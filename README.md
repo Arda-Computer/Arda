@@ -8,6 +8,13 @@
   <img width="600"
        alt="Alacritty - A fast, cross-platform, OpenGL terminal emulator"
        src="https://user-images.githubusercontent.com/8886672/103264352-5ab0d500-49a2-11eb-8961-02f7da66c855.png">
+
+
+<a href="https://arda.computer">Website</a>
+<a href="https://arda.computer">Discord</a>
+<a href="https://arda.computer">Sidequest</a>
+
+
 </p>
 
 ## About
@@ -32,9 +39,7 @@ You can find an overview over the features available in Alacritty [here](./docs/
 
 [![Electron Logo](https://electronjs.org/images/electron-logo.svg)](https://electronjs.org)
 
-[Website](https://gohugo.io) |
-[Forum](https://discourse.gohugo.io) |
-[Documentation](https://gohugo.io/getting-started/) |
+
 
 Arda is a cross-platform AR browser that's more productive to use than laptop browsers.
 
