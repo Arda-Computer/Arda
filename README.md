@@ -1,6 +1,6 @@
-# Arda2
+# Arda
 
-Foobar is a Python library for dealing with word pluralization.
+Arda is a cross-platform AR browser that's more productive to use than laptop browsers.
 
 ## Installation
 
