@@ -1,10 +1,8 @@
-
 <p align="center">
-    <img width="200" alt="Arda Logo" src="https://media.githubusercontent.com/media/Arda-Computer/Arda/main/media/Group%20131.png">
+  <img width="200" alt="Arda Logo" src="https://media.githubusercontent.com/media/Arda-Computer/Arda/main/media/Group%20131.png?token=AUXF2FYGEIJGYZK3GTLJB23DHRNTE">
     
-<h1 align="center">Cross-platform AR browser that's more productive to use than laptop browsers.
-</h1>
-
+  <h1 align="center">Cross-platform AR browser that's more productive to use than laptop browsers.
+  </h1>
 </p>
 
 <p align="center">
@@ -14,45 +12,45 @@
 
 <p align="center">
 
-  	<a href="https://github.com/Arda-Computer/Arda/graphs/contributors">
+  <a href="https://github.com/Arda-Computer/Arda/graphs/contributors">
 	<img src="https://img.shields.io/github/contributors/Arda-Computer/Arda.svg?style=flat"
 	alt="Contributors"></a>
 
-    <a href="https://github.com/Arda-Computer/Arda/network/members">
+  <a href="https://github.com/Arda-Computer/Arda/network/members">
     <img src="https://img.shields.io/github/forks/Arda-Computer/Arda.svg?style=flat"
     alt="forks"></a>
 
-    <a href="https://github.com/Arda-Computer/Arda/stargazers">
-    <img src="https://img.shields.io/github/stars/Arda-Computer/Arda.svg?style=flat"
-    alt="stars"></a>
+  <a href="https://github.com/Arda-Computer/Arda/stargazers">
+  <img src="https://img.shields.io/github/stars/Arda-Computer/Arda.svg?style=flat"
+  alt="stars"></a>
 
-    <a href="https://github.com/Arda-Computer/Arda/issues">
-    <img src="https://img.shields.io/github/issues/Arda-Computer/Arda.svg?style=flat"
-    alt="issues"></a>
+  <a href="https://github.com/Arda-Computer/Arda/issues">
+  <img src="https://img.shields.io/github/issues/Arda-Computer/Arda.svg?style=flat"
+  alt="issues"></a>
 
-    <a href="https://github.com/Arda-Computer/Arda/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/Arda-Computer/Arda.svg?style=flat"
-    alt="license"></a>
+  <a href="https://github.com/Arda-Computer/Arda/blob/main/LICENSE">
+  <img src="https://img.shields.io/github/license/Arda-Computer/Arda.svg?style=flat"
+  alt="license"></a>
 
-    <a href="https://github.com/Arda-Computer/Arda/blob/main/LICENSE">
-    <img src="https://discordapp.com/api/guilds/1009190818667561000/widget.png?style=shield"
-    alt="discordapp"></a>
+  <a href="https://github.com/Arda-Computer/Arda/blob/main/LICENSE">
+  <img src="https://discordapp.com/api/guilds/1009190818667561000/widget.png?style=shield"
+  alt="discordapp"></a>
     
-	<br />
-    <br />
-    
-    <a href="https://www.oculus.com/experiences/quest/2311379172319221/"><strong>Download »</strong>	</a>
-    
-    <br />
-    <br />
-    
-    <a href="https://www.oculus.com/experiences/quest/2311379172319221/">Website</a>
-    ·
-    <a href="https://www.oculus.com/experiences/quest/2311379172319221/">View Demo Video</a>
-    ·
-    <a href="https://github.com/Bonsai-Desk/BonsaiDesk/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/Bonsai-Desk/BonsaiDesk/issues">Request Feature</a>
+<br />
+  <br />
+  
+  <a href="https://www.oculus.com/experiences/quest/2311379172319221/"><strong>Download »</strong>	</a>
+  
+  <br />
+  <br />
+  
+  <a href="https://www.oculus.com/experiences/quest/2311379172319221/">Website</a>
+  ·
+  <a href="https://www.oculus.com/experiences/quest/2311379172319221/">View Demo Video</a>
+  ·
+  <a href="https://github.com/Bonsai-Desk/BonsaiDesk/issues">Report Bug</a>
+  ·
+  <a href="https://github.com/Bonsai-Desk/BonsaiDesk/issues">Request Feature</a>
   
  </p>
   
