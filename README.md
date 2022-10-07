@@ -1,13 +1,17 @@
 <p align="center">
-  <img width="200" alt="Arda Logo" src="https://media.githubusercontent.com/media/Arda-Computer/Arda/main/media/Group%20131.png?token=AUXF2FYGEIJGYZK3GTLJB23DHRNTE">
+  <img width="200" alt="Arda Logo" src="https://media.githubusercontent.com/media/Arda-Computer/Arda/main/media/Group%20131_transparent.png">
     
-  <h1 align="center">Cross-platform AR browser that's more productive to use than laptop browsers.
+  <h1 align="center">Turn your headset into a personal computer
   </h1>
+  
 </p>
 
 <p align="center">
-<iframe src='https://gfycat.com/ifr/ThatDecimalHypsilophodon' frameborder='0' scrolling='no' allowfullscreen width='640' height='404'></iframe>
+  <iframe src='https://gfycat.com/ifr/ThatDecimalHypsilophodon' frameborder='0' scrolling='no' allowfullscreen width='640' height='404'></iframe>
 </p>
+
+<img src="https://media.githubusercontent.com/media/Arda-Computer/Arda/main/media/C06hyS5kVBmaAkbF0bVkxBRVSqA6vMIybZbu31MB.png" alt="description of gif" /> 
+
 
 
 <p align="center">
@@ -36,21 +40,19 @@
   <img src="https://discordapp.com/api/guilds/1009190818667561000/widget.png?style=shield"
   alt="discordapp"></a>
     
-<br />
-  <br />
+  <br/>
+  <br/>
   
   <a href="https://www.oculus.com/experiences/quest/2311379172319221/"><strong>Download »</strong>	</a>
   
-  <br />
-  <br />
+  <br/>
+  <br/>
   
-  <a href="https://www.oculus.com/experiences/quest/2311379172319221/">Website</a>
+  <a href="https://arda.computer">Website</a>
   ·
-  <a href="https://www.oculus.com/experiences/quest/2311379172319221/">View Demo Video</a>
+  <a href="https://github.com/Arda-Computer/Arda/issues">Report Bug</a>
   ·
-  <a href="https://github.com/Bonsai-Desk/BonsaiDesk/issues">Report Bug</a>
-  ·
-  <a href="https://github.com/Bonsai-Desk/BonsaiDesk/issues">Request Feature</a>
+  <a href="https://github.com/Arda-Computer/Arda/issues">Request Feature</a>
   
  </p>
   
@@ -58,36 +60,31 @@
 
 
 ## About
-Arda is a web browsers intended to be used accross all standalone headsets and to be used as a standalone productivity workstation.
+Arda is the productivity tool that brings the utility of a workstation with the portability of a laptop.
 
-You are able to do everything you can do on a laptop borwser only better and faster.
-
-Arda allows for the productivity of a desktop PC with the portability of a laptop.
-
-We're building a tool to unlock human productivity. 
-
+Do everything you're able to do on a desktop web-browser in your headset but better and faster.
 
 <h1></h1>
 
 
 <iframe width="50%"
   align="right" width="560" height="315"
-src="https://www.youtube.com/embed/zAlX1V3lK5s"
+src="https://www.youtube.com/watch?v=iqLrsQolaks"
 frameborder="0" allowfullscreen>
 
 </iframe>
 
 **The minimal, blazing-fast, and infinitely customizable prompt for any shell!**
 
-- **We're fasT AF:** it's fast – _really really_ fast! 🚀
-- **AR first:** configure every aspect of your prompt.
-- **Eyetracking native:** works on any shell, on any operating system.
-- **Cross platform and opensources:** shows relevant information at a glance.
-- **Open ecosystem:** support for all your favorite tools.
-- **Standalone:** quick to install – start using it in minutes.
+- **It's fast:** Interacting with your eyes makes navigating and building on the web feel like magic 🚀
+- **Immersion:** Focus for hours by surounding yourself with multiple monitors
+- **Portability:** Arda works in standalone headsets so you can take nothing but your headset with you
+- **Cross-platform and Opensourced:** Use Arda on standalone headsets and PCVR
+- **Private and Secure:** Private mode and security built-in
+- **Customisable:** Easily custumize your surroundsings 
 
 <p align="center">
-<a href="https://starship.rs/config/"><strong>Checkout full features&nbsp;&nbsp;▶</strong></a>
+<a href="https://starship.rs/config/"><strong>Full features&nbsp;&nbsp;▶</strong></a>
 </p>
 
 <a name="🚀-installation"></a>
@@ -99,85 +96,54 @@ frameborder="0" allowfullscreen>
 
 
 <details>
-<summary>Other browser comparison table</summary>
+<summary>Product Comparison</summary>
 
-Install the latest version for your system:
+|                       | Arda                 | Wolvic Browser       | vSpatial             | Immersed             | Oculus Browser       | Remote Desktop       | Laptop Browser       |
+|-----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|
+| **Customisation**     | :white_check_mark:   | :white_large_square: | :white_check_mark:   | :white_check_mark:   | :white_large_square: | :white_check_mark:   | :white_large_square: |
+| **Multiple monitors** | :white_check_mark:   | :white_check_mark:   | :white_check_mark:   | :white_check_mark:   | :white_check_mark:   | :white_check_mark:   | :white_large_square: |
+| **Open Source**       | :white_check_mark:   | :white_check_mark:   | :white_large_square: | :white_large_square: | :white_large_square: | :white_large_square: | :white_check_mark:   |
+| **Standalone**        | :white_check_mark:   | :white_check_mark:   | :white_check_mark:   | :white_large_square: | :white_check_mark:   | :white_large_square: | :white_check_mark:   |
+| **Private & Secure**  | :white_check_mark:   | :white_check_mark:   | :white_large_square: | :white_check_mark:   | :white_large_square: | :white_check_mark:   | :white_check_mark:   |
+| **WebXR-ready**       | :white_check_mark:   | :white_check_mark:   | :white_large_square: | :white_large_square: | :white_check_mark:   | :white_large_square: | :white_large_square: |
+| **Cross-platform**    | :white_check_mark:   | :white_check_mark:   | :white_check_mark:   | :white_check_mark:   | :white_large_square: | :white_check_mark:   | :white_check_mark:   |
+| **Eye tracking**      | :white_check_mark:   | :white_large_square: | :white_large_square: | :white_large_square: | :white_large_square: | :white_large_square: | :white_large_square: |
+| **Desktop apps**      | :white_large_square: | :white_large_square: | :white_check_mark:   | :white_check_mark:   | :white_large_square: | :white_check_mark:   | :white_check_mark:   |
 
-
-Alternatively, install Starship using any of the following package managers:
-
-| Distribution       | Repository              | Instructions                                                  |
-| ------------------ | ----------------------- | ------------------------------------------------------------- |
-| **_Any_**          | **[crates.io]**         | `cargo install starship --locked`                             |
-| _Any_              | [conda-forge]           | `conda install -c conda-forge starship`                       |
-| _Any_              | [Linuxbrew]             | `brew install starship`                                       |
-| _Any_              | [Snapcraft]             | `snap install starship`                                       |
-| Alpine Linux 3.13+ | [Alpine Linux Packages] | `apk add starship`                                            |
-| Arch Linux         | [Arch Linux Community]  | `pacman -S starship`                                          |
-| CentOS 7+          | [Copr]                  | `dnf copr enable atim/starship` <br /> `dnf install starship` |
-| Fedora 31+         | [Fedora Packages]       | `dnf install starship`                                        |
-| Gentoo             | [Gentoo Packages]       | `emerge app-shells/starship`                                  |
-| Manjaro            |                         | `pacman -S starship`                                          |
-| NixOS              | [nixpkgs]               | `nix-env -iA nixpkgs.starship`                                |
-| Void Linux         | [Void Linux Packages]   | `xbps-install -S starship`                                    |
 
 </details>
 
 <details>
-<summary>input compatability table
+<summary>Input Methods
 </summary>
 
-Install the latest version for your system:
+|               | Availability         |
+|---------------|----------------------|
+| Hand tracking | :white_check_mark:   |
+| Eye tracking  | :white_check_mark:   |
+| Controllers   | :white_check_mark:   |
+| Mouse         | :white_check_mark:   |
+| Keyboard      | :white_check_mark:   |
+| Voice         | :white_large_square: |
 
-```sh
-curl -sS https://starship.rs/install.sh | sh
-```
-
-Alternatively, install Starship using any of the following package managers:
-
-| Distribution       | Repository              | Instructions                                                  |
-| ------------------ | ----------------------- | ------------------------------------------------------------- |
-| **_Any_**          | **[crates.io]**         | `cargo install starship --locked`                             |
-| _Any_              | [conda-forge]           | `conda install -c conda-forge starship`                       |
-| _Any_              | [Linuxbrew]             | `brew install starship`                                       |
-| _Any_              | [Snapcraft]             | `snap install starship`                                       |
-| Alpine Linux 3.13+ | [Alpine Linux Packages] | `apk add starship`                                            |
-| Arch Linux         | [Arch Linux Community]  | `pacman -S starship`                                          |
-| CentOS 7+          | [Copr]                  | `dnf copr enable atim/starship` <br /> `dnf install starship` |
-| Fedora 31+         | [Fedora Packages]       | `dnf install starship`                                        |
-| Gentoo             | [Gentoo Packages]       | `emerge app-shells/starship`                                  |
-| Manjaro            |                         | `pacman -S starship`                                          |
-| NixOS              | [nixpkgs]               | `nix-env -iA nixpkgs.starship`                                |
-| Void Linux         | [Void Linux Packages]   | `xbps-install -S starship`                                    |
 
 </details>
 
 
 <details>
-<summary>headset compatability table</summary>
+<summary>Device Compatibility</summary>
 
-Install the latest version for your system:
-
-```sh
-curl -sS https://starship.rs/install.sh | sh
-```
-
-Alternatively, install Starship using any of the following package managers:
-
-| Distribution       | Repository              | Instructions                                                  |
-| ------------------ | ----------------------- | ------------------------------------------------------------- |
-| **_Any_**          | **[crates.io]**         | `cargo install starship --locked`                             |
-| _Any_              | [conda-forge]           | `conda install -c conda-forge starship`                       |
-| _Any_              | [Linuxbrew]             | `brew install starship`                                       |
-| _Any_              | [Snapcraft]             | `snap install starship`                                       |
-| Alpine Linux 3.13+ | [Alpine Linux Packages] | `apk add starship`                                            |
-| Arch Linux         | [Arch Linux Community]  | `pacman -S starship`                                          |
-| CentOS 7+          | [Copr]                  | `dnf copr enable atim/starship` <br /> `dnf install starship` |
-| Fedora 31+         | [Fedora Packages]       | `dnf install starship`                                        |
-| Gentoo             | [Gentoo Packages]       | `emerge app-shells/starship`                                  |
-| Manjaro            |                         | `pacman -S starship`                                          |
-| NixOS              | [nixpkgs]               | `nix-env -iA nixpkgs.starship`                                |
-| Void Linux         | [Void Linux Packages]   | `xbps-install -S starship`                                    |
+|             | Built              | Tested               |
+| ----------- |:------------------:|:--------------------:|
+| Quest       | :white_check_mark: | :white_large_square: |
+| Quest 2     |                    |                      |
+| Vive        |                    |                      |
+| Valve Index |                    |                      |
+| Rift/Rift S |                    |                      |
+| Windows MR  |                    |                      |
+| Lynx        |                    |                      |
+| Pico        |                    |                      |
+| Magic Leap  |                    |                      |
 
 </details>
 
@@ -194,13 +160,13 @@ Please make sure to update tests as appropriate.
 
 ## Getting started
 
-Arda's backend is currently using a web browser made by [Vuplex](https://assetstore.unity.com/publishers/40309). This asset is paid, and required for Arda to work. It may be possible to strip out the web browser from Arda so it can run without this asset.
+Arda's backend is currently using a web browser made by [Vuplex](https://assetstore.unity.com/publishers/40309) which is in turn built ontop of GeckoView. This asset is paid, and required for Arda to work. It may be possible to strip out the web browser from Arda so it can run without this asset.
 
 1. Clone the repo
    ```sh
    git clone https://github.com/Arda-Computer/Arda
    ```
-2. Open Bonsai Desk using Unity 2021.4.25f1
+2. Open Arda using Unity 2021 LTS
    - Set the platform to Android in Unity Hub before you open the project for the first time so you do not have to import assets twice
 3. Add [3D WebView for Android with Gecko Engine (Web Browser)](https://assetstore.unity.com/packages/tools/gui/3d-webview-for-android-with-gecko-engine-web-browser-158778) to the project
 4. (optional) Add [3D WebView for Windows and macOS (Web Browser)](https://assetstore.unity.com/packages/tools/gui/3d-webview-for-windows-and-macos-web-browser-154144) to the project
