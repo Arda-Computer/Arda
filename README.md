@@ -6,9 +6,9 @@
   
 </p>
 
-<p align="center">
-  <iframe src='https://gfycat.com/ifr/ThatDecimalHypsilophodon' frameborder='0' scrolling='no' allowfullscreen width='640' height='404'></iframe>
-</p>
+  <p align="center">
+    <iframe src='https://gfycat.com/ifr/ThatDecimalHypsilophodon' frameborder='0' scrolling='no' allowfullscreen width='640' height='404'></iframe>
+  </p>
 
 <img src="https://media.githubusercontent.com/media/Arda-Computer/Arda/main/media/C06hyS5kVBmaAkbF0bVkxBRVSqA6vMIybZbu31MB.png" alt="description of gif" /> 
 
@@ -67,12 +67,11 @@ Do everything you're able to do on a desktop web-browser in your headset but bet
 <h1></h1>
 
 
-<iframe width="50%"
-  align="right" width="560" height="315"
-src="https://www.youtube.com/watch?v=iqLrsQolaks"
-frameborder="0" allowfullscreen>
-
-</iframe>
+  <iframe width="50%"
+    align="right" width="560" height="315"
+  src="https://www.youtube.com/watch?v=iqLrsQolaks"
+  frameborder="0" allowfullscreen>
+  </iframe>
 
 **The minimal, blazing-fast, and infinitely customizable prompt for any shell!**
 
