@@ -4,13 +4,17 @@
   <h1 align="center">Turn your headset into a personal computer
   </h1>
   
+  <h3 align="center">  Arda is the productivity tool that brings the utility of a workstation with the portability of a laptop.
+  </h3>
+  
+
+  
 </p>
 
-  <p align="center">
-    <iframe src='https://gfycat.com/ifr/ThatDecimalHypsilophodon' frameborder='0' scrolling='no' allowfullscreen width='640' height='404'></iframe>
-  </p>
+<p align="center">
+<img width="600" height="350"  src="https://media.githubusercontent.com/media/Arda-Computer/Arda/main/media/C06hyS5kVBmaAkbF0bVkxBRVSqA6vMIybZbu31MB.gif" alt="description of gif" /> 
+</p>
 
-<img src="https://media.githubusercontent.com/media/Arda-Computer/Arda/main/media/C06hyS5kVBmaAkbF0bVkxBRVSqA6vMIybZbu31MB.png" alt="description of gif" /> 
 
 
 
@@ -40,38 +44,41 @@
   <img src="https://discordapp.com/api/guilds/1009190818667561000/widget.png?style=shield"
   alt="discordapp"></a>
     
-  <br/>
-  <br/>
-  
-  <a href="https://www.oculus.com/experiences/quest/2311379172319221/"><strong>Download »</strong>	</a>
-  
-  <br/>
-  <br/>
-  
-  <a href="https://arda.computer">Website</a>
-  ·
-  <a href="https://github.com/Arda-Computer/Arda/issues">Report Bug</a>
-  ·
-  <a href="https://github.com/Arda-Computer/Arda/issues">Request Feature</a>
-  
- </p>
+   	<p align="center">
+        <a href="https://www.oculus.com/experiences/quest/2311379172319221/"><strong>Download »</strong>		</a>
+
+        <br/>
+
+        <a href="https://arda.computer">Website</a>
+        ·
+        <a href="https://github.com/Arda-Computer/Arda/issues">Report Bug</a>
+        ·
+        <a href="https://github.com/Arda-Computer/Arda/issues">Request Feature</a>
+   	</p>
+    
+
+</p>
   
 
 
 
 ## About
-Arda is the productivity tool that brings the utility of a workstation with the portability of a laptop.
 
-Do everything you're able to do on a desktop web-browser in your headset but better and faster.
+Arda is a tool that makes humans and computers more productive. We believe augmented reality (AR) is a core enabling technology, bringing the utility of a workstation, portability of a laptop and the potential for (killer) applications to be useful in ways we never thought possible.
+
+Doing anything productive in AR with todays tooling is painful. AR personal computing has gone mostly ignored by big tech as they’ve focused on gaming and miscellaneous industrial niches. 
+
+Moving away from a form-factor that is as deeply entrenched as conventional personal computing - having not changed in the past half a century - is no easy feat. We’re therefore taking a staged approach to building the future:
+
+1. Milestone 1: Reaching feature parity with conventional personal computers. Luckily, since most of what we do today is in the browser, we can build a tool on top of this preexisting, open and powerful ecosystem. `Oct 2022`
+2. Milestone 2: Become more usable, convenient and faster to use than conventional personal computers. Using XR-native features like eye tracking, higher i/o bandwidth and multiplayer to take the product from hobbyists to mass market. `Early 2023`
+3. Milestone 3:  Build a platform based on WebXR, allowing developers to build new types of applications `Mid 2023`
+
 
 <h1></h1>
 
 
-  <iframe width="50%"
-    align="right" width="560" height="315"
-  src="https://www.youtube.com/watch?v=iqLrsQolaks"
-  frameborder="0" allowfullscreen>
-  </iframe>
+<iframe  width="50%" height="28%" align="right" src="https://www.youtube.com/embed/iqLrsQolaks" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **The minimal, blazing-fast, and infinitely customizable prompt for any shell!**
 
@@ -88,14 +95,26 @@ Do everything you're able to do on a desktop web-browser in your headset but bet
 
 <a name="🚀-installation"></a>
 
+<details>
+<summary>Input Methods
+</summary>
 
 
+|               | Availability         |
+|---------------|----------------------|
+| Hand tracking | :white_check_mark:   |
+| Eye tracking  | :white_check_mark:   |
+| Controllers   | :white_check_mark:   |
+| Mouse         | :white_check_mark:   |
+| Keyboard      | :white_check_mark:   |
+| Voice         | :white_large_square: |
 
-## Features
 
+</details>
 
 <details>
 <summary>Product Comparison</summary>
+
 
 |                       | Arda                 | Wolvic Browser       | vSpatial             | Immersed             | Oculus Browser       | Remote Desktop       | Laptop Browser       |
 |-----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|
@@ -112,25 +131,10 @@ Do everything you're able to do on a desktop web-browser in your headset but bet
 
 </details>
 
-<details>
-<summary>Input Methods
-</summary>
-
-|               | Availability         |
-|---------------|----------------------|
-| Hand tracking | :white_check_mark:   |
-| Eye tracking  | :white_check_mark:   |
-| Controllers   | :white_check_mark:   |
-| Mouse         | :white_check_mark:   |
-| Keyboard      | :white_check_mark:   |
-| Voice         | :white_large_square: |
-
-
-</details>
-
 
 <details>
 <summary>Device Compatibility</summary>
+
 
 |             | Built              | Tested               |
 | ----------- |:------------------:|:--------------------:|
