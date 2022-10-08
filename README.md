@@ -62,29 +62,29 @@
 <div style="overflow: hidden;">
     
     
-<div id="leftThing" style="float: left; width:50%;">
+  <div id="leftThing" style="float: left; width:50%;">
+      
+  Arda is a tool that makes humans and computers more productive. We believe augmented reality (AR) is a core enabling technology, bringing the utility of a workstation, portability of a laptop and the potential for (killer) applications to be useful in ways we never thought possible.
+
+  Doing anything productive in AR with todays tooling is painful. AR personal computing has gone mostly ignored by big tech as they’ve focused on gaming and miscellaneous industrial niches. 
     
-Arda is a tool that makes humans and computers more productive. We believe augmented reality (AR) is a core enabling technology, bringing the utility of a workstation, portability of a laptop and the potential for (killer) applications to be useful in ways we never thought possible.
-
-Doing anything productive in AR with todays tooling is painful. AR personal computing has gone mostly ignored by big tech as they’ve focused on gaming and miscellaneous industrial niches. 
-	
-</div>
+  </div>
     
-<div id="rightThing" style="float: right; width:50%;">
-    
-- **It's fast:** Interacting with your eyes makes navigating and building on the web feel like magic 🚀
-- **Immersion:** Focus for hours by surounding yourself with multiple monitors
-- **Portability:** Arda works in standalone headsets so you can take nothing but your headset with you
-- **Cross-platform and Opensourced:** Use Arda on standalone headsets and PCVR
-- **Private and Secure:** Private mode and security built-in
-- **Customisable:** Easily custumize your surroundsings 
+  <div id="rightThing" style="text-align:right; float: right; width:50%;">
+      
+  - **It's fast:** Interacting with your eyes makes navigating and building on the web feel like magic 🚀
+  - **Immersion:** Focus for hours by surounding yourself with multiple monitors
+  - **Portability:** Arda works in standalone headsets so you can take nothing but your headset with you
+  - **Cross-platform and Opensourced:** Use Arda on standalone headsets and PCVR
+  - **Private and Secure:** Private mode and security built-in
+  - **Customisable:** Easily custumize your surroundsings 
 
-<p align="center">
-<a href="https://arda.computer"><strong>Full features&nbsp;&nbsp;▶</strong></a>
-</p>
+  <p align="center">
+  <a href="https://arda.computer"><strong>Full features&nbsp;&nbsp;▶</strong></a>
+  </p>
 
 
-</div>
+  </div>
     
 </div>
 
