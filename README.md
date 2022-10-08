@@ -70,7 +70,7 @@ Doing anything productive in AR with todays tooling is painful. AR personal comp
 	
 </div>
     
-<div id="rightThing" style="float: left; width:50%;">
+<div id="rightThing" style="float: right; width:50%;">
     
 - **It's fast:** Interacting with your eyes makes navigating and building on the web feel like magic 🚀
 - **Immersion:** Focus for hours by surounding yourself with multiple monitors
