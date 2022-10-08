@@ -70,6 +70,12 @@
     
   </div>
     
+    
+</div>
+
+
+## Features
+
   <div id="rightThing" style="text-align:right; float: right; width:50%;">
       
   - **It's fast:** Interacting with your eyes makes navigating and building on the web feel like magic 🚀
@@ -85,23 +91,6 @@
 
 
   </div>
-    
-</div>
-
-<h1></h1>
-
-
-Moving away from a form-factor that is as deeply entrenched as conventional personal computing - having not changed in the past half a century - is no easy feat. We’re therefore taking a staged approach to building this future:
-
-1. Milestone 1: Reaching feature parity with conventional personal computers. Luckily, since most of what we do today is in the browser, we can build a tool on top of this preexisting, open and powerful ecosystem. `Oct 2022`
-2. Milestone 2: Become more usable, convenient and faster to use than conventional personal computers. Using XR-native features like eye tracking, higher i/o bandwidth and multiplayer to take the product from hobbyists to mass market. `Early 2023`
-3. Milestone 3:  Build a platform based on WebXR, allowing developers to build new types of applications `Mid 2023`
-
-
-
-
-<h1></h1>
-
 
 
 <details>
@@ -156,6 +145,16 @@ Moving away from a form-factor that is as deeply entrenched as conventional pers
 | Magic Leap  | :white_large_square: | :white_large_square: |
 
 </details>
+
+
+<h1></h1>
+
+
+Moving away from a form-factor that is as deeply entrenched as conventional personal computing - having not changed in the past half a century - is no easy feat. We’re therefore taking a staged approach to building this future:
+
+1. Milestone 1: Reaching feature parity with conventional personal computers. Luckily, since most of what we do today is in the browser, we can build a tool on top of this preexisting, open and powerful ecosystem. `Oct 2022`
+2. Milestone 2: Become more usable, convenient and faster to use than conventional personal computers. Using XR-native features like eye tracking, higher i/o bandwidth and multiplayer to take the product from hobbyists to mass market. `Early 2023`
+3. Milestone 3:  Build a platform based on WebXR, allowing developers to build new types of applications `Mid 2023`
 
 
 ## Contributing
