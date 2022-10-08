@@ -39,13 +39,10 @@
   <a href="https://github.com/Arda-Computer/Arda/blob/main/LICENSE">
   <img src="https://discordapp.com/api/guilds/1009190818667561000/widget.png?style=shield"
   alt="discordapp"></a>
-
-</p>
-
-<p align="center">
-
+<br/>
+<br/>
   <a href="https://sidequestvr.com/"><strong>Download »</strong></a>
-  <br/>
+<br/>
   <a href="https://arda.computer">Website</a>
     ·
   <a href="https://www.youtube.com/watch?v=iqLrsQolaks">Full Demo</a>
@@ -53,6 +50,20 @@
   <a href="https://github.com/Arda-Computer/Arda/issues">Report Bug</a>
     ·
   <a href="https://github.com/Arda-Computer/Arda/issues">Request Feature</a>
+
+</p>
+
+<p align="center">
+
+<a href="https://sidequestvr.com/"><strong>Download »</strong></a>
+<br/>
+<a href="https://arda.computer">Website</a>
+  ·
+<a href="https://www.youtube.com/watch?v=iqLrsQolaks">Full Demo</a>
+  ·
+<a href="https://github.com/Arda-Computer/Arda/issues">Report Bug</a>
+  ·
+<a href="https://github.com/Arda-Computer/Arda/issues">Request Feature</a>
 
 </p>
     
@@ -64,13 +75,13 @@
 <div style="overflow: hidden;">
     
     
-	<div id="leftThing" style="float: left; width:50%;">
+<div id="leftThing" style="float: left; width:50%;">
     
 Arda is a tool that makes humans and computers more productive. We believe augmented reality (AR) is a core enabling technology, bringing the utility of a workstation, portability of a laptop and the potential for (killer) applications to be useful in ways we never thought possible.
 
 Doing anything productive in AR with todays tooling is painful. AR personal computing has gone mostly ignored by big tech as they’ve focused on gaming and miscellaneous industrial niches. 
 	
-    </div>
+  </div>
     
   	<div id="rightThing" style="float: left; width:50%;">
     
@@ -86,7 +97,7 @@ Doing anything productive in AR with todays tooling is painful. AR personal comp
 </p>
 
 
-	</div>
+</div>
     
 </div>
 
