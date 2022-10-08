@@ -1,8 +1,8 @@
 <p align="center">
   <img width="200" alt="Arda Logo" src="https://media.githubusercontent.com/media/Arda-Computer/Arda/main/media/Group%20131_transparent.png">
 
-  <h2>
-    The productivity tool that brings the utility of a workstation with the portability of a laptop.
+  <h2 align="center">
+    The productivity tool that combines the utility of a workstation with the portability of a laptop.
   </h2>
   
 
@@ -53,19 +53,6 @@
 
 </p>
 
-<p align="center">
-
-<a href="https://sidequestvr.com/"><strong>Download »</strong></a>
-<br/>
-<a href="https://arda.computer">Website</a>
-  ·
-<a href="https://www.youtube.com/watch?v=iqLrsQolaks">Full Demo</a>
-  ·
-<a href="https://github.com/Arda-Computer/Arda/issues">Report Bug</a>
-  ·
-<a href="https://github.com/Arda-Computer/Arda/issues">Request Feature</a>
-
-</p>
     
 
   
@@ -81,9 +68,9 @@ Arda is a tool that makes humans and computers more productive. We believe augme
 
 Doing anything productive in AR with todays tooling is painful. AR personal computing has gone mostly ignored by big tech as they’ve focused on gaming and miscellaneous industrial niches. 
 	
-  </div>
+</div>
     
-  	<div id="rightThing" style="float: left; width:50%;">
+<div id="rightThing" style="float: left; width:50%;">
     
 - **It's fast:** Interacting with your eyes makes navigating and building on the web feel like magic 🚀
 - **Immersion:** Focus for hours by surounding yourself with multiple monitors
