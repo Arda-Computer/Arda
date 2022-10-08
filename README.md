@@ -1,8 +1,9 @@
 <p align="center">
   <img width="200" alt="Arda Logo" src="https://media.githubusercontent.com/media/Arda-Computer/Arda/main/media/Group%20131_transparent.png">
-    
-  <h1 align="center">Arda is the productivity tool that brings the utility of a workstation with the portability of a laptop.
-  </h1>
+
+  <h2>
+    The productivity tool that brings the utility of a workstation with the portability of a laptop.
+  </h2>
   
 
 </p>
@@ -39,10 +40,11 @@
   <img src="https://discordapp.com/api/guilds/1009190818667561000/widget.png?style=shield"
   alt="discordapp"></a>
 
+</p>
 
 <p align="center">
 
-<a href="https://sidequestvr.com/"><strong>Download »</strong></a>
+  <a href="https://sidequestvr.com/"><strong>Download »</strong></a>
   <br/>
   <a href="https://arda.computer">Website</a>
     ·
@@ -55,20 +57,24 @@
 </p>
     
 
-</p>
   
 
-
-
 ## About
 
-## About
+<div style="overflow: hidden;">
+    
+    
+	<div id="leftThing" style="float: left; width:50%;">
+    
+Arda is a tool that makes humans and computers more productive. We believe augmented reality (AR) is a core enabling technology, bringing the utility of a workstation, portability of a laptop and the potential for (killer) applications to be useful in ways we never thought possible.
 
-<div id="the whole thing" style="overflow: hidden;">
-    <div id="leftThing" style="float: left; width:50%;">Arda is a tool that makes humans and computers more productive. We believe augmented reality (AR) is a core enabling technology, bringing the utility of a workstation, portability of a laptop and the potential for (killer) applications to be useful in ways we never thought possible.
-
-Doing anything productive in AR with todays tooling is painful. AR personal computing has gone mostly ignored by big tech as they’ve focused on gaming and miscellaneous industrial niches. </div>
-    <div id="rightThing" style="float: left; width:50%;">- **It's fast:** Interacting with your eyes makes navigating and building on the web feel like magic 🚀
+Doing anything productive in AR with todays tooling is painful. AR personal computing has gone mostly ignored by big tech as they’ve focused on gaming and miscellaneous industrial niches. 
+	
+    </div>
+    
+  	<div id="rightThing" style="float: left; width:50%;">
+    
+- **It's fast:** Interacting with your eyes makes navigating and building on the web feel like magic 🚀
 - **Immersion:** Focus for hours by surounding yourself with multiple monitors
 - **Portability:** Arda works in standalone headsets so you can take nothing but your headset with you
 - **Cross-platform and Opensourced:** Use Arda on standalone headsets and PCVR
@@ -77,11 +83,14 @@ Doing anything productive in AR with todays tooling is painful. AR personal comp
 
 <p align="center">
 <a href="https://arda.computer"><strong>Full features&nbsp;&nbsp;▶</strong></a>
-</p></div>
+</p>
+
+
+	</div>
+    
 </div>
 
 <h1></h1>
-
 
 
 Moving away from a form-factor that is as deeply entrenched as conventional personal computing - having not changed in the past half a century - is no easy feat. We’re therefore taking a staged approach to building this future:
