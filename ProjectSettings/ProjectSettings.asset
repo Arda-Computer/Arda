@@ -701,7 +701,7 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
-    Android: VUPLEX_CCU;VUPLEX_STANDALONE
+    Android: VUPLEX_CCU;UNITY_CCU;CURVEDUI_TMP;CURVEDUI_UNITY_XR;VUPLEX_STANDALONE;VUPLEX_XR_INTERACTION_TOOLKIT
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
@@ -790,7 +790,7 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  activeInputHandler: 1
+  activeInputHandler: 2
   cloudProjectId: 
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
