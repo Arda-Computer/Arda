@@ -154,6 +154,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.Arda.computer.Arda
+    Standalone: com.Arda.computer.Arda
   buildNumber:
     Standalone: 0
     iPhone: 0
@@ -701,11 +702,13 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
-    Android: VUPLEX_CCU;UNITY_CCU;CURVEDUI_TMP;CURVEDUI_UNITY_XR;VUPLEX_STANDALONE;VUPLEX_XR_INTERACTION_TOOLKIT
+    Android: VUPLEX_CCU;UNITY_CCU;CURVEDUI_TMP;VUPLEX_STANDALONE;VUPLEX_XR_INTERACTION_TOOLKIT;CURVEDUI_UNITY_XR
+    Standalone: UNITY_CCU;VUPLEX_CCU;CURVEDUI_TMP;VUPLEX_STANDALONE;VUPLEX_XR_INTERACTION_TOOLKIT;CURVEDUI_UNITY_XR
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
     Android: 1
+    Standalone: 1
   il2cppCompilerConfiguration: {}
   managedStrippingLevel: {}
   incrementalIl2cppBuild: {}
