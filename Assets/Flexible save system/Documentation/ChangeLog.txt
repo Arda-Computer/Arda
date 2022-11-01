@@ -1,0 +1,19 @@
++ Added
+~ Changed
+- Removed
+
+V01.01.00:
+SaveLoadSystem:
++ Delete(); for SaveLoadSystem, this will remove the current selected save File.
+
+SaveableEntity:
++ Feature to determine if an object has @Awake a already existing ID -> then the ID will be regenerated.
+  This is the case, if you copy an instantiated object.
+
+~ Some bugfixes in the Editor Tools
+
+
+V01.02.00:
++ Saving of the transform data of the Object will be optional now and can be deactivated.
+  It can be switched on and off by calling SetSaveTransform(...) on the SaveableEntity or
+  by using the Inspector->SaveSystem ID Management->ShowBase->Save Transform.
