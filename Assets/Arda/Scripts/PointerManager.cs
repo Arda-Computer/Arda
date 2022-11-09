@@ -43,6 +43,9 @@ public class PointerManager : MonoBehaviour
     public GameObject LaserBeam;
     public GameObject CameraFollower;
     bool inputBoolChanged;
+    public GameObject hitGO;
+    RaycastHit hit;
+
 
 
     // Start is called before the first frame update
@@ -86,13 +89,20 @@ public class PointerManager : MonoBehaviour
 
 
             //make laser beam hit stuff it points at.
+            
             if(LaserBeamTransform && LaserBeamDot) {
                 //change the laser's length depending on where it hits
                 float length = 10000;
-                
-                RaycastHit hit;
+
+                //RaycastHit hit;
                 if (Physics.Raycast(myRay, out hit, length, CurvedUIInputModule.Instance.RaycastLayerMask))
                 {
+
+                    //get focusedGO
+                    if(hit.collider.gameObject != null && CurvedUIInputModule.CustomControllerButtonState == true){
+                        hitGO = hit.collider.gameObject; //set hitGO to the gameobject that was hit
+                    }
+                    
                     length = Vector3.Distance(hit.point, customRaycastGO.transform.position);
 
                     //Find if we hit a canvas
@@ -112,6 +122,8 @@ public class PointerManager : MonoBehaviour
                 //set the leangth of the beam
                 LaserBeamTransform.localScale = LaserBeamTransform.localScale.ModifyZ(length);
             }
+
+            
 
 
 
