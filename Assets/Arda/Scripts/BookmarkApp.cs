@@ -43,7 +43,7 @@ using Vuplex.WebView;
             int index = baseURL.IndexOf("/");  
             baseURL = baseURL.Substring(0, index);
             //apply favicon to GO
-            byte[] UploadByte = File.ReadAllBytes(Application.persistentDataPath + "/saves/favicons/"+ baseURL + ".png");
+            byte[] UploadByte = File.ReadAllBytes(Application.persistentDataPath + "/favicons/"+ baseURL + ".png");
             Texture2D texture = new Texture2D(10,10);
             texture.LoadImage(UploadByte);
             appInstance.GetComponent<RawImage>().texture = texture;
