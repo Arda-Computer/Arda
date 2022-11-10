@@ -511,16 +511,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRSettings_get_eyeTextureDesc_Injected_m
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Boolean UnityEngine.XR.XRDevice::SetTrackingSpaceType(UnityEngine.XR.TrackingSpaceType)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRDevice_SetTrackingSpaceType_mD5276BBB091C1AD8082D8F84F4DA0141E682C348 (int32_t ___trackingSpaceType0, const RuntimeMethod* method) 
-{
-	typedef bool (*XRDevice_SetTrackingSpaceType_mD5276BBB091C1AD8082D8F84F4DA0141E682C348_ftn) (int32_t);
-	static XRDevice_SetTrackingSpaceType_mD5276BBB091C1AD8082D8F84F4DA0141E682C348_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (XRDevice_SetTrackingSpaceType_mD5276BBB091C1AD8082D8F84F4DA0141E682C348_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.XR.XRDevice::SetTrackingSpaceType(UnityEngine.XR.TrackingSpaceType)");
-	bool icallRetVal = _il2cpp_icall_func(___trackingSpaceType0);
-	return icallRetVal;
-}
 // System.Void UnityEngine.XR.XRDevice::DisableAutoXRCameraTracking(UnityEngine.Camera,System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRDevice_DisableAutoXRCameraTracking_mDFDDD1D32A4D623A5448533B5E8E02B9536A25DC (Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ___camera0, bool ___disabled1, const RuntimeMethod* method) 
 {

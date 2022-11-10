@@ -2414,15 +2414,6 @@ IL_0093:
 		return;
 	}
 }
-// System.Void UnityEngine.XR.InputTracking::Recenter()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputTracking_Recenter_m08E21C730EF172666DB09B3227016DA631EB6B22 (const RuntimeMethod* method) 
-{
-	typedef void (*InputTracking_Recenter_m08E21C730EF172666DB09B3227016DA631EB6B22_ftn) ();
-	static InputTracking_Recenter_m08E21C730EF172666DB09B3227016DA631EB6B22_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (InputTracking_Recenter_m08E21C730EF172666DB09B3227016DA631EB6B22_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.XR.InputTracking::Recenter()");
-	_il2cpp_icall_func();
-}
 // System.Void UnityEngine.XR.InputTracking::GetNodeStates(System.Collections.Generic.List`1<UnityEngine.XR.XRNodeState>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputTracking_GetNodeStates_m223143B21552B9FF127B22FA26839BFEEE461E09 (List_1_t8AE5A65CCFBC753343962D38B82C801F7BDE3C87* ___nodeStates0, const RuntimeMethod* method) 
 {

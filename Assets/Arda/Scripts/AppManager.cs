@@ -15,7 +15,7 @@ public class AppManager : MonoBehaviour, ISaveable
     CanvasWebViewPrefab canvasPrefab;
 
     RawImage Image;
-    string ImageName;
+    string baseURL;
     bool DestroyedBool = false;
 
 
@@ -23,18 +23,17 @@ public class AppManager : MonoBehaviour, ISaveable
     void Start()
     {
 
+        //need to get url in correct png format
+        baseURL = this.gameObject.name;
+        baseURL = baseURL.Replace("https://", "");
+        int index = baseURL.IndexOf("/");  
+        baseURL = baseURL.Substring(0, index); 
         //apply favicon to GO
-        ImageName = this.gameObject.name;
-        ImageName = ImageName.Replace("/","");
-
-
-        if (File.Exists(Application.persistentDataPath + "/saves/favicons/"+ ImageName + ".png")){
-
-            byte[] UploadByte = File.ReadAllBytes(Application.persistentDataPath + "/saves/favicons/"+ ImageName + ".png");
-            Texture2D texture = new Texture2D(10,10);
-            texture.LoadImage(UploadByte);
-            this.gameObject.GetComponent<RawImage>().texture = texture;
-        }
+        byte[] UploadByte = File.ReadAllBytes(Application.persistentDataPath + "/favicons/"+ baseURL + ".png");
+        Texture2D texture = new Texture2D(10,10);
+        texture.LoadImage(UploadByte);
+        this.gameObject.GetComponent<RawImage>().texture = texture;
+        
 
     
         //once the GO is instantiated, place in correct location

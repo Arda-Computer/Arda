@@ -43,6 +43,9 @@ public class PointerManager : MonoBehaviour
     public GameObject LaserBeam;
     public GameObject CameraFollower;
     bool inputBoolChanged;
+    public GameObject hitGO;
+    RaycastHit hit;
+
 
 
     // Start is called before the first frame update
@@ -61,6 +64,8 @@ public class PointerManager : MonoBehaviour
         /// <summary>
         /// A simple script to make the pointer follow mouse movement and pass the control ray to canvsa
         /// </summary>
+
+            //need if mouse exists otherwise thows errors
 
             //find mouse delta
             Vector3 mouseDelta = CurvedUIInputModule.MousePosition - lastMouse;
@@ -86,14 +91,21 @@ public class PointerManager : MonoBehaviour
 
 
             //make laser beam hit stuff it points at.
+            
             if(LaserBeamTransform && LaserBeamDot) {
                 //change the laser's length depending on where it hits
-                float length = 10000;
-                
-                RaycastHit hit;
+                float length = 10;
+
+                //RaycastHit hit;
                 if (Physics.Raycast(myRay, out hit, length, CurvedUIInputModule.Instance.RaycastLayerMask))
                 {
-                    length = Vector3.Distance(hit.point, customRaycastGO.transform.position);
+
+                    //get focusedGO
+                    if(hit.collider.gameObject != null && CurvedUIInputModule.CustomControllerButtonState == true){
+                        hitGO = hit.collider.gameObject; //set hitGO to the gameobject that was hit
+                    }
+                    
+                    // length = Vector3.Distance(hit.point, customRaycastGO.transform.position);
 
                     //Find if we hit a canvas
                     CurvedUISettings cuiSettings = hit.collider.GetComponentInParent<CurvedUISettings>();
@@ -102,7 +114,7 @@ public class PointerManager : MonoBehaviour
                         //find if there are any canvas objects we're pointing at. we only want transforms with graphics to block the pointer. (that are drawn by canvas => depth not -1)
                         int selectablesUnderPointer = cuiSettings.GetObjectsUnderPointer().FindAll(x => x != null && x.GetComponent<Graphic>() != null && x.GetComponent<Graphic>().depth != -1).Count;
 
-                        length = selectablesUnderPointer == 0 ? 10000 : Vector3.Distance(hit.point, customRaycastGO.transform.position);
+                        // length = selectablesUnderPointer == 0 ? 10000 : Vector3.Distance(hit.point, customRaycastGO.transform.position);
                     }
                     else if (hideWhenNotAimingAtCanvas) length = 0;
                 }
@@ -112,6 +124,8 @@ public class PointerManager : MonoBehaviour
                 //set the leangth of the beam
                 LaserBeamTransform.localScale = LaserBeamTransform.localScale.ModifyZ(length);
             }
+
+            
 
 
 
@@ -130,7 +144,7 @@ public class PointerManager : MonoBehaviour
         }else{//if toggle.inputBool = false
             
             //by default hands are off, mouse is active, pointer is child of camera
-            LaserBeam.SetActive(toggle.inputBool);
+            //LaserBeam.SetActive(toggle.inputBool);
             CurvedUIInputModule.CustomControllerButtonState = CurvedUIInputModule.LeftMouseButton;
             HandGO.SetActive(toggle.inputBool);
             customRaycastGO.transform.SetParent(CameraFollower.transform);

@@ -16,6 +16,8 @@ using Vuplex.WebView;
 
         RawImage Image;
         string ImageName;
+        string baseURL;
+
 
 
 
@@ -29,55 +31,30 @@ using Vuplex.WebView;
 
 
         void CreateBookmark()
-                {	
-        
-                    //Instantiate GO with url as name and favicon as image texture
-                    appInstance = Instantiate(AppPrefab, GameObject.FindWithTag("Respawn").transform);
-                    appInstance.name = this.gameObject.transform.parent.GetComponentInChildren<CanvasWebViewPrefab>().WebView.Url;
-                    Image = appInstance.GetComponent<RawImage>();
-                    ImageName = appInstance.name;
-                    ImageName = ImageName.Replace("/","");
+        {	
 
-                    StartCoroutine(LoadImage("https://www.google.com/s2/favicons?domain="+ appInstance.name +"&sz=256"));
-
-                    //save for each new bookmark created
-                    SaveLoadSystemClass.SaveNew();
-
-
-                }
-
-        
-        //get favicon -> image texture
-        IEnumerator LoadImage(string ImageUrl){
-
-            ImageName = ImageName.Replace("/","");
-
-
-            WWW www = new WWW(ImageUrl);
-            yield return www;
-            if (www.error == null){
-
-                if (!File.Exists(Application.persistentDataPath + "/saves/favicons/"+ ImageName + ".png")){
-
-                //when image downloaded
-                Texture2D texture = www.texture;
-                Image.texture = texture;
-                byte[] dataByte=texture.EncodeToPNG();
-                File.WriteAllBytes(Application.persistentDataPath + "/saves/favicons/"+ ImageName + ".png", dataByte);
-                Debug.Log("Image saved");
-                
-            }
+            //Instantiate GO with url as name and favicon as image texture
+            appInstance = Instantiate(AppPrefab, GameObject.FindWithTag("Respawn").transform);
+            appInstance.name = this.gameObject.transform.parent.transform.parent.GetComponentInChildren<CanvasWebViewPrefab>().WebView.Url;
+            
+            //need to get url in correct png format
+            baseURL = appInstance.name;
+            baseURL = baseURL.Replace("https://", "");
+            int index = baseURL.IndexOf("/");  
+            baseURL = baseURL.Substring(0, index);
+            //apply favicon to GO
+            byte[] UploadByte = File.ReadAllBytes(Application.persistentDataPath + "/favicons/"+ baseURL + ".png");
+            Texture2D texture = new Texture2D(10,10);
+            texture.LoadImage(UploadByte);
+            appInstance.GetComponent<RawImage>().texture = texture;
 
             
-            }
-            else{
-                Debug.Log("net error!");
-            }
-
-
+            SaveLoadSystemClass.SaveNew();
 
 
         }
+
+    
 
 
     }

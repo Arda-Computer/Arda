@@ -34,13 +34,11 @@ extern void XRSettings_get_loadedDeviceName_m0EC0BC3BFBF1483DBC766D882A54677F2DB
 extern void XRSettings_get_supportedDevices_mEF86DEEEEBBE9CABC4372C707C0A3D6D958E9FAF (void);
 // 0x0000000B System.Void UnityEngine.XR.XRSettings::get_eyeTextureDesc_Injected(UnityEngine.RenderTextureDescriptor&)
 extern void XRSettings_get_eyeTextureDesc_Injected_m34E7723D7493113CDE5A18D5C7A9F051E5C9DDC3 (void);
-// 0x0000000C System.Boolean UnityEngine.XR.XRDevice::SetTrackingSpaceType(UnityEngine.XR.TrackingSpaceType)
-extern void XRDevice_SetTrackingSpaceType_mD5276BBB091C1AD8082D8F84F4DA0141E682C348 (void);
-// 0x0000000D System.Void UnityEngine.XR.XRDevice::DisableAutoXRCameraTracking(UnityEngine.Camera,System.Boolean)
+// 0x0000000C System.Void UnityEngine.XR.XRDevice::DisableAutoXRCameraTracking(UnityEngine.Camera,System.Boolean)
 extern void XRDevice_DisableAutoXRCameraTracking_mDFDDD1D32A4D623A5448533B5E8E02B9536A25DC (void);
-// 0x0000000E System.Void UnityEngine.XR.XRDevice::InvokeDeviceLoaded(System.String)
+// 0x0000000D System.Void UnityEngine.XR.XRDevice::InvokeDeviceLoaded(System.String)
 extern void XRDevice_InvokeDeviceLoaded_m07DEE6645B38728C7B8615DAAD6BE592C1DC59F9 (void);
-static Il2CppMethodPointer s_methodPointers[14] = 
+static Il2CppMethodPointer s_methodPointers[13] = 
 {
 	XRSettings_get_enabled_m5ECD63DA0B306F7A3FBFD6B67A5B0702F8AEFB54,
 	XRSettings_get_showDeviceView_m02403BF22E14ECCBC281E9E8DD4462F12F50B167,
@@ -53,32 +51,30 @@ static Il2CppMethodPointer s_methodPointers[14] =
 	XRSettings_get_loadedDeviceName_m0EC0BC3BFBF1483DBC766D882A54677F2DBFC4BA,
 	XRSettings_get_supportedDevices_mEF86DEEEEBBE9CABC4372C707C0A3D6D958E9FAF,
 	XRSettings_get_eyeTextureDesc_Injected_m34E7723D7493113CDE5A18D5C7A9F051E5C9DDC3,
-	XRDevice_SetTrackingSpaceType_mD5276BBB091C1AD8082D8F84F4DA0141E682C348,
 	XRDevice_DisableAutoXRCameraTracking_mDFDDD1D32A4D623A5448533B5E8E02B9536A25DC,
 	XRDevice_InvokeDeviceLoaded_m07DEE6645B38728C7B8615DAAD6BE592C1DC59F9,
 };
-static const int32_t s_InvokerIndices[14] = 
+static const int32_t s_InvokerIndices[13] = 
 {
-	10243,
-	10243,
-	10086,
-	10267,
-	10267,
-	10298,
-	10307,
-	10307,
-	10276,
-	10276,
-	10085,
-	9677,
-	9455,
-	10098,
+	10226,
+	10226,
+	10069,
+	10250,
+	10250,
+	10281,
+	10290,
+	10290,
+	10259,
+	10259,
+	10068,
+	9438,
+	10081,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_VRModule_CodeGenModule;
 const Il2CppCodeGenModule g_UnityEngine_VRModule_CodeGenModule = 
 {
 	"UnityEngine.VRModule.dll",
-	14,
+	13,
 	s_methodPointers,
 	0,
 	NULL,
