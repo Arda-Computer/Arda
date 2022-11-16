@@ -17,8 +17,11 @@ public class FaviconIconSetter : MonoBehaviour
     // Start is called before the first frame update
     async void Start()
     {
-        await this.gameObject.transform.parent.transform.parent.GetComponentInChildren<CanvasWebViewPrefab>().WaitUntilInitialized(); //load before doing anything
-        this.gameObject.transform.parent.transform.parent.GetComponentInChildren<CanvasWebViewPrefab>().WebView.UrlChanged += MainWebView_UrlChanged;//if url changes, send event to MainWebView_UrlChanged(
+        if(this.gameObject.transform.parent.transform.parent.GetComponentInChildren<CanvasWebViewPrefab>()){
+            await this.gameObject.transform.parent.transform.parent.GetComponentInChildren<CanvasWebViewPrefab>().WaitUntilInitialized(); //load before doing anything
+            this.gameObject.transform.parent.transform.parent.GetComponentInChildren<CanvasWebViewPrefab>().WebView.UrlChanged += MainWebView_UrlChanged;//if url changes, send event to MainWebView_UrlChanged(
+        }
+        
 
         
     
