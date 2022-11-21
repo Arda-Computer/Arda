@@ -6,9 +6,9 @@ using CurvedUI;
 public class DragWindows : MonoBehaviour, IPointerDownHandler, IDragHandler, IBeginDragHandler, IEndDragHandler
 {
     //for dragging
-    [SerializeField] private GameObject Window;
+    Transform WindowGroup;
     public RawImage rawImage;
-    public Transform pointer;
+    Transform pointer;
     public Vector3 mOffset;
 
 
@@ -17,16 +17,17 @@ public class DragWindows : MonoBehaviour, IPointerDownHandler, IDragHandler, IBe
 
     public void OnPointerDown(PointerEventData eventData)
     {
+        WindowGroup = this.gameObject.transform.parent.transform.parent.transform.parent;
         eventData.useDragThreshold = false;
         pointer = GameObject.Find("LaserBeamDot").transform;
-        mOffset = pointer.transform.position - Window.transform.position;
+        mOffset = pointer.transform.position - WindowGroup.transform.position;
 
     }
 
     public void OnDrag(PointerEventData eventData)
     {
 
-        Window.transform.position = pointer.transform.position - mOffset;
+        WindowGroup.transform.position = pointer.transform.position - mOffset;
                 
     }
 

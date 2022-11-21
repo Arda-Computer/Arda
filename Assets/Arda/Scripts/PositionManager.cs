@@ -1,67 +1,73 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Vuplex.WebView;
 using UnityEngine.UI;
+using Vuplex.WebView;
+
+
 
 public class PositionManager : MonoBehaviour
 {
-    // public GameObject Window;
-    // public GroupManager windowGroup;
-    public string currentURL;
-    public byte[] currentImagebytes;
-    public int savedPos;
-    public string savedURL;
-    public bool isPreview;
-    public GameObject PreviewButton;
-    public CanvasWebViewPrefab CanvasWebViewPrefab;
 
-    async void Start() {
+        public GameObject PreviewButton;
+        public bool BackExists;
+        public Texture2D focusedTexture;
+        public int urlChangeCount;
+        public int theIndexOfThisWindow;
+        public GameObject BackWindowOfThisWindow;
+        public GameObject Tag;
+        public GameObject ForwardWindow;
 
-        if(isPreview){
-            PreviewButton.SetActive(true);
-            CanvasWebViewPrefab.gameObject.SetActive(false);
+
+        // Start is called before the first frame update
+        void Start()
+        {
+
             PreviewButton.GetComponent<Button>().onClick.AddListener(Convert);
+            Tag.SetActive(false);
 
-        }else{
-            PreviewButton.SetActive(false);
-            CanvasWebViewPrefab.gameObject.SetActive(true);
-            await CanvasWebViewPrefab.WaitUntilInitialized(); //load before doing anything
-            CanvasWebViewPrefab.WebView.UrlChanged += MainWebView_UrlChanged;//if url changes
+            
         }
 
-    }
+     void Convert(){
 
 
+            this.gameObject.GetComponent<Canvas>().sortingOrder = this.gameObject.GetComponent<Canvas>().sortingOrder + 1;
+            this.gameObject.transform.position = this.gameObject.transform.position - this.gameObject.transform.forward/2;
+            urlChangeCount = 1;
+            focusedTexture = new Texture2D(10,10);
+            focusedTexture.LoadImage(this.gameObject.transform.parent.GetComponent<WindowGroupManager>().orders[this.gameObject.transform.parent.GetComponent<WindowGroupManager>().focusedIndex].Imagebytes);
 
+            //if there exists other forwawrdWindows, delete those
+            //if these exists more than 1 window that have indexs smaller than focusedWindow, then delete them (less one)
+            ForwardWindow = this.gameObject.transform.parent.GetComponent<WindowGroupManager>().focusedWindow;
+            ForwardWindow.transform.Find("PreviewButton").gameObject.SetActive(true);
+            Color currColor = ForwardWindow.transform.Find("PreviewButton").GetComponent<RawImage>().color;
+            currColor.a = 0.5f;
+            ForwardWindow.transform.transform.Find("PreviewButton").GetComponent<RawImage>().color = currColor;
+            ForwardWindow.transform.Find("CanvasWebViewPrefab").gameObject.SetActive(false);
+            ForwardWindow.transform.Find("Tag").gameObject.SetActive(false);
+            ForwardWindow.transform.Find("PreviewButton").GetComponent<RawImage>().texture = focusedTexture;
 
-
-    //if url changes
-       public async void MainWebView_UrlChanged(object sender, UrlChangedEventArgs eventArgs) {
-
-            //set variables (image, etc)
-            currentURL = CanvasWebViewPrefab.WebView.Url;
-            currentImagebytes = await CanvasWebViewPrefab.WebView.CaptureScreenshot();
-            this.gameObject.transform.parent.GetComponent<GroupManager>().AddToList(currentURL, currentImagebytes);
+            
+            //check if the postion in the order of this window is ahead or behid of focusedIndex
+            if (theIndexOfThisWindow > this.gameObject.transform.parent.GetComponent<WindowGroupManager>().focusedIndex){
                 
-            
-            
-        }
+                this.gameObject.transform.parent.GetComponent<WindowGroupManager>().ChangeFocusTo(this.gameObject.transform.parent.GetComponent<WindowGroupManager>().focusedIndex+1, this.gameObject);
 
-        async void Convert(){
 
-            // posOfObject = this.gameObject.transform.parent.GetComponent<GroupManager>().focusedPos;
+            }else{
 
-            PreviewButton.SetActive(false);
-            CanvasWebViewPrefab.gameObject.SetActive(true);
-            await CanvasWebViewPrefab.WaitUntilInitialized(); //load before doing anything
-            CanvasWebViewPrefab.WebView.LoadUrl(this.gameObject.transform.parent.GetComponent<GroupManager>().lastURL);
-            CanvasWebViewPrefab.WebView.UrlChanged += MainWebView_UrlChanged;//if url changes
+                this.gameObject.transform.parent.GetComponent<WindowGroupManager>().ChangeFocusTo(this.gameObject.transform.parent.GetComponent<WindowGroupManager>().focusedIndex-1, this.gameObject);
 
-            this.gameObject.transform.parent.GetComponent<GroupManager>().Display(savedPos);
+
+            }
+
+
 
         }
-
-
-        
 }
+
+
+
+

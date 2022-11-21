@@ -38,6 +38,8 @@ public class KeyboardManager : MonoBehaviour
             _focusedPrefab = pointerManager.hitGO.transform.GetComponentInChildren<CanvasWebViewPrefab>(); //add the CanvasWebViewPrefab in question to be the focused window
         }
 
+        // Debug.Log(pointerManager.hitGO);
+
         //testing characters
         //  foreach(KeyCode vKey in System.Enum.GetValues(typeof(KeyCode))){
         //      if(Input.GetKey(vKey)){

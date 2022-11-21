@@ -47,12 +47,19 @@ public class PointerManager : MonoBehaviour
     RaycastHit hit;
 
 
+    //eyetracking
+    public GameObject arrow;
+    OVREyeGaze eyeGaze;
+
+
 
     // Start is called before the first frame update
     void Start()
     {
 
         lastMouse = CurvedUIInputModule.MousePosition;
+                eyeGaze = GetComponent<OVREyeGaze>();
+
 
         
     }
@@ -136,19 +143,32 @@ public class PointerManager : MonoBehaviour
             CurvedUIInputModule.CustomControllerButtonState = rightHandReference.GetIndexFingerIsPinching();
             HandGO.SetActive(toggle.inputBool);
             LaserBeam.SetActive(toggle.inputBool);
-            customRaycastGO.transform.SetParent(handPointer.transform);
+            // customRaycastGO.transform.SetParent(handPointer.transform);
+
+            //for eyetracking now (temp)
+            customRaycastGO.transform.SetParent(CameraFollower.transform);
             inputPressed();
+
+            // if (eyeGaze == null) return;
+
+            // //With eye tracking enabled
+            // if (eyeGaze.EyeTrackingEnabled)
+            // {
+            //     // gaze synchronization
+                arrow.transform.rotation = eyeGaze.transform.rotation;
             
 
 
         }else{//if toggle.inputBool = false
             
             //by default hands are off, mouse is active, pointer is child of camera
-            //LaserBeam.SetActive(toggle.inputBool);
+            LaserBeam.SetActive(toggle.inputBool);
             CurvedUIInputModule.CustomControllerButtonState = CurvedUIInputModule.LeftMouseButton;
             HandGO.SetActive(toggle.inputBool);
             customRaycastGO.transform.SetParent(CameraFollower.transform);
             inputPressed();
+
+            // arrow.transform.rotation = eyeGaze.transform.rotation;
 
             
             

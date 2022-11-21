@@ -31,6 +31,7 @@ public class ResizeWindows : MonoBehaviour, IPointerDownHandler, IDragHandler, I
 
         //grab location of first click
         initialClickPosition = windowRecTransform.InverseTransformPoint(pointer.transform.position);
+        // Debug.Log("initialClickPosition = " + initialClickPosition);
         xCurrentWidth = windowRecTransform.sizeDelta.x;
         yCurrentHeight = windowRecTransform.sizeDelta.y;
 
@@ -44,10 +45,11 @@ public class ResizeWindows : MonoBehaviour, IPointerDownHandler, IDragHandler, I
 
             //update the difference
             clickDelta = windowRecTransform.InverseTransformPoint(pointer.transform.position) - initialClickPosition;
+            // Debug.Log("clickDelta = " + clickDelta);
 
             //change the size by however much the cursor is moving
             windowRecTransform.sizeDelta = new Vector2(xCurrentWidth+(clickDelta.x*2), yCurrentHeight+(clickDelta.y*2)); //causes crashing sometimes
-            canvasRecTransform.sizeDelta = new Vector2(xCurrentWidth-4+(clickDelta.x*2), yCurrentHeight+(clickDelta.y*2));
+            canvasRecTransform.sizeDelta = new Vector2(xCurrentWidth+(clickDelta.x*2), yCurrentHeight-4+(clickDelta.y*2));
 
             //keep consistent angle when resizing - will need work
             windowRecTransform.transform.GetComponent<CurvedUISettings>().Angle = Mathf.RoundToInt(60 * windowRecTransform.sizeDelta.x/102);
