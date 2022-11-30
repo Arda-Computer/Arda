@@ -10,8 +10,8 @@ public class ResizeWindows : MonoBehaviour, IPointerDownHandler, IDragHandler, I
 {
 
     //for dragging
-    [SerializeField] private RectTransform windowRecTransform;
-    [SerializeField] private RectTransform canvasRecTransform;
+    public RectTransform windowRecTransform;
+    public RectTransform canvasRecTransform;
     Vector3 initialClickPosition;
     Vector3 clickDelta;
     float xCurrentWidth;

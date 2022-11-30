@@ -219,13 +219,13 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.oculus": {
-      "version": "3.0.2",
+      "version": "https://github.com/needle-mirror/com.unity.xr.oculus.git",
       "depth": 0,
-      "source": "registry",
+      "source": "git",
       "dependencies": {
         "com.unity.xr.management": "4.2.0"
       },
-      "url": "https://packages.unity.com"
+      "hash": "64e87cf42833f77309bbaf550e9579b41a742391"
     },
     "com.unity.xr.openxr": {
       "version": "1.3.1",

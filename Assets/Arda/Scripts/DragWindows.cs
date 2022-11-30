@@ -17,7 +17,7 @@ public class DragWindows : MonoBehaviour, IPointerDownHandler, IDragHandler, IBe
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        WindowGroup = this.gameObject.transform.parent.transform.parent.transform.parent;
+        WindowGroup = this.gameObject.transform.parent.transform.parent;
         eventData.useDragThreshold = false;
         pointer = GameObject.Find("LaserBeamDot").transform;
         mOffset = pointer.transform.position - WindowGroup.transform.position;

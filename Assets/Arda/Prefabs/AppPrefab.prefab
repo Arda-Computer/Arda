@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 5916114632496594496}
   - component: {fileID: 7382774602847110980}
   - component: {fileID: 2268179879314394918}
+  - component: {fileID: 8235327718902898136}
   m_Layer: 5
   m_Name: AppPrefab
   m_TagString: Untagged
@@ -154,6 +155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   windowPrefab: {fileID: 6257987296833768900, guid: c42b6c4fd45d049d78d73c115b294b8d, type: 3}
+  windowGroupPrefab: {fileID: 6480181639620667922, guid: 0ce3af7ba5db34b52b16e7315134c66a, type: 3}
 --- !u!114 &7382774602847110980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,3 +193,16 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!114 &8235327718902898136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3951801239283985573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 643fb0e412ed84ecca41ac9c787c6450, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentGO: 0

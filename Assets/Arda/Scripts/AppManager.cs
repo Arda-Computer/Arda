@@ -12,11 +12,12 @@ public class AppManager : MonoBehaviour, ISaveable
 {
 
     [SerializeField] GameObject windowPrefab;
+    [SerializeField] GameObject windowGroupPrefab;
     CanvasWebViewPrefab canvasPrefab;
 
     RawImage Image;
     string baseURL;
-    bool DestroyedBool = false;
+    bool isDestroyedBool;
 
 
     // Start is called before the first frame update
@@ -46,24 +47,34 @@ public class AppManager : MonoBehaviour, ISaveable
         
     }
 
-    async void WindowManager()
-        {			
-            if(Input.GetKey(KeyCode.W)){
-                DestroyedBool = true;
-                SaveLoadSystemClass.SaveNew();
-                Destroy(this.gameObject);
-            }
-            
-            else{
-            canvasPrefab = Instantiate(windowPrefab).GetComponentInChildren<CanvasWebViewPrefab>();
-            await canvasPrefab.WaitUntilInitialized();
-            canvasPrefab.WebView.LoadUrl(this.gameObject.name);
+    void WindowManager()
+        {
 
-            }
+            // if(Input.GetKey(KeyCode.LeftCommand) && Input.GetKeyDown(KeyCode.W))
+            // {
+
+                // isDestroyedBool = true;
+            //     SaveLoadSystemClass.SaveNew();
+            //     Destroy(this.gameObject);
+
+            // }else{	
+            
+            foreach (GameObject Room in GameObject.FindGameObjectsWithTag("Room"))
+                {
+                    //Instantiate new window group with startingURL in active room
+                    if(Room.GetComponent<RoomState>().isActive){
+                        Instantiate(windowPrefab, Room.transform).GetComponentInChildren<CanvasWebViewPrefab>().InitialUrl = this.gameObject.name;
+                    }   
+                }
+
+
+
+            // }
 
             
 
         }
+
 
 
 
@@ -75,7 +86,7 @@ public class AppManager : MonoBehaviour, ISaveable
     // Create a Serializable struct which contains all sorable data:
     // You don't need to save the location, rotation and scale, this will be done behind the scenes ;)
     [System.Serializable]
-    struct BlockData
+    struct AppData
     {
         public string appURL;
             
@@ -83,7 +94,7 @@ public class AppManager : MonoBehaviour, ISaveable
     
     public object SaveState()
     {
-        return new BlockData()
+        return new AppData()
         {
             appURL = this.gameObject.name,
 
@@ -92,32 +103,32 @@ public class AppManager : MonoBehaviour, ISaveable
     }
     public void LoadState(object state)
     {
-        BlockData data = (BlockData)state;
+        AppData data = (AppData)state;
         this.gameObject.name = data.appURL;
 
     }
 
     public bool NeedsToBeSaved()
     {
-        if(DestroyedBool == false){
-            return true;
-        }else{
+        if(this == null){
             return false;
+        }else{
+            return true;
         }
     }
     public bool NeedsReinstantiation()
     {
-        if(DestroyedBool == false){
-            return true;
-        }else{
+         if(this == null){
             return false;
+        }else{
+            return true;
         }
         
     }
 
     public void PostInstantiation(object state)
     {
-        BlockData data = (BlockData)state;
+        AppData data = (AppData)state;
 
     }
     public void GotAddedAsChild(GameObject obj, GameObject hisParent)

@@ -4,14 +4,6 @@ using UnityEngine;
 using Vuplex.WebView.Demos;
 using Vuplex.WebView;
 
-// using UnityEngine.EventSystems;
-// using UnityEngine.XR;
-// using System.Threading.Tasks;
-// using UnityEngine.UI;
-// using TMPro;
-// using UnityEngine.EventSystems;
-// using UnityEngine.XR;
-
 
 
 public class KeyboardManager : MonoBehaviour
@@ -34,11 +26,9 @@ public class KeyboardManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(pointerManager.hitGO != null){
-            _focusedPrefab = pointerManager.hitGO.transform.GetComponentInChildren<CanvasWebViewPrefab>(); //add the CanvasWebViewPrefab in question to be the focused window
+        if(pointerManager.hit.collider != null){
+            _focusedPrefab = pointerManager.hit.collider.transform.GetComponentInChildren<CanvasWebViewPrefab>(); //add the CanvasWebViewPrefab in question to be the focused window
         }
-
-        // Debug.Log(pointerManager.hitGO);
 
         //testing characters
         //  foreach(KeyCode vKey in System.Enum.GetValues(typeof(KeyCode))){
