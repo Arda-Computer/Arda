@@ -10,7 +10,7 @@ public class PointerInputToggle : MonoBehaviour
     void Start()
     {
 
-        this.gameObject.GetComponent<Button>().onClick.AddListener(InputToggle);
+        // this.gameObject.GetComponent<Button>().onClick.AddListener(InputToggle);
         
         
     }

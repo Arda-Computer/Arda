@@ -3,14 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Vuplex.WebView.Demos;
 using Vuplex.WebView;
-
-// using UnityEngine.EventSystems;
-// using UnityEngine.XR;
-// using System.Threading.Tasks;
-// using UnityEngine.UI;
-// using TMPro;
-// using UnityEngine.EventSystems;
-// using UnityEngine.XR;
+using TMPro;
 
 
 
@@ -20,6 +13,7 @@ public class KeyboardManager : MonoBehaviour
     HardwareKeyboardListener _hardwareKeyboardListener;
     public CanvasWebViewPrefab _focusedPrefab; //this is the window that is 'focused' which is to say, its the one that was most recently clicked on (anywhere in the top-level canvas)
     [SerializeField] private PointerManager pointerManager;
+    public TMP_InputField InputField;
 
 
 
@@ -34,8 +28,9 @@ public class KeyboardManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(pointerManager.hitGO != null){
-            _focusedPrefab = pointerManager.hitGO.transform.GetComponentInChildren<CanvasWebViewPrefab>(); //add the CanvasWebViewPrefab in question to be the focused window
+        if(pointerManager.hit.collider != null){
+            _focusedPrefab = pointerManager.hit.collider.transform.GetComponentInChildren<CanvasWebViewPrefab>(); //add the CanvasWebViewPrefab in question to be the focused window
+            InputField = pointerManager.hit.collider.transform.GetComponentInChildren<TMP_InputField>();
         }
 
         //testing characters
@@ -62,6 +57,17 @@ public class KeyboardManager : MonoBehaviour
 
                     _focusedPrefab.WebView.SendKey(eventArgs.Value);
 
+                }
+                
+                if (InputField != null){
+                    if(eventArgs.Value == "Enter"){
+                        InputField.gameObject.GetComponent<SpotlightSearch>().CustomOnSubmit(InputField.text);
+                    }
+                    else if(eventArgs.Value == "Backspace"){
+                        InputField.text = InputField.text.Substring(0, InputField.text.Length - 1);
+                    }else{
+                    InputField.text += eventArgs.Value;
+                    }
                 }
 
             
