@@ -19,8 +19,8 @@ public class PointerManager : MonoBehaviour
         Transform pivot;
         [SerializeField]
         float sensitivity = 0.1f;
-        // Vector2 lastMouse;
-        Vector3 lastMouse;
+        Vector2 lastMouse;
+        // Vector3 lastMouse;
         [SerializeField]
         GameObject MouseController;
     #pragma warning restore 0649    
@@ -45,9 +45,7 @@ public class PointerManager : MonoBehaviour
     public GameObject LaserBeam;
     public GameObject CameraFollower;
     bool inputBoolChanged;
-    // public GameObject hitGO;
     public RaycastHit hit;
-    // public bool deleteGO;
 
 
     //eyetracking
@@ -55,9 +53,10 @@ public class PointerManager : MonoBehaviour
     OVREyeGaze eyeGaze;
 
 
-    public Button EyeButton;
-    public Button HandButton;
-    public Button MouseButton;
+    public Toggle EyeToggle;
+    public Toggle HandToggle;
+    public Toggle MouseToggle;
+    public Toggle CursorToggle;
 
 
 
@@ -67,23 +66,17 @@ public class PointerManager : MonoBehaviour
     void Start()
     {
 
-        // lastMouse = CurvedUIInputModule.MousePosition;
-        lastMouse = Input.mousePosition;
+        lastMouse = CurvedUIInputModule.MousePosition;
         eyeGaze = GetComponent<OVREyeGaze>();
-
-        EyeButton.onClick.AddListener(EyeToggle);
-        HandButton.onClick.AddListener(HandToggle);
-        MouseButton.onClick.AddListener(MouseToggle);
         
         if (Application.isEditor)
         {
-            MouseButton.Select();
+            MouseToggle.isOn = true;
         }else{
-            EyeButton.Select();
+            EyeToggle.isOn = true;
             
         }
 
-        // m_MyEvent.AddListener(DestroyAGo);
 
 
 
@@ -96,7 +89,7 @@ public class PointerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey(KeyCode.LeftCommand) && Input.GetKeyDown(KeyCode.Alpha0))
+        if(Input.GetKey(KeyCode.LeftAlt) && Input.GetKeyDown(KeyCode.Alpha0))
         {
 
         customRaycastGO.transform.localPosition = Vector3.zero;
@@ -104,24 +97,24 @@ public class PointerManager : MonoBehaviour
 
         }
 
-        if(Input.GetKey(KeyCode.LeftCommand) && Input.GetKeyDown(KeyCode.Alpha1))
+        if(Input.GetKey(KeyCode.LeftAlt) && Input.GetKeyDown(KeyCode.Alpha1))
         {
 
-            EyeButton.Select();
+            EyeToggle.isOn = !EyeToggle.isOn;
 
         }
 
-        if(Input.GetKey(KeyCode.LeftCommand) && Input.GetKeyDown(KeyCode.Alpha2))
+        if(Input.GetKey(KeyCode.LeftAlt) && Input.GetKeyDown(KeyCode.Alpha2))
         {
 
-            HandButton.Select();
+            HandToggle.isOn = !HandToggle.isOn;
 
         }
 
-        if(Input.GetKey(KeyCode.LeftCommand) && Input.GetKeyDown(KeyCode.Alpha3))
+        if(Input.GetKey(KeyCode.LeftAlt) && Input.GetKeyDown(KeyCode.Alpha3))
         {
 
-            MouseButton.Select();
+            MouseToggle.isOn = !MouseToggle.isOn;
 
         }
 
@@ -135,11 +128,11 @@ public class PointerManager : MonoBehaviour
             //need if mouse exists otherwise thows errors
 
             //find mouse delta
-            // Vector3 mouseDelta = CurvedUIInputModule.MousePosition - lastMouse;
-            // lastMouse = CurvedUIInputModule.MousePosition;
+            Vector3 mouseDelta = CurvedUIInputModule.MousePosition - lastMouse;
+            lastMouse = CurvedUIInputModule.MousePosition;
 
-            Vector3 mouseDelta = Input.mousePosition - lastMouse;
-            lastMouse = Input.mousePosition;
+            // Vector3 mouseDelta = Input.mousePosition - lastMouse;
+            // lastMouse = Input.mousePosition;
 
 
             
@@ -206,55 +199,60 @@ public class PointerManager : MonoBehaviour
                 LaserBeamTransform.localScale = LaserBeamTransform.localScale.ModifyZ(length);
             }
 
+
+
+
+
+                    if(EyeToggle.isOn){
+            customRaycastGO.transform.SetParent(CameraFollower.transform);
+            // customRaycastGO.transform.localPosition = Vector3.zero;
+            // customRaycastGO.transform.localEulerAngles = Vector3.zero;
+            customRaycastGO.transform.rotation = eyeGaze.transform.rotation;
+
+                LaserBeam.SetActive(false);
+                HandGO.SetActive(true);
+
+            CurvedUIInputModule.CustomControllerButtonState = Input.GetKey(KeyCode.LeftAlt);
+            // Debug.Log(Input.GetKey(KeyCode.LeftAlt));
+            // Debug.LogWarning(Input.GetKey(KeyCode.LeftAlt));
             
 
-
-        
-    }
-
-
-
-    void EyeToggle(){
-
-        customRaycastGO.transform.SetParent(CameraFollower.transform);
-        customRaycastGO.transform.localPosition = Vector3.zero;
-        customRaycastGO.transform.localEulerAngles = Vector3.zero;
-        customRaycastGO.transform.rotation = eyeGaze.transform.rotation;
-
-        LaserBeam.SetActive(false);
-        HandGO.SetActive(false);
-
-        if(Input.GetKeyDown(KeyCode.LeftCommand)){
-                CurvedUIInputModule.CustomControllerButtonState = true;
         }
 
-    }
 
-    void HandToggle(){
+                if(HandToggle.isOn){
+            CurvedUIInputModule.CustomControllerButtonState = rightHandReference.GetIndexFingerIsPinching();
+            HandGO.SetActive(true);
+            LaserBeam.SetActive(true);
+            customRaycastGO.transform.SetParent(handPointer.transform);
+            // Debug.LogWarning(rightHandReference.GetIndexFingerIsPinching());
 
-        CurvedUIInputModule.CustomControllerButtonState = rightHandReference.GetIndexFingerIsPinching();
-        HandGO.SetActive(true);
-        LaserBeam.SetActive(true);
-        customRaycastGO.transform.SetParent(handPointer.transform);
+            // customRaycastGO.transform.localPosition = Vector3.zero;
+            // customRaycastGO.transform.localEulerAngles = Vector3.zero;
+        }
 
-        customRaycastGO.transform.localPosition = Vector3.zero;
-        customRaycastGO.transform.localEulerAngles = Vector3.zero;
 
-    }
 
-    void MouseToggle(){
+                if(MouseToggle.isOn){
+            LaserBeam.SetActive(false);
+            CurvedUIInputModule.CustomControllerButtonState = Input.GetMouseButton(0);
+            // Debug.LogWarning(Input.GetMouseButton(0));
+            
+            HandGO.SetActive(false);
+            customRaycastGO.transform.SetParent(CameraFollower.transform);
 
-        LaserBeam.SetActive(false);
-        CurvedUIInputModule.CustomControllerButtonState = Input.GetMouseButton(0);
+            // customRaycastGO.transform.localPosition = Vector3.zero;
+            // customRaycastGO.transform.localEulerAngles = Vector3.zero;
+        }
+            
+            if(CursorToggle.isOn){
+                    LaserBeam.SetActive(!CursorToggle.isOn);
+            LaserBeamDot.gameObject.SetActive(!CursorToggle.isOn);
+
+            }
         
-        // CurvedUIInputModule.LeftMouseButton;
-        HandGO.SetActive(false);
-        customRaycastGO.transform.SetParent(CameraFollower.transform);
-
-        customRaycastGO.transform.localPosition = Vector3.zero;
-        customRaycastGO.transform.localEulerAngles = Vector3.zero;
-
     }
+
 
 
 }

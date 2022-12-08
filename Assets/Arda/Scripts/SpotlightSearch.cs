@@ -17,8 +17,9 @@ public class SpotlightSearch : MonoBehaviour
          this.gameObject.GetComponent<TMP_InputField>().onSubmit.AddListener(CustomOnSubmit);
 
     }
+    
 
-    void CustomOnSubmit(string msg)
+    public void CustomOnSubmit(string msg)
     {
 
         //if pressed enter specfically
