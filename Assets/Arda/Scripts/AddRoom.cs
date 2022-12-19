@@ -29,7 +29,7 @@ public class AddRoom : MonoBehaviour
 
         AddIcon.SetActive(false);
         AddInput.SetActive(true);
-        AddInput.GetComponent<TMP_InputField>().onSubmit.AddListener(CreateRoom);
+        // AddInput.GetComponent<TMP_InputField>().onSubmit.AddListener(CreateRoom);
 
 
 
@@ -37,7 +37,7 @@ public class AddRoom : MonoBehaviour
 
     }
 
-    void CreateRoom(string msg)
+    public void CreateRoom(string msg)
     {
 
         //if pressed enter specfically
@@ -59,8 +59,7 @@ public class AddRoom : MonoBehaviour
             AddIcon.SetActive(true);
             AddInput.SetActive(false);
 
-            AddInput.GetComponent<TMP_InputField>().text = "";
-            AddInput.GetComponent<TMP_InputField>().onSubmit.RemoveListener(CreateRoom);
+            // AddInput.GetComponent<TMP_InputField>().onSubmit.RemoveListener(CreateRoom);
 
 
         }

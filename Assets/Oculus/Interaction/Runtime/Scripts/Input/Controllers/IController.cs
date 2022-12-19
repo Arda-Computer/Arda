@@ -23,7 +23,7 @@ using UnityEngine;
 
 namespace Oculus.Interaction.Input
 {
-    public interface IController
+    public interface IController : IAspectProvider
     {
         Handedness Handedness { get; }
         bool IsConnected { get; }
@@ -34,7 +34,5 @@ namespace Oculus.Interaction.Input
         bool IsButtonUsageAnyActive(ControllerButtonUsage buttonUsage);
         bool IsButtonUsageAllActive(ControllerButtonUsage buttonUsage);
         event Action WhenUpdated;
-
-        bool TryGetAspect<TAspect>(out TAspect aspect) where TAspect : class;
     }
 }

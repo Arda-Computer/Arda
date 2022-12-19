@@ -191,7 +191,12 @@ namespace Facebook.WitAi.Data.Configuration
             // Get new index following reload
             string name = System.IO.Path.GetFileNameWithoutExtension(unityPath);
             int index = GetConfigurationIndex(name);
-            _witConfigs[index].SetServerToken(serverToken);
+
+            // Set server token
+            if (!string.IsNullOrEmpty(serverToken))
+            {
+                _witConfigs[index].SetServerToken(serverToken);
+            }
 
             // Return index
             return index;
@@ -349,16 +354,17 @@ namespace Facebook.WitAi.Data.Configuration
         // Refreshes configuration data
         public static void RefreshData(this WitConfiguration configuration, Action<string> onRefreshComplete = null)
         {
+            // Ignore during runtime
+            if (Application.isPlaying)
+            {
+                onRefreshComplete?.Invoke(null);
+                return;
+            }
             // Get refresh id
             string appID = GetAppID(configuration);
             if (string.IsNullOrEmpty(appID))
             {
                 RefreshDataComplete(configuration, "Cannot refresh without application data", onRefreshComplete);
-                return;
-            }
-            if (Application.isPlaying)
-            {
-                RefreshDataComplete(configuration, "Cannot refresh while playing", onRefreshComplete);
                 return;
             }
             if (IsRefreshing(appID))

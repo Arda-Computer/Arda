@@ -424,12 +424,17 @@ namespace Oculus.Interaction.HandGrab
 
         protected virtual HandGrabInteractable ComputeBestHandGrabTarget(ref HandGrabTarget handGrabTarget)
         {
-            IEnumerable<HandGrabInteractable> interactables = HandGrabInteractable.Registry.List(this);
+            var interactables = HandGrabInteractable.Registry.List(this);
             float bestFingerScore = -1f;
             float bestPoseScore = -1f;
             HandGrabInteractable bestInteractable = null;
             foreach (HandGrabInteractable interactable in interactables)
             {
+                if (!interactable.SupportsHandedness(this.Hand.Handedness))
+                {
+                    continue;
+                }
+
                 if (!Grab.HandGrab.CouldSelect(this, interactable, out GrabTypeFlags availableGrabTypes))
                 {
                     continue;
@@ -498,6 +503,7 @@ namespace Oculus.Interaction.HandGrab
                     _cachedResult.SnapPose = PoseUtils.Multiply(_cachedResult.SnapPose, offset);
                     handGrabTarget.Set(interactable.RelativeTo, interactable.HandAlignment, anchorMode, _cachedResult);
                     bestInteractable = interactable;
+
                 }
             }
 

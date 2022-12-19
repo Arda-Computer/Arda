@@ -77,7 +77,7 @@ namespace Facebook.WitAi
         public const int URI_DEFAULT_PORT = 0;
 
         public const string WIT_API_VERSION = "20220728";
-        public const string WIT_SDK_VERSION = "0.0.46";
+        public const string WIT_SDK_VERSION = "0.0.47";
 
         public const string WIT_ENDPOINT_SPEECH = "speech";
         public const string WIT_ENDPOINT_MESSAGE = "message";
@@ -87,6 +87,7 @@ namespace Facebook.WitAi
         public const string WIT_ENDPOINT_TRAITS = "traits";
         public const string WIT_ENDPOINT_APPS = "apps";
         public const string WIT_ENDPOINT_UTTERANCES = "utterances";
+        public const string WIT_CLIENT_NAME = "wit-unity";
 
         private WitConfiguration configuration;
 
@@ -471,7 +472,7 @@ namespace Facebook.WitAi
             }
 
             // Return full string
-            return $"voice-sdk-46.0.0.244.0,wit-unity-{WIT_SDK_VERSION},{_operatingSystem},{_deviceModel},{configId},{_appIdentifier},{userEditor},{_unityVersion}{customUserAgents}";
+            return $"voice-sdk-47.0.0.188.341,wit-unity-{WIT_SDK_VERSION},{_operatingSystem},{_deviceModel},{configId},{_appIdentifier},{userEditor},{_unityVersion}{customUserAgents}";
         }
 
         private bool RequestRequiresBody(string command)

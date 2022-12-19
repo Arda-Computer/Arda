@@ -165,7 +165,26 @@ public class OVRProjectConfigEditor : Editor
                     ref projectConfig.trackedKeyboardSupport, ref hasModified);
 
                 // Anchor Support
-                OVREditorUtil.SetupEnumField(projectConfig, "Anchor Support", ref projectConfig.anchorSupport, ref hasModified);
+                using (new EditorGUI.DisabledScope(projectConfig.sharedAnchorSupport !=
+                                                   OVRProjectConfig.FeatureSupport.None))
+                {
+                    var tooltip = projectConfig.sharedAnchorSupport != OVRProjectConfig.FeatureSupport.None
+                        ? "Anchor Support is required for Shared Spatial Anchor Support."
+                        : "";
+                    OVREditorUtil.SetupEnumField(projectConfig, new GUIContent("Anchor Support", tooltip), ref projectConfig.anchorSupport, ref hasModified);
+                }
+
+                OVREditorUtil.SetupEnumField(projectConfig,
+                    new GUIContent("Shared Spatial Anchor Support", "Enables support for sharing spatial anchors with other users. This requires Anchor Support to be enabled."),
+                    ref projectConfig.sharedAnchorSupport, ref hasModified);
+
+                if (projectConfig.sharedAnchorSupport != OVRProjectConfig.FeatureSupport.None &&
+                    projectConfig.anchorSupport != OVRProjectConfig.AnchorSupport.Enabled)
+                {
+                    projectConfig.anchorSupport = OVRProjectConfig.AnchorSupport.Enabled;
+                    hasModified = true;
+                }
+
 
                 // Body Tracking Support
                 OVREditorUtil.SetupEnumField(projectConfig, "Body Tracking Support", ref projectConfig.bodyTrackingSupport, ref hasModified);

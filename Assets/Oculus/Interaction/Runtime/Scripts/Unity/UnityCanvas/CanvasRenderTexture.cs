@@ -160,10 +160,8 @@ namespace Oculus.Interaction.UnityCanvas
 
         public Vector2Int GetScaledResolutionToUse()
         {
-            return new Vector2Int(
-                Mathf.RoundToInt(GetBaseResolutionToUse().x * (float)_renderScale),
-                Mathf.RoundToInt(GetBaseResolutionToUse().y * (float)_renderScale)
-            );
+            Vector2 resolution = GetBaseResolutionToUse();
+            return Vector2Int.RoundToInt(resolution * _renderScale);
         }
 
         public float PixelsToUnits(float pixels)
@@ -283,7 +281,7 @@ namespace Oculus.Interaction.UnityCanvas
                         DestroyImmediate(_tex);
                     }
 
-                    _tex = new RenderTexture(resolutionToUse.x, resolutionToUse.y, 24, RenderTextureFormat.ARGB32, RenderTextureReadWrite.Linear);
+                    _tex = new RenderTexture(resolutionToUse.x, resolutionToUse.y, 24, RenderTextureFormat.ARGB32, RenderTextureReadWrite.sRGB);
                     _tex.filterMode = FilterMode.Bilinear;
                     _tex.autoGenerateMips = _generateMipMaps;
                     _camera.targetTexture = _tex;

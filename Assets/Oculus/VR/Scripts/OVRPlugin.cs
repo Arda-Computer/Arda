@@ -54,7 +54,7 @@ public static partial class OVRPlugin
 #if OVRPLUGIN_UNSUPPORTED_PLATFORM
 	public static readonly System.Version wrapperVersion = _versionZero;
 #else
-	public static readonly System.Version wrapperVersion = OVRP_1_78_0.version;
+	public static readonly System.Version wrapperVersion = OVRP_1_79_0.version;
 #endif
 
 #if !OVRPLUGIN_UNSUPPORTED_PLATFORM
@@ -183,7 +183,13 @@ public static partial class OVRPlugin
 		Failure_OperationFailed = -1006,
 		Failure_InsufficientSize = -1007,
 		Failure_DataIsInvalid = -1008,
-		Failure_DeprecatedOperation = -1009
+		Failure_DeprecatedOperation = -1009,
+		/// Space error cases
+		Failure_SpaceCloudStorageDisabled = -2000,
+		Failure_SpaceMappingInsufficient = -2001,
+		Failure_SpaceLocalizationFailed = -2002,
+		Failure_SpaceNetworkTimeout = -2003,
+		Failure_SpaceNetworkRequestFailed = -2004,
 	}
 
 	public enum LogLevel
@@ -248,7 +254,8 @@ public static partial class OVRPlugin
 		Count = 2
 	}
 
-	public enum Tracker
+
+    public enum Tracker
 	{
 		None = -1,
 		Zero = 0,
@@ -397,6 +404,14 @@ public static partial class OVRPlugin
 		Fisheye = 9,
 		KeyboardHandsPassthrough = 10,
 		KeyboardMaskedHandsPassthrough = 11,
+	}
+
+	public static bool IsPassthroughShape(OverlayShape shape)
+	{
+		return shape == OverlayShape.ReconstructionPassthrough
+			|| shape == OverlayShape.KeyboardHandsPassthrough
+			|| shape == OverlayShape.KeyboardMaskedHandsPassthrough
+			|| shape == OverlayShape.SurfaceProjectedPassthrough;
 	}
 
 	public enum Step
@@ -1015,8 +1030,8 @@ public static partial class OVRPlugin
 
 	[StructLayout(LayoutKind.Sequential)]
 	public struct Recti {
-		Vector2i Pos;
-		Sizei Size;
+		public Vector2i Pos;
+		public Sizei Size;
 	}
 
 	[StructLayout(LayoutKind.Sequential)]
@@ -1248,6 +1263,7 @@ public static partial class OVRPlugin
 			return layerDesc;
 		}
 	}
+
 
 	public enum BlendFactor {
 		Zero = 0,
@@ -2132,6 +2148,8 @@ public static partial class OVRPlugin
 		public double Time;
 	}
 
+
+
     public enum ColorSpace
 	{
 		/// The default value from GetHmdColorSpace until SetClientColorDesc is called. Only valid on PC, and will be remapped to Quest on Mobile
@@ -2154,21 +2172,21 @@ public static partial class OVRPlugin
 		Adobe_RGB = 8,
 	}
 
-	public enum EventType
-	{
-		Unknown = 0,
-		DisplayRefreshRateChanged = 1,
+    public enum EventType
+    {
+        Unknown = 0,
+        DisplayRefreshRateChanged = 1,
 
-		SpatialAnchorCreateComplete = 49,
-		SpaceSetComponentStatusComplete = 50,
-		SpaceQueryResults = 51,
-		SpaceQueryComplete = 52,
-		SpaceSaveComplete = 53,
-		SpaceEraseComplete = 54,
+        SpatialAnchorCreateComplete = 49,
+        SpaceSetComponentStatusComplete = 50,
+        SpaceQueryResults = 51,
+        SpaceQueryComplete = 52,
+        SpaceSaveComplete = 53,
+        SpaceEraseComplete = 54,
+        SpaceShareResult = 56,
+        SpaceListSaveResult = 57,
 
-
-		SceneCaptureComplete = 100,
-
+        SceneCaptureComplete = 100,
 
 
 	}
@@ -2253,21 +2271,23 @@ public static partial class OVRPlugin
 		Depth       = 1 << 2
 	}
 
-	public enum SpaceComponentType
-	{
-		Locatable = 0,
-		Storable = 1,
-		Bounded2D = 3,
-		Bounded3D = 4,
-		SemanticLabels = 5,
-		RoomLayout = 6,
-		SpaceContainer = 7,
-	}
+    public enum SpaceComponentType
+    {
+        Locatable = 0,
+        Storable = 1,
+        Sharable = 2,
+        Bounded2D = 3,
+        Bounded3D = 4,
+        SemanticLabels = 5,
+        RoomLayout = 6,
+        SpaceContainer = 7,
+    }
 
 	public enum SpaceStorageLocation
 	{
 		Invalid = 0,
 		Local = 1,
+		Cloud = 2,
 	}
 
 	public enum SpaceStoragePersistenceMode
@@ -2292,7 +2312,6 @@ public static partial class OVRPlugin
 		Ids = 1,
 		Components = 2,
 	}
-
 
 	[StructLayout(LayoutKind.Sequential)]
 	public struct SpatialAnchorCreateInfo
@@ -2344,6 +2363,7 @@ public static partial class OVRPlugin
 		public UInt64 space;
 		public Guid uuid;
 	}
+
 
 
 	//-----------------------------------------------------------------
@@ -3203,6 +3223,7 @@ public static partial class OVRPlugin
 		return false;
 #endif
 	}
+
 
 	public static bool EnqueueDestroyLayer(IntPtr layerID)
 	{
@@ -5349,6 +5370,7 @@ public static partial class OVRPlugin
 		}
 	}
 
+
 	[Obsolete("Please use useDynamicFoveatedRendering instead", false)]
 	public static bool useDynamicFixedFoveatedRendering
 	{
@@ -7308,6 +7330,7 @@ public static partial class OVRPlugin
 #endif
 	}
 
+
     public static bool StartEyeTracking() =>
 #if OVRPLUGIN_UNSUPPORTED_PLATFORM
 		false;
@@ -7356,8 +7379,7 @@ public static partial class OVRPlugin
 		OVRP_1_78_0.ovrp_StopBodyTracking() == Result.Success;
 #endif // OVRPLUGIN_UNSUPPORTED_PLATFORM
 
-
-	public static int GetLocalTrackingSpaceRecenterCount()
+    public static int GetLocalTrackingSpaceRecenterCount()
 	{
 #if OVRPLUGIN_UNSUPPORTED_PLATFORM
 		return 0;
@@ -7614,8 +7636,7 @@ public static partial class OVRPlugin
 #else
 		if (version >= OVRP_1_72_0.version)
 		{
-			Result result = OVRP_1_72_0.ovrp_SaveSpace(ref space, location, mode, out requestId);
-			return (result == Result.Success);
+			return OVRP_1_72_0.ovrp_SaveSpace(ref space, location, mode, out requestId) == Result.Success;
 		}
 		else
 		{
@@ -7631,8 +7652,7 @@ public static partial class OVRPlugin
 #else
 		if (version >= OVRP_1_72_0.version)
 		{
-			Result result = OVRP_1_72_0.ovrp_EraseSpace(ref space, location, out requestId);
-			return (result == Result.Success);
+			return OVRP_1_72_0.ovrp_EraseSpace(ref space, location, out requestId) == Result.Success;
 		}
 		else
 		{
@@ -7740,11 +7760,78 @@ public static partial class OVRPlugin
 #endif
 	}
 
-
-
-	public static bool TryLocateSpace(UInt64 space, TrackingOrigin baseOrigin, out Posef pose)
+	public static OVRPlugin.Result SaveSpaceList(NativeArray<ulong> spaces, SpaceStorageLocation location, out UInt64 requestId)
 	{
-		pose = Posef.identity;
+		requestId = 0;
+#if OVRPLUGIN_UNSUPPORTED_PLATFORM
+		return Result.Failure_Unsupported;
+#else
+        if (version >= OVRP_1_79_0.version)
+		{
+			unsafe
+			{
+				Result result = OVRP_1_79_0.ovrp_SaveSpaceList((ulong*)spaces.GetUnsafeReadOnlyPtr(),
+					(uint)spaces.Length, location, out requestId);
+				return result;
+			}
+		}
+		else
+		{
+			return Result.Failure_Unsupported;
+		}
+#endif
+	}
+
+    public static bool GetSpaceUserId(UInt64 spaceUserHandle, out UInt64 spaceUserId)
+    {
+        spaceUserId = 0;
+#if OVRPLUGIN_UNSUPPORTED_PLATFORM
+		return false;
+#else
+        return version >= OVRP_1_79_0.version && OVRP_1_79_0.ovrp_GetSpaceUserId(in spaceUserHandle, out spaceUserId) == Result.Success;
+#endif
+    }
+
+    public static bool CreateSpaceUser(UInt64 spaceUserId, out UInt64 spaceUserHandle)
+    {
+        spaceUserHandle = 0;
+#if OVRPLUGIN_UNSUPPORTED_PLATFORM
+        return false;
+#else
+        return version >= OVRP_1_79_0.version && OVRP_1_79_0.ovrp_CreateSpaceUser(in spaceUserId, out spaceUserHandle) == Result.Success;
+#endif
+    }
+
+    public static bool DestroySpaceUser(UInt64 spaceUserHandle)
+    {
+#if OVRPLUGIN_UNSUPPORTED_PLATFORM
+        return false;
+#else
+        return version >= OVRP_1_79_0.version && OVRP_1_79_0.ovrp_DestroySpaceUser(in spaceUserHandle) == Result.Success;
+#endif
+    }
+
+    public static unsafe Result ShareSpaces(NativeArray<ulong> spaces, NativeArray<ulong> userHandles, out UInt64 requestId)
+    {
+        requestId = 0;
+#if OVRPLUGIN_UNSUPPORTED_PLATFORM
+		return Result.Failure_Unsupported;
+#else
+        if (version >= OVRP_1_79_0.version)
+        {
+                return OVRP_1_79_0.ovrp_ShareSpaces((ulong*)spaces.GetUnsafeReadOnlyPtr(), (uint)spaces.Length,
+                    (ulong*)userHandles.GetUnsafeReadOnlyPtr(), (uint)userHandles.Length, out requestId);
+        }
+        else
+        {
+            return Result.Failure_Unsupported;
+        }
+#endif
+    }
+
+    public static bool TryLocateSpace(UInt64 space, TrackingOrigin baseOrigin, out Posef pose)
+    {
+        pose = Posef.identity;
 #if OVRPLUGIN_UNSUPPORTED_PLATFORM
 		return false;
 #else
@@ -7753,10 +7840,32 @@ public static partial class OVRPlugin
 #endif // OVRPLUGIN_UNSUPPORTED_PLATFORM
 	}
 
-	public static Posef LocateSpace(UInt64 space, TrackingOrigin baseOrigin) =>
-		TryLocateSpace(space, baseOrigin, out var pose) ? pose : Posef.identity;
+    [Obsolete(nameof(LocateSpace) + " unconditionally returns a pose, even if the underlying OpenXR function fails. Instead, use TryLocateSpace, which indicates failure.")]
+    public static Posef LocateSpace(UInt64 space, TrackingOrigin baseOrigin) =>
+        TryLocateSpace(space, baseOrigin, out var pose) ? pose : Posef.identity;
 
-	public static bool DestroySpace(UInt64 space)
+    public static bool TryLocateSpace(UInt64 space, TrackingOrigin baseOrigin, out Posef pose,
+        out SpaceLocationFlags locationFlags)
+    {
+        pose = Posef.identity;
+        locationFlags = default;
+#if OVRPLUGIN_UNSUPPORTED_PLATFORM
+        return false;
+#else
+        if (version >= OVRP_1_79_0.version &&
+            OVRP_1_79_0.ovrp_LocateSpace2(out var spaceLocation, in space, baseOrigin) ==
+            Result.Success)
+        {
+            pose = spaceLocation.pose;
+            locationFlags = spaceLocation.locationFlags;
+            return true;
+        }
+
+        return false;
+#endif // OVRPLUGIN_UNSUPPORTED_PLATFORM
+    }
+
+    public static bool DestroySpace(UInt64 space)
 	{
 #if OVRPLUGIN_UNSUPPORTED_PLATFORM
 		return false;
@@ -7936,6 +8045,39 @@ public static partial class OVRPlugin
 #endif
 	}
 
+    public static bool GetSpaceBoundary2DCount(UInt64 space, out int count)
+    {
+        count = 0;
+#if OVRPLUGIN_UNSUPPORTED_PLATFORM
+        return false;
+#else
+        if (version < OVRP_1_72_0.version) return false;
+
+        var boundaryInternal = default(PolygonalBoundary2DInternal);
+        var result = OVRP_1_72_0.ovrp_GetSpaceBoundary2D(ref space, ref boundaryInternal);
+        count = boundaryInternal.vertexCountOutput;
+        return result == Result.Success;
+#endif
+    }
+
+    public static unsafe bool GetSpaceBoundary2D(UInt64 space, NativeArray<Vector2> boundary)
+    {
+#if OVRPLUGIN_UNSUPPORTED_PLATFORM
+        return false;
+#else
+        if (version < OVRP_1_72_0.version) return false;
+
+        var boundaryInternal = new PolygonalBoundary2DInternal
+        {
+            vertexCapacityInput = boundary.Length,
+            vertices = new IntPtr(boundary.GetUnsafePtr()),
+        };
+
+        return OVRP_1_72_0.ovrp_GetSpaceBoundary2D(ref space, ref boundaryInternal) == Result.Success;
+#endif
+    }
+
+
 	public static NativeArray<Vector2> GetSpaceBoundary2D(UInt64 space, Allocator allocator)
 	{
 #if OVRPLUGIN_UNSUPPORTED_PLATFORM
@@ -8033,7 +8175,6 @@ public static partial class OVRPlugin
 		}
 #endif
 	}
-
 
 
 	public static string[] GetRenderModelPaths()
@@ -8276,6 +8417,7 @@ public static partial class OVRPlugin
 #endif
 		}
 	}
+
 
 
 
@@ -8996,6 +9138,7 @@ public static partial class OVRPlugin
 
 		[DllImport(pluginName, CallingConvention = CallingConvention.Cdecl)]
 		public static extern Result ovrp_EnqueueSetupLayer2(ref LayerDescInternal desc, int compositionDepth, IntPtr layerId);
+
 	}
 
 	private static class OVRP_1_29_0
@@ -9369,6 +9512,7 @@ public static partial class OVRPlugin
 		public static extern Result ovrp_GetNativeOpenXRHandles(out UInt64 xrInstance, out UInt64 xrSession);
 	}
 
+
 	private static class OVRP_1_55_1
 	{
 		public static readonly System.Version version = new System.Version(1, 55, 1);
@@ -9680,8 +9824,6 @@ public static partial class OVRPlugin
 	{
 		public static readonly System.Version version = new System.Version(1, 74, 0);
 
-		public const int OVRP_MAX_VIRTUAL_KEYBOARD_KEY_LABEL_SIZE = 32;
-
 		[DllImport(pluginName, CallingConvention = CallingConvention.Cdecl)]
 		public static extern Result ovrp_GetSpaceUuid(in UInt64 space, out Guid uuid);
 
@@ -9693,17 +9835,16 @@ public static partial class OVRPlugin
 	private static class OVRP_1_75_0
 	{
 		public static readonly System.Version version = new System.Version(1, 75, 0);
-
 	}
 
 	private static class OVRP_1_76_0
 	{
 		public static readonly System.Version version = new System.Version(1, 76, 0);
 
-        [DllImport(pluginName, CallingConvention = CallingConvention.Cdecl)]
-        public static extern Result ovrp_GetNodePoseStateAtTime(double time, Node nodeId, out PoseStatef nodePoseState);
+		[DllImport(pluginName, CallingConvention = CallingConvention.Cdecl)]
+		public static extern Result ovrp_GetNodePoseStateAtTime(double time, Node nodeId, out PoseStatef nodePoseState);
 
-    }
+	}
 
 	private static class OVRP_1_78_0
 	{
@@ -9721,7 +9862,7 @@ public static partial class OVRPlugin
 		[DllImport(pluginName, CallingConvention = CallingConvention.Cdecl)]
 		public static extern Result ovrp_SetFoveationEyeTracked(Bool isEyeTrackedFoveation);
 
-        [DllImport(pluginName, CallingConvention = CallingConvention.Cdecl)]
+		[DllImport(pluginName, CallingConvention = CallingConvention.Cdecl)]
 		public static extern Result ovrp_StartFaceTracking();
 
 		[DllImport(pluginName, CallingConvention = CallingConvention.Cdecl)]
@@ -9739,20 +9880,20 @@ public static partial class OVRPlugin
 		[DllImport(pluginName, CallingConvention = CallingConvention.Cdecl)]
 		public static extern Result ovrp_StopEyeTracking();
 
-        [DllImport(pluginName, CallingConvention = CallingConvention.Cdecl)]
-        public static extern Result ovrp_GetEyeTrackingSupported(out Bool eyeTrackingSupported);
+		[DllImport(pluginName, CallingConvention = CallingConvention.Cdecl)]
+		public static extern Result ovrp_GetEyeTrackingSupported(out Bool eyeTrackingSupported);
 
-        [DllImport(pluginName, CallingConvention = CallingConvention.Cdecl)]
-        public static extern Result ovrp_GetFaceTrackingSupported(out Bool faceTrackingSupported);
+		[DllImport(pluginName, CallingConvention = CallingConvention.Cdecl)]
+		public static extern Result ovrp_GetFaceTrackingSupported(out Bool faceTrackingSupported);
 
-        [DllImport(pluginName, CallingConvention = CallingConvention.Cdecl)]
-        public static extern Result ovrp_GetBodyTrackingEnabled(out Bool value);
+		[DllImport(pluginName, CallingConvention = CallingConvention.Cdecl)]
+		public static extern Result ovrp_GetBodyTrackingEnabled(out Bool value);
 
-        [DllImport(pluginName, CallingConvention = CallingConvention.Cdecl)]
-        public static extern Result ovrp_GetBodyTrackingSupported(out Bool value);
+		[DllImport(pluginName, CallingConvention = CallingConvention.Cdecl)]
+		public static extern Result ovrp_GetBodyTrackingSupported(out Bool value);
 
-        [DllImport(pluginName, CallingConvention = CallingConvention.Cdecl)]
-        public static extern Result ovrp_GetBodyState(Step stepId, int frameIndex, out BodyStateInternal bodyState);
+		[DllImport(pluginName, CallingConvention = CallingConvention.Cdecl)]
+		public static extern Result ovrp_GetBodyState(Step stepId, int frameIndex, out BodyStateInternal bodyState);
 
 		[DllImport(pluginName, CallingConvention = CallingConvention.Cdecl)]
 		public static extern Result ovrp_GetFaceTrackingEnabled(out Bool faceTrackingEnabled);
@@ -9773,14 +9914,14 @@ public static partial class OVRPlugin
 		[DllImport(pluginName, CallingConvention = CallingConvention.Cdecl)]
 		public static extern Result ovrp_SetControllerLocalizedVibration(Controller controllerMask, HapticsLocation hapticsLocationMask, float frequency, float amplitude);
 
-        [DllImport(pluginName, CallingConvention = CallingConvention.Cdecl)]
-        public static extern Result ovrp_GetLocalDimmingSupported(out Bool localDimmingSupported);
+		[DllImport(pluginName, CallingConvention = CallingConvention.Cdecl)]
+		public static extern Result ovrp_GetLocalDimmingSupported(out Bool localDimmingSupported);
 
-        [DllImport(pluginName, CallingConvention = CallingConvention.Cdecl)]
-        public static extern Result ovrp_SetLocalDimming(Bool localDimmingMode);
+		[DllImport(pluginName, CallingConvention = CallingConvention.Cdecl)]
+		public static extern Result ovrp_SetLocalDimming(Bool localDimmingMode);
 
-        [DllImport(pluginName, CallingConvention = CallingConvention.Cdecl)]
-        public static extern Result ovrp_GetLocalDimming(out Bool localDimmingMode);
+		[DllImport(pluginName, CallingConvention = CallingConvention.Cdecl)]
+		public static extern Result ovrp_GetLocalDimming(out Bool localDimmingMode);
 
 		[DllImport(pluginName, CallingConvention = CallingConvention.Cdecl)]
 		public static extern Result ovrp_GetCurrentInteractionProfile(Hand hand, out InteractionProfile interactionProfile);
@@ -9798,5 +9939,33 @@ public static partial class OVRPlugin
 		[DllImport(pluginName, CallingConvention = CallingConvention.Cdecl)]
 		public static extern Result ovrp_GetControllerSampleRateHz(Controller controller, out float sampleRateHz);
     }
+
+	private static class OVRP_1_79_0
+	{
+		public static readonly System.Version version = new System.Version(1, 79, 0);
+
+		[DllImport(pluginName, CallingConvention = CallingConvention.Cdecl)]
+		public static extern unsafe Result ovrp_ShareSpaces(UInt64* spaces, UInt32 numSpaces, ulong* userHandles,
+			UInt32 numUsers, out UInt64 requestId);
+
+		[DllImport(pluginName, CallingConvention = CallingConvention.Cdecl)]
+		public static extern unsafe Result ovrp_SaveSpaceList(UInt64* spaces, UInt32 numSpaces,
+			SpaceStorageLocation location, out UInt64 requestId);
+
+		[DllImport(pluginName, CallingConvention = CallingConvention.Cdecl)]
+		public static extern Result ovrp_GetSpaceUserId(in UInt64 spaceUserHandle, out UInt64 spaceUserId);
+
+		[DllImport(pluginName, CallingConvention = CallingConvention.Cdecl)]
+		public static extern Result ovrp_CreateSpaceUser(in UInt64 spaceUserId, out UInt64 spaceUserHandle);
+
+		[DllImport(pluginName, CallingConvention = CallingConvention.Cdecl)]
+		public static extern Result ovrp_DestroySpaceUser(in UInt64 userHandle);
+
+        [DllImport(pluginName, CallingConvention = CallingConvention.Cdecl)]
+        public static extern Result ovrp_LocateSpace2(out SpaceLocationf location, in UInt64 space, TrackingOrigin trackingOrigin);
+
+
+
+	}
 	/* INSERT NEW OVRP CLASS ABOVE THIS LINE */
 }

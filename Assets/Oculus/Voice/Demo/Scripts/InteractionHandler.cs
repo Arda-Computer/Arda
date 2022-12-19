@@ -51,6 +51,7 @@ namespace Oculus.Voice.Demo
             appVoiceExperience.events.OnStartListening.AddListener(OnListenStart);
             appVoiceExperience.events.OnStoppedListening.AddListener(OnListenStop);
             appVoiceExperience.events.OnStoppedListeningDueToDeactivation.AddListener(OnListenForcedStop);
+            appVoiceExperience.events.OnStoppedListeningDueToInactivity.AddListener(OnListenForcedStop);
             appVoiceExperience.events.OnResponse.AddListener(OnRequestResponse);
             appVoiceExperience.events.OnError.AddListener(OnRequestError);
         }
@@ -63,6 +64,7 @@ namespace Oculus.Voice.Demo
             appVoiceExperience.events.OnStartListening.RemoveListener(OnListenStart);
             appVoiceExperience.events.OnStoppedListening.RemoveListener(OnListenStop);
             appVoiceExperience.events.OnStoppedListeningDueToDeactivation.RemoveListener(OnListenForcedStop);
+            appVoiceExperience.events.OnStoppedListeningDueToInactivity.RemoveListener(OnListenForcedStop);
             appVoiceExperience.events.OnResponse.RemoveListener(OnRequestResponse);
             appVoiceExperience.events.OnError.RemoveListener(OnRequestError);
         }

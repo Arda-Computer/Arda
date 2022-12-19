@@ -102,6 +102,7 @@ namespace Oculus.Platform
       AssetFile_Status                                    = 0x02D32F60,
       AssetFile_StatusById                                = 0x5D955D38,
       AssetFile_StatusByName                              = 0x41CFDA50,
+      Avatar_LaunchAvatarEditor                           = 0x05F1E153,
       Challenges_Create                                   = 0x6859D641,
       Challenges_DeclineInvite                            = 0x568E76C0,
       Challenges_Delete                                   = 0x264885CA,
@@ -414,6 +415,7 @@ namespace Oculus.Platform
     public virtual AssetFileDownloadCancelResult GetAssetFileDownloadCancelResult() { return null; }
     public virtual AssetFileDownloadResult GetAssetFileDownloadResult() { return null; }
     public virtual AssetFileDownloadUpdate GetAssetFileDownloadUpdate() { return null; }
+    public virtual AvatarEditorResult GetAvatarEditorResult() { return null; }
     public virtual BlockedUserList GetBlockedUserList() { return null; }
     public virtual CalApplicationFinalized GetCalApplicationFinalized() { return null; }
     public virtual CalApplicationProposed GetCalApplicationProposed() { return null; }
@@ -553,6 +555,10 @@ namespace Oculus.Platform
 
         case Message.MessageType.Notification_AssetFile_DownloadUpdate:
           message = new MessageWithAssetFileDownloadUpdate(messageHandle);
+          break;
+
+        case Message.MessageType.Avatar_LaunchAvatarEditor:
+          message = new MessageWithAvatarEditorResult(messageHandle);
           break;
 
         case Message.MessageType.User_GetBlockedUsers:
@@ -1091,6 +1097,18 @@ namespace Oculus.Platform
       var msg = CAPI.ovr_Message_GetNativeMessage(c_message);
       var obj = CAPI.ovr_Message_GetAssetFileDownloadUpdate(msg);
       return new AssetFileDownloadUpdate(obj);
+    }
+
+  }
+  public class MessageWithAvatarEditorResult : Message<AvatarEditorResult>
+  {
+    public MessageWithAvatarEditorResult(IntPtr c_message) : base(c_message) { }
+    public override AvatarEditorResult GetAvatarEditorResult() { return Data; }
+    protected override AvatarEditorResult GetDataFromMessage(IntPtr c_message)
+    {
+      var msg = CAPI.ovr_Message_GetNativeMessage(c_message);
+      var obj = CAPI.ovr_Message_GetAvatarEditorResult(msg);
+      return new AvatarEditorResult(obj);
     }
 
   }

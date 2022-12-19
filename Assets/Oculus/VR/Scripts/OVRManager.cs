@@ -159,8 +159,10 @@ public class OVRManager : MonoBehaviour, OVRMixedRealityCaptureConfiguration
 		Unmanaged = OVRPlugin.ColorSpace.Unmanaged,
 		Rec_2020 = OVRPlugin.ColorSpace.Rec_2020,
 		Rec_709 = OVRPlugin.ColorSpace.Rec_709,
+		[InspectorName("Rift CV1 (Recommended)")]
 		Rift_CV1 = OVRPlugin.ColorSpace.Rift_CV1,
 		Rift_S = OVRPlugin.ColorSpace.Rift_S,
+		[InspectorName("Quest 1")]
 		Quest = OVRPlugin.ColorSpace.Quest,
 		P3 = OVRPlugin.ColorSpace.P3,
 		Adobe_RGB = OVRPlugin.ColorSpace.Adobe_RGB,
@@ -320,13 +322,23 @@ public class OVRManager : MonoBehaviour, OVRMixedRealityCaptureConfiguration
     /// </summary>
     public static event Action<UInt64, bool, Guid, OVRPlugin.SpaceStorageLocation> SpaceEraseComplete;
 
+	/// <summary>
+	/// Occurs when sharing spatial entities
+	/// @params (UInt64 requestId, OVRSpatialAnchor.OperationResult result)
+	/// </summary>
+	public static event Action<UInt64, OVRSpatialAnchor.OperationResult> ShareSpacesComplete;
+
+	/// <summary>
+	/// Occurs when saving space list
+	/// @params (UInt64 requestId, OVRSpatialAnchor.OperationResult result)
+	/// </summary>
+	public static event Action<UInt64, OVRSpatialAnchor.OperationResult> SpaceListSaveComplete;
 
     /// <summary>
     /// Occurs when a scene capture request completes
     /// @params (UInt64 requestId, bool result)
     /// </summary>
     public static event Action<UInt64, bool> SceneCaptureComplete;
-
 
 
     /// <summary>
@@ -1152,6 +1164,7 @@ public class OVRManager : MonoBehaviour, OVRMixedRealityCaptureConfiguration
             }
         }
     }
+
 
     /// <summary>
     /// Gets or sets the tiled-based multi-resolution level
@@ -2307,6 +2320,26 @@ public class OVRManager : MonoBehaviour, OVRMixedRealityCaptureConfiguration
                             OVRDeserialize.ByteArrayToStructure<OVRDeserialize.SpaceEraseCompleteData>(eventDataBuffer
                                 .EventData);
                         SpaceEraseComplete(data.RequestId, data.Result >= 0, data.Uuid, data.Location);
+                    }
+                    break;
+                case OVRPlugin.EventType.SpaceShareResult:
+                    if (ShareSpacesComplete != null)
+                    {
+                        var data =
+                            OVRDeserialize.ByteArrayToStructure<OVRDeserialize.SpaceShareResultData>(
+                                eventDataBuffer.EventData);
+
+                        ShareSpacesComplete(data.RequestId, (OVRSpatialAnchor.OperationResult)data.Result);
+                    }
+                    break;
+                case OVRPlugin.EventType.SpaceListSaveResult:
+                    if (SpaceListSaveComplete != null)
+                    {
+                        var data =
+                            OVRDeserialize.ByteArrayToStructure<OVRDeserialize.SpaceListSaveResultData>(
+                                eventDataBuffer.EventData);
+
+                        SpaceListSaveComplete(data.RequestId, (OVRSpatialAnchor.OperationResult)data.Result);
                     }
                     break;
                 case OVRPlugin.EventType.SceneCaptureComplete:

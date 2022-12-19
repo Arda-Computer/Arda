@@ -22,7 +22,6 @@ using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using UnityEngine;
-using UnityEngine.Profiling;
 using ColorMapType = OVRPlugin.InsightPassthroughColorMapType;
 
 /// <summary>
@@ -63,6 +62,7 @@ public class OVRPassthroughLayer : MonoBehaviour
     /// Property that can hide layers when required. Should be false when present, true when hidden. By default, the value is set to false, which means the layers are present.
     /// </summary>
     public bool hidden = false;
+
 
     /// <summary>
     /// Specify whether `colorScale` and `colorOffset` should be applied to this layer. By default, the color scale and offset are not applied to the layer.
@@ -346,7 +346,7 @@ public class OVRPassthroughLayer : MonoBehaviour
     }
 
     [SerializeField]
-    private ColorMapEditorType colorMapEditorType_ = ColorMapEditorType.None;
+    internal ColorMapEditorType colorMapEditorType_ = ColorMapEditorType.None;
     /// <summary>
     /// Editor attribute to get or set the selection in the inspector.
     /// Using this selection will update the `colorMapType` and `colorMapData` if needed.
@@ -402,6 +402,7 @@ public class OVRPassthroughLayer : MonoBehaviour
     /// <summary>
     /// This field is not intended for public scripting. Use `SetBrightnessContrastSaturation()` or `SetColorMapControls()` instead.
     /// </summary>
+    [Range(-1f,1f)]
     public float colorMapEditorContrast;
     // Keep a private copy of the contrast value. Every frame, it is compared against the public one in UpdateColorMapFromControls() and updated if necessary.
     private float colorMapEditorContrast_ = 0;
@@ -409,6 +410,7 @@ public class OVRPassthroughLayer : MonoBehaviour
     /// <summary>
     /// This field is not intended for public scripting. Use `SetBrightnessContrastSaturation()` or `SetColorMapControls()` instead.
     /// </summary>
+    [Range(-1f,1f)]
     public float colorMapEditorBrightness;
     // Keep a private copy of the brightness value. Every frame, it is compared against the public one in UpdateColorMapFromControls() and updated if necessary.
     private float colorMapEditorBrightness_ = 0;
@@ -416,6 +418,7 @@ public class OVRPassthroughLayer : MonoBehaviour
     /// <summary>
     /// This field is not intended for public scripting. Use `SetColorMapControls()` instead.
     /// </summary>
+    [Range(0f,1f)]
     public float colorMapEditorPosterize;
     // Keep a private copy of the posterize value. Every frame, it is compared against the public one in UpdateColorMapFromControls() and updated if necessary.
     private float colorMapEditorPosterize_ = 0;
@@ -423,9 +426,18 @@ public class OVRPassthroughLayer : MonoBehaviour
     /// <summary>
     /// This field is not intended for public scripting. Use `SetBrightnessContrastSaturation()` instead.
     /// </summary>
+    [Range(-1f,1f)]
     public float colorMapEditorSaturation;
     // Keep a private copy of the saturation value. Every frame, it is compared against the public one in UpdateColorMapFromControls() and updated if necessary.
     private float colorMapEditorSaturation_ = 0;
+
+    /// <summary>
+    /// This method is required for internal use only.
+    /// </summary>
+    public void SetStyleDirty()
+    {
+        styleDirty = true;
+    }
 
     #endregion
 
@@ -468,7 +480,7 @@ public class OVRPassthroughLayer : MonoBehaviour
 
     private Matrix4x4 GetTransformMatrixForPassthroughSurfaceObject(Matrix4x4 worldFromObj)
     {
-        using var profile = new ScopedProfile(nameof(GetTransformMatrixForPassthroughSurfaceObject));
+        using var profile = new OVRProfilerScope(nameof(GetTransformMatrixForPassthroughSurfaceObject));
 
         if (!cameraRigInitialized)
         {
@@ -553,15 +565,9 @@ public class OVRPassthroughLayer : MonoBehaviour
         surfaceGameObjects.Clear();
     }
 
-    struct ScopedProfile : IDisposable
-    {
-        public ScopedProfile(string name) => Profiler.BeginSample(name);
-        void IDisposable.Dispose() => Profiler.EndSample();
-    }
-
     private void UpdateSurfaceGeometryTransforms()
     {
-        using var profile = new ScopedProfile(nameof(UpdateSurfaceGeometryTransforms));
+        using var profile = new OVRProfilerScope(nameof(UpdateSurfaceGeometryTransforms));
 
         // Iterate through mesh instances and see if transforms need to be updated
         foreach (var kvp in surfaceGameObjects)
@@ -580,7 +586,7 @@ public class OVRPassthroughLayer : MonoBehaviour
     private void UpdateSurfaceGeometryTransform(ulong instanceHandle, Matrix4x4 localToWorld)
     {
         var worldInsightModel = GetTransformMatrixForPassthroughSurfaceObject(localToWorld);
-        using (new ScopedProfile(nameof(OVRPlugin.UpdateInsightPassthroughGeometryTransform)))
+        using (new OVRProfilerScope(nameof(OVRPlugin.UpdateInsightPassthroughGeometryTransform)))
         {
             if (!OVRPlugin.UpdateInsightPassthroughGeometryTransform(instanceHandle, worldInsightModel))
             {
@@ -820,13 +826,13 @@ public class OVRPassthroughLayer : MonoBehaviour
         new List<SerializedSurfaceGeometry>();
 
     [SerializeField]
-    private float textureOpacity_ = 1;
+    internal float textureOpacity_ = 1;
 
     [SerializeField]
-    private bool edgeRenderingEnabled_ = false;
+    internal bool edgeRenderingEnabled_ = false;
 
     [SerializeField]
-    private Color edgeColor_ = new Color(1, 1, 1, 1);
+    internal Color edgeColor_ = new Color(1, 1, 1, 1);
 
     // Internal fields which store the color map values that will be relayed to the Passthrough API in the next update.
     [SerializeField]

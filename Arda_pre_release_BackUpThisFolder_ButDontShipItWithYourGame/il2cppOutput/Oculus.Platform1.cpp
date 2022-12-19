@@ -226,6 +226,10 @@ struct Callback_t8F713F0E0616D8F122DDDC999143D58E07F2E3A1;
 struct Callback_t2EA1BDA8BD73D03D914EB229ED3D6D88C96C4845;
 // Oculus.Platform.Message`1/Callback<Oculus.Platform.Models.AssetFileDownloadUpdate>
 struct Callback_t0E4A9F4F93D60352B98BB521D57F2FB25489EC80;
+// Oculus.Platform.Message`1/Callback<Oculus.Platform.Models.AvatarEditorResult>
+struct Callback_tA2452F1C4AC3381367E35694F6FD7369A1489E00;
+// Oculus.Platform.Message`1/Callback<Oculus.Platform.Models.BlockedUserList>
+struct Callback_t8518DE6529FFE4A36B7D0290EBADE08F101F5044;
 // Oculus.Platform.Message`1/Callback<System.Boolean>
 struct Callback_t1F7280244800BBF07ED6B73751D41AA1ADACF4AD;
 // Oculus.Platform.Message`1/Callback<Oculus.Platform.Models.CloudStorageConflictMetadata>
@@ -248,8 +252,14 @@ struct Callback_t72ADDA0DCE925D83D0AF201E5D1DE0639B65C8F1;
 struct Callback_t6C8EC71793918468976ED4A3DD6DA1B9D66E3C46;
 // Oculus.Platform.Message`1/Callback<Oculus.Platform.Models.InvitePanelResultInfo>
 struct Callback_t43C9CF6C5083B5B7ED789D50C8145ADD655F2F92;
+// Oculus.Platform.Message`1/Callback<Oculus.Platform.Models.LaunchBlockFlowResult>
+struct Callback_t4F6C464AAFBD29CD2E68AAC630AF035D978FDD19;
+// Oculus.Platform.Message`1/Callback<Oculus.Platform.Models.LaunchFriendRequestFlowResult>
+struct Callback_t58414550514838A98D75D20B2CD63F6E5C05D4F0;
 // Oculus.Platform.Message`1/Callback<Oculus.Platform.Models.LaunchInvitePanelFlowResult>
 struct Callback_t9DA24D9401D6E6519599DC938267C4BCDFFCD3AB;
+// Oculus.Platform.Message`1/Callback<Oculus.Platform.Models.LaunchUnblockFlowResult>
+struct Callback_tB49A071100F285CD4E746C047EE44D13BD9B2C8B;
 // Oculus.Platform.Message`1/Callback<Oculus.Platform.Models.LeaderboardEntryList>
 struct Callback_t704AFC6DBD0B7A462C7CDF3147C6A8100F88FF16;
 // Oculus.Platform.Message`1/Callback<Oculus.Platform.Models.LinkedAccountList>
@@ -258,6 +268,8 @@ struct Callback_t2584B1BB0163D70AB757D0B90165C9940A5CA7B7;
 struct Callback_tAC09649C1EC69C78C77FFFBD3C1C41CBD290A421;
 // Oculus.Platform.Message`1/Callback<Oculus.Platform.Models.MatchmakingEnqueueResult>
 struct Callback_t2A94A02223801D94F04E26BD852435B464FD6E9F;
+// Oculus.Platform.Message`1/Callback<Oculus.Platform.Models.MicrophoneAvailabilityState>
+struct Callback_tD241040D754AC417061B2492EBC0D9219FFDF9A1;
 // Oculus.Platform.Message`1/Callback<Oculus.Platform.Models.NetSyncConnection>
 struct Callback_tAFBE0CD0C4444D1F7DDB9926DB6F67BF17EB4782;
 // Oculus.Platform.Message`1/Callback<Oculus.Platform.Models.NetSyncSessionsChangedNotification>
@@ -266,6 +278,8 @@ struct Callback_t24B5D3C0A4AE5C4684EF1BFA0BCC963E6EE81939;
 struct Callback_tDBF20A8F9B848831CC1CB414BE89E49B81F2888A;
 // Oculus.Platform.Message`1/Callback<System.Object>
 struct Callback_t80E1E12B0A5397910E616CA65BFEA673FF16934D;
+// Oculus.Platform.Message`1/Callback<Oculus.Platform.Models.OrgScopedID>
+struct Callback_t66EC19EFA5A5EFF1C6FB655C3C7C1A4363069FA2;
 // Oculus.Platform.Message`1/Callback<Oculus.Platform.Models.Party>
 struct Callback_tA2823853D55BBAE33F435C45C2867ABE5672D0FB;
 // Oculus.Platform.Message`1/Callback<Oculus.Platform.Models.PartyUpdateNotification>
@@ -284,18 +298,28 @@ struct Callback_t4E2AACBC2C7FB025FE0AB0B9879047414B2B231C;
 struct Callback_t9EC7A0EE57CE64F769946FF4B8F38764C84FD764;
 // Oculus.Platform.Message`1/Callback<Oculus.Platform.Models.RoomInviteNotificationList>
 struct Callback_tBFF8DA3FEEEFE0521FCD9C4D3385D7DD11DF4E93;
+// Oculus.Platform.Message`1/Callback<Oculus.Platform.Models.SdkAccountList>
+struct Callback_t63EF9C08991700EE2E67AC46366332430F165672;
 // Oculus.Platform.Message`1/Callback<Oculus.Platform.Models.SendInvitesResult>
 struct Callback_t081BF195BEDA0A17D0EC2612D126F615CA4A090A;
 // Oculus.Platform.Message`1/Callback<Oculus.Platform.Models.ShareMediaResult>
 struct Callback_t0ADB1D9F7B3830B0B3E5F950BF941DFAC49CE627;
 // Oculus.Platform.Message`1/Callback<System.String>
 struct Callback_t6FF4DE9C75ADF5326E55DAB2608C15009D179EEE;
+// Oculus.Platform.Message`1/Callback<Oculus.Platform.Models.SystemVoipState>
+struct Callback_t9C59B9BB1EE02D0156A50BF5CC9995C6053625E9;
 // Oculus.Platform.Message`1/Callback<Oculus.Platform.Models.User>
 struct Callback_t8CDD7D3925F3AD3B67E2295158D4299A831742F8;
+// Oculus.Platform.Message`1/Callback<Oculus.Platform.Models.UserAndRoomList>
+struct Callback_t7A20F1242236A878006570F19CE533DD6C68C95C;
+// Oculus.Platform.Message`1/Callback<Oculus.Platform.Models.UserCapabilityList>
+struct Callback_tD2F68E6B320D0913E7019E880006EC50AE6DE44D;
 // Oculus.Platform.Message`1/Callback<Oculus.Platform.Models.UserDataStoreUpdateResponse>
 struct Callback_t608E4764DE014DD5397FE53C8896477502EA6A27;
 // Oculus.Platform.Message`1/Callback<Oculus.Platform.Models.UserList>
 struct Callback_t48BA0579E8C6EA7E7CFA38266E0C194358EE616E;
+// Oculus.Platform.Message`1/Callback<Oculus.Platform.Models.UserProof>
+struct Callback_t0A5B859EEEB752556533BF9B6C7AD9AB9CBC06FA;
 // System.Comparison`1<UnityEngine.EventSystems.RaycastResult>
 struct Comparison_1_t9FCAC8C8CE160A96C5AAD2DE1D353DCE8A2FEEFC;
 // Oculus.Platform.Models.DeserializableList`1<Oculus.Platform.Models.AchievementDefinition>
@@ -356,6 +380,8 @@ struct DeserializableList_1_t8C90B7850D74427EC10029BF2CB1D443047B8FC8;
 struct DeserializableList_1_t178C5649CD5289BA356F0CE21C4F1E87673C17AB;
 // Oculus.Platform.Models.DeserializableList`1<Oculus.Platform.Models.UserCapability>
 struct DeserializableList_1_t2C48A604D96ADFDDA2A56068585340FF74A37510;
+// System.Collections.Generic.Dictionary`2<Oculus.Platform.InitConfigOptions,System.Boolean>
+struct Dictionary_2_t517C6845622890637A128BD0CFCC8B146C5F7C0D;
 // System.Collections.Generic.Dictionary`2<System.Int32,System.Object>
 struct Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907;
 // System.Collections.Generic.Dictionary`2<System.Int32,Oculus.Platform.Samples.VrHoops.P2PNetworkBall>
@@ -364,6 +390,8 @@ struct Dictionary_2_tF1A6E37CE4DBE6FFCEDFFAD031DF73A1BBFEC851;
 struct Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710;
 // System.Collections.Generic.Dictionary`2<System.String,System.String>
 struct Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83;
+// System.Collections.Generic.Dictionary`2<System.UInt32Enum,System.Boolean>
+struct Dictionary_2_tFE2918DAC8D64671FE7519D5A67DF743C8008C28;
 // System.Collections.Generic.Dictionary`2<System.UInt64,System.Collections.Generic.List`1<System.Single>>
 struct Dictionary_2_t4B1587BDEC8D774AC4DA8FAE39EB12C3DE03AA0A;
 // System.Collections.Generic.Dictionary`2<System.UInt64,System.Object>
@@ -386,12 +414,16 @@ struct IEnumerator_1_t43D2E4BA9246755F293DFA74F001FB1A70A648FD;
 struct IEnumerator_1_t7389F43C07E191238DCE68B33A419F5CEB04A41D;
 // System.Collections.Generic.IEnumerator`1<Oculus.Platform.Models.User>
 struct IEnumerator_1_tE626E5F857E8F1F61ADCDEA37411C8A3FB964F07;
+// System.Collections.Generic.IEqualityComparer`1<Oculus.Platform.InitConfigOptions>
+struct IEqualityComparer_1_tFBEC3D48706EAAB715154D7D28D666A6CCE9C64A;
 // System.Collections.Generic.IEqualityComparer`1<System.Int32>
 struct IEqualityComparer_1_tDBFC8496F14612776AF930DBF84AFE7D06D1F0E9;
 // System.Collections.Generic.IEqualityComparer`1<System.String>
 struct IEqualityComparer_1_tAE94C8F24AD5B94D4EE85CA9FC59E3409D41CAF7;
 // System.Collections.Generic.IEqualityComparer`1<System.UInt64>
 struct IEqualityComparer_1_t958EAC5D5BD188327B4736D6F82A08EA1476A4C8;
+// System.Collections.Generic.Dictionary`2/KeyCollection<Oculus.Platform.InitConfigOptions,System.Boolean>
+struct KeyCollection_t70FA772EC951D8974D71B840D6C37EB21A84C6D0;
 // System.Collections.Generic.SortedDictionary`2/KeyCollection<System.Int32,Oculus.Platform.Models.LeaderboardEntry>
 struct KeyCollection_tC1150F46480F0329C1320D026C4AC9795D673DE1;
 // System.Collections.Generic.Dictionary`2/KeyCollection<System.Int32,Oculus.Platform.Samples.VrHoops.P2PNetworkBall>
@@ -510,6 +542,8 @@ struct Message_1_t6712B041CB9A6E0826F5AB64DF7897242DBC6CCD;
 struct Message_1_tAB5F90E9033E7C33FEB20965CBFD03D001427842;
 // Oculus.Platform.Message`1<System.String>
 struct Message_1_t0F379AFBD2F9DC93B291238F9C57840F85433F10;
+// Oculus.Platform.Message`1<Oculus.Platform.Models.SystemVoipState>
+struct Message_1_tDE3DF5CFF9DD1DB8383FC34EA84FF9D047DEE14C;
 // Oculus.Platform.Message`1<Oculus.Platform.Models.User>
 struct Message_1_tB77F82F1F4550955CAB92DBFEB260790E37A308A;
 // System.Collections.Generic.SortedSet`1/Node<System.Collections.Generic.KeyValuePair`2<System.Int32,Oculus.Platform.Models.LeaderboardEntry>>
@@ -540,6 +574,10 @@ struct Request_1_t253B07721AD6DD50EADED7F97C768A5F55E69BD4;
 struct Request_1_tBF787CA613182DEEC14F62FC0AF1495D74C4B5D0;
 // Oculus.Platform.Request`1<Oculus.Platform.Models.AssetFileDownloadResult>
 struct Request_1_t796C83E44678C6349E5D2C7031FAB67D9A504050;
+// Oculus.Platform.Request`1<Oculus.Platform.Models.AvatarEditorResult>
+struct Request_1_t466EFA6DA402C7AB4E5DB8FD9449360A91DE7A15;
+// Oculus.Platform.Request`1<Oculus.Platform.Models.BlockedUserList>
+struct Request_1_tA1A1CD1F5D29C229C28D2A0EC82D151542DB3EEA;
 // Oculus.Platform.Request`1<System.Boolean>
 struct Request_1_t8CBF786FEE87992B8F5BC02CAFA62C67DBCE97F7;
 // Oculus.Platform.Request`1<Oculus.Platform.Models.CloudStorageConflictMetadata>
@@ -556,14 +594,24 @@ struct Request_1_t729D7B56B9E2485B104BBAE916ED91C06A350359;
 struct Request_1_t71AE8EF5496FB058CC1DE0C0B18E96BCA82CD326;
 // Oculus.Platform.Request`1<Oculus.Platform.Models.InvitePanelResultInfo>
 struct Request_1_t0C74A5C7761CE8EEE75516AEB71768B9FCE654A8;
+// Oculus.Platform.Request`1<Oculus.Platform.Models.LaunchBlockFlowResult>
+struct Request_1_t28B31BE3D25A15906E1813CD9A3CD98AE6AF0095;
+// Oculus.Platform.Request`1<Oculus.Platform.Models.LaunchFriendRequestFlowResult>
+struct Request_1_tBC7CA37C1E6649AD66987EB2412C3F99168A939A;
+// Oculus.Platform.Request`1<Oculus.Platform.Models.LaunchUnblockFlowResult>
+struct Request_1_t09D04A2C7BFFED0052C28FE8F1B910188C82097F;
 // Oculus.Platform.Request`1<Oculus.Platform.Models.LeaderboardEntryList>
 struct Request_1_tA777A989996B87A89AA7597FC22C01C3F69C90EB;
 // Oculus.Platform.Request`1<Oculus.Platform.Models.LinkedAccountList>
 struct Request_1_tB4CC88AC982A225437FE09E24279D276DA09140A;
 // Oculus.Platform.Request`1<Oculus.Platform.Models.MatchmakingEnqueueResult>
 struct Request_1_t032FC07496E4AC093857E050A2BF5CEFB37C7905;
+// Oculus.Platform.Request`1<Oculus.Platform.Models.MicrophoneAvailabilityState>
+struct Request_1_t67FD568CD1C554099AF3D6D33E041CB522420B45;
 // Oculus.Platform.Request`1<System.Object>
 struct Request_1_t4CB96621592A20B180089ED17BA12AE8564AF53F;
+// Oculus.Platform.Request`1<Oculus.Platform.Models.OrgScopedID>
+struct Request_1_tB92CA9F7F4668A9B2BE9EFCA7464B35E34A484BE;
 // Oculus.Platform.Request`1<Oculus.Platform.Models.Party>
 struct Request_1_t0305EEBF9C017DD1CF44D91DB39D476573C8C20F;
 // Oculus.Platform.Request`1<Oculus.Platform.Models.PlatformInitialize>
@@ -580,18 +628,28 @@ struct Request_1_tB19FB1436A9165DC54FB22CA42C29EE5ED63A1C7;
 struct Request_1_t3F874A2FE55A781BF568AD7106B9CD8FCBD16DAE;
 // Oculus.Platform.Request`1<Oculus.Platform.Models.RoomInviteNotificationList>
 struct Request_1_t44C62F6FEE45C01281D855337E13258D94599DD9;
+// Oculus.Platform.Request`1<Oculus.Platform.Models.SdkAccountList>
+struct Request_1_t0E461943B20217E934C02BEAE22CBCE722FBAAB1;
 // Oculus.Platform.Request`1<Oculus.Platform.Models.SendInvitesResult>
 struct Request_1_t9704CF4AEC0D882EC0A56851D895CDDC9FB77090;
 // Oculus.Platform.Request`1<Oculus.Platform.Models.ShareMediaResult>
 struct Request_1_t321D519575023012F49406BF75BE2103FED5B9A1;
 // Oculus.Platform.Request`1<System.String>
 struct Request_1_t3EA499B388856971AB69C173E53D128BEBA5144C;
+// Oculus.Platform.Request`1<Oculus.Platform.Models.SystemVoipState>
+struct Request_1_t606A2B983CFE2E4BC7C0AB1721450E2CED4B9036;
 // Oculus.Platform.Request`1<Oculus.Platform.Models.User>
 struct Request_1_tDEBBCEA56ECDB50CF2277C79EB69671802236259;
+// Oculus.Platform.Request`1<Oculus.Platform.Models.UserAndRoomList>
+struct Request_1_tF953DCC8B5667246F0B35B701E72623F730DEE81;
+// Oculus.Platform.Request`1<Oculus.Platform.Models.UserCapabilityList>
+struct Request_1_tC258C952DBE23E9E1EF084E937E156146A43974A;
 // Oculus.Platform.Request`1<Oculus.Platform.Models.UserDataStoreUpdateResponse>
 struct Request_1_t66C191B95A62622610624D7A76205982449EA173;
 // Oculus.Platform.Request`1<Oculus.Platform.Models.UserList>
 struct Request_1_tB0D397F1B11033FAFA93EE15D75151B14D42DDD8;
+// Oculus.Platform.Request`1<Oculus.Platform.Models.UserProof>
+struct Request_1_tB774BFF663D8B08A599321246DD0E753AEE6C23C;
 // System.Collections.Generic.SortedDictionary`2<System.Int32,Oculus.Platform.Models.LeaderboardEntry>
 struct SortedDictionary_2_tD34912AE82ED2B538AB8DEC19F79D58A5148D87D;
 // System.Collections.Generic.SortedDictionary`2<System.Int32,System.Object>
@@ -608,6 +666,8 @@ struct Stack_1_t311266B2ECD5409479F7BC6F9BA2617342EBBF82;
 struct TreeSet_1_t06C0C7DAE2ECD9B394238215F9FDB61C4CA36C5E;
 // UnityEngine.UI.CoroutineTween.TweenRunner`1<UnityEngine.UI.CoroutineTween.ColorTween>
 struct TweenRunner_1_t5BB0582F926E75E2FE795492679A6CF55A4B4BC4;
+// System.Collections.Generic.Dictionary`2/ValueCollection<Oculus.Platform.InitConfigOptions,System.Boolean>
+struct ValueCollection_tFFFA32BA14CA77608FE0ADFEEDB64FDBC050D557;
 // System.Collections.Generic.SortedDictionary`2/ValueCollection<System.Int32,Oculus.Platform.Models.LeaderboardEntry>
 struct ValueCollection_t2DCA8304E27E398B266D7DDD67E913DBD9E85063;
 // System.Collections.Generic.Dictionary`2/ValueCollection<System.Int32,System.Object>
@@ -626,6 +686,8 @@ struct ValueCollection_t25A733A7C35572269A56BDFEC02F6EB9860084A9;
 struct ValueCollection_t114A1AB89EA44AEF8D8292BCCD406CADF1B237B5;
 // System.Collections.Generic.Dictionary`2/ValueCollection<System.UInt64,Oculus.Platform.Samples.VrHoops.P2PManager/RemotePlayerData>
 struct ValueCollection_t09B1A78969BE2D7FE5F37902836F1BAC6B1E8A93;
+// System.Collections.Generic.Dictionary`2/Entry<Oculus.Platform.InitConfigOptions,System.Boolean>[]
+struct EntryU5BU5D_tF28ECF9A63A3DBAFA357AB8013C51C01466D108C;
 // System.Collections.Generic.Dictionary`2/Entry<System.Int32,Oculus.Platform.Samples.VrHoops.P2PNetworkBall>[]
 struct EntryU5BU5D_t816BAA984BB632BC8C03117780CEAC0490C61888;
 // System.Collections.Generic.Dictionary`2/Entry<System.String,System.String>[]
@@ -668,6 +730,8 @@ struct DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771;
 struct DestinationU5BU5D_tABA6E0D5E0AA060AF3B83C0B07D4A210EB50876F;
 // Oculus.Platform.Models.InstalledApplication[]
 struct InstalledApplicationU5BU5D_t42A525A2D58B9AC9E9265E5D5CE1C0C2FB74EBD5;
+// System.Int16[]
+struct Int16U5BU5D_t8175CE8DD9C9F9FB0CF4F58E45BC570575B43CFB;
 // System.Int32[]
 struct Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C;
 // System.IntPtr[]
@@ -728,6 +792,8 @@ struct UserCapabilityU5BU5D_t850B102A771ED741C9F7CECE11B26CF42F9719F9;
 struct Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA;
 // UnityEngine.Vector3[]
 struct Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C;
+// Oculus.Platform.CAPI/ovrKeyValuePair[]
+struct ovrKeyValuePairU5BU5D_t179DEEABE7E2281231B6526EF0D8FF37255D5AD9;
 // Oculus.Platform.Samples.VrVoiceChat.RoomManager/Invite[]
 struct InviteU5BU5D_tB007ABB780B700B08870058C5B1C0FE1C37EB7F6;
 // Oculus.Platform.Matchmaking/CustomQuery/Criterion[]
@@ -774,6 +840,10 @@ struct AssetFileDownloadUpdate_tADF06153486F11F16E760CA1DC935D18ED1FE7BC;
 struct AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C;
 // UnityEngine.AudioSource
 struct AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299;
+// Oculus.Platform.AvatarEditorOptions
+struct AvatarEditorOptions_t80D597247D01497F024A772C7065CE7F018053C0;
+// Oculus.Platform.Models.AvatarEditorResult
+struct AvatarEditorResult_tF2E564890A3CC6EC8A9806BEEEBE765D2CF2F85B;
 // Oculus.Platform.Samples.VrHoops.BallEjector
 struct BallEjector_t023EB6B237DE52EBFC0435AD57FF12A78CD13FE1;
 // UnityEngine.EventSystems.BaseEventData
@@ -1170,6 +1240,8 @@ struct VoipPCMSourceNative_t8B75D7B4B76A97B312ADD23A19E2CBF21906679B;
 struct WindowsPlatform_tB49116598B4ED1B05AEE6E288F55C2449418D9FC;
 // UnityEngine.UI.Button/ButtonClickedEvent
 struct ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C;
+// Oculus.Platform.CAPI/FilterCallback
+struct FilterCallback_tFB7F4170CD7F3376F85B5DEBEE9C2D407283A86D;
 // UnityEngine.Camera/CameraCallback
 struct CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD;
 // Oculus.Platform.Samples.VrHoops.LeaderboardManager/OnHighScoreLeaderboardUpdated
@@ -1336,36 +1408,49 @@ IL2CPP_EXTERN_C RuntimeClass* Purchase_tD525E4FF299D923FAF9BF3EDB81772753A1E3697
 IL2CPP_EXTERN_C RuntimeClass* RemotePlayerData_tC2516244F2AEB7F3FE5FE893E93B4C0C70B6CEC0_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* RemotePlayer_t6D9EC707F9351864CCC050F8BEB14845C6DC0073_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Request_1_t0305EEBF9C017DD1CF44D91DB39D476573C8C20F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Request_1_t09D04A2C7BFFED0052C28FE8F1B910188C82097F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Request_1_t0C74A5C7761CE8EEE75516AEB71768B9FCE654A8_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Request_1_t0E461943B20217E934C02BEAE22CBCE722FBAAB1_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Request_1_t11F7D21AD90B1ED0E213749E005B12B15813E4BA_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Request_1_t168A1D3A1E4E50CC95588BADD9F32A8553154C3B_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Request_1_t253B07721AD6DD50EADED7F97C768A5F55E69BD4_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Request_1_t2582E9E520286EF045796A3332D98B9CDB0671AC_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Request_1_t28B31BE3D25A15906E1813CD9A3CD98AE6AF0095_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Request_1_t2BE28D6B9A97C15D6202FF1F0770F18292297042_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Request_1_t321D519575023012F49406BF75BE2103FED5B9A1_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Request_1_t385A2849F725932C5FF947999584BB3F82282A44_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Request_1_t390C544B30F4BC339992D242B3A6637DA7C97EA7_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Request_1_t3EA499B388856971AB69C173E53D128BEBA5144C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Request_1_t44C62F6FEE45C01281D855337E13258D94599DD9_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Request_1_t466EFA6DA402C7AB4E5DB8FD9449360A91DE7A15_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Request_1_t5C8CBF80FDF0210E465CF29A069954267CF19DB3_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Request_1_t606A2B983CFE2E4BC7C0AB1721450E2CED4B9036_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Request_1_t614394FC2222D5395B9720BD76183AB9185AE84A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Request_1_t66C191B95A62622610624D7A76205982449EA173_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Request_1_t67FD568CD1C554099AF3D6D33E041CB522420B45_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Request_1_t71AE8EF5496FB058CC1DE0C0B18E96BCA82CD326_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Request_1_t729D7B56B9E2485B104BBAE916ED91C06A350359_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Request_1_t796C83E44678C6349E5D2C7031FAB67D9A504050_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Request_1_t7E78C8655CE2AC6F75BB6CC741440CBD56A246A3_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Request_1_t9704CF4AEC0D882EC0A56851D895CDDC9FB77090_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Request_1_t971CCBB9ABE7579AA8D67A2DBDC6B43663DD48CA_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Request_1_tA1A1CD1F5D29C229C28D2A0EC82D151542DB3EEA_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Request_1_tB0D397F1B11033FAFA93EE15D75151B14D42DDD8_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Request_1_tB19FB1436A9165DC54FB22CA42C29EE5ED63A1C7_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Request_1_tB4CC88AC982A225437FE09E24279D276DA09140A_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Request_1_tB774BFF663D8B08A599321246DD0E753AEE6C23C_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Request_1_tB92CA9F7F4668A9B2BE9EFCA7464B35E34A484BE_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Request_1_tBA40613AEDD4560090FBAF26CA57F69C1A31A215_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Request_1_tBC7CA37C1E6649AD66987EB2412C3F99168A939A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Request_1_tBF4C05DEFB61E2590FCFB1041CF02B23BB3092A0_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Request_1_tBF787CA613182DEEC14F62FC0AF1495D74C4B5D0_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Request_1_tC258C952DBE23E9E1EF084E937E156146A43974A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Request_1_tC5B6E137548496BDBF83B246FD4875ECE59B63E6_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Request_1_tC9DC4AB9EF9F62B430146D773654385C70FEF2CE_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Request_1_tDEBBCEA56ECDB50CF2277C79EB69671802236259_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Request_1_tDF5315C7EB8AA620C19730D55185214ADD908497_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Request_1_tE25EE2E26F04EA35FE91FA20CD23303982741FE3_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Request_1_tF953DCC8B5667246F0B35B701E72623F730DEE81_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Request_t0773858FF1AC67C0D8B43058CC7119DDD1202D3B_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* RoomInviteNotification_t8D90F91E61360D71CE0BB041103D001210C3169B_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* RoomList_t423B31BA1FCC7D2DBA81814BD9EAEC03D34F1715_il2cpp_TypeInfo_var;
@@ -1412,8 +1497,10 @@ IL2CPP_EXTERN_C String_t* _stringLiteral18006CDD9FCA29F568272453A717AB872AE6025B
 IL2CPP_EXTERN_C String_t* _stringLiteral194C68A6F90159A4805C87DDCCF20C0EE7F77F45;
 IL2CPP_EXTERN_C String_t* _stringLiteral1C58AC14F538E6B129A0DC9EF15DF5C5DC975C71;
 IL2CPP_EXTERN_C String_t* _stringLiteral1F09ED45796D4DB6704502F77ED12CAB39AFB7F9;
+IL2CPP_EXTERN_C String_t* _stringLiteral21F44D94A63BEE6D780718FB25538264AEC6ED92;
 IL2CPP_EXTERN_C String_t* _stringLiteral25B2CB2373C091D9AE64AF13228FD6FBA2E9B685;
 IL2CPP_EXTERN_C String_t* _stringLiteral29BDF3A9A1F27D8313BA4FCD066A82883082ECBD;
+IL2CPP_EXTERN_C String_t* _stringLiteral2A54C0E6260A2AA6788D410FDC09DAE358F35E15;
 IL2CPP_EXTERN_C String_t* _stringLiteral31FE0174C4AF143912929C34E81887C0542AEA97;
 IL2CPP_EXTERN_C String_t* _stringLiteral33157D9C9F7D31AF8194BEB1C5D43B3972AC216D;
 IL2CPP_EXTERN_C String_t* _stringLiteral389FBB2E1DCFCFC267D1BD92D99D2CB613256BE5;
@@ -1422,6 +1509,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral46C357A4C93691C83EFEDB04BD0E8ED0A6E202CF
 IL2CPP_EXTERN_C String_t* _stringLiteral490E7A78D754BCECC6CF945C78681E1F4248DFB5;
 IL2CPP_EXTERN_C String_t* _stringLiteral4BC8E4C55C252B5E0B6574388184BCFF43098DA1;
 IL2CPP_EXTERN_C String_t* _stringLiteral4EB9686BB54B3643A953FCCA3E90241839076EF5;
+IL2CPP_EXTERN_C String_t* _stringLiteral58DE12A61CB8F5C6AE93E6A588A18C0FC42E00E3;
 IL2CPP_EXTERN_C String_t* _stringLiteral5D3879374A4CBD07A4D2F2F9B6DA78099700E5D0;
 IL2CPP_EXTERN_C String_t* _stringLiteral6502DBEA7DCA489774648AC2338DB14B68A43496;
 IL2CPP_EXTERN_C String_t* _stringLiteral68CFB983F069CCE71F266AEFF0FA7DB668B14B66;
@@ -1441,6 +1529,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralB9FC41F4D38A1AA3D583D4E33D76461C3A151204
 IL2CPP_EXTERN_C String_t* _stringLiteralBE6343D560D6F1C5CC8B8AF487EE85453237BBDE;
 IL2CPP_EXTERN_C String_t* _stringLiteralC11ABD6D2851A9FC5A2A857929F7BB27884B52B5;
 IL2CPP_EXTERN_C String_t* _stringLiteralC18EAB9DDDB41F49C5D281F7AE058F90F54442C5;
+IL2CPP_EXTERN_C String_t* _stringLiteralC80A2B706C9CFA7D08C1B83FC2D4B8E7E7D9C7A2;
 IL2CPP_EXTERN_C String_t* _stringLiteralCB0A78B035105B2CCEB9174377B59BDBD1095C96;
 IL2CPP_EXTERN_C String_t* _stringLiteralCB605D3EBD55B5E67BB61ACE2168D02F7CC4A678;
 IL2CPP_EXTERN_C String_t* _stringLiteralCD567A072E47E4C0835A391529103CBD2B4A6BA3;
@@ -1469,8 +1558,10 @@ IL2CPP_EXTERN_C const RuntimeMethod* Callback_SetNotificationCallback_TisLaunchI
 IL2CPP_EXTERN_C const RuntimeMethod* Callback_SetNotificationCallback_TisLivestreamingStatus_tDE34B278979E3D1304618F96EAAA2A7225002439_mD8CB29DB8B08DED795185B69720A2D14EA2C95B2_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Callback_SetNotificationCallback_TisNetSyncConnection_t56A15FAA53610168A57C1811881A85203E676B45_m56C7F33B1D7A7F7A5F857AADC69200D45D5915FA_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Callback_SetNotificationCallback_TisNetSyncSessionsChangedNotification_t2126479CB5F469F1DF443B6196C8F77AFB601FAF_mB62EB604D96A0C43D61B33EC79E7EA96A5931AB7_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Callback_SetNotificationCallback_TisNetworkingPeer_t5C937383B3A595FA6AAB83EB8189F0FF38EC8654_m5F2D103F2BC57A46B3D7D11D60E03618C77E94E2_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Callback_SetNotificationCallback_TisPartyUpdateNotification_t2BF86F67045240B9ABC79B0AE0402C21EF8B7A9A_m1A657CCC5E1DBC20ED88D0503B1309BF5C07A770_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Callback_SetNotificationCallback_TisString_t_mF0EDF938D7D1F7F6858C0E4B2060C0EB70F55520_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Callback_SetNotificationCallback_TisSystemVoipState_tEC107BAED5F2D825E4872F383C722B2DE25AF4CF_m3AA45CB12521943F5FC2517523C618153CB371EE_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentInChildren_TisBallEjector_t023EB6B237DE52EBFC0435AD57FF12A78CD13FE1_m5B5C44C724C6C27F921C5C9CDFDDCEDE94231D2E_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentInChildren_TisLocalPlayer_tEDCFB512FD81B7BD7C4CA6F6F3CE2ED3D99C0775_m71F83C0C5F3BBD6A69B883747839681D1AC7DC26_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisButton_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098_mFF8BA4CA5D7158D1D6249559A3289E7A6DF0A2BB_RuntimeMethod_var;
@@ -1514,17 +1605,25 @@ IL2CPP_EXTERN_C const RuntimeMethod* DeserializableList_1_get_HasNextPage_m3CFAE
 IL2CPP_EXTERN_C const RuntimeMethod* DeserializableList_1_get_HasNextPage_m4A6882ADB10F2ADE29BAE1A6D899C1F12FDBD420_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* DeserializableList_1_get_HasNextPage_m5EECE63118B9F3458ECF97FBF06A2386F2FD618E_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* DeserializableList_1_get_HasNextPage_m62042DFA48D6E935A8FA87BE00CF522A1F0E248A_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* DeserializableList_1_get_HasNextPage_m65E89472F8C63E1057652C31706E981B965E7B99_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* DeserializableList_1_get_HasNextPage_m6A2F7F020970030E784A1B206E33E5F49D265E73_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* DeserializableList_1_get_HasNextPage_m6B72A2B74D26F7721691D3D3B88767301A04C28D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* DeserializableList_1_get_HasNextPage_m8767AE70C67BDC04DDB81AB15C4B221AB696A6FA_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* DeserializableList_1_get_HasNextPage_m9CE0318DD26ED859C7F0D793D8DC1242F1B26591_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* DeserializableList_1_get_HasNextPage_m9E2A468C5236A58EBB2C8A1D69237E46E6C20D1B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* DeserializableList_1_get_HasNextPage_mEB5C0C0BBB67CF2A969A64424F81F7F5B533C8F4_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* DeserializableList_1_get_HasNextPage_mF13DB2078BD1415E6741900652F95A8433F9828F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* DeserializableList_1_get_NextUrl_m1B3B8585C83174BBE314AD71FB05DB4BCE8709BA_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* DeserializableList_1_get_NextUrl_m459F67FBA3FCA3101ED75D4154B4D6C98950AD8A_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* DeserializableList_1_get_NextUrl_m53A2BA0039735C0F3589A698D544F1172BE26CBB_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* DeserializableList_1_get_NextUrl_m57C2882F67AAECF1B880E5ACF6A9770B2104EDBB_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* DeserializableList_1_get_NextUrl_m596301FADE45150EF1945BC485BBEA6F46CDE17C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* DeserializableList_1_get_NextUrl_m7B2D500C4D776A609108A79722B482E00A68ABC7_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* DeserializableList_1_get_NextUrl_m808082EDC032012D439EDB34D65F5C62532BDF56_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* DeserializableList_1_get_NextUrl_m86EB8BDEFF99549E12661E48C43D18D2A555AEB2_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* DeserializableList_1_get_NextUrl_mA2753C23B3FB8DB1A57DCB0C7370A7EF6FAE0D8B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* DeserializableList_1_get_NextUrl_mD7B7B6B4B90040625BF01AD2D0443635E750BFFC_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* DeserializableList_1_get_NextUrl_mF0066A747E01BD90FBFEF95A8CDE5E1E677CBCA8_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* DeserializableList_1_get_NextUrl_mF95E6C844B1A61334139DB1887925D44F3080966_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Clear_m13F181458A9A6C9E62220AB20C074CA35A6FDD21_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Clear_mB104EAF962E31AB1710255DD623BCDB6716F88D6_RuntimeMethod_var;
@@ -1544,6 +1643,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2__ctor_m3234880290F7C59339B4523
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2__ctor_m9D5A96232123155C18F8B0C1408289DFD641B5B3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2__ctor_mE6F8A3BD926343917A5A9D9D2E81611A9A605FCE_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_get_Count_m24465B0A9B83E0B8F55A1DB3A59C7B10C7D1C0E9_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_get_Count_m69D9FF951D8C254EEA8E524980D47128183CF475_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_get_Count_mC131853B4A748B2F4083FB4732163B61BF4AEFEC_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_get_Count_mC25666F992DE6B60E47EBFD979949F6E23935221_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_get_Item_m4C9BC3D5FD66728127467CB4C777F703FA9E973C_RuntimeMethod_var;
@@ -1699,6 +1799,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* Request_1_OnComplete_mD9378F7C06B8C4996C73A
 IL2CPP_EXTERN_C const RuntimeMethod* Request_1_OnComplete_mDFB58EBF0B3765367190E9F05BB8A08FB9D8E993_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Request_1_OnComplete_mE92A72BF377F9BA7E0900A7BC0D2AEB0265511D4_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Request_1__ctor_m029D713284EB47C08C4139CC986ED7BF3348F0DC_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Request_1__ctor_m03C2495625A265815829807F5C1EB88073D09AA1_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Request_1__ctor_m0797B6EE9016C5CC78F5A7B62C4772FE5C8B9084_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Request_1__ctor_m0E647EB385F1DD3AA82CAA8A4F985901C4A27555_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Request_1__ctor_m1E7500B0E81FB4DFC355D0A918615B60D9453263_RuntimeMethod_var;
@@ -1709,26 +1810,38 @@ IL2CPP_EXTERN_C const RuntimeMethod* Request_1__ctor_m28E9B6FAA0E1C74A9A10C2A5A7
 IL2CPP_EXTERN_C const RuntimeMethod* Request_1__ctor_m2B1AE43918AF59E82F635F2A44A88559FB729F14_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Request_1__ctor_m2BB6F2862799E8CC2D93CA6B274CC4700384A501_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Request_1__ctor_m40DD4D85AD0DC125F55F09A53E969C27E8628CC5_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Request_1__ctor_m4354B9574AB2106522121A92852C2F2B513C1506_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Request_1__ctor_m48D48C6ED1C39B2A1DA76DCECFC1CBC08ADD4C39_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Request_1__ctor_m4A7F8E6E9A11EA41E5E1CCD5805EB596C66BAA10_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Request_1__ctor_m4C39F7F11A072BFA2764F932A3D93F041F73B29D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Request_1__ctor_m4C83EDA6A558C77C3528DF7681A2EC32A92BADE3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Request_1__ctor_m4D5F073F7E68DC1466FAD3B1F3F66E9DAD54A955_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Request_1__ctor_m54C5E77F18866F9D37A78D38540C1A9098FFA69A_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Request_1__ctor_m6DDE70BC284B946D4ABB5B0AE4A21DDDFBA76763_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Request_1__ctor_m708B098FD636E216D011D5326B06EFC437EC43E3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Request_1__ctor_m7BA52A3CA6B9E1D2049A9E4993A7E971C1561D0B_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Request_1__ctor_m85EFF0D85A09D5BFB8C60B40F6001573662FFF13_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Request_1__ctor_m9535F5F4E04A8CC2BD258E90A90772C134F240CC_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Request_1__ctor_m9BD570166CA78D6FAB07CCCDACFFCF97F99B965C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Request_1__ctor_mA3728C8405B3A0B6E588268B3D52433CBF56AFF6_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Request_1__ctor_mA396F9742F588CE9B41DDFC04CAEA665DF56E94F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Request_1__ctor_mACC21C1CFC296FA64F69817715107554F85E38B8_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Request_1__ctor_mB01D7429349D47610C414EA9A54ECA19330476A1_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Request_1__ctor_mC37C0892538E3DB6433BDCC19B82FCBD0F2EC03D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Request_1__ctor_mC6D31FF6CABCBC95036E6E6B8CC02CE9B6A992BB_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Request_1__ctor_mC72E41D8DE218B3992AA2AFF3F4CD16F6FEF7D7C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Request_1__ctor_mC9DBB55570125E12BBA6AA3AFD7C36554D335961_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Request_1__ctor_mC9F53649E330781B890B1B367B0D798F27DCF0B6_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Request_1__ctor_mD0E52D3F14918162D3CA0CE2B72BFE44BF7E61E8_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Request_1__ctor_mD3DA42620CCA0121D88478998FCF40481CA3669E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Request_1__ctor_mD691227C5FBDD77242FEE56411F7ADA3EA126FFD_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Request_1__ctor_mD7C574928FD0710BCDEEDC10A9A715FA18D2FF56_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Request_1__ctor_mD7E66315163736B629D4206D6B552B663ABDE8FA_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Request_1__ctor_mEA3CDCDB773DE2D7102B8868236C15B4FADE8529_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Request_1__ctor_mEB8D5B7363C4F90FA72C860801C4E2AF63756833_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Request_1__ctor_mF07C7B965E64AE4822901A4E0DFC834FF55B522D_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Request_1__ctor_mF785EC2BD98CD102F3F59A376719135186815499_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Request_1__ctor_mFB8EEE098625FF28A905EC0D66FA9823CC29C5AC_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Request_HandleMessage_m421A2AD9CB5F5B6F6F0AA96D8928379177680BBD_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Resources_Load_TisPlatformSettings_t57B0A5C515B54C8095689CDFC9A4CB1AB0180258_m82BF30DAF306BCBD860196A6630EF29475082B71_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* RoomManager_CreateAndJoinPrivateRoomCallback_m665247C1A71271EBB32CC373D8FE2C18B4E4AC5F_RuntimeMethod_var;
@@ -1763,6 +1876,7 @@ struct ServiceProviderU5BU5D_tCAD4E8493BED3344EE208E646B2F66E2CC3CC31E;
 struct SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C;
 struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248;
 struct UInt64U5BU5D_tAB1A62450AC0899188486EDB9FC066B8BEED9299;
+struct ovrKeyValuePairU5BU5D_t179DEEABE7E2281231B6526EF0D8FF37255D5AD9;
 struct InviteU5BU5D_tB007ABB780B700B08870058C5B1C0FE1C37EB7F6;
 
 IL2CPP_EXTERN_C_BEGIN
@@ -2091,6 +2205,31 @@ struct DeserializableList_1_t2C48A604D96ADFDDA2A56068585340FF74A37510  : public 
 	String_t* ____NextUrl_1;
 	// System.String Oculus.Platform.Models.DeserializableList`1::_PreviousUrl
 	String_t* ____PreviousUrl_2;
+};
+
+// System.Collections.Generic.Dictionary`2<Oculus.Platform.InitConfigOptions,System.Boolean>
+struct Dictionary_2_t517C6845622890637A128BD0CFCC8B146C5F7C0D  : public RuntimeObject
+{
+	// System.Int32[] System.Collections.Generic.Dictionary`2::_buckets
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ____buckets_0;
+	// System.Collections.Generic.Dictionary`2/Entry<TKey,TValue>[] System.Collections.Generic.Dictionary`2::_entries
+	EntryU5BU5D_tF28ECF9A63A3DBAFA357AB8013C51C01466D108C* ____entries_1;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_count
+	int32_t ____count_2;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeList
+	int32_t ____freeList_3;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeCount
+	int32_t ____freeCount_4;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_version
+	int32_t ____version_5;
+	// System.Collections.Generic.IEqualityComparer`1<TKey> System.Collections.Generic.Dictionary`2::_comparer
+	RuntimeObject* ____comparer_6;
+	// System.Collections.Generic.Dictionary`2/KeyCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_keys
+	KeyCollection_t70FA772EC951D8974D71B840D6C37EB21A84C6D0* ____keys_7;
+	// System.Collections.Generic.Dictionary`2/ValueCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_values
+	ValueCollection_tFFFA32BA14CA77608FE0ADFEEDB64FDBC050D557* ____values_8;
+	// System.Object System.Collections.Generic.Dictionary`2::_syncRoot
+	RuntimeObject* ____syncRoot_9;
 };
 
 // System.Collections.Generic.Dictionary`2<System.Int32,Oculus.Platform.Samples.VrHoops.P2PNetworkBall>
@@ -3045,6 +3184,18 @@ struct AssetFileDownloadUpdate_tADF06153486F11F16E760CA1DC935D18ED1FE7BC  : publ
 	int64_t ___BytesTransferred_3;
 	// System.Boolean Oculus.Platform.Models.AssetFileDownloadUpdate::Completed
 	bool ___Completed_4;
+};
+
+// Oculus.Platform.Avatar
+struct Avatar_tC99D404CAF4D69E8DF5E1068333A2FDD571FD02F  : public RuntimeObject
+{
+};
+
+// Oculus.Platform.Models.AvatarEditorResult
+struct AvatarEditorResult_tF2E564890A3CC6EC8A9806BEEEBE765D2CF2F85B  : public RuntimeObject
+{
+	// System.Boolean Oculus.Platform.Models.AvatarEditorResult::RequestSent
+	bool ___RequestSent_0;
 };
 
 // Oculus.Platform.Models.BlockedUser
@@ -4005,6 +4156,11 @@ struct UserReportID_tD70D5253BCB3569AA708BCAF053181891B00AA88  : public RuntimeO
 	uint64_t ___ID_1;
 };
 
+// Oculus.Platform.Users
+struct Users_tC4A6CA82D358759D70B614DA28C20A6CEB3DB7F5  : public RuntimeObject
+{
+};
+
 // System.ValueType
 struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F  : public RuntimeObject
 {
@@ -4015,6 +4171,11 @@ struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_pinvoke
 };
 // Native definition for COM marshalling of System.ValueType
 struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_com
+{
+};
+
+// Oculus.Platform.Voip
+struct Voip_tBEB7F64EE7766088F38AA5812A5A9EDACAD9D664  : public RuntimeObject
 {
 };
 
@@ -4473,6 +4634,20 @@ struct Request_1_t796C83E44678C6349E5D2C7031FAB67D9A504050  : public Request_t07
 	Callback_t2EA1BDA8BD73D03D914EB229ED3D6D88C96C4845* ___callback__2;
 };
 
+// Oculus.Platform.Request`1<Oculus.Platform.Models.AvatarEditorResult>
+struct Request_1_t466EFA6DA402C7AB4E5DB8FD9449360A91DE7A15  : public Request_t0773858FF1AC67C0D8B43058CC7119DDD1202D3B
+{
+	// Oculus.Platform.Message`1/Callback<T> Oculus.Platform.Request`1::callback_
+	Callback_tA2452F1C4AC3381367E35694F6FD7369A1489E00* ___callback__2;
+};
+
+// Oculus.Platform.Request`1<Oculus.Platform.Models.BlockedUserList>
+struct Request_1_tA1A1CD1F5D29C229C28D2A0EC82D151542DB3EEA  : public Request_t0773858FF1AC67C0D8B43058CC7119DDD1202D3B
+{
+	// Oculus.Platform.Message`1/Callback<T> Oculus.Platform.Request`1::callback_
+	Callback_t8518DE6529FFE4A36B7D0290EBADE08F101F5044* ___callback__2;
+};
+
 // Oculus.Platform.Request`1<System.Boolean>
 struct Request_1_t8CBF786FEE87992B8F5BC02CAFA62C67DBCE97F7  : public Request_t0773858FF1AC67C0D8B43058CC7119DDD1202D3B
 {
@@ -4529,6 +4704,27 @@ struct Request_1_t0C74A5C7761CE8EEE75516AEB71768B9FCE654A8  : public Request_t07
 	Callback_t43C9CF6C5083B5B7ED789D50C8145ADD655F2F92* ___callback__2;
 };
 
+// Oculus.Platform.Request`1<Oculus.Platform.Models.LaunchBlockFlowResult>
+struct Request_1_t28B31BE3D25A15906E1813CD9A3CD98AE6AF0095  : public Request_t0773858FF1AC67C0D8B43058CC7119DDD1202D3B
+{
+	// Oculus.Platform.Message`1/Callback<T> Oculus.Platform.Request`1::callback_
+	Callback_t4F6C464AAFBD29CD2E68AAC630AF035D978FDD19* ___callback__2;
+};
+
+// Oculus.Platform.Request`1<Oculus.Platform.Models.LaunchFriendRequestFlowResult>
+struct Request_1_tBC7CA37C1E6649AD66987EB2412C3F99168A939A  : public Request_t0773858FF1AC67C0D8B43058CC7119DDD1202D3B
+{
+	// Oculus.Platform.Message`1/Callback<T> Oculus.Platform.Request`1::callback_
+	Callback_t58414550514838A98D75D20B2CD63F6E5C05D4F0* ___callback__2;
+};
+
+// Oculus.Platform.Request`1<Oculus.Platform.Models.LaunchUnblockFlowResult>
+struct Request_1_t09D04A2C7BFFED0052C28FE8F1B910188C82097F  : public Request_t0773858FF1AC67C0D8B43058CC7119DDD1202D3B
+{
+	// Oculus.Platform.Message`1/Callback<T> Oculus.Platform.Request`1::callback_
+	Callback_tB49A071100F285CD4E746C047EE44D13BD9B2C8B* ___callback__2;
+};
+
 // Oculus.Platform.Request`1<Oculus.Platform.Models.LeaderboardEntryList>
 struct Request_1_tA777A989996B87A89AA7597FC22C01C3F69C90EB  : public Request_t0773858FF1AC67C0D8B43058CC7119DDD1202D3B
 {
@@ -4548,6 +4744,20 @@ struct Request_1_t032FC07496E4AC093857E050A2BF5CEFB37C7905  : public Request_t07
 {
 	// Oculus.Platform.Message`1/Callback<T> Oculus.Platform.Request`1::callback_
 	Callback_t2A94A02223801D94F04E26BD852435B464FD6E9F* ___callback__2;
+};
+
+// Oculus.Platform.Request`1<Oculus.Platform.Models.MicrophoneAvailabilityState>
+struct Request_1_t67FD568CD1C554099AF3D6D33E041CB522420B45  : public Request_t0773858FF1AC67C0D8B43058CC7119DDD1202D3B
+{
+	// Oculus.Platform.Message`1/Callback<T> Oculus.Platform.Request`1::callback_
+	Callback_tD241040D754AC417061B2492EBC0D9219FFDF9A1* ___callback__2;
+};
+
+// Oculus.Platform.Request`1<Oculus.Platform.Models.OrgScopedID>
+struct Request_1_tB92CA9F7F4668A9B2BE9EFCA7464B35E34A484BE  : public Request_t0773858FF1AC67C0D8B43058CC7119DDD1202D3B
+{
+	// Oculus.Platform.Message`1/Callback<T> Oculus.Platform.Request`1::callback_
+	Callback_t66EC19EFA5A5EFF1C6FB655C3C7C1A4363069FA2* ___callback__2;
 };
 
 // Oculus.Platform.Request`1<Oculus.Platform.Models.Party>
@@ -4606,6 +4816,13 @@ struct Request_1_t44C62F6FEE45C01281D855337E13258D94599DD9  : public Request_t07
 	Callback_tBFF8DA3FEEEFE0521FCD9C4D3385D7DD11DF4E93* ___callback__2;
 };
 
+// Oculus.Platform.Request`1<Oculus.Platform.Models.SdkAccountList>
+struct Request_1_t0E461943B20217E934C02BEAE22CBCE722FBAAB1  : public Request_t0773858FF1AC67C0D8B43058CC7119DDD1202D3B
+{
+	// Oculus.Platform.Message`1/Callback<T> Oculus.Platform.Request`1::callback_
+	Callback_t63EF9C08991700EE2E67AC46366332430F165672* ___callback__2;
+};
+
 // Oculus.Platform.Request`1<Oculus.Platform.Models.SendInvitesResult>
 struct Request_1_t9704CF4AEC0D882EC0A56851D895CDDC9FB77090  : public Request_t0773858FF1AC67C0D8B43058CC7119DDD1202D3B
 {
@@ -4627,11 +4844,32 @@ struct Request_1_t3EA499B388856971AB69C173E53D128BEBA5144C  : public Request_t07
 	Callback_t6FF4DE9C75ADF5326E55DAB2608C15009D179EEE* ___callback__2;
 };
 
+// Oculus.Platform.Request`1<Oculus.Platform.Models.SystemVoipState>
+struct Request_1_t606A2B983CFE2E4BC7C0AB1721450E2CED4B9036  : public Request_t0773858FF1AC67C0D8B43058CC7119DDD1202D3B
+{
+	// Oculus.Platform.Message`1/Callback<T> Oculus.Platform.Request`1::callback_
+	Callback_t9C59B9BB1EE02D0156A50BF5CC9995C6053625E9* ___callback__2;
+};
+
 // Oculus.Platform.Request`1<Oculus.Platform.Models.User>
 struct Request_1_tDEBBCEA56ECDB50CF2277C79EB69671802236259  : public Request_t0773858FF1AC67C0D8B43058CC7119DDD1202D3B
 {
 	// Oculus.Platform.Message`1/Callback<T> Oculus.Platform.Request`1::callback_
 	Callback_t8CDD7D3925F3AD3B67E2295158D4299A831742F8* ___callback__2;
+};
+
+// Oculus.Platform.Request`1<Oculus.Platform.Models.UserAndRoomList>
+struct Request_1_tF953DCC8B5667246F0B35B701E72623F730DEE81  : public Request_t0773858FF1AC67C0D8B43058CC7119DDD1202D3B
+{
+	// Oculus.Platform.Message`1/Callback<T> Oculus.Platform.Request`1::callback_
+	Callback_t7A20F1242236A878006570F19CE533DD6C68C95C* ___callback__2;
+};
+
+// Oculus.Platform.Request`1<Oculus.Platform.Models.UserCapabilityList>
+struct Request_1_tC258C952DBE23E9E1EF084E937E156146A43974A  : public Request_t0773858FF1AC67C0D8B43058CC7119DDD1202D3B
+{
+	// Oculus.Platform.Message`1/Callback<T> Oculus.Platform.Request`1::callback_
+	Callback_tD2F68E6B320D0913E7019E880006EC50AE6DE44D* ___callback__2;
 };
 
 // Oculus.Platform.Request`1<Oculus.Platform.Models.UserDataStoreUpdateResponse>
@@ -4646,6 +4884,13 @@ struct Request_1_tB0D397F1B11033FAFA93EE15D75151B14D42DDD8  : public Request_t07
 {
 	// Oculus.Platform.Message`1/Callback<T> Oculus.Platform.Request`1::callback_
 	Callback_t48BA0579E8C6EA7E7CFA38266E0C194358EE616E* ___callback__2;
+};
+
+// Oculus.Platform.Request`1<Oculus.Platform.Models.UserProof>
+struct Request_1_tB774BFF663D8B08A599321246DD0E753AEE6C23C  : public Request_t0773858FF1AC67C0D8B43058CC7119DDD1202D3B
+{
+	// Oculus.Platform.Message`1/Callback<T> Oculus.Platform.Request`1::callback_
+	Callback_t0A5B859EEEB752556533BF9B6C7AD9AB9CBC06FA* ___callback__2;
 };
 
 // Oculus.Platform.Models.AchievementDefinitionList
@@ -5130,6 +5375,39 @@ struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915
 	};
 };
 
+// Oculus.Platform.CAPI/ovrKeyValuePair
+struct ovrKeyValuePair_t50C9F41DCEE0339FFEF82707DCE6CDBAF0BC18A2 
+{
+	// System.String Oculus.Platform.CAPI/ovrKeyValuePair::key_
+	String_t* ___key__0;
+	// Oculus.Platform.KeyValuePairType Oculus.Platform.CAPI/ovrKeyValuePair::valueType_
+	int32_t ___valueType__1;
+	// System.String Oculus.Platform.CAPI/ovrKeyValuePair::stringValue_
+	String_t* ___stringValue__2;
+	// System.Int32 Oculus.Platform.CAPI/ovrKeyValuePair::intValue_
+	int32_t ___intValue__3;
+	// System.Double Oculus.Platform.CAPI/ovrKeyValuePair::doubleValue_
+	double ___doubleValue__4;
+};
+// Native definition for P/Invoke marshalling of Oculus.Platform.CAPI/ovrKeyValuePair
+struct ovrKeyValuePair_t50C9F41DCEE0339FFEF82707DCE6CDBAF0BC18A2_marshaled_pinvoke
+{
+	char* ___key__0;
+	int32_t ___valueType__1;
+	char* ___stringValue__2;
+	int32_t ___intValue__3;
+	double ___doubleValue__4;
+};
+// Native definition for COM marshalling of Oculus.Platform.CAPI/ovrKeyValuePair
+struct ovrKeyValuePair_t50C9F41DCEE0339FFEF82707DCE6CDBAF0BC18A2_marshaled_com
+{
+	Il2CppChar* ___key__0;
+	int32_t ___valueType__1;
+	Il2CppChar* ___stringValue__2;
+	int32_t ___intValue__3;
+	double ___doubleValue__4;
+};
+
 // UnityEngine.EventSystems.EventSystem/UIToolkitOverrideConfig
 struct UIToolkitOverrideConfig_t4E6B4528E38BCA7DA72C45424634806200A50182 
 {
@@ -5256,6 +5534,13 @@ struct AchievementProgress_t4E3196B933910D3BFB3A0DB29996C15FE26561AE  : public R
 struct ApplicationOptions_t8313FE39BC9A922D51E5AD03601E9EF49A55E852  : public RuntimeObject
 {
 	// System.IntPtr Oculus.Platform.ApplicationOptions::Handle
+	intptr_t ___Handle_0;
+};
+
+// Oculus.Platform.AvatarEditorOptions
+struct AvatarEditorOptions_t80D597247D01497F024A772C7065CE7F018053C0  : public RuntimeObject
+{
+	// System.IntPtr Oculus.Platform.AvatarEditorOptions::Handle
 	intptr_t ___Handle_0;
 };
 
@@ -5950,6 +6235,11 @@ struct Callback_t6FF4DE9C75ADF5326E55DAB2608C15009D179EEE  : public MulticastDel
 {
 };
 
+// Oculus.Platform.Message`1/Callback<Oculus.Platform.Models.SystemVoipState>
+struct Callback_t9C59B9BB1EE02D0156A50BF5CC9995C6053625E9  : public MulticastDelegate_t
+{
+};
+
 // Oculus.Platform.Message`1/Callback<Oculus.Platform.Models.User>
 struct Callback_t8CDD7D3925F3AD3B67E2295158D4299A831742F8  : public MulticastDelegate_t
 {
@@ -5999,6 +6289,11 @@ struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1  : public Component_t
 
 // UnityEngine.Events.UnityAction
 struct UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7  : public MulticastDelegate_t
+{
+};
+
+// Oculus.Platform.CAPI/FilterCallback
+struct FilterCallback_tFB7F4170CD7F3376F85B5DEBEE9C2D407283A86D  : public MulticastDelegate_t
 {
 };
 
@@ -6623,6 +6918,47 @@ struct ServiceProviderU5BU5D_tCAD4E8493BED3344EE208E646B2F66E2CC3CC31E  : public
 		m_Items[index] = value;
 	}
 };
+// Oculus.Platform.CAPI/ovrKeyValuePair[]
+struct ovrKeyValuePairU5BU5D_t179DEEABE7E2281231B6526EF0D8FF37255D5AD9  : public RuntimeArray
+{
+	ALIGN_FIELD (8) ovrKeyValuePair_t50C9F41DCEE0339FFEF82707DCE6CDBAF0BC18A2 m_Items[1];
+
+	inline ovrKeyValuePair_t50C9F41DCEE0339FFEF82707DCE6CDBAF0BC18A2 GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline ovrKeyValuePair_t50C9F41DCEE0339FFEF82707DCE6CDBAF0BC18A2* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, ovrKeyValuePair_t50C9F41DCEE0339FFEF82707DCE6CDBAF0BC18A2 value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)&((m_Items + index)->___key__0), (void*)NULL);
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&((m_Items + index)->___stringValue__2), (void*)NULL);
+		#endif
+	}
+	inline ovrKeyValuePair_t50C9F41DCEE0339FFEF82707DCE6CDBAF0BC18A2 GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline ovrKeyValuePair_t50C9F41DCEE0339FFEF82707DCE6CDBAF0BC18A2* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, ovrKeyValuePair_t50C9F41DCEE0339FFEF82707DCE6CDBAF0BC18A2 value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)&((m_Items + index)->___key__0), (void*)NULL);
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&((m_Items + index)->___stringValue__2), (void*)NULL);
+		#endif
+	}
+};
 // System.Delegate[]
 struct DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771  : public RuntimeArray
 {
@@ -6798,10 +7134,10 @@ struct InviteU5BU5D_tB007ABB780B700B08870058C5B1C0FE1C37EB7F6  : public RuntimeA
 };
 
 
-// System.Void Oculus.Platform.Callback::SetNotificationCallback<System.Object>(Oculus.Platform.Message/MessageType,Oculus.Platform.Message`1/Callback<T>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Callback_SetNotificationCallback_TisRuntimeObject_m613472667E039D41C69F5CDC1A54FAB623798261_gshared (uint32_t ___type0, Callback_t80E1E12B0A5397910E616CA65BFEA673FF16934D* ___callback1, const RuntimeMethod* method) ;
 // System.Void Oculus.Platform.Request`1<System.Object>::.ctor(System.UInt64)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Request_1__ctor_mBD86FE6A8E27475EBA0DE2DC06FCE16D94CA2FEE_gshared (Request_1_t4CB96621592A20B180089ED17BA12AE8564AF53F* __this, uint64_t ___requestID0, const RuntimeMethod* method) ;
+// System.Void Oculus.Platform.Callback::SetNotificationCallback<System.Object>(Oculus.Platform.Message/MessageType,Oculus.Platform.Message`1/Callback<T>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Callback_SetNotificationCallback_TisRuntimeObject_m613472667E039D41C69F5CDC1A54FAB623798261_gshared (uint32_t ___type0, Callback_t80E1E12B0A5397910E616CA65BFEA673FF16934D* ___callback1, const RuntimeMethod* method) ;
 // System.Boolean Oculus.Platform.Models.DeserializableList`1<System.Object>::get_HasNextPage()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DeserializableList_1_get_HasNextPage_m1131EAFD6753D1F83B93F3A0B3D023F922B05057_gshared (DeserializableList_1_tF03B8C48A736E5705A86C89209212CD695949C09* __this, const RuntimeMethod* method) ;
 // System.String Oculus.Platform.Models.DeserializableList`1<System.Object>::get_NextUrl()
@@ -6812,6 +7148,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GameObject_AddComponent_TisRun
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Resources_Load_TisRuntimeObject_m8B40A11CE62A4E445DADC28C81BD73922A4D4B65_gshared (String_t* ___path0, const RuntimeMethod* method) ;
 // T UnityEngine.ScriptableObject::CreateInstance<System.Object>()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ScriptableObject_CreateInstance_TisRuntimeObject_mBE664E52864F727B39B81313FA00C5FCFF9BAE62_gshared (const RuntimeMethod* method) ;
+// System.Int32 System.Collections.Generic.Dictionary`2<System.UInt32Enum,System.Boolean>::get_Count()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Dictionary_2_get_Count_m30D4904DD0E9DAFF9D3736BD284817A539BD8334_gshared (Dictionary_2_tFE2918DAC8D64671FE7519D5A67DF743C8008C28* __this, const RuntimeMethod* method) ;
 // T UnityEngine.GameObject::GetComponent<System.Object>()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GameObject_GetComponent_TisRuntimeObject_m6EAED4AA356F0F48288F67899E5958792395563B_gshared (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
 // System.Void Oculus.Platform.Models.DeserializableList`1<System.Object>::.ctor()
@@ -6967,17 +7305,201 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Dictionary_2_get_Item_mC3FEA64
 
 // System.Boolean Oculus.Platform.Core::IsInitialized()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Core_IsInitialized_m2A9AF05BAD7A54490ED0EE266829C5A36FB4EAA8_inline (const RuntimeMethod* method) ;
-// System.UInt64 Oculus.Platform.CAPI::ovr_AbuseReport_ReportRequestHandled(Oculus.Platform.ReportRequestResponse)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t CAPI_ovr_AbuseReport_ReportRequestHandled_m68ADD5522C2C7540ED671D5D8F1F59C51FF60C85 (int32_t ___response0, const RuntimeMethod* method) ;
-// System.Void Oculus.Platform.Request::.ctor(System.UInt64)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Request__ctor_m1E18C977DA3EFD314F430CAB4B36134F3A6D712A (Request_t0773858FF1AC67C0D8B43058CC7119DDD1202D3B* __this, uint64_t ___requestID0, const RuntimeMethod* method) ;
+// System.Void Oculus.Platform.CAPI::ovr_Voip_Start(System.UInt64)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CAPI_ovr_Voip_Start_m30F4D595CEFFAA461A88F6C4FE7C414783A1B665 (uint64_t ___userID0, const RuntimeMethod* method) ;
+// System.Void Oculus.Platform.CAPI::ovr_Voip_Accept(System.UInt64)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CAPI_ovr_Voip_Accept_m4A3452E606495D0253DB2BE6D84820F90159948F (uint64_t ___userID0, const RuntimeMethod* method) ;
+// System.Void Oculus.Platform.CAPI::ovr_Voip_Stop(System.UInt64)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CAPI_ovr_Voip_Stop_m1D668C51F99664C8660B43C899716F428E9E87D4 (uint64_t ___userID0, const RuntimeMethod* method) ;
+// System.UIntPtr System.UIntPtr::op_Explicit(System.UInt64)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uintptr_t UIntPtr_op_Explicit_m4E434CAEFCE03986FDC48F3452F81DC7E4F093BE (uint64_t ___value0, const RuntimeMethod* method) ;
+// System.Void Oculus.Platform.CAPI::ovr_Voip_SetMicrophoneFilterCallbackWithFixedSizeBuffer(Oculus.Platform.CAPI/FilterCallback,System.UIntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CAPI_ovr_Voip_SetMicrophoneFilterCallbackWithFixedSizeBuffer_m530E3A015D259D86509303F3E739003D6D7662CC (FilterCallback_tFB7F4170CD7F3376F85B5DEBEE9C2D407283A86D* ___cb0, uintptr_t ___bufferSizeElements1, const RuntimeMethod* method) ;
+// System.Void Oculus.Platform.CAPI::ovr_Voip_SetMicrophoneMuted(Oculus.Platform.VoipMuteState)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CAPI_ovr_Voip_SetMicrophoneMuted_mC560290BC42351C6F808A6D4787D9DB201AA3199 (int32_t ___state0, const RuntimeMethod* method) ;
+// Oculus.Platform.VoipMuteState Oculus.Platform.CAPI::ovr_Voip_GetSystemVoipMicrophoneMuted()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CAPI_ovr_Voip_GetSystemVoipMicrophoneMuted_mE56B2F42F229D078AF7C4941973F4D4E82D118C9 (const RuntimeMethod* method) ;
+// Oculus.Platform.SystemVoipStatus Oculus.Platform.CAPI::ovr_Voip_GetSystemVoipStatus()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CAPI_ovr_Voip_GetSystemVoipStatus_m11B81ECD13A238E0754883C480436AF120D87CC4 (const RuntimeMethod* method) ;
+// Oculus.Platform.VoipDtxState Oculus.Platform.CAPI::ovr_Voip_GetIsConnectionUsingDtx(System.UInt64)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CAPI_ovr_Voip_GetIsConnectionUsingDtx_mF82A325E1F32B651E0ADE510F6D455EAB2F56574 (uint64_t ___peerID0, const RuntimeMethod* method) ;
+// Oculus.Platform.VoipBitrate Oculus.Platform.CAPI::ovr_Voip_GetLocalBitrate(System.UInt64)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CAPI_ovr_Voip_GetLocalBitrate_m4700975B338135490458BDA4B6D8DAFA99E8890D (uint64_t ___peerID0, const RuntimeMethod* method) ;
+// Oculus.Platform.VoipBitrate Oculus.Platform.CAPI::ovr_Voip_GetRemoteBitrate(System.UInt64)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CAPI_ovr_Voip_GetRemoteBitrate_m1ED5678B57F70F1B5E0FBCF4A96BB6499607150D (uint64_t ___peerID0, const RuntimeMethod* method) ;
+// System.IntPtr Oculus.Platform.VoipOptions::op_Explicit(Oculus.Platform.VoipOptions)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t VoipOptions_op_Explicit_mDBF759BB1CF8E40BDD8000D665182C2B7D40042E (VoipOptions_t23139B923274B30643E7856F9F77B44F94D782A0* ___options0, const RuntimeMethod* method) ;
+// System.Void Oculus.Platform.CAPI::ovr_Voip_SetNewConnectionOptions(System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CAPI_ovr_Voip_SetNewConnectionOptions_m94F40EEC3DE3C69329BB67FA60ED20D604687E00 (intptr_t ___voipOptions0, const RuntimeMethod* method) ;
+// System.UInt64 Oculus.Platform.CAPI::ovr_Voip_GetMicrophoneAvailability()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t CAPI_ovr_Voip_GetMicrophoneAvailability_mE4F5353A533E82344E1F2FE5DAAD75C8045DB28C (const RuntimeMethod* method) ;
+// System.Void Oculus.Platform.Request`1<Oculus.Platform.Models.MicrophoneAvailabilityState>::.ctor(System.UInt64)
+inline void Request_1__ctor_m4354B9574AB2106522121A92852C2F2B513C1506 (Request_1_t67FD568CD1C554099AF3D6D33E041CB522420B45* __this, uint64_t ___requestID0, const RuntimeMethod* method)
+{
+	((  void (*) (Request_1_t67FD568CD1C554099AF3D6D33E041CB522420B45*, uint64_t, const RuntimeMethod*))Request_1__ctor_mBD86FE6A8E27475EBA0DE2DC06FCE16D94CA2FEE_gshared)(__this, ___requestID0, method);
+}
 // System.Void UnityEngine.Debug::LogError(System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogError_m059825802BB6AF7EA9693FEBEEB0D85F59A3E38E (RuntimeObject* ___message0, const RuntimeMethod* method) ;
+// System.UInt64 Oculus.Platform.CAPI::ovr_Voip_SetSystemVoipSuppressed(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t CAPI_ovr_Voip_SetSystemVoipSuppressed_m332696DDA5E1A245A55B69396C707C223DEAB2B3 (bool ___suppressed0, const RuntimeMethod* method) ;
+// System.Void Oculus.Platform.Request`1<Oculus.Platform.Models.SystemVoipState>::.ctor(System.UInt64)
+inline void Request_1__ctor_mFB8EEE098625FF28A905EC0D66FA9823CC29C5AC (Request_1_t606A2B983CFE2E4BC7C0AB1721450E2CED4B9036* __this, uint64_t ___requestID0, const RuntimeMethod* method)
+{
+	((  void (*) (Request_1_t606A2B983CFE2E4BC7C0AB1721450E2CED4B9036*, uint64_t, const RuntimeMethod*))Request_1__ctor_mBD86FE6A8E27475EBA0DE2DC06FCE16D94CA2FEE_gshared)(__this, ___requestID0, method);
+}
+// System.Void Oculus.Platform.Callback::SetNotificationCallback<Oculus.Platform.Models.NetworkingPeer>(Oculus.Platform.Message/MessageType,Oculus.Platform.Message`1/Callback<T>)
+inline void Callback_SetNotificationCallback_TisNetworkingPeer_t5C937383B3A595FA6AAB83EB8189F0FF38EC8654_m5F2D103F2BC57A46B3D7D11D60E03618C77E94E2 (uint32_t ___type0, Callback_tDBF20A8F9B848831CC1CB414BE89E49B81F2888A* ___callback1, const RuntimeMethod* method)
+{
+	((  void (*) (uint32_t, Callback_tDBF20A8F9B848831CC1CB414BE89E49B81F2888A*, const RuntimeMethod*))Callback_SetNotificationCallback_TisRuntimeObject_m613472667E039D41C69F5CDC1A54FAB623798261_gshared)(___type0, ___callback1, method);
+}
 // System.Void Oculus.Platform.Callback::SetNotificationCallback<System.String>(Oculus.Platform.Message/MessageType,Oculus.Platform.Message`1/Callback<T>)
 inline void Callback_SetNotificationCallback_TisString_t_mF0EDF938D7D1F7F6858C0E4B2060C0EB70F55520 (uint32_t ___type0, Callback_t6FF4DE9C75ADF5326E55DAB2608C15009D179EEE* ___callback1, const RuntimeMethod* method)
 {
 	((  void (*) (uint32_t, Callback_t6FF4DE9C75ADF5326E55DAB2608C15009D179EEE*, const RuntimeMethod*))Callback_SetNotificationCallback_TisRuntimeObject_m613472667E039D41C69F5CDC1A54FAB623798261_gshared)(___type0, ___callback1, method);
 }
+// System.Void Oculus.Platform.Callback::SetNotificationCallback<Oculus.Platform.Models.SystemVoipState>(Oculus.Platform.Message/MessageType,Oculus.Platform.Message`1/Callback<T>)
+inline void Callback_SetNotificationCallback_TisSystemVoipState_tEC107BAED5F2D825E4872F383C722B2DE25AF4CF_m3AA45CB12521943F5FC2517523C618153CB371EE (uint32_t ___type0, Callback_t9C59B9BB1EE02D0156A50BF5CC9995C6053625E9* ___callback1, const RuntimeMethod* method)
+{
+	((  void (*) (uint32_t, Callback_t9C59B9BB1EE02D0156A50BF5CC9995C6053625E9*, const RuntimeMethod*))Callback_SetNotificationCallback_TisRuntimeObject_m613472667E039D41C69F5CDC1A54FAB623798261_gshared)(___type0, ___callback1, method);
+}
+// System.String Oculus.Platform.CAPI::ovr_GetLoggedInUserLocale()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CAPI_ovr_GetLoggedInUserLocale_m3FFB3A12DBA044E8C612243CF916730D92424179 (const RuntimeMethod* method) ;
+// System.UInt64 Oculus.Platform.CAPI::ovr_User_Get(System.UInt64)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t CAPI_ovr_User_Get_m979888C20B95939874880767F429D1B6D3F81D62 (uint64_t ___userID0, const RuntimeMethod* method) ;
+// System.Void Oculus.Platform.Request`1<Oculus.Platform.Models.User>::.ctor(System.UInt64)
+inline void Request_1__ctor_mC37C0892538E3DB6433BDCC19B82FCBD0F2EC03D (Request_1_tDEBBCEA56ECDB50CF2277C79EB69671802236259* __this, uint64_t ___requestID0, const RuntimeMethod* method)
+{
+	((  void (*) (Request_1_tDEBBCEA56ECDB50CF2277C79EB69671802236259*, uint64_t, const RuntimeMethod*))Request_1__ctor_mBD86FE6A8E27475EBA0DE2DC06FCE16D94CA2FEE_gshared)(__this, ___requestID0, method);
+}
+// System.UInt64 Oculus.Platform.CAPI::ovr_User_GetAccessToken()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t CAPI_ovr_User_GetAccessToken_m04D5DC9D5D59FB2C7147E3E2D92E106876810D5C (const RuntimeMethod* method) ;
+// System.Void Oculus.Platform.Request`1<System.String>::.ctor(System.UInt64)
+inline void Request_1__ctor_m6DDE70BC284B946D4ABB5B0AE4A21DDDFBA76763 (Request_1_t3EA499B388856971AB69C173E53D128BEBA5144C* __this, uint64_t ___requestID0, const RuntimeMethod* method)
+{
+	((  void (*) (Request_1_t3EA499B388856971AB69C173E53D128BEBA5144C*, uint64_t, const RuntimeMethod*))Request_1__ctor_mBD86FE6A8E27475EBA0DE2DC06FCE16D94CA2FEE_gshared)(__this, ___requestID0, method);
+}
+// System.UInt64 Oculus.Platform.CAPI::ovr_User_GetBlockedUsers()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t CAPI_ovr_User_GetBlockedUsers_m7C25C612EA535F0AA8F85788F2E703DFBD9E2734 (const RuntimeMethod* method) ;
+// System.Void Oculus.Platform.Request`1<Oculus.Platform.Models.BlockedUserList>::.ctor(System.UInt64)
+inline void Request_1__ctor_m54C5E77F18866F9D37A78D38540C1A9098FFA69A (Request_1_tA1A1CD1F5D29C229C28D2A0EC82D151542DB3EEA* __this, uint64_t ___requestID0, const RuntimeMethod* method)
+{
+	((  void (*) (Request_1_tA1A1CD1F5D29C229C28D2A0EC82D151542DB3EEA*, uint64_t, const RuntimeMethod*))Request_1__ctor_mBD86FE6A8E27475EBA0DE2DC06FCE16D94CA2FEE_gshared)(__this, ___requestID0, method);
+}
+// System.UInt64 Oculus.Platform.CAPI::ovr_User_GetLoggedInUser()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t CAPI_ovr_User_GetLoggedInUser_m6A66A41CE44A6402E3750BF69750647C012EAF9A (const RuntimeMethod* method) ;
+// System.UInt64 Oculus.Platform.CAPI::ovr_User_GetLoggedInUserFriends()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t CAPI_ovr_User_GetLoggedInUserFriends_m4AD755876EB347B6A54F72F5526068C2973CFA62 (const RuntimeMethod* method) ;
+// System.Void Oculus.Platform.Request`1<Oculus.Platform.Models.UserList>::.ctor(System.UInt64)
+inline void Request_1__ctor_m029D713284EB47C08C4139CC986ED7BF3348F0DC (Request_1_tB0D397F1B11033FAFA93EE15D75151B14D42DDD8* __this, uint64_t ___requestID0, const RuntimeMethod* method)
+{
+	((  void (*) (Request_1_tB0D397F1B11033FAFA93EE15D75151B14D42DDD8*, uint64_t, const RuntimeMethod*))Request_1__ctor_mBD86FE6A8E27475EBA0DE2DC06FCE16D94CA2FEE_gshared)(__this, ___requestID0, method);
+}
+// System.UInt64 Oculus.Platform.CAPI::ovr_User_GetLoggedInUserFriendsAndRooms()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t CAPI_ovr_User_GetLoggedInUserFriendsAndRooms_m229F8D427F9E8EED2BA84E29BA0E3AE7ABDED9B7 (const RuntimeMethod* method) ;
+// System.Void Oculus.Platform.Request`1<Oculus.Platform.Models.UserAndRoomList>::.ctor(System.UInt64)
+inline void Request_1__ctor_mF785EC2BD98CD102F3F59A376719135186815499 (Request_1_tF953DCC8B5667246F0B35B701E72623F730DEE81* __this, uint64_t ___requestID0, const RuntimeMethod* method)
+{
+	((  void (*) (Request_1_tF953DCC8B5667246F0B35B701E72623F730DEE81*, uint64_t, const RuntimeMethod*))Request_1__ctor_mBD86FE6A8E27475EBA0DE2DC06FCE16D94CA2FEE_gshared)(__this, ___requestID0, method);
+}
+// System.IntPtr Oculus.Platform.UserOptions::op_Explicit(Oculus.Platform.UserOptions)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t UserOptions_op_Explicit_m2B94A9734A4FF1676B9C7E2CDC9EB40792CAE116 (UserOptions_t723A6159F32B98109482B9D2618A0816F06C1E1F* ___options0, const RuntimeMethod* method) ;
+// System.UInt64 Oculus.Platform.CAPI::ovr_User_GetLoggedInUserRecentlyMetUsersAndRooms(System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t CAPI_ovr_User_GetLoggedInUserRecentlyMetUsersAndRooms_mB6415059F239BD52C95A77DC95A1CE97DA62CC15 (intptr_t ___userOptions0, const RuntimeMethod* method) ;
+// System.UInt64 Oculus.Platform.CAPI::ovr_User_GetOrgScopedID(System.UInt64)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t CAPI_ovr_User_GetOrgScopedID_m985B9BE052047E7511015582FB855422231CCD08 (uint64_t ___userID0, const RuntimeMethod* method) ;
+// System.Void Oculus.Platform.Request`1<Oculus.Platform.Models.OrgScopedID>::.ctor(System.UInt64)
+inline void Request_1__ctor_mD691227C5FBDD77242FEE56411F7ADA3EA126FFD (Request_1_tB92CA9F7F4668A9B2BE9EFCA7464B35E34A484BE* __this, uint64_t ___requestID0, const RuntimeMethod* method)
+{
+	((  void (*) (Request_1_tB92CA9F7F4668A9B2BE9EFCA7464B35E34A484BE*, uint64_t, const RuntimeMethod*))Request_1__ctor_mBD86FE6A8E27475EBA0DE2DC06FCE16D94CA2FEE_gshared)(__this, ___requestID0, method);
+}
+// System.UInt64 Oculus.Platform.CAPI::ovr_User_GetSdkAccounts()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t CAPI_ovr_User_GetSdkAccounts_m113B810756C59FF38FF5847CA1A8ED61844AF1DD (const RuntimeMethod* method) ;
+// System.Void Oculus.Platform.Request`1<Oculus.Platform.Models.SdkAccountList>::.ctor(System.UInt64)
+inline void Request_1__ctor_m4A7F8E6E9A11EA41E5E1CCD5805EB596C66BAA10 (Request_1_t0E461943B20217E934C02BEAE22CBCE722FBAAB1* __this, uint64_t ___requestID0, const RuntimeMethod* method)
+{
+	((  void (*) (Request_1_t0E461943B20217E934C02BEAE22CBCE722FBAAB1*, uint64_t, const RuntimeMethod*))Request_1__ctor_mBD86FE6A8E27475EBA0DE2DC06FCE16D94CA2FEE_gshared)(__this, ___requestID0, method);
+}
+// System.UInt64 Oculus.Platform.CAPI::ovr_User_GetUserProof()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t CAPI_ovr_User_GetUserProof_m505A94355484409003E733A6D454E62590A39923 (const RuntimeMethod* method) ;
+// System.Void Oculus.Platform.Request`1<Oculus.Platform.Models.UserProof>::.ctor(System.UInt64)
+inline void Request_1__ctor_m9535F5F4E04A8CC2BD258E90A90772C134F240CC (Request_1_tB774BFF663D8B08A599321246DD0E753AEE6C23C* __this, uint64_t ___requestID0, const RuntimeMethod* method)
+{
+	((  void (*) (Request_1_tB774BFF663D8B08A599321246DD0E753AEE6C23C*, uint64_t, const RuntimeMethod*))Request_1__ctor_mBD86FE6A8E27475EBA0DE2DC06FCE16D94CA2FEE_gshared)(__this, ___requestID0, method);
+}
+// System.UInt64 Oculus.Platform.CAPI::ovr_User_LaunchBlockFlow(System.UInt64)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t CAPI_ovr_User_LaunchBlockFlow_m0BFE055EFE7A467303C78A18757C75F693CF1A36 (uint64_t ___userID0, const RuntimeMethod* method) ;
+// System.Void Oculus.Platform.Request`1<Oculus.Platform.Models.LaunchBlockFlowResult>::.ctor(System.UInt64)
+inline void Request_1__ctor_mC72E41D8DE218B3992AA2AFF3F4CD16F6FEF7D7C (Request_1_t28B31BE3D25A15906E1813CD9A3CD98AE6AF0095* __this, uint64_t ___requestID0, const RuntimeMethod* method)
+{
+	((  void (*) (Request_1_t28B31BE3D25A15906E1813CD9A3CD98AE6AF0095*, uint64_t, const RuntimeMethod*))Request_1__ctor_mBD86FE6A8E27475EBA0DE2DC06FCE16D94CA2FEE_gshared)(__this, ___requestID0, method);
+}
+// System.UInt64 Oculus.Platform.CAPI::ovr_User_LaunchFriendRequestFlow(System.UInt64)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t CAPI_ovr_User_LaunchFriendRequestFlow_m1A723E1C082EBB70FAA7E52C5A4D112CC62F526B (uint64_t ___userID0, const RuntimeMethod* method) ;
+// System.Void Oculus.Platform.Request`1<Oculus.Platform.Models.LaunchFriendRequestFlowResult>::.ctor(System.UInt64)
+inline void Request_1__ctor_mC9F53649E330781B890B1B367B0D798F27DCF0B6 (Request_1_tBC7CA37C1E6649AD66987EB2412C3F99168A939A* __this, uint64_t ___requestID0, const RuntimeMethod* method)
+{
+	((  void (*) (Request_1_tBC7CA37C1E6649AD66987EB2412C3F99168A939A*, uint64_t, const RuntimeMethod*))Request_1__ctor_mBD86FE6A8E27475EBA0DE2DC06FCE16D94CA2FEE_gshared)(__this, ___requestID0, method);
+}
+// System.UInt64 Oculus.Platform.CAPI::ovr_User_LaunchUnblockFlow(System.UInt64)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t CAPI_ovr_User_LaunchUnblockFlow_m6731DF77216408C4EC17E6875CBF3C4557F295B1 (uint64_t ___userID0, const RuntimeMethod* method) ;
+// System.Void Oculus.Platform.Request`1<Oculus.Platform.Models.LaunchUnblockFlowResult>::.ctor(System.UInt64)
+inline void Request_1__ctor_m85EFF0D85A09D5BFB8C60B40F6001573662FFF13 (Request_1_t09D04A2C7BFFED0052C28FE8F1B910188C82097F* __this, uint64_t ___requestID0, const RuntimeMethod* method)
+{
+	((  void (*) (Request_1_t09D04A2C7BFFED0052C28FE8F1B910188C82097F*, uint64_t, const RuntimeMethod*))Request_1__ctor_mBD86FE6A8E27475EBA0DE2DC06FCE16D94CA2FEE_gshared)(__this, ___requestID0, method);
+}
+// System.Boolean Oculus.Platform.Models.DeserializableList`1<Oculus.Platform.Models.BlockedUser>::get_HasNextPage()
+inline bool DeserializableList_1_get_HasNextPage_m6A2F7F020970030E784A1B206E33E5F49D265E73 (DeserializableList_1_t3F0651D93C15E0EF094F448F037075BB204D3B15* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (DeserializableList_1_t3F0651D93C15E0EF094F448F037075BB204D3B15*, const RuntimeMethod*))DeserializableList_1_get_HasNextPage_m1131EAFD6753D1F83B93F3A0B3D023F922B05057_gshared)(__this, method);
+}
+// System.Void UnityEngine.Debug::LogWarning(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogWarning_mEF15C6B17CE4E1FA7E379CDB82CE40FCD89A3F28 (RuntimeObject* ___message0, const RuntimeMethod* method) ;
+// System.String Oculus.Platform.Models.DeserializableList`1<Oculus.Platform.Models.BlockedUser>::get_NextUrl()
+inline String_t* DeserializableList_1_get_NextUrl_mF0066A747E01BD90FBFEF95A8CDE5E1E677CBCA8_inline (DeserializableList_1_t3F0651D93C15E0EF094F448F037075BB204D3B15* __this, const RuntimeMethod* method)
+{
+	return ((  String_t* (*) (DeserializableList_1_t3F0651D93C15E0EF094F448F037075BB204D3B15*, const RuntimeMethod*))DeserializableList_1_get_NextUrl_m935C3C0C4590EF50B18541EE6286526EEB24B294_gshared_inline)(__this, method);
+}
+// System.UInt64 Oculus.Platform.CAPI::ovr_HTTP_GetWithMessageType(System.String,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t CAPI_ovr_HTTP_GetWithMessageType_m5FA8308DA6FB0F12C34F2C68AC1EE283F68B5984 (String_t* ___url0, int32_t ___messageType1, const RuntimeMethod* method) ;
+// System.Boolean Oculus.Platform.Models.DeserializableList`1<Oculus.Platform.Models.UserAndRoom>::get_HasNextPage()
+inline bool DeserializableList_1_get_HasNextPage_m6B72A2B74D26F7721691D3D3B88767301A04C28D (DeserializableList_1_t178C5649CD5289BA356F0CE21C4F1E87673C17AB* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (DeserializableList_1_t178C5649CD5289BA356F0CE21C4F1E87673C17AB*, const RuntimeMethod*))DeserializableList_1_get_HasNextPage_m1131EAFD6753D1F83B93F3A0B3D023F922B05057_gshared)(__this, method);
+}
+// System.String Oculus.Platform.Models.DeserializableList`1<Oculus.Platform.Models.UserAndRoom>::get_NextUrl()
+inline String_t* DeserializableList_1_get_NextUrl_m86EB8BDEFF99549E12661E48C43D18D2A555AEB2_inline (DeserializableList_1_t178C5649CD5289BA356F0CE21C4F1E87673C17AB* __this, const RuntimeMethod* method)
+{
+	return ((  String_t* (*) (DeserializableList_1_t178C5649CD5289BA356F0CE21C4F1E87673C17AB*, const RuntimeMethod*))DeserializableList_1_get_NextUrl_m935C3C0C4590EF50B18541EE6286526EEB24B294_gshared_inline)(__this, method);
+}
+// System.Boolean Oculus.Platform.Models.DeserializableList`1<Oculus.Platform.Models.User>::get_HasNextPage()
+inline bool DeserializableList_1_get_HasNextPage_mF13DB2078BD1415E6741900652F95A8433F9828F (DeserializableList_1_t8C90B7850D74427EC10029BF2CB1D443047B8FC8* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (DeserializableList_1_t8C90B7850D74427EC10029BF2CB1D443047B8FC8*, const RuntimeMethod*))DeserializableList_1_get_HasNextPage_m1131EAFD6753D1F83B93F3A0B3D023F922B05057_gshared)(__this, method);
+}
+// System.String Oculus.Platform.Models.DeserializableList`1<Oculus.Platform.Models.User>::get_NextUrl()
+inline String_t* DeserializableList_1_get_NextUrl_m1B3B8585C83174BBE314AD71FB05DB4BCE8709BA_inline (DeserializableList_1_t8C90B7850D74427EC10029BF2CB1D443047B8FC8* __this, const RuntimeMethod* method)
+{
+	return ((  String_t* (*) (DeserializableList_1_t8C90B7850D74427EC10029BF2CB1D443047B8FC8*, const RuntimeMethod*))DeserializableList_1_get_NextUrl_m935C3C0C4590EF50B18541EE6286526EEB24B294_gshared_inline)(__this, method);
+}
+// System.Boolean Oculus.Platform.Models.DeserializableList`1<Oculus.Platform.Models.UserCapability>::get_HasNextPage()
+inline bool DeserializableList_1_get_HasNextPage_m65E89472F8C63E1057652C31706E981B965E7B99 (DeserializableList_1_t2C48A604D96ADFDDA2A56068585340FF74A37510* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (DeserializableList_1_t2C48A604D96ADFDDA2A56068585340FF74A37510*, const RuntimeMethod*))DeserializableList_1_get_HasNextPage_m1131EAFD6753D1F83B93F3A0B3D023F922B05057_gshared)(__this, method);
+}
+// System.String Oculus.Platform.Models.DeserializableList`1<Oculus.Platform.Models.UserCapability>::get_NextUrl()
+inline String_t* DeserializableList_1_get_NextUrl_m57C2882F67AAECF1B880E5ACF6A9770B2104EDBB_inline (DeserializableList_1_t2C48A604D96ADFDDA2A56068585340FF74A37510* __this, const RuntimeMethod* method)
+{
+	return ((  String_t* (*) (DeserializableList_1_t2C48A604D96ADFDDA2A56068585340FF74A37510*, const RuntimeMethod*))DeserializableList_1_get_NextUrl_m935C3C0C4590EF50B18541EE6286526EEB24B294_gshared_inline)(__this, method);
+}
+// System.Void Oculus.Platform.Request`1<Oculus.Platform.Models.UserCapabilityList>::.ctor(System.UInt64)
+inline void Request_1__ctor_mD7C574928FD0710BCDEEDC10A9A715FA18D2FF56 (Request_1_tC258C952DBE23E9E1EF084E937E156146A43974A* __this, uint64_t ___requestID0, const RuntimeMethod* method)
+{
+	((  void (*) (Request_1_tC258C952DBE23E9E1EF084E937E156146A43974A*, uint64_t, const RuntimeMethod*))Request_1__ctor_mBD86FE6A8E27475EBA0DE2DC06FCE16D94CA2FEE_gshared)(__this, ___requestID0, method);
+}
+// System.UInt64 Oculus.Platform.CAPI::ovr_AbuseReport_ReportRequestHandled(Oculus.Platform.ReportRequestResponse)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t CAPI_ovr_AbuseReport_ReportRequestHandled_m68ADD5522C2C7540ED671D5D8F1F59C51FF60C85 (int32_t ___response0, const RuntimeMethod* method) ;
+// System.Void Oculus.Platform.Request::.ctor(System.UInt64)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Request__ctor_m1E18C977DA3EFD314F430CAB4B36134F3A6D712A (Request_t0773858FF1AC67C0D8B43058CC7119DDD1202D3B* __this, uint64_t ___requestID0, const RuntimeMethod* method) ;
 // System.UInt64 Oculus.Platform.CAPI::ovr_Achievements_AddCount(System.String,System.UInt64)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t CAPI_ovr_Achievements_AddCount_m08D8BE60C1F737952338EDA0BFD71ACB729A41FB (String_t* ___name0, uint64_t ___count1, const RuntimeMethod* method) ;
 // System.Void Oculus.Platform.Request`1<Oculus.Platform.Models.AchievementUpdate>::.ctor(System.UInt64)
@@ -7012,15 +7534,11 @@ inline bool DeserializableList_1_get_HasNextPage_m5EECE63118B9F3458ECF97FBF06A23
 {
 	return ((  bool (*) (DeserializableList_1_t1DEB53C597DDC53CEB3982479D636D954E6B685F*, const RuntimeMethod*))DeserializableList_1_get_HasNextPage_m1131EAFD6753D1F83B93F3A0B3D023F922B05057_gshared)(__this, method);
 }
-// System.Void UnityEngine.Debug::LogWarning(System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogWarning_mEF15C6B17CE4E1FA7E379CDB82CE40FCD89A3F28 (RuntimeObject* ___message0, const RuntimeMethod* method) ;
 // System.String Oculus.Platform.Models.DeserializableList`1<Oculus.Platform.Models.AchievementDefinition>::get_NextUrl()
 inline String_t* DeserializableList_1_get_NextUrl_mF95E6C844B1A61334139DB1887925D44F3080966_inline (DeserializableList_1_t1DEB53C597DDC53CEB3982479D636D954E6B685F* __this, const RuntimeMethod* method)
 {
 	return ((  String_t* (*) (DeserializableList_1_t1DEB53C597DDC53CEB3982479D636D954E6B685F*, const RuntimeMethod*))DeserializableList_1_get_NextUrl_m935C3C0C4590EF50B18541EE6286526EEB24B294_gshared_inline)(__this, method);
 }
-// System.UInt64 Oculus.Platform.CAPI::ovr_HTTP_GetWithMessageType(System.String,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t CAPI_ovr_HTTP_GetWithMessageType_m5FA8308DA6FB0F12C34F2C68AC1EE283F68B5984 (String_t* ___url0, int32_t ___messageType1, const RuntimeMethod* method) ;
 // System.Boolean Oculus.Platform.Models.DeserializableList`1<Oculus.Platform.Models.AchievementProgress>::get_HasNextPage()
 inline bool DeserializableList_1_get_HasNextPage_m4A6882ADB10F2ADE29BAE1A6D899C1F12FDBD420 (DeserializableList_1_tF328A94CA00780F009738727571ED40D4126172B* __this, const RuntimeMethod* method)
 {
@@ -7042,11 +7560,6 @@ inline void Request_1__ctor_m2B1AE43918AF59E82F635F2A44A88559FB729F14 (Request_1
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t ApplicationOptions_op_Explicit_mAA7E3FBA26CA9F7316BDD585474A1E9D3057F189 (ApplicationOptions_t8313FE39BC9A922D51E5AD03601E9EF49A55E852* ___options0, const RuntimeMethod* method) ;
 // System.UInt64 Oculus.Platform.CAPI::ovr_Application_LaunchOtherApp(System.UInt64,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t CAPI_ovr_Application_LaunchOtherApp_m9AD7A8BF18957E7A70BF8F21B88EFCB036888022 (uint64_t ___appID0, intptr_t ___deeplink_options1, const RuntimeMethod* method) ;
-// System.Void Oculus.Platform.Request`1<System.String>::.ctor(System.UInt64)
-inline void Request_1__ctor_m6DDE70BC284B946D4ABB5B0AE4A21DDDFBA76763 (Request_1_t3EA499B388856971AB69C173E53D128BEBA5144C* __this, uint64_t ___requestID0, const RuntimeMethod* method)
-{
-	((  void (*) (Request_1_t3EA499B388856971AB69C173E53D128BEBA5144C*, uint64_t, const RuntimeMethod*))Request_1__ctor_mBD86FE6A8E27475EBA0DE2DC06FCE16D94CA2FEE_gshared)(__this, ___requestID0, method);
-}
 // System.UInt64 Oculus.Platform.CAPI::ovr_AssetFile_Delete(System.UInt64)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t CAPI_ovr_AssetFile_Delete_mA93224580150F341F23A9747C2251F5C0BB6C2BE (uint64_t ___assetFileID0, const RuntimeMethod* method) ;
 // System.Void Oculus.Platform.Request`1<Oculus.Platform.Models.AssetFileDeleteResult>::.ctor(System.UInt64)
@@ -7102,6 +7615,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t CAPI_ovr_AssetFile_StatusByName_mE94
 inline void Callback_SetNotificationCallback_TisAssetFileDownloadUpdate_tADF06153486F11F16E760CA1DC935D18ED1FE7BC_m4BF417F5AE4C041B5089FEEFA81629E3582E036B (uint32_t ___type0, Callback_t0E4A9F4F93D60352B98BB521D57F2FB25489EC80* ___callback1, const RuntimeMethod* method)
 {
 	((  void (*) (uint32_t, Callback_t0E4A9F4F93D60352B98BB521D57F2FB25489EC80*, const RuntimeMethod*))Callback_SetNotificationCallback_TisRuntimeObject_m613472667E039D41C69F5CDC1A54FAB623798261_gshared)(___type0, ___callback1, method);
+}
+// System.IntPtr Oculus.Platform.AvatarEditorOptions::op_Explicit(Oculus.Platform.AvatarEditorOptions)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t AvatarEditorOptions_op_Explicit_mB2E3BCDC2823E3C899D2513B77C538A81473262F (AvatarEditorOptions_t80D597247D01497F024A772C7065CE7F018053C0* ___options0, const RuntimeMethod* method) ;
+// System.UInt64 Oculus.Platform.CAPI::ovr_Avatar_LaunchAvatarEditor(System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t CAPI_ovr_Avatar_LaunchAvatarEditor_m0A143DADCB0A54A0DB37B09296D448136C6C3E84 (intptr_t ___options0, const RuntimeMethod* method) ;
+// System.Void Oculus.Platform.Request`1<Oculus.Platform.Models.AvatarEditorResult>::.ctor(System.UInt64)
+inline void Request_1__ctor_m03C2495625A265815829807F5C1EB88073D09AA1 (Request_1_t466EFA6DA402C7AB4E5DB8FD9449360A91DE7A15* __this, uint64_t ___requestID0, const RuntimeMethod* method)
+{
+	((  void (*) (Request_1_t466EFA6DA402C7AB4E5DB8FD9449360A91DE7A15*, uint64_t, const RuntimeMethod*))Request_1__ctor_mBD86FE6A8E27475EBA0DE2DC06FCE16D94CA2FEE_gshared)(__this, ___requestID0, method);
 }
 // System.UInt64 Oculus.Platform.CAPI::ovr_CloudStorage_Delete(System.String,System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t CAPI_ovr_CloudStorage_Delete_mE91F16547BA60E04D72595DE13C744AE1208BE31 (String_t* ___bucket0, String_t* ___key1, const RuntimeMethod* method) ;
@@ -7166,11 +7688,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t CAPI_ovr_GroupPresence_Clear_mA02975
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t InviteOptions_op_Explicit_m9F8E9FB9A5BDB385410EDD9F204B1A35C4C89A93 (InviteOptions_tEBFCE10D6E1E340073E889DE0FA2CC3DB273645D* ___options0, const RuntimeMethod* method) ;
 // System.UInt64 Oculus.Platform.CAPI::ovr_GroupPresence_GetInvitableUsers(System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t CAPI_ovr_GroupPresence_GetInvitableUsers_m435080EC28A90B4BDB21CCD71EA9B44C0D9DA35D (intptr_t ___options0, const RuntimeMethod* method) ;
-// System.Void Oculus.Platform.Request`1<Oculus.Platform.Models.UserList>::.ctor(System.UInt64)
-inline void Request_1__ctor_m029D713284EB47C08C4139CC986ED7BF3348F0DC (Request_1_tB0D397F1B11033FAFA93EE15D75151B14D42DDD8* __this, uint64_t ___requestID0, const RuntimeMethod* method)
-{
-	((  void (*) (Request_1_tB0D397F1B11033FAFA93EE15D75151B14D42DDD8*, uint64_t, const RuntimeMethod*))Request_1__ctor_mBD86FE6A8E27475EBA0DE2DC06FCE16D94CA2FEE_gshared)(__this, ___requestID0, method);
-}
 // System.UInt64 Oculus.Platform.CAPI::ovr_GroupPresence_GetSentInvites()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t CAPI_ovr_GroupPresence_GetSentInvites_m0D9E49D0D9EF46CEF05773B881C951773AB5EF8F (const RuntimeMethod* method) ;
 // System.Void Oculus.Platform.Request`1<Oculus.Platform.Models.ApplicationInviteList>::.ctor(System.UInt64)
@@ -7471,8 +7988,6 @@ inline void Callback_SetNotificationCallback_TisHttpTransferUpdate_tFB05B6D5CE5A
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserOptions__ctor_m0C1012BA305C4A7DCCB11A80B199FD98727A4FEE (UserOptions_t723A6159F32B98109482B9D2618A0816F06C1E1F* __this, const RuntimeMethod* method) ;
 // System.Void Oculus.Platform.UserOptions::AddServiceProvider(Oculus.Platform.ServiceProvider)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserOptions_AddServiceProvider_m7FC4C32028BC56F9C70B675649F3D96F29338C08 (UserOptions_t723A6159F32B98109482B9D2618A0816F06C1E1F* __this, int32_t ___value0, const RuntimeMethod* method) ;
-// System.IntPtr Oculus.Platform.UserOptions::op_Explicit(Oculus.Platform.UserOptions)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t UserOptions_op_Explicit_m2B94A9734A4FF1676B9C7E2CDC9EB40792CAE116 (UserOptions_t723A6159F32B98109482B9D2618A0816F06C1E1F* ___options0, const RuntimeMethod* method) ;
 // System.UInt64 Oculus.Platform.CAPI::ovr_User_GetLinkedAccounts(System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t CAPI_ovr_User_GetLinkedAccounts_mB7691E51E28187D3F105AF0604F6275819D888B5 (intptr_t ___userOptions0, const RuntimeMethod* method) ;
 // System.Void Oculus.Platform.Request`1<Oculus.Platform.Models.LinkedAccountList>::.ctor(System.UInt64)
@@ -7581,6 +8096,15 @@ inline void Request_1__ctor_m4C83EDA6A558C77C3528DF7681A2EC32A92BADE3 (Request_1
 {
 	((  void (*) (Request_1_tDF5315C7EB8AA620C19730D55185214ADD908497*, uint64_t, const RuntimeMethod*))Request_1__ctor_mBD86FE6A8E27475EBA0DE2DC06FCE16D94CA2FEE_gshared)(__this, ___requestID0, method);
 }
+// System.Int32 System.Collections.Generic.Dictionary`2<Oculus.Platform.InitConfigOptions,System.Boolean>::get_Count()
+inline int32_t Dictionary_2_get_Count_m69D9FF951D8C254EEA8E524980D47128183CF475 (Dictionary_2_t517C6845622890637A128BD0CFCC8B146C5F7C0D* __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (Dictionary_2_t517C6845622890637A128BD0CFCC8B146C5F7C0D*, const RuntimeMethod*))Dictionary_2_get_Count_m30D4904DD0E9DAFF9D3736BD284817A539BD8334_gshared)(__this, method);
+}
+// Oculus.Platform.CAPI/ovrKeyValuePair[] Oculus.Platform.CAPI::DictionaryToOVRKeyValuePairs(System.Collections.Generic.Dictionary`2<Oculus.Platform.InitConfigOptions,System.Boolean>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ovrKeyValuePairU5BU5D_t179DEEABE7E2281231B6526EF0D8FF37255D5AD9* CAPI_DictionaryToOVRKeyValuePairs_m155C41E0908CC0CAF842757892156023734146FC (Dictionary_2_t517C6845622890637A128BD0CFCC8B146C5F7C0D* ___dict0, const RuntimeMethod* method) ;
+// System.UInt64 Oculus.Platform.CAPI::ovr_PlatformInitializeWithAccessTokenAndOptions(System.UInt64,System.String,Oculus.Platform.CAPI/ovrKeyValuePair[],System.UIntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t CAPI_ovr_PlatformInitializeWithAccessTokenAndOptions_mE8EF24F3DF993B19B6CA38448C6512FBF2FA0683 (uint64_t ___appId0, String_t* ___accessToken1, ovrKeyValuePairU5BU5D_t179DEEABE7E2281231B6526EF0D8FF37255D5AD9* ___configOptions2, uintptr_t ___numOptions3, const RuntimeMethod* method) ;
 // System.IntPtr Oculus.Platform.CAPI::ovr_UserOptions_Create()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t CAPI_ovr_UserOptions_Create_mC1B82DB46CF6C94FE1FA490F7FE3964A9F2E689E (const RuntimeMethod* method) ;
 // System.Void Oculus.Platform.CAPI::ovr_UserOptions_SetMaxUsers(System.IntPtr,System.UInt32)
@@ -7650,8 +8174,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CAPI_ovr_VoipOptions_SetBitrateForNewCon
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CAPI_ovr_VoipOptions_SetCreateNewConnectionUseDtx_mB9BEFE099E85B193E971DA3A0DE8233DD7876710 (intptr_t ___handle0, int32_t ___value1, const RuntimeMethod* method) ;
 // System.Void Oculus.Platform.CAPI::ovr_VoipOptions_Destroy(System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CAPI_ovr_VoipOptions_Destroy_m181C197767ABCD26AC452F98FCA32FA61532B10F (intptr_t ___handle0, const RuntimeMethod* method) ;
-// System.UIntPtr System.UIntPtr::op_Explicit(System.UInt64)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uintptr_t UIntPtr_op_Explicit_m4E434CAEFCE03986FDC48F3452F81DC7E4F093BE (uint64_t ___value0, const RuntimeMethod* method) ;
 // System.UIntPtr Oculus.Platform.CAPI::ovr_Voip_GetPCMFloat(System.UInt64,System.Single[],System.UIntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uintptr_t CAPI_ovr_Voip_GetPCMFloat_mB7F02CAF5C47890B41487E2579DCB386A9E62D8C (uint64_t ___senderID0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___outputBuffer1, uintptr_t ___outputBufferNumElements2, const RuntimeMethod* method) ;
 // System.UIntPtr Oculus.Platform.CAPI::ovr_Voip_GetPCMSize(System.UInt64)
@@ -7852,6 +8374,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t CAPI_ovr_AssetFileDownloadUpdate_Get
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t CAPI_ovr_AssetFileDownloadUpdate_GetBytesTransferredLong_mE6363D4271C2C83C6F7C7296C3B89C2EF033297B (intptr_t ___obj0, const RuntimeMethod* method) ;
 // System.Boolean Oculus.Platform.CAPI::ovr_AssetFileDownloadUpdate_GetCompleted(System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CAPI_ovr_AssetFileDownloadUpdate_GetCompleted_mEADC0DE67B0DE31FCCBDC877C89BD758C60E6AB7 (intptr_t ___obj0, const RuntimeMethod* method) ;
+// System.Boolean Oculus.Platform.CAPI::ovr_AvatarEditorResult_GetRequestSent(System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CAPI_ovr_AvatarEditorResult_GetRequestSent_m9B128A6C2724E40A9F26B75536C1EB6E94A5930C (intptr_t ___obj0, const RuntimeMethod* method) ;
 // System.UInt64 Oculus.Platform.CAPI::ovr_BlockedUser_GetId(System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t CAPI_ovr_BlockedUser_GetId_m7FED1FEFC87D13AAFDFDD78D6B5DFD3872E8105A (intptr_t ___obj0, const RuntimeMethod* method) ;
 // System.Void Oculus.Platform.Models.DeserializableList`1<Oculus.Platform.Models.BlockedUser>::.ctor()
@@ -9936,6 +10460,1514 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Quaternion__ctor_m868FD60AA6
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void Oculus.Platform.Voip::Start(System.UInt64)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Voip_Start_mE59F011D4F1F3003508CF581EB3B0862D2EF5BA8 (uint64_t ___userID0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (Core.IsInitialized())
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		bool L_0;
+		L_0 = Core_IsInitialized_m2A9AF05BAD7A54490ED0EE266829C5A36FB4EAA8_inline(NULL);
+		if (!L_0)
+		{
+			goto IL_000d;
+		}
+	}
+	{
+		// CAPI.ovr_Voip_Start(userID);
+		uint64_t L_1 = ___userID0;
+		il2cpp_codegen_runtime_class_init_inline(CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		CAPI_ovr_Voip_Start_m30F4D595CEFFAA461A88F6C4FE7C414783A1B665(L_1, NULL);
+	}
+
+IL_000d:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Oculus.Platform.Voip::Accept(System.UInt64)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Voip_Accept_m5CF313BC14B4C57E3883A5531A640012F7E17631 (uint64_t ___userID0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (Core.IsInitialized())
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		bool L_0;
+		L_0 = Core_IsInitialized_m2A9AF05BAD7A54490ED0EE266829C5A36FB4EAA8_inline(NULL);
+		if (!L_0)
+		{
+			goto IL_000d;
+		}
+	}
+	{
+		// CAPI.ovr_Voip_Accept(userID);
+		uint64_t L_1 = ___userID0;
+		il2cpp_codegen_runtime_class_init_inline(CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		CAPI_ovr_Voip_Accept_m4A3452E606495D0253DB2BE6D84820F90159948F(L_1, NULL);
+	}
+
+IL_000d:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Oculus.Platform.Voip::Stop(System.UInt64)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Voip_Stop_m1EE22B03CE377E40F53A3FBC15108F3C84AD537E (uint64_t ___userID0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (Core.IsInitialized())
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		bool L_0;
+		L_0 = Core_IsInitialized_m2A9AF05BAD7A54490ED0EE266829C5A36FB4EAA8_inline(NULL);
+		if (!L_0)
+		{
+			goto IL_000d;
+		}
+	}
+	{
+		// CAPI.ovr_Voip_Stop(userID);
+		uint64_t L_1 = ___userID0;
+		il2cpp_codegen_runtime_class_init_inline(CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		CAPI_ovr_Voip_Stop_m1D668C51F99664C8660B43C899716F428E9E87D4(L_1, NULL);
+	}
+
+IL_000d:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Oculus.Platform.Voip::SetMicrophoneFilterCallback(Oculus.Platform.CAPI/FilterCallback)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Voip_SetMicrophoneFilterCallback_mC360D367C4EE084E22B3276CD894593AE53E19DF (FilterCallback_tFB7F4170CD7F3376F85B5DEBEE9C2D407283A86D* ___callback0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UIntPtr_t_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (Core.IsInitialized())
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		bool L_0;
+		L_0 = Core_IsInitialized_m2A9AF05BAD7A54490ED0EE266829C5A36FB4EAA8_inline(NULL);
+		if (!L_0)
+		{
+			goto IL_0018;
+		}
+	}
+	{
+		// CAPI.ovr_Voip_SetMicrophoneFilterCallbackWithFixedSizeBuffer(callback, (UIntPtr)CAPI.VoipFilterBufferSize);
+		FilterCallback_tFB7F4170CD7F3376F85B5DEBEE9C2D407283A86D* L_1 = ___callback0;
+		il2cpp_codegen_runtime_class_init_inline(UIntPtr_t_il2cpp_TypeInfo_var);
+		uintptr_t L_2;
+		L_2 = UIntPtr_op_Explicit_m4E434CAEFCE03986FDC48F3452F81DC7E4F093BE(((int64_t)((int32_t)480)), NULL);
+		il2cpp_codegen_runtime_class_init_inline(CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		CAPI_ovr_Voip_SetMicrophoneFilterCallbackWithFixedSizeBuffer_m530E3A015D259D86509303F3E739003D6D7662CC(L_1, L_2, NULL);
+	}
+
+IL_0018:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Oculus.Platform.Voip::SetMicrophoneMuted(Oculus.Platform.VoipMuteState)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Voip_SetMicrophoneMuted_mC20A6DA73BB18093D7A90944F6B68376E0DE3D77 (int32_t ___state0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (Core.IsInitialized())
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		bool L_0;
+		L_0 = Core_IsInitialized_m2A9AF05BAD7A54490ED0EE266829C5A36FB4EAA8_inline(NULL);
+		if (!L_0)
+		{
+			goto IL_000d;
+		}
+	}
+	{
+		// CAPI.ovr_Voip_SetMicrophoneMuted(state);
+		int32_t L_1 = ___state0;
+		il2cpp_codegen_runtime_class_init_inline(CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		CAPI_ovr_Voip_SetMicrophoneMuted_mC560290BC42351C6F808A6D4787D9DB201AA3199(L_1, NULL);
+	}
+
+IL_000d:
+	{
+		// }
+		return;
+	}
+}
+// Oculus.Platform.VoipMuteState Oculus.Platform.Voip::GetSystemVoipMicrophoneMuted()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Voip_GetSystemVoipMicrophoneMuted_m55D856B0CF6DA584BD895C5CB05789E29856283C (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (Core.IsInitialized())
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		bool L_0;
+		L_0 = Core_IsInitialized_m2A9AF05BAD7A54490ED0EE266829C5A36FB4EAA8_inline(NULL);
+		if (!L_0)
+		{
+			goto IL_000d;
+		}
+	}
+	{
+		// return CAPI.ovr_Voip_GetSystemVoipMicrophoneMuted();
+		il2cpp_codegen_runtime_class_init_inline(CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		int32_t L_1;
+		L_1 = CAPI_ovr_Voip_GetSystemVoipMicrophoneMuted_mE56B2F42F229D078AF7C4941973F4D4E82D118C9(NULL);
+		return L_1;
+	}
+
+IL_000d:
+	{
+		// return VoipMuteState.Unknown;
+		return (int32_t)(0);
+	}
+}
+// Oculus.Platform.SystemVoipStatus Oculus.Platform.Voip::GetSystemVoipStatus()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Voip_GetSystemVoipStatus_mD6FCA7C625986E463180BDE82D7143A2B041D299 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (Core.IsInitialized())
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		bool L_0;
+		L_0 = Core_IsInitialized_m2A9AF05BAD7A54490ED0EE266829C5A36FB4EAA8_inline(NULL);
+		if (!L_0)
+		{
+			goto IL_000d;
+		}
+	}
+	{
+		// return CAPI.ovr_Voip_GetSystemVoipStatus();
+		il2cpp_codegen_runtime_class_init_inline(CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		int32_t L_1;
+		L_1 = CAPI_ovr_Voip_GetSystemVoipStatus_m11B81ECD13A238E0754883C480436AF120D87CC4(NULL);
+		return L_1;
+	}
+
+IL_000d:
+	{
+		// return SystemVoipStatus.Unknown;
+		return (int32_t)(0);
+	}
+}
+// Oculus.Platform.VoipDtxState Oculus.Platform.Voip::GetIsConnectionUsingDtx(System.UInt64)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Voip_GetIsConnectionUsingDtx_m7E901DD9BA01DF60DF430892FB2754F3A2C8F2FC (uint64_t ___peerID0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (Core.IsInitialized())
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		bool L_0;
+		L_0 = Core_IsInitialized_m2A9AF05BAD7A54490ED0EE266829C5A36FB4EAA8_inline(NULL);
+		if (!L_0)
+		{
+			goto IL_000e;
+		}
+	}
+	{
+		// return CAPI.ovr_Voip_GetIsConnectionUsingDtx(peerID);
+		uint64_t L_1 = ___peerID0;
+		il2cpp_codegen_runtime_class_init_inline(CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		int32_t L_2;
+		L_2 = CAPI_ovr_Voip_GetIsConnectionUsingDtx_mF82A325E1F32B651E0ADE510F6D455EAB2F56574(L_1, NULL);
+		return L_2;
+	}
+
+IL_000e:
+	{
+		// return Oculus.Platform.VoipDtxState.Unknown;
+		return (int32_t)(0);
+	}
+}
+// Oculus.Platform.VoipBitrate Oculus.Platform.Voip::GetLocalBitrate(System.UInt64)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Voip_GetLocalBitrate_m06FFA7417F89371F98441E007132E5E5857C83D7 (uint64_t ___peerID0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (Core.IsInitialized())
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		bool L_0;
+		L_0 = Core_IsInitialized_m2A9AF05BAD7A54490ED0EE266829C5A36FB4EAA8_inline(NULL);
+		if (!L_0)
+		{
+			goto IL_000e;
+		}
+	}
+	{
+		// return CAPI.ovr_Voip_GetLocalBitrate(peerID);
+		uint64_t L_1 = ___peerID0;
+		il2cpp_codegen_runtime_class_init_inline(CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		int32_t L_2;
+		L_2 = CAPI_ovr_Voip_GetLocalBitrate_m4700975B338135490458BDA4B6D8DAFA99E8890D(L_1, NULL);
+		return L_2;
+	}
+
+IL_000e:
+	{
+		// return Oculus.Platform.VoipBitrate.Unknown;
+		return (int32_t)(0);
+	}
+}
+// Oculus.Platform.VoipBitrate Oculus.Platform.Voip::GetRemoteBitrate(System.UInt64)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Voip_GetRemoteBitrate_m703885A0FF9E29BE99458E7DC2FA068AA74EBCBF (uint64_t ___peerID0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (Core.IsInitialized())
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		bool L_0;
+		L_0 = Core_IsInitialized_m2A9AF05BAD7A54490ED0EE266829C5A36FB4EAA8_inline(NULL);
+		if (!L_0)
+		{
+			goto IL_000e;
+		}
+	}
+	{
+		// return CAPI.ovr_Voip_GetRemoteBitrate(peerID);
+		uint64_t L_1 = ___peerID0;
+		il2cpp_codegen_runtime_class_init_inline(CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		int32_t L_2;
+		L_2 = CAPI_ovr_Voip_GetRemoteBitrate_m1ED5678B57F70F1B5E0FBCF4A96BB6499607150D(L_1, NULL);
+		return L_2;
+	}
+
+IL_000e:
+	{
+		// return Oculus.Platform.VoipBitrate.Unknown;
+		return (int32_t)(0);
+	}
+}
+// System.Void Oculus.Platform.Voip::SetNewConnectionOptions(Oculus.Platform.VoipOptions)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Voip_SetNewConnectionOptions_mA7DF232792A50C63D95880DBF35AACC1D0050E80 (VoipOptions_t23139B923274B30643E7856F9F77B44F94D782A0* ___voipOptions0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (Core.IsInitialized())
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		bool L_0;
+		L_0 = Core_IsInitialized_m2A9AF05BAD7A54490ED0EE266829C5A36FB4EAA8_inline(NULL);
+		if (!L_0)
+		{
+			goto IL_0012;
+		}
+	}
+	{
+		// CAPI.ovr_Voip_SetNewConnectionOptions((IntPtr)voipOptions);
+		VoipOptions_t23139B923274B30643E7856F9F77B44F94D782A0* L_1 = ___voipOptions0;
+		intptr_t L_2;
+		L_2 = VoipOptions_op_Explicit_mDBF759BB1CF8E40BDD8000D665182C2B7D40042E(L_1, NULL);
+		il2cpp_codegen_runtime_class_init_inline(CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		CAPI_ovr_Voip_SetNewConnectionOptions_m94F40EEC3DE3C69329BB67FA60ED20D604687E00(L_2, NULL);
+	}
+
+IL_0012:
+	{
+		// }
+		return;
+	}
+}
+// Oculus.Platform.Request`1<Oculus.Platform.Models.MicrophoneAvailabilityState> Oculus.Platform.Voip::GetMicrophoneAvailability()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Request_1_t67FD568CD1C554099AF3D6D33E041CB522420B45* Voip_GetMicrophoneAvailability_mF4E324F447010B87C4C7C7B61461DF1528537852 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Request_1__ctor_m4354B9574AB2106522121A92852C2F2B513C1506_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Request_1_t67FD568CD1C554099AF3D6D33E041CB522420B45_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (Core.IsInitialized())
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		bool L_0;
+		L_0 = Core_IsInitialized_m2A9AF05BAD7A54490ED0EE266829C5A36FB4EAA8_inline(NULL);
+		if (!L_0)
+		{
+			goto IL_0012;
+		}
+	}
+	{
+		// return new Request<Models.MicrophoneAvailabilityState>(CAPI.ovr_Voip_GetMicrophoneAvailability());
+		il2cpp_codegen_runtime_class_init_inline(CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		uint64_t L_1;
+		L_1 = CAPI_ovr_Voip_GetMicrophoneAvailability_mE4F5353A533E82344E1F2FE5DAAD75C8045DB28C(NULL);
+		Request_1_t67FD568CD1C554099AF3D6D33E041CB522420B45* L_2 = (Request_1_t67FD568CD1C554099AF3D6D33E041CB522420B45*)il2cpp_codegen_object_new(Request_1_t67FD568CD1C554099AF3D6D33E041CB522420B45_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
+		Request_1__ctor_m4354B9574AB2106522121A92852C2F2B513C1506(L_2, L_1, Request_1__ctor_m4354B9574AB2106522121A92852C2F2B513C1506_RuntimeMethod_var);
+		return L_2;
+	}
+
+IL_0012:
+	{
+		// Debug.LogError(Oculus.Platform.Core.PlatformUninitializedError);
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		String_t* L_3 = ((Core_t272580A990CA827C27F3116C5420EB2F87FE290C_StaticFields*)il2cpp_codegen_static_fields_for(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var))->___PlatformUninitializedError_2;
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogError_m059825802BB6AF7EA9693FEBEEB0D85F59A3E38E(L_3, NULL);
+		// return null;
+		return (Request_1_t67FD568CD1C554099AF3D6D33E041CB522420B45*)NULL;
+	}
+}
+// Oculus.Platform.Request`1<Oculus.Platform.Models.SystemVoipState> Oculus.Platform.Voip::SetSystemVoipSuppressed(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Request_1_t606A2B983CFE2E4BC7C0AB1721450E2CED4B9036* Voip_SetSystemVoipSuppressed_m70D73EBCC3CA7F43692181EA06DEE0A967D8F01B (bool ___suppressed0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Request_1__ctor_mFB8EEE098625FF28A905EC0D66FA9823CC29C5AC_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Request_1_t606A2B983CFE2E4BC7C0AB1721450E2CED4B9036_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (Core.IsInitialized())
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		bool L_0;
+		L_0 = Core_IsInitialized_m2A9AF05BAD7A54490ED0EE266829C5A36FB4EAA8_inline(NULL);
+		if (!L_0)
+		{
+			goto IL_0013;
+		}
+	}
+	{
+		// return new Request<Models.SystemVoipState>(CAPI.ovr_Voip_SetSystemVoipSuppressed(suppressed));
+		bool L_1 = ___suppressed0;
+		il2cpp_codegen_runtime_class_init_inline(CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		uint64_t L_2;
+		L_2 = CAPI_ovr_Voip_SetSystemVoipSuppressed_m332696DDA5E1A245A55B69396C707C223DEAB2B3(L_1, NULL);
+		Request_1_t606A2B983CFE2E4BC7C0AB1721450E2CED4B9036* L_3 = (Request_1_t606A2B983CFE2E4BC7C0AB1721450E2CED4B9036*)il2cpp_codegen_object_new(Request_1_t606A2B983CFE2E4BC7C0AB1721450E2CED4B9036_il2cpp_TypeInfo_var);
+		NullCheck(L_3);
+		Request_1__ctor_mFB8EEE098625FF28A905EC0D66FA9823CC29C5AC(L_3, L_2, Request_1__ctor_mFB8EEE098625FF28A905EC0D66FA9823CC29C5AC_RuntimeMethod_var);
+		return L_3;
+	}
+
+IL_0013:
+	{
+		// Debug.LogError(Oculus.Platform.Core.PlatformUninitializedError);
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		String_t* L_4 = ((Core_t272580A990CA827C27F3116C5420EB2F87FE290C_StaticFields*)il2cpp_codegen_static_fields_for(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var))->___PlatformUninitializedError_2;
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogError_m059825802BB6AF7EA9693FEBEEB0D85F59A3E38E(L_4, NULL);
+		// return null;
+		return (Request_1_t606A2B983CFE2E4BC7C0AB1721450E2CED4B9036*)NULL;
+	}
+}
+// System.Void Oculus.Platform.Voip::SetVoipConnectRequestCallback(Oculus.Platform.Message`1/Callback<Oculus.Platform.Models.NetworkingPeer>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Voip_SetVoipConnectRequestCallback_mF96B8F658A6722FDDE97105E26430FDFA2BBE62E (Callback_tDBF20A8F9B848831CC1CB414BE89E49B81F2888A* ___callback0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Callback_SetNotificationCallback_TisNetworkingPeer_t5C937383B3A595FA6AAB83EB8189F0FF38EC8654_m5F2D103F2BC57A46B3D7D11D60E03618C77E94E2_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Callback_t27A2F0AE768A580B549416864AA17C71EED92A27_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// Callback.SetNotificationCallback(
+		//   Message.MessageType.Notification_Voip_ConnectRequest,
+		//   callback
+		// );
+		Callback_tDBF20A8F9B848831CC1CB414BE89E49B81F2888A* L_0 = ___callback0;
+		il2cpp_codegen_runtime_class_init_inline(Callback_t27A2F0AE768A580B549416864AA17C71EED92A27_il2cpp_TypeInfo_var);
+		Callback_SetNotificationCallback_TisNetworkingPeer_t5C937383B3A595FA6AAB83EB8189F0FF38EC8654_m5F2D103F2BC57A46B3D7D11D60E03618C77E94E2(((int32_t)908343318), L_0, Callback_SetNotificationCallback_TisNetworkingPeer_t5C937383B3A595FA6AAB83EB8189F0FF38EC8654_m5F2D103F2BC57A46B3D7D11D60E03618C77E94E2_RuntimeMethod_var);
+		// }
+		return;
+	}
+}
+// System.Void Oculus.Platform.Voip::SetMicrophoneAvailabilityStateUpdateNotificationCallback(Oculus.Platform.Message`1/Callback<System.String>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Voip_SetMicrophoneAvailabilityStateUpdateNotificationCallback_m09A5A89B314E851CE5D1DA76DBF27B1F81FE08C2 (Callback_t6FF4DE9C75ADF5326E55DAB2608C15009D179EEE* ___callback0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Callback_SetNotificationCallback_TisString_t_mF0EDF938D7D1F7F6858C0E4B2060C0EB70F55520_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Callback_t27A2F0AE768A580B549416864AA17C71EED92A27_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// Callback.SetNotificationCallback(
+		//   Message.MessageType.Notification_Voip_MicrophoneAvailabilityStateUpdate,
+		//   callback
+		// );
+		Callback_t6FF4DE9C75ADF5326E55DAB2608C15009D179EEE* L_0 = ___callback0;
+		il2cpp_codegen_runtime_class_init_inline(Callback_t27A2F0AE768A580B549416864AA17C71EED92A27_il2cpp_TypeInfo_var);
+		Callback_SetNotificationCallback_TisString_t_mF0EDF938D7D1F7F6858C0E4B2060C0EB70F55520(((int32_t)1042336599), L_0, Callback_SetNotificationCallback_TisString_t_mF0EDF938D7D1F7F6858C0E4B2060C0EB70F55520_RuntimeMethod_var);
+		// }
+		return;
+	}
+}
+// System.Void Oculus.Platform.Voip::SetVoipStateChangeCallback(Oculus.Platform.Message`1/Callback<Oculus.Platform.Models.NetworkingPeer>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Voip_SetVoipStateChangeCallback_mCEE300CA1EBEB3CB8B098FB1372F7023250CC558 (Callback_tDBF20A8F9B848831CC1CB414BE89E49B81F2888A* ___callback0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Callback_SetNotificationCallback_TisNetworkingPeer_t5C937383B3A595FA6AAB83EB8189F0FF38EC8654_m5F2D103F2BC57A46B3D7D11D60E03618C77E94E2_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Callback_t27A2F0AE768A580B549416864AA17C71EED92A27_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// Callback.SetNotificationCallback(
+		//   Message.MessageType.Notification_Voip_StateChange,
+		//   callback
+		// );
+		Callback_tDBF20A8F9B848831CC1CB414BE89E49B81F2888A* L_0 = ___callback0;
+		il2cpp_codegen_runtime_class_init_inline(Callback_t27A2F0AE768A580B549416864AA17C71EED92A27_il2cpp_TypeInfo_var);
+		Callback_SetNotificationCallback_TisNetworkingPeer_t5C937383B3A595FA6AAB83EB8189F0FF38EC8654_m5F2D103F2BC57A46B3D7D11D60E03618C77E94E2(((int32_t)888120928), L_0, Callback_SetNotificationCallback_TisNetworkingPeer_t5C937383B3A595FA6AAB83EB8189F0FF38EC8654_m5F2D103F2BC57A46B3D7D11D60E03618C77E94E2_RuntimeMethod_var);
+		// }
+		return;
+	}
+}
+// System.Void Oculus.Platform.Voip::SetSystemVoipStateNotificationCallback(Oculus.Platform.Message`1/Callback<Oculus.Platform.Models.SystemVoipState>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Voip_SetSystemVoipStateNotificationCallback_mF8BBF0123BA0E43E8757798CF74DD0B28E8374C2 (Callback_t9C59B9BB1EE02D0156A50BF5CC9995C6053625E9* ___callback0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Callback_SetNotificationCallback_TisSystemVoipState_tEC107BAED5F2D825E4872F383C722B2DE25AF4CF_m3AA45CB12521943F5FC2517523C618153CB371EE_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Callback_t27A2F0AE768A580B549416864AA17C71EED92A27_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// Callback.SetNotificationCallback(
+		//   Message.MessageType.Notification_Voip_SystemVoipState,
+		//   callback
+		// );
+		Callback_t9C59B9BB1EE02D0156A50BF5CC9995C6053625E9* L_0 = ___callback0;
+		il2cpp_codegen_runtime_class_init_inline(Callback_t27A2F0AE768A580B549416864AA17C71EED92A27_il2cpp_TypeInfo_var);
+		Callback_SetNotificationCallback_TisSystemVoipState_tEC107BAED5F2D825E4872F383C722B2DE25AF4CF_m3AA45CB12521943F5FC2517523C618153CB371EE(((int32_t)1490179237), L_0, Callback_SetNotificationCallback_TisSystemVoipState_tEC107BAED5F2D825E4872F383C722B2DE25AF4CF_m3AA45CB12521943F5FC2517523C618153CB371EE_RuntimeMethod_var);
+		// }
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.String Oculus.Platform.Users::GetLoggedInUserLocale()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Users_GetLoggedInUserLocale_mF835C45AC555FFF5F8A6FB4557262AFDD515BEEA (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (Core.IsInitialized())
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		bool L_0;
+		L_0 = Core_IsInitialized_m2A9AF05BAD7A54490ED0EE266829C5A36FB4EAA8_inline(NULL);
+		if (!L_0)
+		{
+			goto IL_000d;
+		}
+	}
+	{
+		// return CAPI.ovr_GetLoggedInUserLocale();
+		il2cpp_codegen_runtime_class_init_inline(CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		String_t* L_1;
+		L_1 = CAPI_ovr_GetLoggedInUserLocale_m3FFB3A12DBA044E8C612243CF916730D92424179(NULL);
+		return L_1;
+	}
+
+IL_000d:
+	{
+		// return "";
+		return _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
+	}
+}
+// Oculus.Platform.Request`1<Oculus.Platform.Models.User> Oculus.Platform.Users::Get(System.UInt64)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Request_1_tDEBBCEA56ECDB50CF2277C79EB69671802236259* Users_Get_m8A71C6B4C8EFEEC671D05E085798EECE2F335A3C (uint64_t ___userID0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Request_1__ctor_mC37C0892538E3DB6433BDCC19B82FCBD0F2EC03D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Request_1_tDEBBCEA56ECDB50CF2277C79EB69671802236259_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (Core.IsInitialized())
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		bool L_0;
+		L_0 = Core_IsInitialized_m2A9AF05BAD7A54490ED0EE266829C5A36FB4EAA8_inline(NULL);
+		if (!L_0)
+		{
+			goto IL_0013;
+		}
+	}
+	{
+		// return new Request<Models.User>(CAPI.ovr_User_Get(userID));
+		uint64_t L_1 = ___userID0;
+		il2cpp_codegen_runtime_class_init_inline(CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		uint64_t L_2;
+		L_2 = CAPI_ovr_User_Get_m979888C20B95939874880767F429D1B6D3F81D62(L_1, NULL);
+		Request_1_tDEBBCEA56ECDB50CF2277C79EB69671802236259* L_3 = (Request_1_tDEBBCEA56ECDB50CF2277C79EB69671802236259*)il2cpp_codegen_object_new(Request_1_tDEBBCEA56ECDB50CF2277C79EB69671802236259_il2cpp_TypeInfo_var);
+		NullCheck(L_3);
+		Request_1__ctor_mC37C0892538E3DB6433BDCC19B82FCBD0F2EC03D(L_3, L_2, Request_1__ctor_mC37C0892538E3DB6433BDCC19B82FCBD0F2EC03D_RuntimeMethod_var);
+		return L_3;
+	}
+
+IL_0013:
+	{
+		// Debug.LogError(Oculus.Platform.Core.PlatformUninitializedError);
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		String_t* L_4 = ((Core_t272580A990CA827C27F3116C5420EB2F87FE290C_StaticFields*)il2cpp_codegen_static_fields_for(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var))->___PlatformUninitializedError_2;
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogError_m059825802BB6AF7EA9693FEBEEB0D85F59A3E38E(L_4, NULL);
+		// return null;
+		return (Request_1_tDEBBCEA56ECDB50CF2277C79EB69671802236259*)NULL;
+	}
+}
+// Oculus.Platform.Request`1<System.String> Oculus.Platform.Users::GetAccessToken()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Request_1_t3EA499B388856971AB69C173E53D128BEBA5144C* Users_GetAccessToken_m2A77B9656F71E0CB969915A4C805A4A3037F745A (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Request_1__ctor_m6DDE70BC284B946D4ABB5B0AE4A21DDDFBA76763_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Request_1_t3EA499B388856971AB69C173E53D128BEBA5144C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (Core.IsInitialized())
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		bool L_0;
+		L_0 = Core_IsInitialized_m2A9AF05BAD7A54490ED0EE266829C5A36FB4EAA8_inline(NULL);
+		if (!L_0)
+		{
+			goto IL_0012;
+		}
+	}
+	{
+		// return new Request<string>(CAPI.ovr_User_GetAccessToken());
+		il2cpp_codegen_runtime_class_init_inline(CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		uint64_t L_1;
+		L_1 = CAPI_ovr_User_GetAccessToken_m04D5DC9D5D59FB2C7147E3E2D92E106876810D5C(NULL);
+		Request_1_t3EA499B388856971AB69C173E53D128BEBA5144C* L_2 = (Request_1_t3EA499B388856971AB69C173E53D128BEBA5144C*)il2cpp_codegen_object_new(Request_1_t3EA499B388856971AB69C173E53D128BEBA5144C_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
+		Request_1__ctor_m6DDE70BC284B946D4ABB5B0AE4A21DDDFBA76763(L_2, L_1, Request_1__ctor_m6DDE70BC284B946D4ABB5B0AE4A21DDDFBA76763_RuntimeMethod_var);
+		return L_2;
+	}
+
+IL_0012:
+	{
+		// Debug.LogError(Oculus.Platform.Core.PlatformUninitializedError);
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		String_t* L_3 = ((Core_t272580A990CA827C27F3116C5420EB2F87FE290C_StaticFields*)il2cpp_codegen_static_fields_for(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var))->___PlatformUninitializedError_2;
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogError_m059825802BB6AF7EA9693FEBEEB0D85F59A3E38E(L_3, NULL);
+		// return null;
+		return (Request_1_t3EA499B388856971AB69C173E53D128BEBA5144C*)NULL;
+	}
+}
+// Oculus.Platform.Request`1<Oculus.Platform.Models.BlockedUserList> Oculus.Platform.Users::GetBlockedUsers()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Request_1_tA1A1CD1F5D29C229C28D2A0EC82D151542DB3EEA* Users_GetBlockedUsers_m7C9B88FE8F12F062C158888E7BEE9DBC198C0B8A (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Request_1__ctor_m54C5E77F18866F9D37A78D38540C1A9098FFA69A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Request_1_tA1A1CD1F5D29C229C28D2A0EC82D151542DB3EEA_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (Core.IsInitialized())
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		bool L_0;
+		L_0 = Core_IsInitialized_m2A9AF05BAD7A54490ED0EE266829C5A36FB4EAA8_inline(NULL);
+		if (!L_0)
+		{
+			goto IL_0012;
+		}
+	}
+	{
+		// return new Request<Models.BlockedUserList>(CAPI.ovr_User_GetBlockedUsers());
+		il2cpp_codegen_runtime_class_init_inline(CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		uint64_t L_1;
+		L_1 = CAPI_ovr_User_GetBlockedUsers_m7C25C612EA535F0AA8F85788F2E703DFBD9E2734(NULL);
+		Request_1_tA1A1CD1F5D29C229C28D2A0EC82D151542DB3EEA* L_2 = (Request_1_tA1A1CD1F5D29C229C28D2A0EC82D151542DB3EEA*)il2cpp_codegen_object_new(Request_1_tA1A1CD1F5D29C229C28D2A0EC82D151542DB3EEA_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
+		Request_1__ctor_m54C5E77F18866F9D37A78D38540C1A9098FFA69A(L_2, L_1, Request_1__ctor_m54C5E77F18866F9D37A78D38540C1A9098FFA69A_RuntimeMethod_var);
+		return L_2;
+	}
+
+IL_0012:
+	{
+		// Debug.LogError(Oculus.Platform.Core.PlatformUninitializedError);
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		String_t* L_3 = ((Core_t272580A990CA827C27F3116C5420EB2F87FE290C_StaticFields*)il2cpp_codegen_static_fields_for(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var))->___PlatformUninitializedError_2;
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogError_m059825802BB6AF7EA9693FEBEEB0D85F59A3E38E(L_3, NULL);
+		// return null;
+		return (Request_1_tA1A1CD1F5D29C229C28D2A0EC82D151542DB3EEA*)NULL;
+	}
+}
+// Oculus.Platform.Request`1<Oculus.Platform.Models.User> Oculus.Platform.Users::GetLoggedInUser()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Request_1_tDEBBCEA56ECDB50CF2277C79EB69671802236259* Users_GetLoggedInUser_mC75598E256AF585C1A77551CA031AD47574D5DFB (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Request_1__ctor_mC37C0892538E3DB6433BDCC19B82FCBD0F2EC03D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Request_1_tDEBBCEA56ECDB50CF2277C79EB69671802236259_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (Core.IsInitialized())
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		bool L_0;
+		L_0 = Core_IsInitialized_m2A9AF05BAD7A54490ED0EE266829C5A36FB4EAA8_inline(NULL);
+		if (!L_0)
+		{
+			goto IL_0012;
+		}
+	}
+	{
+		// return new Request<Models.User>(CAPI.ovr_User_GetLoggedInUser());
+		il2cpp_codegen_runtime_class_init_inline(CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		uint64_t L_1;
+		L_1 = CAPI_ovr_User_GetLoggedInUser_m6A66A41CE44A6402E3750BF69750647C012EAF9A(NULL);
+		Request_1_tDEBBCEA56ECDB50CF2277C79EB69671802236259* L_2 = (Request_1_tDEBBCEA56ECDB50CF2277C79EB69671802236259*)il2cpp_codegen_object_new(Request_1_tDEBBCEA56ECDB50CF2277C79EB69671802236259_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
+		Request_1__ctor_mC37C0892538E3DB6433BDCC19B82FCBD0F2EC03D(L_2, L_1, Request_1__ctor_mC37C0892538E3DB6433BDCC19B82FCBD0F2EC03D_RuntimeMethod_var);
+		return L_2;
+	}
+
+IL_0012:
+	{
+		// Debug.LogError(Oculus.Platform.Core.PlatformUninitializedError);
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		String_t* L_3 = ((Core_t272580A990CA827C27F3116C5420EB2F87FE290C_StaticFields*)il2cpp_codegen_static_fields_for(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var))->___PlatformUninitializedError_2;
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogError_m059825802BB6AF7EA9693FEBEEB0D85F59A3E38E(L_3, NULL);
+		// return null;
+		return (Request_1_tDEBBCEA56ECDB50CF2277C79EB69671802236259*)NULL;
+	}
+}
+// Oculus.Platform.Request`1<Oculus.Platform.Models.UserList> Oculus.Platform.Users::GetLoggedInUserFriends()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Request_1_tB0D397F1B11033FAFA93EE15D75151B14D42DDD8* Users_GetLoggedInUserFriends_m5A8C1464F38277C857FA233AFD722ABAFC8DDCD2 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Request_1__ctor_m029D713284EB47C08C4139CC986ED7BF3348F0DC_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Request_1_tB0D397F1B11033FAFA93EE15D75151B14D42DDD8_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (Core.IsInitialized())
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		bool L_0;
+		L_0 = Core_IsInitialized_m2A9AF05BAD7A54490ED0EE266829C5A36FB4EAA8_inline(NULL);
+		if (!L_0)
+		{
+			goto IL_0012;
+		}
+	}
+	{
+		// return new Request<Models.UserList>(CAPI.ovr_User_GetLoggedInUserFriends());
+		il2cpp_codegen_runtime_class_init_inline(CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		uint64_t L_1;
+		L_1 = CAPI_ovr_User_GetLoggedInUserFriends_m4AD755876EB347B6A54F72F5526068C2973CFA62(NULL);
+		Request_1_tB0D397F1B11033FAFA93EE15D75151B14D42DDD8* L_2 = (Request_1_tB0D397F1B11033FAFA93EE15D75151B14D42DDD8*)il2cpp_codegen_object_new(Request_1_tB0D397F1B11033FAFA93EE15D75151B14D42DDD8_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
+		Request_1__ctor_m029D713284EB47C08C4139CC986ED7BF3348F0DC(L_2, L_1, Request_1__ctor_m029D713284EB47C08C4139CC986ED7BF3348F0DC_RuntimeMethod_var);
+		return L_2;
+	}
+
+IL_0012:
+	{
+		// Debug.LogError(Oculus.Platform.Core.PlatformUninitializedError);
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		String_t* L_3 = ((Core_t272580A990CA827C27F3116C5420EB2F87FE290C_StaticFields*)il2cpp_codegen_static_fields_for(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var))->___PlatformUninitializedError_2;
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogError_m059825802BB6AF7EA9693FEBEEB0D85F59A3E38E(L_3, NULL);
+		// return null;
+		return (Request_1_tB0D397F1B11033FAFA93EE15D75151B14D42DDD8*)NULL;
+	}
+}
+// Oculus.Platform.Request`1<Oculus.Platform.Models.UserAndRoomList> Oculus.Platform.Users::GetLoggedInUserFriendsAndRooms()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Request_1_tF953DCC8B5667246F0B35B701E72623F730DEE81* Users_GetLoggedInUserFriendsAndRooms_mE5304DEA39B682F3866824630FC765EC4A2B7E49 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Request_1__ctor_mF785EC2BD98CD102F3F59A376719135186815499_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Request_1_tF953DCC8B5667246F0B35B701E72623F730DEE81_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (Core.IsInitialized())
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		bool L_0;
+		L_0 = Core_IsInitialized_m2A9AF05BAD7A54490ED0EE266829C5A36FB4EAA8_inline(NULL);
+		if (!L_0)
+		{
+			goto IL_0012;
+		}
+	}
+	{
+		// return new Request<Models.UserAndRoomList>(CAPI.ovr_User_GetLoggedInUserFriendsAndRooms());
+		il2cpp_codegen_runtime_class_init_inline(CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		uint64_t L_1;
+		L_1 = CAPI_ovr_User_GetLoggedInUserFriendsAndRooms_m229F8D427F9E8EED2BA84E29BA0E3AE7ABDED9B7(NULL);
+		Request_1_tF953DCC8B5667246F0B35B701E72623F730DEE81* L_2 = (Request_1_tF953DCC8B5667246F0B35B701E72623F730DEE81*)il2cpp_codegen_object_new(Request_1_tF953DCC8B5667246F0B35B701E72623F730DEE81_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
+		Request_1__ctor_mF785EC2BD98CD102F3F59A376719135186815499(L_2, L_1, Request_1__ctor_mF785EC2BD98CD102F3F59A376719135186815499_RuntimeMethod_var);
+		return L_2;
+	}
+
+IL_0012:
+	{
+		// Debug.LogError(Oculus.Platform.Core.PlatformUninitializedError);
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		String_t* L_3 = ((Core_t272580A990CA827C27F3116C5420EB2F87FE290C_StaticFields*)il2cpp_codegen_static_fields_for(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var))->___PlatformUninitializedError_2;
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogError_m059825802BB6AF7EA9693FEBEEB0D85F59A3E38E(L_3, NULL);
+		// return null;
+		return (Request_1_tF953DCC8B5667246F0B35B701E72623F730DEE81*)NULL;
+	}
+}
+// Oculus.Platform.Request`1<Oculus.Platform.Models.UserAndRoomList> Oculus.Platform.Users::GetLoggedInUserRecentlyMetUsersAndRooms(Oculus.Platform.UserOptions)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Request_1_tF953DCC8B5667246F0B35B701E72623F730DEE81* Users_GetLoggedInUserRecentlyMetUsersAndRooms_m6ECE79F0F2B0802906D54F80C53464A709BA573E (UserOptions_t723A6159F32B98109482B9D2618A0816F06C1E1F* ___userOptions0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Request_1__ctor_mF785EC2BD98CD102F3F59A376719135186815499_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Request_1_tF953DCC8B5667246F0B35B701E72623F730DEE81_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (Core.IsInitialized())
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		bool L_0;
+		L_0 = Core_IsInitialized_m2A9AF05BAD7A54490ED0EE266829C5A36FB4EAA8_inline(NULL);
+		if (!L_0)
+		{
+			goto IL_0018;
+		}
+	}
+	{
+		// return new Request<Models.UserAndRoomList>(CAPI.ovr_User_GetLoggedInUserRecentlyMetUsersAndRooms((IntPtr)userOptions));
+		UserOptions_t723A6159F32B98109482B9D2618A0816F06C1E1F* L_1 = ___userOptions0;
+		intptr_t L_2;
+		L_2 = UserOptions_op_Explicit_m2B94A9734A4FF1676B9C7E2CDC9EB40792CAE116(L_1, NULL);
+		il2cpp_codegen_runtime_class_init_inline(CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		uint64_t L_3;
+		L_3 = CAPI_ovr_User_GetLoggedInUserRecentlyMetUsersAndRooms_mB6415059F239BD52C95A77DC95A1CE97DA62CC15(L_2, NULL);
+		Request_1_tF953DCC8B5667246F0B35B701E72623F730DEE81* L_4 = (Request_1_tF953DCC8B5667246F0B35B701E72623F730DEE81*)il2cpp_codegen_object_new(Request_1_tF953DCC8B5667246F0B35B701E72623F730DEE81_il2cpp_TypeInfo_var);
+		NullCheck(L_4);
+		Request_1__ctor_mF785EC2BD98CD102F3F59A376719135186815499(L_4, L_3, Request_1__ctor_mF785EC2BD98CD102F3F59A376719135186815499_RuntimeMethod_var);
+		return L_4;
+	}
+
+IL_0018:
+	{
+		// Debug.LogError(Oculus.Platform.Core.PlatformUninitializedError);
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		String_t* L_5 = ((Core_t272580A990CA827C27F3116C5420EB2F87FE290C_StaticFields*)il2cpp_codegen_static_fields_for(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var))->___PlatformUninitializedError_2;
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogError_m059825802BB6AF7EA9693FEBEEB0D85F59A3E38E(L_5, NULL);
+		// return null;
+		return (Request_1_tF953DCC8B5667246F0B35B701E72623F730DEE81*)NULL;
+	}
+}
+// Oculus.Platform.Request`1<Oculus.Platform.Models.OrgScopedID> Oculus.Platform.Users::GetOrgScopedID(System.UInt64)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Request_1_tB92CA9F7F4668A9B2BE9EFCA7464B35E34A484BE* Users_GetOrgScopedID_m7C657B5477D4DC08BB12B083F1B76BBE1203039B (uint64_t ___userID0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Request_1__ctor_mD691227C5FBDD77242FEE56411F7ADA3EA126FFD_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Request_1_tB92CA9F7F4668A9B2BE9EFCA7464B35E34A484BE_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (Core.IsInitialized())
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		bool L_0;
+		L_0 = Core_IsInitialized_m2A9AF05BAD7A54490ED0EE266829C5A36FB4EAA8_inline(NULL);
+		if (!L_0)
+		{
+			goto IL_0013;
+		}
+	}
+	{
+		// return new Request<Models.OrgScopedID>(CAPI.ovr_User_GetOrgScopedID(userID));
+		uint64_t L_1 = ___userID0;
+		il2cpp_codegen_runtime_class_init_inline(CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		uint64_t L_2;
+		L_2 = CAPI_ovr_User_GetOrgScopedID_m985B9BE052047E7511015582FB855422231CCD08(L_1, NULL);
+		Request_1_tB92CA9F7F4668A9B2BE9EFCA7464B35E34A484BE* L_3 = (Request_1_tB92CA9F7F4668A9B2BE9EFCA7464B35E34A484BE*)il2cpp_codegen_object_new(Request_1_tB92CA9F7F4668A9B2BE9EFCA7464B35E34A484BE_il2cpp_TypeInfo_var);
+		NullCheck(L_3);
+		Request_1__ctor_mD691227C5FBDD77242FEE56411F7ADA3EA126FFD(L_3, L_2, Request_1__ctor_mD691227C5FBDD77242FEE56411F7ADA3EA126FFD_RuntimeMethod_var);
+		return L_3;
+	}
+
+IL_0013:
+	{
+		// Debug.LogError(Oculus.Platform.Core.PlatformUninitializedError);
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		String_t* L_4 = ((Core_t272580A990CA827C27F3116C5420EB2F87FE290C_StaticFields*)il2cpp_codegen_static_fields_for(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var))->___PlatformUninitializedError_2;
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogError_m059825802BB6AF7EA9693FEBEEB0D85F59A3E38E(L_4, NULL);
+		// return null;
+		return (Request_1_tB92CA9F7F4668A9B2BE9EFCA7464B35E34A484BE*)NULL;
+	}
+}
+// Oculus.Platform.Request`1<Oculus.Platform.Models.SdkAccountList> Oculus.Platform.Users::GetSdkAccounts()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Request_1_t0E461943B20217E934C02BEAE22CBCE722FBAAB1* Users_GetSdkAccounts_m1A9703AC2DC0D35A0C3084C8D93911DB4AF1A6E0 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Request_1__ctor_m4A7F8E6E9A11EA41E5E1CCD5805EB596C66BAA10_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Request_1_t0E461943B20217E934C02BEAE22CBCE722FBAAB1_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (Core.IsInitialized())
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		bool L_0;
+		L_0 = Core_IsInitialized_m2A9AF05BAD7A54490ED0EE266829C5A36FB4EAA8_inline(NULL);
+		if (!L_0)
+		{
+			goto IL_0012;
+		}
+	}
+	{
+		// return new Request<Models.SdkAccountList>(CAPI.ovr_User_GetSdkAccounts());
+		il2cpp_codegen_runtime_class_init_inline(CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		uint64_t L_1;
+		L_1 = CAPI_ovr_User_GetSdkAccounts_m113B810756C59FF38FF5847CA1A8ED61844AF1DD(NULL);
+		Request_1_t0E461943B20217E934C02BEAE22CBCE722FBAAB1* L_2 = (Request_1_t0E461943B20217E934C02BEAE22CBCE722FBAAB1*)il2cpp_codegen_object_new(Request_1_t0E461943B20217E934C02BEAE22CBCE722FBAAB1_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
+		Request_1__ctor_m4A7F8E6E9A11EA41E5E1CCD5805EB596C66BAA10(L_2, L_1, Request_1__ctor_m4A7F8E6E9A11EA41E5E1CCD5805EB596C66BAA10_RuntimeMethod_var);
+		return L_2;
+	}
+
+IL_0012:
+	{
+		// Debug.LogError(Oculus.Platform.Core.PlatformUninitializedError);
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		String_t* L_3 = ((Core_t272580A990CA827C27F3116C5420EB2F87FE290C_StaticFields*)il2cpp_codegen_static_fields_for(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var))->___PlatformUninitializedError_2;
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogError_m059825802BB6AF7EA9693FEBEEB0D85F59A3E38E(L_3, NULL);
+		// return null;
+		return (Request_1_t0E461943B20217E934C02BEAE22CBCE722FBAAB1*)NULL;
+	}
+}
+// Oculus.Platform.Request`1<Oculus.Platform.Models.UserProof> Oculus.Platform.Users::GetUserProof()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Request_1_tB774BFF663D8B08A599321246DD0E753AEE6C23C* Users_GetUserProof_mAE2E4E211419E23F4ACC6650DB84FDA46124ED6C (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Request_1__ctor_m9535F5F4E04A8CC2BD258E90A90772C134F240CC_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Request_1_tB774BFF663D8B08A599321246DD0E753AEE6C23C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (Core.IsInitialized())
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		bool L_0;
+		L_0 = Core_IsInitialized_m2A9AF05BAD7A54490ED0EE266829C5A36FB4EAA8_inline(NULL);
+		if (!L_0)
+		{
+			goto IL_0012;
+		}
+	}
+	{
+		// return new Request<Models.UserProof>(CAPI.ovr_User_GetUserProof());
+		il2cpp_codegen_runtime_class_init_inline(CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		uint64_t L_1;
+		L_1 = CAPI_ovr_User_GetUserProof_m505A94355484409003E733A6D454E62590A39923(NULL);
+		Request_1_tB774BFF663D8B08A599321246DD0E753AEE6C23C* L_2 = (Request_1_tB774BFF663D8B08A599321246DD0E753AEE6C23C*)il2cpp_codegen_object_new(Request_1_tB774BFF663D8B08A599321246DD0E753AEE6C23C_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
+		Request_1__ctor_m9535F5F4E04A8CC2BD258E90A90772C134F240CC(L_2, L_1, Request_1__ctor_m9535F5F4E04A8CC2BD258E90A90772C134F240CC_RuntimeMethod_var);
+		return L_2;
+	}
+
+IL_0012:
+	{
+		// Debug.LogError(Oculus.Platform.Core.PlatformUninitializedError);
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		String_t* L_3 = ((Core_t272580A990CA827C27F3116C5420EB2F87FE290C_StaticFields*)il2cpp_codegen_static_fields_for(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var))->___PlatformUninitializedError_2;
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogError_m059825802BB6AF7EA9693FEBEEB0D85F59A3E38E(L_3, NULL);
+		// return null;
+		return (Request_1_tB774BFF663D8B08A599321246DD0E753AEE6C23C*)NULL;
+	}
+}
+// Oculus.Platform.Request`1<Oculus.Platform.Models.LaunchBlockFlowResult> Oculus.Platform.Users::LaunchBlockFlow(System.UInt64)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Request_1_t28B31BE3D25A15906E1813CD9A3CD98AE6AF0095* Users_LaunchBlockFlow_mAAB74433991C43CC56AFC7AB73162B45D9B8B90B (uint64_t ___userID0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Request_1__ctor_mC72E41D8DE218B3992AA2AFF3F4CD16F6FEF7D7C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Request_1_t28B31BE3D25A15906E1813CD9A3CD98AE6AF0095_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (Core.IsInitialized())
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		bool L_0;
+		L_0 = Core_IsInitialized_m2A9AF05BAD7A54490ED0EE266829C5A36FB4EAA8_inline(NULL);
+		if (!L_0)
+		{
+			goto IL_0013;
+		}
+	}
+	{
+		// return new Request<Models.LaunchBlockFlowResult>(CAPI.ovr_User_LaunchBlockFlow(userID));
+		uint64_t L_1 = ___userID0;
+		il2cpp_codegen_runtime_class_init_inline(CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		uint64_t L_2;
+		L_2 = CAPI_ovr_User_LaunchBlockFlow_m0BFE055EFE7A467303C78A18757C75F693CF1A36(L_1, NULL);
+		Request_1_t28B31BE3D25A15906E1813CD9A3CD98AE6AF0095* L_3 = (Request_1_t28B31BE3D25A15906E1813CD9A3CD98AE6AF0095*)il2cpp_codegen_object_new(Request_1_t28B31BE3D25A15906E1813CD9A3CD98AE6AF0095_il2cpp_TypeInfo_var);
+		NullCheck(L_3);
+		Request_1__ctor_mC72E41D8DE218B3992AA2AFF3F4CD16F6FEF7D7C(L_3, L_2, Request_1__ctor_mC72E41D8DE218B3992AA2AFF3F4CD16F6FEF7D7C_RuntimeMethod_var);
+		return L_3;
+	}
+
+IL_0013:
+	{
+		// Debug.LogError(Oculus.Platform.Core.PlatformUninitializedError);
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		String_t* L_4 = ((Core_t272580A990CA827C27F3116C5420EB2F87FE290C_StaticFields*)il2cpp_codegen_static_fields_for(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var))->___PlatformUninitializedError_2;
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogError_m059825802BB6AF7EA9693FEBEEB0D85F59A3E38E(L_4, NULL);
+		// return null;
+		return (Request_1_t28B31BE3D25A15906E1813CD9A3CD98AE6AF0095*)NULL;
+	}
+}
+// Oculus.Platform.Request`1<Oculus.Platform.Models.LaunchFriendRequestFlowResult> Oculus.Platform.Users::LaunchFriendRequestFlow(System.UInt64)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Request_1_tBC7CA37C1E6649AD66987EB2412C3F99168A939A* Users_LaunchFriendRequestFlow_mE6AFA9E1CB3944F8A1EBAB431E7B15950BA60EAD (uint64_t ___userID0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Request_1__ctor_mC9F53649E330781B890B1B367B0D798F27DCF0B6_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Request_1_tBC7CA37C1E6649AD66987EB2412C3F99168A939A_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (Core.IsInitialized())
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		bool L_0;
+		L_0 = Core_IsInitialized_m2A9AF05BAD7A54490ED0EE266829C5A36FB4EAA8_inline(NULL);
+		if (!L_0)
+		{
+			goto IL_0013;
+		}
+	}
+	{
+		// return new Request<Models.LaunchFriendRequestFlowResult>(CAPI.ovr_User_LaunchFriendRequestFlow(userID));
+		uint64_t L_1 = ___userID0;
+		il2cpp_codegen_runtime_class_init_inline(CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		uint64_t L_2;
+		L_2 = CAPI_ovr_User_LaunchFriendRequestFlow_m1A723E1C082EBB70FAA7E52C5A4D112CC62F526B(L_1, NULL);
+		Request_1_tBC7CA37C1E6649AD66987EB2412C3F99168A939A* L_3 = (Request_1_tBC7CA37C1E6649AD66987EB2412C3F99168A939A*)il2cpp_codegen_object_new(Request_1_tBC7CA37C1E6649AD66987EB2412C3F99168A939A_il2cpp_TypeInfo_var);
+		NullCheck(L_3);
+		Request_1__ctor_mC9F53649E330781B890B1B367B0D798F27DCF0B6(L_3, L_2, Request_1__ctor_mC9F53649E330781B890B1B367B0D798F27DCF0B6_RuntimeMethod_var);
+		return L_3;
+	}
+
+IL_0013:
+	{
+		// Debug.LogError(Oculus.Platform.Core.PlatformUninitializedError);
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		String_t* L_4 = ((Core_t272580A990CA827C27F3116C5420EB2F87FE290C_StaticFields*)il2cpp_codegen_static_fields_for(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var))->___PlatformUninitializedError_2;
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogError_m059825802BB6AF7EA9693FEBEEB0D85F59A3E38E(L_4, NULL);
+		// return null;
+		return (Request_1_tBC7CA37C1E6649AD66987EB2412C3F99168A939A*)NULL;
+	}
+}
+// Oculus.Platform.Request`1<Oculus.Platform.Models.LaunchUnblockFlowResult> Oculus.Platform.Users::LaunchUnblockFlow(System.UInt64)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Request_1_t09D04A2C7BFFED0052C28FE8F1B910188C82097F* Users_LaunchUnblockFlow_m09E8487DE82A0EDB2708A347A8E893AE261F21EE (uint64_t ___userID0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Request_1__ctor_m85EFF0D85A09D5BFB8C60B40F6001573662FFF13_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Request_1_t09D04A2C7BFFED0052C28FE8F1B910188C82097F_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (Core.IsInitialized())
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		bool L_0;
+		L_0 = Core_IsInitialized_m2A9AF05BAD7A54490ED0EE266829C5A36FB4EAA8_inline(NULL);
+		if (!L_0)
+		{
+			goto IL_0013;
+		}
+	}
+	{
+		// return new Request<Models.LaunchUnblockFlowResult>(CAPI.ovr_User_LaunchUnblockFlow(userID));
+		uint64_t L_1 = ___userID0;
+		il2cpp_codegen_runtime_class_init_inline(CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		uint64_t L_2;
+		L_2 = CAPI_ovr_User_LaunchUnblockFlow_m6731DF77216408C4EC17E6875CBF3C4557F295B1(L_1, NULL);
+		Request_1_t09D04A2C7BFFED0052C28FE8F1B910188C82097F* L_3 = (Request_1_t09D04A2C7BFFED0052C28FE8F1B910188C82097F*)il2cpp_codegen_object_new(Request_1_t09D04A2C7BFFED0052C28FE8F1B910188C82097F_il2cpp_TypeInfo_var);
+		NullCheck(L_3);
+		Request_1__ctor_m85EFF0D85A09D5BFB8C60B40F6001573662FFF13(L_3, L_2, Request_1__ctor_m85EFF0D85A09D5BFB8C60B40F6001573662FFF13_RuntimeMethod_var);
+		return L_3;
+	}
+
+IL_0013:
+	{
+		// Debug.LogError(Oculus.Platform.Core.PlatformUninitializedError);
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		String_t* L_4 = ((Core_t272580A990CA827C27F3116C5420EB2F87FE290C_StaticFields*)il2cpp_codegen_static_fields_for(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var))->___PlatformUninitializedError_2;
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogError_m059825802BB6AF7EA9693FEBEEB0D85F59A3E38E(L_4, NULL);
+		// return null;
+		return (Request_1_t09D04A2C7BFFED0052C28FE8F1B910188C82097F*)NULL;
+	}
+}
+// Oculus.Platform.Request`1<Oculus.Platform.Models.BlockedUserList> Oculus.Platform.Users::GetNextBlockedUserListPage(Oculus.Platform.Models.BlockedUserList)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Request_1_tA1A1CD1F5D29C229C28D2A0EC82D151542DB3EEA* Users_GetNextBlockedUserListPage_mD20F4F7283E867F8121EF329BFFBCDA0B00595CB (BlockedUserList_tE0F78ED32CD54ABE0577ACB789FEA84A87762164* ___list0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DeserializableList_1_get_HasNextPage_m6A2F7F020970030E784A1B206E33E5F49D265E73_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DeserializableList_1_get_NextUrl_mF0066A747E01BD90FBFEF95A8CDE5E1E677CBCA8_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Request_1__ctor_m54C5E77F18866F9D37A78D38540C1A9098FFA69A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Request_1_tA1A1CD1F5D29C229C28D2A0EC82D151542DB3EEA_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral58DE12A61CB8F5C6AE93E6A588A18C0FC42E00E3);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (!list.HasNextPage)
+		BlockedUserList_tE0F78ED32CD54ABE0577ACB789FEA84A87762164* L_0 = ___list0;
+		NullCheck(L_0);
+		bool L_1;
+		L_1 = DeserializableList_1_get_HasNextPage_m6A2F7F020970030E784A1B206E33E5F49D265E73(L_0, DeserializableList_1_get_HasNextPage_m6A2F7F020970030E784A1B206E33E5F49D265E73_RuntimeMethod_var);
+		if (L_1)
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		// Debug.LogWarning("Oculus.Platform.GetNextBlockedUserListPage: List has no next page");
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogWarning_mEF15C6B17CE4E1FA7E379CDB82CE40FCD89A3F28(_stringLiteral58DE12A61CB8F5C6AE93E6A588A18C0FC42E00E3, NULL);
+		// return null;
+		return (Request_1_tA1A1CD1F5D29C229C28D2A0EC82D151542DB3EEA*)NULL;
+	}
+
+IL_0014:
+	{
+		// if (Core.IsInitialized())
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = Core_IsInitialized_m2A9AF05BAD7A54490ED0EE266829C5A36FB4EAA8_inline(NULL);
+		if (!L_2)
+		{
+			goto IL_0031;
+		}
+	}
+	{
+		// return new Request<Models.BlockedUserList>(
+		//   CAPI.ovr_HTTP_GetWithMessageType(
+		//     list.NextUrl,
+		//     (int)Message.MessageType.User_GetNextBlockedUserArrayPage
+		//   )
+		// );
+		BlockedUserList_tE0F78ED32CD54ABE0577ACB789FEA84A87762164* L_3 = ___list0;
+		NullCheck(L_3);
+		String_t* L_4;
+		L_4 = DeserializableList_1_get_NextUrl_mF0066A747E01BD90FBFEF95A8CDE5E1E677CBCA8_inline(L_3, DeserializableList_1_get_NextUrl_mF0066A747E01BD90FBFEF95A8CDE5E1E677CBCA8_RuntimeMethod_var);
+		il2cpp_codegen_runtime_class_init_inline(CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		uint64_t L_5;
+		L_5 = CAPI_ovr_HTTP_GetWithMessageType_m5FA8308DA6FB0F12C34F2C68AC1EE283F68B5984(L_4, ((int32_t)2083192267), NULL);
+		Request_1_tA1A1CD1F5D29C229C28D2A0EC82D151542DB3EEA* L_6 = (Request_1_tA1A1CD1F5D29C229C28D2A0EC82D151542DB3EEA*)il2cpp_codegen_object_new(Request_1_tA1A1CD1F5D29C229C28D2A0EC82D151542DB3EEA_il2cpp_TypeInfo_var);
+		NullCheck(L_6);
+		Request_1__ctor_m54C5E77F18866F9D37A78D38540C1A9098FFA69A(L_6, L_5, Request_1__ctor_m54C5E77F18866F9D37A78D38540C1A9098FFA69A_RuntimeMethod_var);
+		return L_6;
+	}
+
+IL_0031:
+	{
+		// Debug.LogError(Oculus.Platform.Core.PlatformUninitializedError);
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		String_t* L_7 = ((Core_t272580A990CA827C27F3116C5420EB2F87FE290C_StaticFields*)il2cpp_codegen_static_fields_for(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var))->___PlatformUninitializedError_2;
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogError_m059825802BB6AF7EA9693FEBEEB0D85F59A3E38E(L_7, NULL);
+		// return null;
+		return (Request_1_tA1A1CD1F5D29C229C28D2A0EC82D151542DB3EEA*)NULL;
+	}
+}
+// Oculus.Platform.Request`1<Oculus.Platform.Models.UserAndRoomList> Oculus.Platform.Users::GetNextUserAndRoomListPage(Oculus.Platform.Models.UserAndRoomList)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Request_1_tF953DCC8B5667246F0B35B701E72623F730DEE81* Users_GetNextUserAndRoomListPage_mDDE30CCDBA2E0A88137DFB3778C9213EA2B114EE (UserAndRoomList_t474B5DE23C782B620406DEEAD72D778D5F4DAF8D* ___list0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DeserializableList_1_get_HasNextPage_m6B72A2B74D26F7721691D3D3B88767301A04C28D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DeserializableList_1_get_NextUrl_m86EB8BDEFF99549E12661E48C43D18D2A555AEB2_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Request_1__ctor_mF785EC2BD98CD102F3F59A376719135186815499_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Request_1_tF953DCC8B5667246F0B35B701E72623F730DEE81_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC80A2B706C9CFA7D08C1B83FC2D4B8E7E7D9C7A2);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (!list.HasNextPage)
+		UserAndRoomList_t474B5DE23C782B620406DEEAD72D778D5F4DAF8D* L_0 = ___list0;
+		NullCheck(L_0);
+		bool L_1;
+		L_1 = DeserializableList_1_get_HasNextPage_m6B72A2B74D26F7721691D3D3B88767301A04C28D(L_0, DeserializableList_1_get_HasNextPage_m6B72A2B74D26F7721691D3D3B88767301A04C28D_RuntimeMethod_var);
+		if (L_1)
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		// Debug.LogWarning("Oculus.Platform.GetNextUserAndRoomListPage: List has no next page");
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogWarning_mEF15C6B17CE4E1FA7E379CDB82CE40FCD89A3F28(_stringLiteralC80A2B706C9CFA7D08C1B83FC2D4B8E7E7D9C7A2, NULL);
+		// return null;
+		return (Request_1_tF953DCC8B5667246F0B35B701E72623F730DEE81*)NULL;
+	}
+
+IL_0014:
+	{
+		// if (Core.IsInitialized())
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = Core_IsInitialized_m2A9AF05BAD7A54490ED0EE266829C5A36FB4EAA8_inline(NULL);
+		if (!L_2)
+		{
+			goto IL_0031;
+		}
+	}
+	{
+		// return new Request<Models.UserAndRoomList>(
+		//   CAPI.ovr_HTTP_GetWithMessageType(
+		//     list.NextUrl,
+		//     (int)Message.MessageType.User_GetNextUserAndRoomArrayPage
+		//   )
+		// );
+		UserAndRoomList_t474B5DE23C782B620406DEEAD72D778D5F4DAF8D* L_3 = ___list0;
+		NullCheck(L_3);
+		String_t* L_4;
+		L_4 = DeserializableList_1_get_NextUrl_m86EB8BDEFF99549E12661E48C43D18D2A555AEB2_inline(L_3, DeserializableList_1_get_NextUrl_m86EB8BDEFF99549E12661E48C43D18D2A555AEB2_RuntimeMethod_var);
+		il2cpp_codegen_runtime_class_init_inline(CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		uint64_t L_5;
+		L_5 = CAPI_ovr_HTTP_GetWithMessageType_m5FA8308DA6FB0F12C34F2C68AC1EE283F68B5984(L_4, ((int32_t)2143146719), NULL);
+		Request_1_tF953DCC8B5667246F0B35B701E72623F730DEE81* L_6 = (Request_1_tF953DCC8B5667246F0B35B701E72623F730DEE81*)il2cpp_codegen_object_new(Request_1_tF953DCC8B5667246F0B35B701E72623F730DEE81_il2cpp_TypeInfo_var);
+		NullCheck(L_6);
+		Request_1__ctor_mF785EC2BD98CD102F3F59A376719135186815499(L_6, L_5, Request_1__ctor_mF785EC2BD98CD102F3F59A376719135186815499_RuntimeMethod_var);
+		return L_6;
+	}
+
+IL_0031:
+	{
+		// Debug.LogError(Oculus.Platform.Core.PlatformUninitializedError);
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		String_t* L_7 = ((Core_t272580A990CA827C27F3116C5420EB2F87FE290C_StaticFields*)il2cpp_codegen_static_fields_for(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var))->___PlatformUninitializedError_2;
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogError_m059825802BB6AF7EA9693FEBEEB0D85F59A3E38E(L_7, NULL);
+		// return null;
+		return (Request_1_tF953DCC8B5667246F0B35B701E72623F730DEE81*)NULL;
+	}
+}
+// Oculus.Platform.Request`1<Oculus.Platform.Models.UserList> Oculus.Platform.Users::GetNextUserListPage(Oculus.Platform.Models.UserList)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Request_1_tB0D397F1B11033FAFA93EE15D75151B14D42DDD8* Users_GetNextUserListPage_m5BE9E7FE74F68227B314858702EAA6049934E7EA (UserList_t5F3955235D184B6260F2376C7EA72B3E19FE6376* ___list0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DeserializableList_1_get_HasNextPage_mF13DB2078BD1415E6741900652F95A8433F9828F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DeserializableList_1_get_NextUrl_m1B3B8585C83174BBE314AD71FB05DB4BCE8709BA_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Request_1__ctor_m029D713284EB47C08C4139CC986ED7BF3348F0DC_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Request_1_tB0D397F1B11033FAFA93EE15D75151B14D42DDD8_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2A54C0E6260A2AA6788D410FDC09DAE358F35E15);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (!list.HasNextPage)
+		UserList_t5F3955235D184B6260F2376C7EA72B3E19FE6376* L_0 = ___list0;
+		NullCheck(L_0);
+		bool L_1;
+		L_1 = DeserializableList_1_get_HasNextPage_mF13DB2078BD1415E6741900652F95A8433F9828F(L_0, DeserializableList_1_get_HasNextPage_mF13DB2078BD1415E6741900652F95A8433F9828F_RuntimeMethod_var);
+		if (L_1)
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		// Debug.LogWarning("Oculus.Platform.GetNextUserListPage: List has no next page");
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogWarning_mEF15C6B17CE4E1FA7E379CDB82CE40FCD89A3F28(_stringLiteral2A54C0E6260A2AA6788D410FDC09DAE358F35E15, NULL);
+		// return null;
+		return (Request_1_tB0D397F1B11033FAFA93EE15D75151B14D42DDD8*)NULL;
+	}
+
+IL_0014:
+	{
+		// if (Core.IsInitialized())
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = Core_IsInitialized_m2A9AF05BAD7A54490ED0EE266829C5A36FB4EAA8_inline(NULL);
+		if (!L_2)
+		{
+			goto IL_0031;
+		}
+	}
+	{
+		// return new Request<Models.UserList>(
+		//   CAPI.ovr_HTTP_GetWithMessageType(
+		//     list.NextUrl,
+		//     (int)Message.MessageType.User_GetNextUserArrayPage
+		//   )
+		// );
+		UserList_t5F3955235D184B6260F2376C7EA72B3E19FE6376* L_3 = ___list0;
+		NullCheck(L_3);
+		String_t* L_4;
+		L_4 = DeserializableList_1_get_NextUrl_m1B3B8585C83174BBE314AD71FB05DB4BCE8709BA_inline(L_3, DeserializableList_1_get_NextUrl_m1B3B8585C83174BBE314AD71FB05DB4BCE8709BA_RuntimeMethod_var);
+		il2cpp_codegen_runtime_class_init_inline(CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		uint64_t L_5;
+		L_5 = CAPI_ovr_HTTP_GetWithMessageType_m5FA8308DA6FB0F12C34F2C68AC1EE283F68B5984(L_4, ((int32_t)645723971), NULL);
+		Request_1_tB0D397F1B11033FAFA93EE15D75151B14D42DDD8* L_6 = (Request_1_tB0D397F1B11033FAFA93EE15D75151B14D42DDD8*)il2cpp_codegen_object_new(Request_1_tB0D397F1B11033FAFA93EE15D75151B14D42DDD8_il2cpp_TypeInfo_var);
+		NullCheck(L_6);
+		Request_1__ctor_m029D713284EB47C08C4139CC986ED7BF3348F0DC(L_6, L_5, Request_1__ctor_m029D713284EB47C08C4139CC986ED7BF3348F0DC_RuntimeMethod_var);
+		return L_6;
+	}
+
+IL_0031:
+	{
+		// Debug.LogError(Oculus.Platform.Core.PlatformUninitializedError);
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		String_t* L_7 = ((Core_t272580A990CA827C27F3116C5420EB2F87FE290C_StaticFields*)il2cpp_codegen_static_fields_for(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var))->___PlatformUninitializedError_2;
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogError_m059825802BB6AF7EA9693FEBEEB0D85F59A3E38E(L_7, NULL);
+		// return null;
+		return (Request_1_tB0D397F1B11033FAFA93EE15D75151B14D42DDD8*)NULL;
+	}
+}
+// Oculus.Platform.Request`1<Oculus.Platform.Models.UserCapabilityList> Oculus.Platform.Users::GetNextUserCapabilityListPage(Oculus.Platform.Models.UserCapabilityList)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Request_1_tC258C952DBE23E9E1EF084E937E156146A43974A* Users_GetNextUserCapabilityListPage_mDE646BDCC953AB90289D1F5E7E96E82E32F8EF08 (UserCapabilityList_t1DD8ED9B65B673C346EA8B899EB1E3EDF196FE11* ___list0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DeserializableList_1_get_HasNextPage_m65E89472F8C63E1057652C31706E981B965E7B99_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DeserializableList_1_get_NextUrl_m57C2882F67AAECF1B880E5ACF6A9770B2104EDBB_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Request_1__ctor_mD7C574928FD0710BCDEEDC10A9A715FA18D2FF56_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Request_1_tC258C952DBE23E9E1EF084E937E156146A43974A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral21F44D94A63BEE6D780718FB25538264AEC6ED92);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (!list.HasNextPage)
+		UserCapabilityList_t1DD8ED9B65B673C346EA8B899EB1E3EDF196FE11* L_0 = ___list0;
+		NullCheck(L_0);
+		bool L_1;
+		L_1 = DeserializableList_1_get_HasNextPage_m65E89472F8C63E1057652C31706E981B965E7B99(L_0, DeserializableList_1_get_HasNextPage_m65E89472F8C63E1057652C31706E981B965E7B99_RuntimeMethod_var);
+		if (L_1)
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		// Debug.LogWarning("Oculus.Platform.GetNextUserCapabilityListPage: List has no next page");
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogWarning_mEF15C6B17CE4E1FA7E379CDB82CE40FCD89A3F28(_stringLiteral21F44D94A63BEE6D780718FB25538264AEC6ED92, NULL);
+		// return null;
+		return (Request_1_tC258C952DBE23E9E1EF084E937E156146A43974A*)NULL;
+	}
+
+IL_0014:
+	{
+		// if (Core.IsInitialized())
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = Core_IsInitialized_m2A9AF05BAD7A54490ED0EE266829C5A36FB4EAA8_inline(NULL);
+		if (!L_2)
+		{
+			goto IL_0031;
+		}
+	}
+	{
+		// return new Request<Models.UserCapabilityList>(
+		//   CAPI.ovr_HTTP_GetWithMessageType(
+		//     list.NextUrl,
+		//     (int)Message.MessageType.User_GetNextUserCapabilityArrayPage
+		//   )
+		// );
+		UserCapabilityList_t1DD8ED9B65B673C346EA8B899EB1E3EDF196FE11* L_3 = ___list0;
+		NullCheck(L_3);
+		String_t* L_4;
+		L_4 = DeserializableList_1_get_NextUrl_m57C2882F67AAECF1B880E5ACF6A9770B2104EDBB_inline(L_3, DeserializableList_1_get_NextUrl_m57C2882F67AAECF1B880E5ACF6A9770B2104EDBB_RuntimeMethod_var);
+		il2cpp_codegen_runtime_class_init_inline(CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		uint64_t L_5;
+		L_5 = CAPI_ovr_HTTP_GetWithMessageType_m5FA8308DA6FB0F12C34F2C68AC1EE283F68B5984(L_4, ((int32_t)587854745), NULL);
+		Request_1_tC258C952DBE23E9E1EF084E937E156146A43974A* L_6 = (Request_1_tC258C952DBE23E9E1EF084E937E156146A43974A*)il2cpp_codegen_object_new(Request_1_tC258C952DBE23E9E1EF084E937E156146A43974A_il2cpp_TypeInfo_var);
+		NullCheck(L_6);
+		Request_1__ctor_mD7C574928FD0710BCDEEDC10A9A715FA18D2FF56(L_6, L_5, Request_1__ctor_mD7C574928FD0710BCDEEDC10A9A715FA18D2FF56_RuntimeMethod_var);
+		return L_6;
+	}
+
+IL_0031:
+	{
+		// Debug.LogError(Oculus.Platform.Core.PlatformUninitializedError);
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		String_t* L_7 = ((Core_t272580A990CA827C27F3116C5420EB2F87FE290C_StaticFields*)il2cpp_codegen_static_fields_for(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var))->___PlatformUninitializedError_2;
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogError_m059825802BB6AF7EA9693FEBEEB0D85F59A3E38E(L_7, NULL);
+		// return null;
+		return (Request_1_tC258C952DBE23E9E1EF084E937E156146A43974A*)NULL;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 // Oculus.Platform.Request Oculus.Platform.AbuseReport::ReportRequestHandled(Oculus.Platform.ReportRequestResponse)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Request_t0773858FF1AC67C0D8B43058CC7119DDD1202D3B* AbuseReport_ReportRequestHandled_mFC9AA8FA38601255ADF4E7D5A5CB274068A15FE6 (int32_t ___response0, const RuntimeMethod* method) 
 {
@@ -11270,6 +13302,62 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AssetFile_SetDownloadUpdateNotificationC
 		Callback_SetNotificationCallback_TisAssetFileDownloadUpdate_tADF06153486F11F16E760CA1DC935D18ED1FE7BC_m4BF417F5AE4C041B5089FEEFA81629E3582E036B(((int32_t)803015885), L_0, Callback_SetNotificationCallback_TisAssetFileDownloadUpdate_tADF06153486F11F16E760CA1DC935D18ED1FE7BC_m4BF417F5AE4C041B5089FEEFA81629E3582E036B_RuntimeMethod_var);
 		// }
 		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Oculus.Platform.Request`1<Oculus.Platform.Models.AvatarEditorResult> Oculus.Platform.Avatar::LaunchAvatarEditor(Oculus.Platform.AvatarEditorOptions)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Request_1_t466EFA6DA402C7AB4E5DB8FD9449360A91DE7A15* Avatar_LaunchAvatarEditor_mBACD9F584D8539409AB54CCCA97F9D2C046B39E6 (AvatarEditorOptions_t80D597247D01497F024A772C7065CE7F018053C0* ___options0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Request_1__ctor_m03C2495625A265815829807F5C1EB88073D09AA1_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Request_1_t466EFA6DA402C7AB4E5DB8FD9449360A91DE7A15_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (Core.IsInitialized())
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		bool L_0;
+		L_0 = Core_IsInitialized_m2A9AF05BAD7A54490ED0EE266829C5A36FB4EAA8_inline(NULL);
+		if (!L_0)
+		{
+			goto IL_0018;
+		}
+	}
+	{
+		// return new Request<Models.AvatarEditorResult>(CAPI.ovr_Avatar_LaunchAvatarEditor((IntPtr)options));
+		AvatarEditorOptions_t80D597247D01497F024A772C7065CE7F018053C0* L_1 = ___options0;
+		intptr_t L_2;
+		L_2 = AvatarEditorOptions_op_Explicit_mB2E3BCDC2823E3C899D2513B77C538A81473262F(L_1, NULL);
+		il2cpp_codegen_runtime_class_init_inline(CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		uint64_t L_3;
+		L_3 = CAPI_ovr_Avatar_LaunchAvatarEditor_m0A143DADCB0A54A0DB37B09296D448136C6C3E84(L_2, NULL);
+		Request_1_t466EFA6DA402C7AB4E5DB8FD9449360A91DE7A15* L_4 = (Request_1_t466EFA6DA402C7AB4E5DB8FD9449360A91DE7A15*)il2cpp_codegen_object_new(Request_1_t466EFA6DA402C7AB4E5DB8FD9449360A91DE7A15_il2cpp_TypeInfo_var);
+		NullCheck(L_4);
+		Request_1__ctor_m03C2495625A265815829807F5C1EB88073D09AA1(L_4, L_3, Request_1__ctor_m03C2495625A265815829807F5C1EB88073D09AA1_RuntimeMethod_var);
+		return L_4;
+	}
+
+IL_0018:
+	{
+		// Debug.LogError(Oculus.Platform.Core.PlatformUninitializedError);
+		il2cpp_codegen_runtime_class_init_inline(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var);
+		String_t* L_5 = ((Core_t272580A990CA827C27F3116C5420EB2F87FE290C_StaticFields*)il2cpp_codegen_static_fields_for(Core_t272580A990CA827C27F3116C5420EB2F87FE290C_il2cpp_TypeInfo_var))->___PlatformUninitializedError_2;
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogError_m059825802BB6AF7EA9693FEBEEB0D85F59A3E38E(L_5, NULL);
+		// return null;
+		return (Request_1_t466EFA6DA402C7AB4E5DB8FD9449360A91DE7A15*)NULL;
 	}
 }
 #ifdef __clang__
@@ -16757,6 +18845,53 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Request_1_tDF5315C7EB8AA620C19730D55185214ADD
 		return L_3;
 	}
 }
+// Oculus.Platform.Request`1<Oculus.Platform.Models.PlatformInitialize> Oculus.Platform.StandalonePlatform::AsyncInitializeWithAccessTokenAndOptions(System.String,System.String,System.Collections.Generic.Dictionary`2<Oculus.Platform.InitConfigOptions,System.Boolean>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Request_1_tDF5315C7EB8AA620C19730D55185214ADD908497* StandalonePlatform_AsyncInitializeWithAccessTokenAndOptions_mB108E899C7939CC46C44EC272E04DC0F94539DC8 (StandalonePlatform_tE7DE3D69BC898F49ED603B09D489046B4AA1D74D* __this, String_t* ___appId0, String_t* ___accessToken1, Dictionary_2_t517C6845622890637A128BD0CFCC8B146C5F7C0D* ___initConfigOptions2, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_get_Count_m69D9FF951D8C254EEA8E524980D47128183CF475_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Request_1__ctor_m4C83EDA6A558C77C3528DF7681A2EC32A92BADE3_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Request_1_tDF5315C7EB8AA620C19730D55185214ADD908497_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UIntPtr_t_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	uintptr_t V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	ovrKeyValuePairU5BU5D_t179DEEABE7E2281231B6526EF0D8FF37255D5AD9* V_1 = NULL;
+	{
+		// var configCount = (UIntPtr)initConfigOptions.Count;
+		Dictionary_2_t517C6845622890637A128BD0CFCC8B146C5F7C0D* L_0 = ___initConfigOptions2;
+		NullCheck(L_0);
+		int32_t L_1;
+		L_1 = Dictionary_2_get_Count_m69D9FF951D8C254EEA8E524980D47128183CF475(L_0, Dictionary_2_get_Count_m69D9FF951D8C254EEA8E524980D47128183CF475_RuntimeMethod_var);
+		il2cpp_codegen_runtime_class_init_inline(UIntPtr_t_il2cpp_TypeInfo_var);
+		uintptr_t L_2;
+		L_2 = UIntPtr_op_Explicit_m4E434CAEFCE03986FDC48F3452F81DC7E4F093BE(((int64_t)L_1), NULL);
+		V_0 = L_2;
+		// var configPairs = CAPI.DictionaryToOVRKeyValuePairs(initConfigOptions);
+		Dictionary_2_t517C6845622890637A128BD0CFCC8B146C5F7C0D* L_3 = ___initConfigOptions2;
+		il2cpp_codegen_runtime_class_init_inline(CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		ovrKeyValuePairU5BU5D_t179DEEABE7E2281231B6526EF0D8FF37255D5AD9* L_4;
+		L_4 = CAPI_DictionaryToOVRKeyValuePairs_m155C41E0908CC0CAF842757892156023734146FC(L_3, NULL);
+		V_1 = L_4;
+		// return new Request<Models.PlatformInitialize>(CAPI.ovr_PlatformInitializeWithAccessTokenAndOptions(UInt64.Parse(appId), accessToken, configPairs, configCount));
+		String_t* L_5 = ___appId0;
+		uint64_t L_6;
+		L_6 = UInt64_Parse_m1354FD3AF2866D7BF3B3C7257012F243FDB9303A(L_5, NULL);
+		String_t* L_7 = ___accessToken1;
+		ovrKeyValuePairU5BU5D_t179DEEABE7E2281231B6526EF0D8FF37255D5AD9* L_8 = V_1;
+		uintptr_t L_9 = V_0;
+		uint64_t L_10;
+		L_10 = CAPI_ovr_PlatformInitializeWithAccessTokenAndOptions_mE8EF24F3DF993B19B6CA38448C6512FBF2FA0683(L_6, L_7, L_8, L_9, NULL);
+		Request_1_tDF5315C7EB8AA620C19730D55185214ADD908497* L_11 = (Request_1_tDF5315C7EB8AA620C19730D55185214ADD908497*)il2cpp_codegen_object_new(Request_1_tDF5315C7EB8AA620C19730D55185214ADD908497_il2cpp_TypeInfo_var);
+		NullCheck(L_11);
+		Request_1__ctor_m4C83EDA6A558C77C3528DF7681A2EC32A92BADE3(L_11, L_10, Request_1__ctor_m4C83EDA6A558C77C3528DF7681A2EC32A92BADE3_RuntimeMethod_var);
+		return L_11;
+	}
+}
 // System.Void Oculus.Platform.StandalonePlatform::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StandalonePlatform__ctor_mED92320996F3E35A5E2C82E7D3A5428529563AAB (StandalonePlatform_tE7DE3D69BC898F49ED603B09D489046B4AA1D74D* __this, const RuntimeMethod* method) 
 {
@@ -19187,6 +21322,36 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AssetFileDownloadUpdate__ctor_mE254BCC2A
 		bool L_9;
 		L_9 = CAPI_ovr_AssetFileDownloadUpdate_GetCompleted_mEADC0DE67B0DE31FCCBDC877C89BD758C60E6AB7(L_8, NULL);
 		__this->___Completed_4 = L_9;
+		// }
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Oculus.Platform.Models.AvatarEditorResult::.ctor(System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AvatarEditorResult__ctor_mA4C3F266C3434F505134AB19ECCBBDBFF7D1DBE1 (AvatarEditorResult_tF2E564890A3CC6EC8A9806BEEEBE765D2CF2F85B* __this, intptr_t ___o0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// public AvatarEditorResult(IntPtr o)
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		// RequestSent = CAPI.ovr_AvatarEditorResult_GetRequestSent(o);
+		intptr_t L_0 = ___o0;
+		il2cpp_codegen_runtime_class_init_inline(CAPI_t2BFE742D9AFC80CDA72B67CCB2BECAB63F82F903_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = CAPI_ovr_AvatarEditorResult_GetRequestSent_m9B128A6C2724E40A9F26B75536C1EB6E94A5930C(L_0, NULL);
+		__this->___RequestSent_0 = L_1;
 		// }
 		return;
 	}
@@ -27079,7 +29244,7 @@ IL_000f:
 		Message_1_t0F379AFBD2F9DC93B291238F9C57840F85433F10* L_6 = ___msg0;
 		NullCheck(L_6);
 		String_t* L_7;
-		L_7 = VirtualFuncInvoker0< String_t* >::Invoke(79 /* System.String Oculus.Platform.Message::GetString() */, L_6);
+		L_7 = VirtualFuncInvoker0< String_t* >::Invoke(80 /* System.String Oculus.Platform.Message::GetString() */, L_6);
 		il2cpp_codegen_runtime_class_init_inline(Convert_t7097FF336D592F7C06D88A98349A44646F91EFFC_il2cpp_TypeInfo_var);
 		uint64_t L_8;
 		L_8 = Convert_ToUInt64_mF67ECD35A83B063880A4EC33D76117360CB1FBEB(L_7, NULL);

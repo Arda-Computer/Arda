@@ -97,7 +97,7 @@ namespace Oculus.Interaction
         protected override void DoPostprocess()
         {
             base.DoPostprocess();
-            IEnumerable<PokeInteractable> interactables = PokeInteractable.Registry.List(this);
+            var interactables = PokeInteractable.Registry.List(this);
             foreach (PokeInteractable interactable in interactables)
             {
                 _previousSurfaceTransformMap[interactable] =
@@ -155,7 +155,7 @@ namespace Oculus.Interaction
             float closestDist = float.MaxValue;
             float minNormalProject = float.MaxValue;
 
-            IEnumerable<PokeInteractable> interactables = PokeInteractable.Registry.List(this);
+            var interactables = PokeInteractable.Registry.List(this);
 
             // Check the surface first as a movement through this will
             // automatically put us in a "active" state. We expect the raycast
@@ -197,7 +197,7 @@ namespace Oculus.Interaction
                 {
                     // Then do a raycast against the surface
                     bool hit = interactable.Surface.Raycast(ray, out SurfaceHit surfaceHit);
-                    hit = surfaceHit.Distance <= magnitude;
+                    hit = hit && surfaceHit.Distance <= magnitude;
 
                     if (!hit)
                     {
@@ -284,7 +284,7 @@ namespace Oculus.Interaction
             PokeInteractable closestInteractable = null;
             float closestDistance = float.MaxValue;
 
-            IEnumerable<PokeInteractable> interactables = PokeInteractable.Registry.List(this);
+            var interactables = PokeInteractable.Registry.List(this);
 
             // We check that we're above the surface first as we don't
             // care about hovers that originate below the surface

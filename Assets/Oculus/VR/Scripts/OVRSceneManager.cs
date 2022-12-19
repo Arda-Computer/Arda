@@ -25,7 +25,6 @@ using System.Diagnostics;
 using System.Linq;
 using UnityEngine.Serialization;
 using Debug = UnityEngine.Debug;
-using System.Collections;
 
 /// <summary>
 /// A manager for <see cref="OVRSceneAnchor"/>s created using the Guardian's Room Capture feature.
@@ -66,7 +65,9 @@ public class OVRSceneManager : MonoBehaviour
     [Tooltip("The maximum number of scene anchors that will be updated each frame.")]
     public int MaxSceneAnchorUpdatesPerFrame = 3;
 
+
     #region Events
+
     /// <summary>
     /// This event fires when the OVR Scene Manager has correctly loaded the scene definition and
     /// instantiated the prefabs for the planes and volumes. Trap it to know that the logic of the
@@ -90,6 +91,7 @@ public class OVRSceneManager : MonoBehaviour
     /// This event will fire if an error occurred while trying to send the user to Room Capture.
     /// </summary>
     public Action UnexpectedErrorWithSceneCapture;
+
 
     #endregion
 
@@ -191,6 +193,7 @@ public class OVRSceneManager : MonoBehaviour
         QueryAllRoomLayoutEnabledForRoomBox,            // Get Ceiling/Floor/Walls only.
     }
 
+
     private readonly Dictionary<Guid, int> _orderedRoomGuids = new Dictionary<Guid, int>();
 
     private Comparison<OVRScenePlane> _wallOrderComparer;
@@ -211,6 +214,9 @@ public class OVRSceneManager : MonoBehaviour
 
     private OVRCameraRig _cameraRig;
     private int _sceneAnchorUpdateIndex;
+    private HashSet<Guid> _uuidSet = new HashSet<Guid>();
+    private bool _sceneLoadComplete;
+
 
     #endregion
 
@@ -247,7 +253,8 @@ public class OVRSceneManager : MonoBehaviour
                 var guid = plane.GetComponent<OVRSceneAnchor>().Uuid;
                 if (_orderedRoomGuids.TryGetValue(guid, out index)) return true;
 
-                Development.LogWarning(nameof(OVRSceneManager), $"{nameof(OVRScenePlane)} {guid} does not belong to the current room layout.");
+                Development.LogWarning(nameof(OVRSceneManager),
+                    $"{nameof(OVRScenePlane)} {guid} does not belong to the current room layout.");
                 return false;
             }
 
@@ -276,11 +283,13 @@ public class OVRSceneManager : MonoBehaviour
     private void Update()
     {
         UpdateSomeSceneAnchors();
+
     }
+
 
     private static void UpdateAllSceneAnchors()
     {
-        foreach (var sceneAnchor in OVRSceneAnchor.SceneAnchorsList)
+        foreach (var sceneAnchor in OVRSceneAnchor.SceneAnchors.Values)
         {
             sceneAnchor.TryUpdateTransform(true);
         }
@@ -398,7 +407,8 @@ public class OVRSceneManager : MonoBehaviour
                  _currentQueryMode == QueryMode.QueryAllBounded2DEnabled ||
                  _currentQueryMode == QueryMode.QueryAllRoomLayoutEnabledForRoomBox)
         {
-            if (_currentQueryMode == QueryMode.QueryAllRoomLayoutEnabledForAllEntitiesInside || _currentQueryMode == QueryMode.QueryAllRoomLayoutEnabledForRoomBox)
+            if (_currentQueryMode == QueryMode.QueryAllRoomLayoutEnabledForAllEntitiesInside ||
+                _currentQueryMode == QueryMode.QueryAllRoomLayoutEnabledForRoomBox)
             {
                 options.ComponentFilter = OVRSpaceQuery.ComponentType.RoomLayout;
             }
@@ -446,9 +456,11 @@ public class OVRSceneManager : MonoBehaviour
 
         return false;
     }
+
     #endregion
 
     #region ActionFunctions
+
     private void OVRManager_SceneCaptureComplete(UInt64 requestId, bool result)
     {
         if (requestId != _sceneCaptureRequestId)
@@ -509,7 +521,7 @@ public class OVRSceneManager : MonoBehaviour
         }
 
         // This can occur if neither the prefab nor any matching override prefab is set in the inspector
-        if(prefab == null)
+        if (prefab == null)
         {
             Verbose?.Log(nameof(OVRSceneManager),
                 $"No prefab was provided for space: [{space}]"
@@ -546,7 +558,6 @@ public class OVRSceneManager : MonoBehaviour
 
     private void OVRManager_SpaceQueryComplete(UInt64 requestId, bool result)
     {
-        // We should ignore any request that wasn't created by us
         if (!_individualRequestIds.Contains(requestId))
         {
             Verbose?.LogWarning(nameof(OVRSceneManager),
@@ -558,6 +569,7 @@ public class OVRSceneManager : MonoBehaviour
             $"{nameof(OVRManager_SpaceQueryComplete)}() requestId: [{requestId}] result: [{result}]");
 
         _individualRequestIds.Remove(requestId);
+
 
         if (!result)
         {
@@ -587,10 +599,12 @@ public class OVRSceneManager : MonoBehaviour
             return;
         }
 
+
         foreach (var queryResult in results)
         {
             ProcessQueryResult(queryResult);
         }
+
 
         CheckForCompletion();
     }
@@ -599,12 +613,13 @@ public class OVRSceneManager : MonoBehaviour
     {
         // Requests can be nested, so we have to wait for the last one to be complete before applying
         // any judgement on the final outcome.
-        if (_individualRequestIds.Count == 0 && _pendingLocatable.Count == 0)
+        if (_individualRequestIds.Count == 0 && _pendingLocatable.Count == 0 && !_sceneLoadComplete)
         {
             Development.Log(nameof(OVRSceneManager),
                 $"Scene Model was loaded successfully. Invoking {nameof(SceneModelLoadedSuccessfully)}.");
             RoomLayout?.Walls.Sort(_wallOrderComparer);
             SceneModelLoadedSuccessfully?.Invoke();
+            _sceneLoadComplete = true;
         }
     }
 
@@ -614,10 +629,11 @@ public class OVRSceneManager : MonoBehaviour
         if (!result)
         {
 #if DEVELOPMENT_BUILD
-      if (_pendingLocatable.ContainsKey(space))
-      {
-        Development.LogError(nameof(OVRSceneManager), $"[{uuid}] {nameof(OVRManager)}.{nameof(OVRManager.SpaceSetComponentStatusComplete)} failed for component {componentType}.");
-      }
+            if (_pendingLocatable.ContainsKey(space))
+            {
+                Development.LogError(nameof(OVRSceneManager),
+                    $"[{uuid}] {nameof(OVRManager)}.{nameof(OVRManager.SpaceSetComponentStatusComplete)} failed for component {componentType}.");
+            }
 #endif
             return;
         }
@@ -659,6 +675,7 @@ public class OVRSceneManager : MonoBehaviour
                     yield return $"{nameof(OVRPlugin.SpaceComponentType.SemanticLabels)} (none)";
                 }
             }
+
             if (roomLayoutEnabled) yield return nameof(OVRPlugin.SpaceComponentType.RoomLayout);
         }
 
@@ -679,8 +696,20 @@ public class OVRSceneManager : MonoBehaviour
             var locatableEnabled = EnableComponentIfNecessary(space, uuid, OVRPlugin.SpaceComponentType.Locatable);
             if (!locatableEnabled)
             {
-                Development.Log(nameof(OVRSceneManager), $"[{uuid}] Waiting for spatial entity to become {nameof(OVRPlugin.SpaceComponentType.Locatable)}.");
+                Development.Log(nameof(OVRSceneManager),
+                    $"[{uuid}] Waiting for spatial entity to become {nameof(OVRPlugin.SpaceComponentType.Locatable)}.");
                 _pendingLocatable[queryResult.space] = queryResult;
+                return;
+            }
+
+            if (OVRSceneAnchor.SceneAnchors.ContainsKey(uuid))
+            {
+                return;
+            }
+
+            // Ignoring this anchor because it has been destroyed.
+            if (OVRSceneAnchor.DestroyedSceneAnchors.Contains(uuid))
+            {
                 return;
             }
 
@@ -696,17 +725,17 @@ public class OVRSceneManager : MonoBehaviour
                 return;
             }
 
-            var uuidSet = new HashSet<Guid>();
+            _uuidSet.Clear();
             if (!roomLayout.floorUuid.Equals(Guid.Empty))
             {
-                uuidSet.Add(roomLayout.floorUuid);
+                _uuidSet.Add(roomLayout.floorUuid);
                 Verbose?.Log(nameof(OVRSceneManager),
                     $"{nameof(OVRPlugin.GetSpaceRoomLayout)}: floor [{roomLayout.floorUuid}]");
             }
 
             if (!roomLayout.ceilingUuid.Equals(Guid.Empty))
             {
-                uuidSet.Add(roomLayout.ceilingUuid);
+                _uuidSet.Add(roomLayout.ceilingUuid);
                 Verbose?.Log(nameof(OVRSceneManager),
                     $"{nameof(OVRPlugin.GetSpaceRoomLayout)}: ceiling [{roomLayout.ceilingUuid}]");
             }
@@ -717,12 +746,13 @@ public class OVRSceneManager : MonoBehaviour
             {
                 if (!wallUuid.Equals(Guid.Empty))
                 {
-                    uuidSet.Add(wallUuid);
+                    _uuidSet.Add(wallUuid);
                     Verbose?.Log(nameof(OVRSceneManager),
                         $"{nameof(OVRPlugin.GetSpaceRoomLayout)}: wall [{wallUuid}]");
                     _orderedRoomGuids[wallUuid] = validWallsCount++;
                 }
             }
+
             Verbose?.Log(nameof(OVRSceneManager),
                 $"{nameof(OVRPlugin.GetSpaceRoomLayout)}: wall count [{validWallsCount}]");
 
@@ -739,15 +769,16 @@ public class OVRSceneManager : MonoBehaviour
 
                     if (!containerUuid.Equals(Guid.Empty))
                     {
-                        uuidSet.Add(containerUuid);
+                        _uuidSet.Add(containerUuid);
                     }
                 }
             }
 
-            _uuidsToQuery = uuidSet.ToList();
+            _uuidsToQuery = _uuidSet.ToList();
             _currentQueryMode = QueryMode.QueryByUuid;
             LoadSpatialEntities();
         }
     }
+
     #endregion
 }

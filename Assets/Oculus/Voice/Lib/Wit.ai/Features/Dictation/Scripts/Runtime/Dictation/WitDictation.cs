@@ -8,7 +8,6 @@
 
 using Facebook.WitAi.Configuration;
 using Facebook.WitAi.Data.Configuration;
-using Facebook.WitAi.Dictation.Data;
 using Facebook.WitAi.Events;
 using Facebook.WitAi.Interfaces;
 using Facebook.WitAi.Lib;

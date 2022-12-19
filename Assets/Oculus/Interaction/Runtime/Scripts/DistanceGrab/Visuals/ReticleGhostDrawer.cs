@@ -29,7 +29,7 @@ namespace Oculus.Interaction.DistanceReticles
 {
     public class ReticleGhostDrawer : InteractorReticle<ReticleDataGhost>
     {
-        [SerializeField, Interface(typeof(IHandGrabber),typeof(IHandGrabState), typeof(IInteractorView))]
+        [SerializeField, Interface(typeof(IHandGrabber), typeof(IHandGrabState), typeof(IInteractorView))]
         private MonoBehaviour _handGrabber;
         private IHandGrabber HandGrabber { get; set; }
         private IHandGrabState HandGrabSource { get; set; }
@@ -38,8 +38,11 @@ namespace Oculus.Interaction.DistanceReticles
         [SerializeField]
         private SyntheticHand _syntheticHand;
 
-        [SerializeField]
-        private HandVisual _visualHand;
+        [SerializeField, Interface(typeof(IHandVisual))]
+        [FormerlySerializedAs("_visualHand")]
+        private MonoBehaviour _handVisual;
+
+        private IHandVisual HandVisual;
 
         private bool _areFingersFree = true;
         private bool _isWristFree = true;
@@ -51,6 +54,7 @@ namespace Oculus.Interaction.DistanceReticles
 
         protected virtual void Awake()
         {
+            HandVisual = _handVisual as IHandVisual;
             HandGrabber = _handGrabber as IHandGrabber;
             HandGrabSource = _handGrabber as IHandGrabState;
             Interactor = _handGrabber as IInteractorView;
@@ -62,7 +66,7 @@ namespace Oculus.Interaction.DistanceReticles
             Assert.IsNotNull(HandGrabber, "Associated HandGrabber Hand can not be null");
             Assert.IsNotNull(Interactor, "Associated Interactor Hand can not be null");
             Assert.IsNotNull(HandGrabSource, "Associated HandGrabSource can not be null");
-            Assert.IsNotNull(_visualHand, "Associated Visual Hand can not be null");
+            Assert.IsNotNull(HandVisual, "Associated Visual Hand can not be null");
             Assert.IsNotNull(_syntheticHand, "Associated Synthetic hand can not be null");
             Transformer = _syntheticHand.GetData().Config.TrackingToWorldTransformer;
             this.EndStart(ref _started);
@@ -152,18 +156,18 @@ namespace Oculus.Interaction.DistanceReticles
 
         protected override void Draw(ReticleDataGhost data)
         {
-            _visualHand.ForceOffVisibility = false;
+            HandVisual.ForceOffVisibility = false;
         }
 
         protected override void Hide()
         {
-            _visualHand.ForceOffVisibility = true;
+            HandVisual.ForceOffVisibility = true;
         }
 
         #region Inject
 
         public void InjectAllReticleGhostDrawer(IHandGrabber handGrabber,
-            SyntheticHand syntheticHand, HandVisual visualHand)
+            SyntheticHand syntheticHand, IHandVisual visualHand)
         {
             InjectHandGrabber(handGrabber);
             InjectSyntheticHand(syntheticHand);
@@ -183,9 +187,10 @@ namespace Oculus.Interaction.DistanceReticles
             _syntheticHand = syntheticHand;
         }
 
-        public void InjectVisualHand(HandVisual visualHand)
+        public void InjectVisualHand(IHandVisual visualHand)
         {
-            _visualHand = visualHand;
+            _handVisual = visualHand as MonoBehaviour;
+            HandVisual = visualHand;
         }
         #endregion
     }

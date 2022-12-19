@@ -51,7 +51,7 @@ public class OVRPluginUpdater : IOVRPluginInfoSupplier
 		Win,
 		Win64,
 		Win64OpenXR,
-	}
+    }
 	class PluginPackage
 	{
 		public string RootPath;
@@ -274,7 +274,7 @@ public class OVRPluginUpdater : IOVRPluginInfoSupplier
 				{ PluginPlatform.Win,              rootPath + GetPluginBuildTargetSubPath(PluginPlatform.Win)              },
 				{ PluginPlatform.Win64,            rootPath + GetPluginBuildTargetSubPath(PluginPlatform.Win64)            },
 				{ PluginPlatform.Win64OpenXR,      rootPath + GetPluginBuildTargetSubPath(PluginPlatform.Win64OpenXR)      },
-			}
+            }
 		};
 	}
 
@@ -346,7 +346,7 @@ public class OVRPluginUpdater : IOVRPluginInfoSupplier
 			case PluginPlatform.Win64OpenXR:
 				path = @"/Win64OpenXR/OVRPlugin.dll";
 				break;
-			default:
+            default:
 				throw new ArgumentException("Attempted GetPluginBuildTargetSubPath() for unsupported BuildTarget: " + target);
 		}
 
@@ -574,7 +574,7 @@ public class OVRPluginUpdater : IOVRPluginInfoSupplier
 							pi.SetPlatformData("Editor", "OS", "Windows");
 						}
 						break;
-					default:
+                    default:
 						throw new ArgumentException("Attempted EnablePluginPackage() for unsupported BuildTarget: " + platform);
 				}
 

@@ -44,7 +44,7 @@ namespace Oculus.Interaction.DistanceReticles
             }
         }
 
-        private List<Vector3> _linePoints;
+        private Vector3[] _linePoints;
 
         [SerializeField]
         private bool _visibleDuringNormal;
@@ -71,7 +71,7 @@ namespace Oculus.Interaction.DistanceReticles
         {
             this.BeginStart(ref _started);
             Assert.IsNotNull(DistanceInteractor);
-            _linePoints = new List<Vector3>(new Vector3[NumLinePoints]);
+            _linePoints = new Vector3[NumLinePoints];
             this.EndStart(ref _started);
         }
 
@@ -175,7 +175,7 @@ namespace Oculus.Interaction.DistanceReticles
             RenderLine(_linePoints);
         }
 
-        protected abstract void RenderLine(List<Vector3> linePoints);
+        protected abstract void RenderLine(Vector3[] linePoints);
 
         protected Vector3 TargetHit(Vector3 hitPoint)
         {

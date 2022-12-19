@@ -8,7 +8,6 @@
 
 using System;
 using System.IO;
-using System.Runtime.Remoting.Messaging;
 using Meta.Conduit.Editor;
 using Facebook.WitAi.Configuration;
 using Facebook.WitAi.Data.Configuration;
@@ -115,9 +114,11 @@ namespace Facebook.WitAi.Windows
 
         private void LayoutConduitContent()
         {
+            // Get full manifest path & ensure it exists
             string manifestPath = configuration.ManifestEditorPath;
             manifestAvailable = File.Exists(manifestPath);
 
+            // Set conduit
             var useConduit = (GUILayout.Toggle(configuration.useConduit, "Use Conduit (Beta)"));
             if (configuration.useConduit != useConduit)
             {
@@ -125,28 +126,31 @@ namespace Facebook.WitAi.Windows
                 EditorUtility.SetDirty(configuration);
             }
 
-            EditorGUI.BeginDisabledGroup(!configuration.useConduit);
+            // Auto-generate manifest
+            if (configuration.useConduit && !manifestAvailable)
+            {
+                GenerateManifest(configuration, configuration.openManifestOnGeneration);
+            }
+
             {
                 EditorGUI.indentLevel++;
                 GUILayout.Space(EditorGUI.indentLevel * WitStyles.ButtonMargin);
                 {
+                    GUI.enabled = configuration.useConduit;
                     GUILayout.BeginHorizontal();
                     if (WitEditorUI.LayoutTextButton(manifestAvailable ? "Update Manifest" : "Generate Manifest"))
                     {
                         GenerateManifest(configuration, configuration.openManifestOnGeneration);
                     }
-                    GUI.enabled = manifestAvailable;
+                    GUI.enabled = configuration.useConduit && manifestAvailable;
                     if (WitEditorUI.LayoutTextButton("Select Manifest") && manifestAvailable)
                     {
                         Selection.activeObject = AssetDatabase.LoadAssetAtPath<TextAsset>(configuration.ManifestEditorPath);
                     }
                     GUI.enabled = true;
                     GUILayout.EndHorizontal();
-                    GUILayout.Space(WitStyles.ButtonMargin);
-                    configuration.autoGenerateManifest = (GUILayout.Toggle(configuration.autoGenerateManifest, "Auto Generate"));
                 }
                 EditorGUI.indentLevel--;
-                GUILayout.TextField($"Manifests generated: {Statistics.SuccessfulGenerations}");
             }
             EditorGUI.EndDisabledGroup();
         }
@@ -442,7 +446,7 @@ namespace Facebook.WitAi.Windows
         private static void OnScriptsReloaded() {
             foreach (var witConfig in WitConfigurationUtility.WitConfigs)
             {
-                if (witConfig.useConduit && witConfig.autoGenerateManifest)
+                if (witConfig.useConduit)
                 {
                     GenerateManifest(witConfig, false);
                 }
@@ -480,17 +484,27 @@ namespace Facebook.WitAi.Windows
             }
             catch (Exception e)
             {
-                Debug.LogError($"Wit Configuration Editor - Conduit Manifest Creation Failed\nPath: {fullPath}\n{e}");
+                Debug.LogError($"Wit Configuration Editor - Conduit manifest generation Failed\nPath: {fullPath}\n{e}");
                 return;
             }
 
             Statistics.SuccessfulGenerations++;
             Statistics.AddFrequencies(AssemblyMiner.SignatureFrequency);
             Statistics.AddIncompatibleFrequencies(AssemblyMiner.IncompatibleSignatureFrequency);
-            var generationTime = endGenerationTime - startGenerationTime;
-            AssetDatabase.ImportAsset(fullPath.Replace(Application.dataPath, "Assets"));
 
-            Debug.Log($"Done generating manifest. Total time: {generationTime.TotalMilliseconds} ms");
+            string unityPath = fullPath.Replace(Application.dataPath, "Assets");
+            AssetDatabase.ImportAsset(unityPath);
+
+            string configName = configuration.name;
+            string manifestName = Path.GetFileNameWithoutExtension(unityPath);
+#if UNITY_2021_2_OR_NEWER
+            string configPath = AssetDatabase.GetAssetPath(configuration);
+            configName = $"<a href=\"{configPath}\">{configName}</a>";
+            manifestName = $"<a href=\"{unityPath}\">{manifestName}</a>";
+#endif
+            Debug.Log($"Ref: {unityPath}");
+            var generationTime = endGenerationTime - startGenerationTime;
+            Debug.Log($"Wit Configuration Editor - Conduit manifest generated\nConfiguration: {configName}\nManifest: {manifestName}\nGeneration Time: {generationTime.TotalMilliseconds} ms");
 
             if (openManifest)
             {

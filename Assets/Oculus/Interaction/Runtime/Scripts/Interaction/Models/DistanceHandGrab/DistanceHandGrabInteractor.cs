@@ -447,10 +447,15 @@ namespace Oculus.Interaction.HandGrab
             float bestScore = float.NegativeInfinity;
             float bestFingerScore = float.NegativeInfinity;
 
-            IEnumerable<DistanceHandGrabInteractable> interactables = DistanceHandGrabInteractable.Registry.List(this);
+            var interactables = DistanceHandGrabInteractable.Registry.List(this);
 
             foreach (DistanceHandGrabInteractable interactable in interactables)
             {
+                if (!interactable.SupportsHandedness(this.Hand.Handedness))
+                {
+                    continue;
+                }
+
                 if (!Grab.HandGrab.CouldSelect(this, interactable, out GrabTypeFlags availableGrabTypes))
                 {
                     continue;

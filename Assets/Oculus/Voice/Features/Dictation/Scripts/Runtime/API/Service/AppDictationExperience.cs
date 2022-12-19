@@ -53,7 +53,7 @@ namespace Oculus.Voice.Dictation
         public event Action OnInitialized;
 
 #if UNITY_ANDROID && !UNITY_EDITOR
-        private readonly string PACKAGE_VERSION = "46.0.1";
+        private readonly string PACKAGE_VERSION = "47.0.0.188.341";
 #endif
 
 #if UNITY_ANDROID && !UNITY_EDITOR
@@ -121,7 +121,7 @@ namespace Oculus.Voice.Dictation
             RevertToWitDictation();
 #endif
             _voiceSDKLogger.WitApplication =
-                RuntimeConfiguration.witConfiguration.WitApplicationId;
+                RuntimeConfiguration?.witConfiguration?.WitApplicationId;
             _voiceSDKLogger.ShouldLogToConsole = enableConsoleLogging;
 
             OnInitialized?.Invoke();

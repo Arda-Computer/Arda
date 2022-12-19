@@ -28,7 +28,7 @@ namespace Oculus.Interaction.Input
         IController
     {
 
-        [SerializeField]
+        [SerializeField, Optional]
         [Tooltip("Provides access to additional functionality on top of what the IController interface provides.")]
         private Component[] _aspects;
 
@@ -147,8 +147,23 @@ namespace Oculus.Interaction.Input
                 }
             }
 
+            if (ModifyDataFromSource is IAspectProvider)
+            {
+                IAspectProvider prevDevice = ModifyDataFromSource as IAspectProvider;
+                return prevDevice.TryGetAspect(out foundAspect);
+            }
+
             foundAspect = null;
             return false;
         }
+
+        #region Inject
+
+        public void InjectOptionalAspects(Component[] aspects)
+        {
+            _aspects = aspects;
+        }
+
+        #endregion
     }
 }

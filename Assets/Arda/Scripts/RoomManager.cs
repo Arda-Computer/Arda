@@ -34,7 +34,7 @@ public class RoomManager : MonoBehaviour
 
 
     //save everytime application quits
-    void OnApplicationQuit() {
+    void OnApplicationFocus() {
 
         SaveLoadSystemClass.SaveNew();
 

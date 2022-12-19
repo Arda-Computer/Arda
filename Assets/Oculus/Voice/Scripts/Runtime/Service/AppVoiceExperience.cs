@@ -21,6 +21,7 @@
 using System;
 using Facebook.WitAi;
 using Facebook.WitAi.Configuration;
+using Facebook.WitAi.Data;
 using Facebook.WitAi.Interfaces;
 using Facebook.WitAi.Lib;
 using Oculus.Voice.Bindings.Android;
@@ -52,7 +53,7 @@ namespace Oculus.Voice
         private IVoiceService voiceServiceImpl;
         private IVoiceSDKLogger voiceSDKLoggerImpl;
 #if UNITY_ANDROID && !UNITY_EDITOR
-        private readonly string PACKAGE_VERSION = "46.0.1";
+        private readonly string PACKAGE_VERSION = "47.0.0.188.341";
 #endif
 
         private bool Initialized => null != voiceServiceImpl;
@@ -111,12 +112,25 @@ namespace Oculus.Voice
         {
             voiceSDKLoggerImpl.LogInteractionStart(options.requestID, "speech");
             voiceServiceImpl.Activate(options);
+
+            CheckIfMicPresent();
         }
 
         public override void ActivateImmediately(WitRequestOptions options)
         {
             voiceSDKLoggerImpl.LogInteractionStart(options.requestID, "speech");
             voiceServiceImpl.ActivateImmediately(options);
+
+            CheckIfMicPresent();
+        }
+
+        private void CheckIfMicPresent()
+        {
+            if (!HasPlatformIntegrations && !AudioBuffer.Instance.IsInputAvailable)
+            {
+                VoiceEvents.OnError?.Invoke("No Microphone present",
+                    "No Microphone(s)/recording devices found.  You will be unable to capture audio on this device.");
+            }
         }
 
         public override void Deactivate()
@@ -177,7 +191,7 @@ namespace Oculus.Voice
             RevertToWitUnity();
 #endif
             voiceSDKLoggerImpl.WitApplication =
-                RuntimeConfiguration.witConfiguration.WitApplicationId;
+                RuntimeConfiguration?.witConfiguration?.WitApplicationId;
             voiceSDKLoggerImpl.ShouldLogToConsole = EnableConsoleLogging;
 
             OnInitialized?.Invoke();
@@ -254,7 +268,7 @@ namespace Oculus.Voice
 
         private void OnApplicationFocus(bool hasFocus)
         {
-            if (hasFocus && !Initialized)
+            if (enabled && hasFocus && !Initialized)
             {
                 if (MicPermissionsManager.HasMicPermission())
                 {
@@ -263,7 +277,7 @@ namespace Oculus.Voice
             }
         }
 
-        #region Event listerns for logging
+        #region Event listeners for logging
 
         void OnWitResponseListener(WitResponseNode witResponseNode)
         {

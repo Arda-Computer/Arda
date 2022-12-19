@@ -29,7 +29,7 @@ namespace Oculus.Interaction.Input
     /// </summary>
     public class HmdRef : MonoBehaviour, IHmd
     {
-        [SerializeField, Interface(typeof(Hmd))]
+        [SerializeField, Interface(typeof(IHmd))]
         private MonoBehaviour _hmd;
         private IHmd Hmd;
 
@@ -52,6 +52,11 @@ namespace Oculus.Interaction.Input
         public bool GetRootPose(out Pose pose)
         {
             return Hmd.GetRootPose(out pose);
+        }
+
+        public bool TryGetAspect<TAspect>(out TAspect aspect) where TAspect : class
+        {
+            return Hmd.TryGetAspect(out aspect);
         }
 
         #region Inject

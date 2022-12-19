@@ -26,11 +26,11 @@ using UnityEngine.Assertions;
 
 namespace Oculus.Interaction
 {
-    public class HandVisual : MonoBehaviour
+    public class HandVisual : MonoBehaviour, IHandVisual
     {
         [SerializeField, Interface(typeof(IHand))]
         private MonoBehaviour _hand;
-        public IHand Hand;
+        public IHand Hand { get; private set; }
 
         [SerializeField]
         private SkinnedMeshRenderer _skinnedMeshRenderer;
@@ -56,7 +56,7 @@ namespace Oculus.Interaction
 
         private int _wristScalePropertyId;
 
-        public List<Transform> Joints => _jointTransforms;
+        public IList<Transform> Joints => _jointTransforms;
 
         public bool ForceOffVisibility { get; set; }
 
@@ -165,6 +165,11 @@ namespace Oculus.Interaction
             return _jointTransforms[(int)handJointId];
         }
 
+        public Pose GetJointPose(HandJointId jointId, Space space)
+        {
+            return GetTransformByHandJointId(jointId).GetPose(space);
+        }
+
         #region Inject
 
         public void InjectAllHandSkeletonVisual(IHand hand, SkinnedMeshRenderer skinnedMeshRenderer)
@@ -203,6 +208,7 @@ namespace Oculus.Interaction
         {
             _handMaterialPropertyBlockEditor = editor;
         }
+
         #endregion
     }
 }

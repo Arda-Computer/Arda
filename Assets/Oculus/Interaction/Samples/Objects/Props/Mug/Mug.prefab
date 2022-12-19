@@ -204,26 +204,27 @@ MonoBehaviour:
   _interactorFilters: []
   _maxInteractors: -1
   _maxSelectingInteractors: -1
+  _data: {fileID: 0}
   _pointableElement: {fileID: 1551646519691236562}
   _rigidbody: {fileID: 8580307722448229154}
   _resetGrabOnGrabsUpdated: 1
   _physicsGrabbable: {fileID: 0}
   _scoringModifier:
-    _maxDistance: 0.05
-    _positionRotationWeight: 0.5
+    _maxDistance: 0.1
+    _positionRotationWeight: 0.8
   _supportedGrabTypes: 3
   _pinchGrabRules:
     _thumbRequirement: 0
     _indexRequirement: 1
     _middleRequirement: 1
-    _ringRequirement: 0
+    _ringRequirement: 1
     _pinkyRequirement: 0
     _unselectMode: 0
   _palmGrabRules:
     _thumbRequirement: 0
-    _indexRequirement: 2
-    _middleRequirement: 2
-    _ringRequirement: 2
+    _indexRequirement: 1
+    _middleRequirement: 1
+    _ringRequirement: 1
     _pinkyRequirement: 1
     _unselectMode: 0
   _movementProvider: {fileID: 0}
@@ -337,26 +338,27 @@ MonoBehaviour:
   _interactorFilters: []
   _maxInteractors: -1
   _maxSelectingInteractors: -1
+  _data: {fileID: 0}
   _pointableElement: {fileID: 1551646519691236562}
   _rigidbody: {fileID: 8580307722448229154}
   _resetGrabOnGrabsUpdated: 1
   _physicsGrabbable: {fileID: 0}
   _scoringModifier:
     _maxDistance: 0.1
-    _positionRotationWeight: 1
+    _positionRotationWeight: 0.8
   _supportedGrabTypes: 3
   _pinchGrabRules:
     _thumbRequirement: 0
     _indexRequirement: 1
     _middleRequirement: 1
-    _ringRequirement: 0
+    _ringRequirement: 1
     _pinkyRequirement: 0
     _unselectMode: 0
   _palmGrabRules:
     _thumbRequirement: 0
-    _indexRequirement: 2
-    _middleRequirement: 2
-    _ringRequirement: 2
+    _indexRequirement: 1
+    _middleRequirement: 1
+    _ringRequirement: 1
     _pinkyRequirement: 1
     _unselectMode: 0
   _movementProvider: {fileID: 0}
@@ -797,13 +799,14 @@ MonoBehaviour:
   _interactorFilters: []
   _maxInteractors: -1
   _maxSelectingInteractors: -1
+  _data: {fileID: 0}
   _pointableElement: {fileID: 1551646519691236562}
   _rigidbody: {fileID: 8580307722448229154}
   _resetGrabOnGrabsUpdated: 1
   _physicsGrabbable: {fileID: 0}
   _scoringModifier:
-    _maxDistance: 0.2
-    _positionRotationWeight: 0
+    _maxDistance: 0.1
+    _positionRotationWeight: 0.3
   _supportedGrabTypes: 3
   _pinchGrabRules:
     _thumbRequirement: 0
@@ -1271,26 +1274,27 @@ MonoBehaviour:
   _interactorFilters: []
   _maxInteractors: -1
   _maxSelectingInteractors: -1
+  _data: {fileID: 0}
   _pointableElement: {fileID: 1551646519691236562}
   _rigidbody: {fileID: 8580307722448229154}
   _resetGrabOnGrabsUpdated: 1
   _physicsGrabbable: {fileID: 0}
   _scoringModifier:
     _maxDistance: 0.1
-    _positionRotationWeight: 1
+    _positionRotationWeight: 0.8
   _supportedGrabTypes: 3
   _pinchGrabRules:
     _thumbRequirement: 0
     _indexRequirement: 1
     _middleRequirement: 1
-    _ringRequirement: 0
+    _ringRequirement: 1
     _pinkyRequirement: 0
     _unselectMode: 0
   _palmGrabRules:
     _thumbRequirement: 0
-    _indexRequirement: 2
-    _middleRequirement: 2
-    _ringRequirement: 2
+    _indexRequirement: 1
+    _middleRequirement: 1
+    _ringRequirement: 1
     _pinkyRequirement: 1
     _unselectMode: 0
   _movementProvider: {fileID: 0}
@@ -1654,6 +1658,7 @@ MonoBehaviour:
   - {fileID: 1798685864391773425}
   - {fileID: 8420726405956667829}
   - {fileID: 2808954227376388995}
+  _data: {fileID: 0}
 --- !u!1 &4097471630138220772
 GameObject:
   m_ObjectHideFlags: 0
@@ -1932,26 +1937,27 @@ MonoBehaviour:
   _interactorFilters: []
   _maxInteractors: -1
   _maxSelectingInteractors: -1
+  _data: {fileID: 0}
   _pointableElement: {fileID: 1551646519691236562}
   _rigidbody: {fileID: 8580307722448229154}
   _resetGrabOnGrabsUpdated: 1
   _physicsGrabbable: {fileID: 0}
   _scoringModifier:
-    _maxDistance: 0.05
-    _positionRotationWeight: 0.5
+    _maxDistance: 0.1
+    _positionRotationWeight: 0.8
   _supportedGrabTypes: 3
   _pinchGrabRules:
     _thumbRequirement: 0
     _indexRequirement: 1
     _middleRequirement: 1
-    _ringRequirement: 0
+    _ringRequirement: 1
     _pinkyRequirement: 0
     _unselectMode: 0
   _palmGrabRules:
     _thumbRequirement: 0
-    _indexRequirement: 2
-    _middleRequirement: 2
-    _ringRequirement: 2
+    _indexRequirement: 1
+    _middleRequirement: 1
+    _ringRequirement: 1
     _pinkyRequirement: 1
     _unselectMode: 0
   _movementProvider: {fileID: 0}
@@ -2064,13 +2070,14 @@ MonoBehaviour:
   _interactorFilters: []
   _maxInteractors: -1
   _maxSelectingInteractors: -1
+  _data: {fileID: 0}
   _pointableElement: {fileID: 1551646519691236562}
   _rigidbody: {fileID: 8580307722448229154}
   _resetGrabOnGrabsUpdated: 1
   _physicsGrabbable: {fileID: 0}
   _scoringModifier:
-    _maxDistance: 0.2
-    _positionRotationWeight: 0
+    _maxDistance: 0.1
+    _positionRotationWeight: 0.3
   _supportedGrabTypes: 3
   _pinchGrabRules:
     _thumbRequirement: 0

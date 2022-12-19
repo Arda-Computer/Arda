@@ -108,7 +108,7 @@ namespace Oculus.Interaction
             float score = bestScore;
             bool closestPointIsInside = false;
 
-            IEnumerable<GrabInteractable> interactables = Interaction.GrabInteractable.Registry.List(this);
+            var interactables = Interaction.GrabInteractable.Registry.List(this);
             foreach (GrabInteractable interactable in interactables)
             {
                 Collider[] colliders = interactable.Colliders;
