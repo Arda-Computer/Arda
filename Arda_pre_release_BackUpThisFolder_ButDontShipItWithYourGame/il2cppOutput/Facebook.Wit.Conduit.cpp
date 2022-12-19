@@ -346,13 +346,11 @@ IL2CPP_EXTERN_C String_t* _stringLiteralC18C9BB6DF0D5C60CE5A5D2D3D6111BEB6F8CCEB
 IL2CPP_EXTERN_C String_t* _stringLiteralCD9B14D4046ED1AD88F3E1F180FCBA71F134B53B;
 IL2CPP_EXTERN_C String_t* _stringLiteralCE718B85C732127DA06EC4DDA3E9F112B092F786;
 IL2CPP_EXTERN_C String_t* _stringLiteralD498A609ABCC1ADA0E1D7FBCCB2FACE5277DBBE0;
-IL2CPP_EXTERN_C String_t* _stringLiteralDAC21706C0E8B5C17AB5CFD17A7F07E274C8C610;
 IL2CPP_EXTERN_C String_t* _stringLiteralE10CE76A36830983737AFC7AB5662B41A8D7111B;
 IL2CPP_EXTERN_C String_t* _stringLiteralE15B6F2D7831CA81037E8DCF7B3F54A8A2AD80BC;
 IL2CPP_EXTERN_C String_t* _stringLiteralE1A3CD913FA259DB8A074AE7BB483A85777F004B;
 IL2CPP_EXTERN_C String_t* _stringLiteralF19157630C2E302C33B88C5B6A53BB1D1F0B6896;
 IL2CPP_EXTERN_C String_t* _stringLiteralF19C581C636A926E20F7D783DF0F1AE22C19E0B9;
-IL2CPP_EXTERN_C String_t* _stringLiteralF2866152ABF66A7E9E457DC2C650C3FEFA90B90E;
 IL2CPP_EXTERN_C String_t* _stringLiteralF3E84B722399601AD7E281754E917478AA9AD48D;
 IL2CPP_EXTERN_C const RuntimeMethod* ConduitDispatcher_U3CCompatibleInvocationContextU3Eb__8_0_m2CEEFFE91923C1898CAF9829B7BB09D268E3C74D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Add_m9584173AD45120BB7D1FB40440ED3943B64EE0C3_RuntimeMethod_var;
@@ -1796,10 +1794,6 @@ inline bool Enumerator_MoveNext_m6D1DE9A3C77E32986FDE259E5D8DE4F6F517525C (Enume
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_mF8B69BE42B5C5ABCAD3C176FBBE3010E0815D65D (String_t* ___str00, String_t* ___str11, String_t* ___str22, String_t* ___str33, const RuntimeMethod* method) ;
 // System.Boolean System.Reflection.MethodBase::get_IsStatic()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MethodBase_get_IsStatic_mD2921396167EC4F99E2ADC46C39CCCEC3CD0E16E (MethodBase_t* __this, const RuntimeMethod* method) ;
-// System.String System.String::Concat(System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_mAF2CE02CC0CB7460753D0A1A91CCF2B1E9804C5D (String_t* ___str00, String_t* ___str11, const RuntimeMethod* method) ;
-// System.Void UnityEngine.Debug::Log(System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m86567BCF22BBE7809747817453CACA0E41E68219 (RuntimeObject* ___message0, const RuntimeMethod* method) ;
 // TSource[] System.Linq.Enumerable::ToArray<System.Object>(System.Collections.Generic.IEnumerable`1<TSource>)
 inline ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* Enumerable_ToArray_TisRuntimeObject_m6B1F26FB2B3EA7B18B82FC81035440AAAEFCE924 (RuntimeObject* ___source0, const RuntimeMethod* method)
 {
@@ -1842,6 +1836,8 @@ inline void Dictionary_2__ctor_m4B46282F56E1C120392B553F9927DD511BFFF4E7 (Dictio
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* ManifestAction_get_ID_mCCA94FFA2F3904129D01D8D27C60C746F80A9611_inline (ManifestAction_t669ABBC9BB7419A59BFAE250F45403C78A30C056* __this, const RuntimeMethod* method) ;
 // System.Int32 System.String::LastIndexOf(System.Char)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t String_LastIndexOf_m6BB3E7E1B48702D4C715FA423F8A822C053B290E (String_t* __this, Il2CppChar ___value0, const RuntimeMethod* method) ;
+// System.String System.String::Concat(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_mAF2CE02CC0CB7460753D0A1A91CCF2B1E9804C5D (String_t* ___str00, String_t* ___str11, const RuntimeMethod* method) ;
 // System.String System.String::Substring(System.Int32,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Substring_mB1D94F47935D22E130FF2C01DBB6A4135FBB76CE (String_t* __this, int32_t ___startIndex0, int32_t ___length1, const RuntimeMethod* method) ;
 // System.String Meta.Conduit.ManifestAction::get_Assembly()
@@ -1985,6 +1981,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* ManifestEntity_get_Type
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* ManifestEntity_get_Name_m6EF67B98CC88F20449A5396CF4DF806A4FA0AC61_inline (ManifestEntity_t023CD958B1387BF24647DAF1E49C2F393C282938* __this, const RuntimeMethod* method) ;
 // System.Collections.Generic.List`1<System.String> Meta.Conduit.ManifestEntity::get_Values()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ManifestEntity_get_Values_m55A1BC0584AA1542D169B217332865EB79E71259_inline (ManifestEntity_t023CD958B1387BF24647DAF1E49C2F393C282938* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Debug::Log(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m86567BCF22BBE7809747817453CACA0E41E68219 (RuntimeObject* ___message0, const RuntimeMethod* method) ;
 // T UnityEngine.Resources::Load<UnityEngine.TextAsset>(System.String)
 inline TextAsset_t2C64E93DA366D9DE5A8209E1802FA4884AC1BD69* Resources_Load_TisTextAsset_t2C64E93DA366D9DE5A8209E1802FA4884AC1BD69_m6079ADE3574BF9526436A2BD6BFE75EA94BF193A (String_t* ___path0, const RuntimeMethod* method)
 {
@@ -2917,8 +2915,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ConduitDispatcher_InvokeMethod_m2FA25297
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9922970D8005166DB69DF5FECF38875C42ADC753);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD498A609ABCC1ADA0E1D7FBCCB2FACE5277DBBE0);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDAC21706C0E8B5C17AB5CFD17A7F07E274C8C610);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF2866152ABF66A7E9E457DC2C650C3FEFA90B90E);
 		s_Il2CppMethodInitialized = true;
 	}
 	MethodInfo_t* V_0 = NULL;
@@ -3035,116 +3031,96 @@ IL_0064:
 		L_32 = MethodBase_get_IsStatic_mD2921396167EC4F99E2ADC46C39CCCEC3CD0E16E(L_31, NULL);
 		if (!L_32)
 		{
-			goto IL_00ba;
+			goto IL_00a2;
 		}
-	}
-	{
-		// Debug.Log($"About to invoke {method.Name}");
-		MethodInfo_t* L_33 = V_0;
-		NullCheck(L_33);
-		String_t* L_34;
-		L_34 = VirtualFuncInvoker0< String_t* >::Invoke(7 /* System.String System.Reflection.MemberInfo::get_Name() */, L_33);
-		String_t* L_35;
-		L_35 = String_Concat_mAF2CE02CC0CB7460753D0A1A91CCF2B1E9804C5D(_stringLiteralDAC21706C0E8B5C17AB5CFD17A7F07E274C8C610, L_34, NULL);
-		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m86567BCF22BBE7809747817453CACA0E41E68219(L_35, NULL);
 	}
 	try
 	{// begin try (depth: 1)
 		// method.Invoke(null, parameterObjects.ToArray());
-		MethodInfo_t* L_36 = V_0;
-		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_37 = V_2;
-		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_38;
-		L_38 = Enumerable_ToArray_TisRuntimeObject_m6B1F26FB2B3EA7B18B82FC81035440AAAEFCE924((RuntimeObject*)L_37, Enumerable_ToArray_TisRuntimeObject_m6B1F26FB2B3EA7B18B82FC81035440AAAEFCE924_RuntimeMethod_var);
-		NullCheck(L_36);
-		RuntimeObject* L_39;
-		L_39 = MethodBase_Invoke_mEEF3218648F111A8C338001A7804091A0747C826(L_36, NULL, L_38, NULL);
+		MethodInfo_t* L_33 = V_0;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_34 = V_2;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_35;
+		L_35 = Enumerable_ToArray_TisRuntimeObject_m6B1F26FB2B3EA7B18B82FC81035440AAAEFCE924((RuntimeObject*)L_34, Enumerable_ToArray_TisRuntimeObject_m6B1F26FB2B3EA7B18B82FC81035440AAAEFCE924_RuntimeMethod_var);
+		NullCheck(L_33);
+		RuntimeObject* L_36;
+		L_36 = MethodBase_Invoke_mEEF3218648F111A8C338001A7804091A0747C826(L_33, NULL, L_35, NULL);
 		// }
-		goto IL_00b8;
+		goto IL_00a0;
 	}// end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
 		{
 			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
-			goto CATCH_0097;
+			goto CATCH_0082;
 		}
 		throw e;
 	}
 
-CATCH_0097:
+CATCH_0082:
 	{// begin catch(System.Exception)
 		// catch (Exception e)
 		V_4 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
 		// Debug.LogError($"Failed to invoke static method {method.Name}. {e}");
-		MethodInfo_t* L_40 = V_0;
-		NullCheck(L_40);
-		String_t* L_41;
-		L_41 = VirtualFuncInvoker0< String_t* >::Invoke(7 /* System.String System.Reflection.MemberInfo::get_Name() */, L_40);
-		Exception_t* L_42 = V_4;
-		String_t* L_43;
-		L_43 = String_Format_m9499958F4B0BB6089C75760AB647AB3CA4D55806(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralF19C581C636A926E20F7D783DF0F1AE22C19E0B9)), L_41, L_42, NULL);
+		MethodInfo_t* L_37 = V_0;
+		NullCheck(L_37);
+		String_t* L_38;
+		L_38 = VirtualFuncInvoker0< String_t* >::Invoke(7 /* System.String System.Reflection.MemberInfo::get_Name() */, L_37);
+		Exception_t* L_39 = V_4;
+		String_t* L_40;
+		L_40 = String_Format_m9499958F4B0BB6089C75760AB647AB3CA4D55806(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralF19C581C636A926E20F7D783DF0F1AE22C19E0B9)), L_38, L_39, NULL);
 		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var)));
-		Debug_LogError_m059825802BB6AF7EA9693FEBEEB0D85F59A3E38E(L_43, NULL);
+		Debug_LogError_m059825802BB6AF7EA9693FEBEEB0D85F59A3E38E(L_40, NULL);
 		// return false;
 		V_5 = (bool)0;
 		IL2CPP_POP_ACTIVE_EXCEPTION();
-		goto IL_0145;
+		goto IL_0113;
 	}// end catch (depth: 1)
 
-IL_00b8:
+IL_00a0:
 	{
 		// return true;
 		return (bool)1;
 	}
 
-IL_00ba:
+IL_00a2:
 	{
-		// Debug.Log($"About to invoke {method.Name} on all instances");
-		MethodInfo_t* L_44 = V_0;
-		NullCheck(L_44);
-		String_t* L_45;
-		L_45 = VirtualFuncInvoker0< String_t* >::Invoke(7 /* System.String System.Reflection.MemberInfo::get_Name() */, L_44);
-		String_t* L_46;
-		L_46 = String_Concat_m9B13B47FCB3DF61144D9647DDA05F527377251B0(_stringLiteralDAC21706C0E8B5C17AB5CFD17A7F07E274C8C610, L_45, _stringLiteralF2866152ABF66A7E9E457DC2C650C3FEFA90B90E, NULL);
-		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m86567BCF22BBE7809747817453CACA0E41E68219(L_46, NULL);
 		// var allSucceeded = true;
 		V_6 = (bool)1;
 		// foreach (var obj in this.instanceResolver.GetObjectsOfType(invocationContext.Type))
-		RuntimeObject* L_47 = __this->___instanceResolver_2;
-		InvocationContext_t59E9CF067A50EDB835F14C795FE7DBCC32F62E05* L_48 = ___invocationContext0;
-		NullCheck(L_48);
-		Type_t* L_49;
-		L_49 = InvocationContext_get_Type_mF3CE4F0552F57E7268A4CDF48AF9A1B88BD78EE0_inline(L_48, NULL);
-		NullCheck(L_47);
-		RuntimeObject* L_50;
-		L_50 = InterfaceFuncInvoker1< RuntimeObject*, Type_t* >::Invoke(0 /* System.Collections.Generic.IEnumerable`1<System.Object> Meta.Conduit.IInstanceResolver::GetObjectsOfType(System.Type) */, IInstanceResolver_t4081CA8E4E0CFA6F97CCE27A95338CF91C0542F0_il2cpp_TypeInfo_var, L_47, L_49);
-		NullCheck(L_50);
-		RuntimeObject* L_51;
-		L_51 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.Generic.IEnumerator`1<T> System.Collections.Generic.IEnumerable`1<System.Object>::GetEnumerator() */, IEnumerable_1_tF95C9E01A913DD50575531C8305932628663D9E9_il2cpp_TypeInfo_var, L_50);
-		V_7 = L_51;
+		RuntimeObject* L_41 = __this->___instanceResolver_2;
+		InvocationContext_t59E9CF067A50EDB835F14C795FE7DBCC32F62E05* L_42 = ___invocationContext0;
+		NullCheck(L_42);
+		Type_t* L_43;
+		L_43 = InvocationContext_get_Type_mF3CE4F0552F57E7268A4CDF48AF9A1B88BD78EE0_inline(L_42, NULL);
+		NullCheck(L_41);
+		RuntimeObject* L_44;
+		L_44 = InterfaceFuncInvoker1< RuntimeObject*, Type_t* >::Invoke(0 /* System.Collections.Generic.IEnumerable`1<System.Object> Meta.Conduit.IInstanceResolver::GetObjectsOfType(System.Type) */, IInstanceResolver_t4081CA8E4E0CFA6F97CCE27A95338CF91C0542F0_il2cpp_TypeInfo_var, L_41, L_43);
+		NullCheck(L_44);
+		RuntimeObject* L_45;
+		L_45 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.Generic.IEnumerator`1<T> System.Collections.Generic.IEnumerable`1<System.Object>::GetEnumerator() */, IEnumerable_1_tF95C9E01A913DD50575531C8305932628663D9E9_il2cpp_TypeInfo_var, L_44);
+		V_7 = L_45;
 	}
 	{
 		auto __finallyBlock = il2cpp::utils::Finally([&]
 		{
 
-FINALLY_0136:
+FINALLY_0104:
 			{// begin finally (depth: 1)
 				{
-					RuntimeObject* L_52 = V_7;
-					if (!L_52)
+					RuntimeObject* L_46 = V_7;
+					if (!L_46)
 					{
-						goto IL_0141;
+						goto IL_010f;
 					}
 				}
 				{
-					RuntimeObject* L_53 = V_7;
-					NullCheck(L_53);
-					InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_53);
+					RuntimeObject* L_47 = V_7;
+					NullCheck(L_47);
+					InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_47);
 				}
 
-IL_0141:
+IL_010f:
 				{
 					return;
 				}
@@ -3153,78 +3129,78 @@ IL_0141:
 		try
 		{// begin try (depth: 1)
 			{
-				goto IL_012b_1;
+				goto IL_00f9_1;
 			}
 
-IL_00f1_1:
+IL_00bf_1:
 			{
 				// foreach (var obj in this.instanceResolver.GetObjectsOfType(invocationContext.Type))
-				RuntimeObject* L_54 = V_7;
-				NullCheck(L_54);
-				RuntimeObject* L_55;
-				L_55 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* T System.Collections.Generic.IEnumerator`1<System.Object>::get_Current() */, IEnumerator_1_t43D2E4BA9246755F293DFA74F001FB1A70A648FD_il2cpp_TypeInfo_var, L_54);
-				V_8 = L_55;
+				RuntimeObject* L_48 = V_7;
+				NullCheck(L_48);
+				RuntimeObject* L_49;
+				L_49 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* T System.Collections.Generic.IEnumerator`1<System.Object>::get_Current() */, IEnumerator_1_t43D2E4BA9246755F293DFA74F001FB1A70A648FD_il2cpp_TypeInfo_var, L_48);
+				V_8 = L_49;
 			}
 			try
 			{// begin try (depth: 2)
 				// method.Invoke(obj, parameterObjects.ToArray());
-				MethodInfo_t* L_56 = V_0;
-				RuntimeObject* L_57 = V_8;
-				ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_58 = V_2;
-				ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_59;
-				L_59 = Enumerable_ToArray_TisRuntimeObject_m6B1F26FB2B3EA7B18B82FC81035440AAAEFCE924((RuntimeObject*)L_58, Enumerable_ToArray_TisRuntimeObject_m6B1F26FB2B3EA7B18B82FC81035440AAAEFCE924_RuntimeMethod_var);
-				NullCheck(L_56);
-				RuntimeObject* L_60;
-				L_60 = MethodBase_Invoke_mEEF3218648F111A8C338001A7804091A0747C826(L_56, L_57, L_59, NULL);
+				MethodInfo_t* L_50 = V_0;
+				RuntimeObject* L_51 = V_8;
+				ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_52 = V_2;
+				ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_53;
+				L_53 = Enumerable_ToArray_TisRuntimeObject_m6B1F26FB2B3EA7B18B82FC81035440AAAEFCE924((RuntimeObject*)L_52, Enumerable_ToArray_TisRuntimeObject_m6B1F26FB2B3EA7B18B82FC81035440AAAEFCE924_RuntimeMethod_var);
+				NullCheck(L_50);
+				RuntimeObject* L_54;
+				L_54 = MethodBase_Invoke_mEEF3218648F111A8C338001A7804091A0747C826(L_50, L_51, L_53, NULL);
 				// }
-				goto IL_012b_1;
+				goto IL_00f9_1;
 			}// end try (depth: 2)
 			catch(Il2CppExceptionWrapper& e)
 			{
 				if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
 				{
 					IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
-					goto CATCH_010b_1;
+					goto CATCH_00d9_1;
 				}
 				throw e;
 			}
 
-CATCH_010b_1:
+CATCH_00d9_1:
 			{// begin catch(System.Exception)
 				// catch (Exception e)
 				V_9 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
 				// Debug.LogError($"Failed to invoke method {method.Name}. {e} on {obj}");
-				MethodInfo_t* L_61 = V_0;
-				NullCheck(L_61);
-				String_t* L_62;
-				L_62 = VirtualFuncInvoker0< String_t* >::Invoke(7 /* System.String System.Reflection.MemberInfo::get_Name() */, L_61);
-				Exception_t* L_63 = V_9;
-				RuntimeObject* L_64 = V_8;
-				String_t* L_65;
-				L_65 = String_Format_m76BF8F3A6AD789E38B708848A2688D400AAC250A(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralE15B6F2D7831CA81037E8DCF7B3F54A8A2AD80BC)), L_62, L_63, L_64, NULL);
+				MethodInfo_t* L_55 = V_0;
+				NullCheck(L_55);
+				String_t* L_56;
+				L_56 = VirtualFuncInvoker0< String_t* >::Invoke(7 /* System.String System.Reflection.MemberInfo::get_Name() */, L_55);
+				Exception_t* L_57 = V_9;
+				RuntimeObject* L_58 = V_8;
+				String_t* L_59;
+				L_59 = String_Format_m76BF8F3A6AD789E38B708848A2688D400AAC250A(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralE15B6F2D7831CA81037E8DCF7B3F54A8A2AD80BC)), L_56, L_57, L_58, NULL);
 				il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var)));
-				Debug_LogError_m059825802BB6AF7EA9693FEBEEB0D85F59A3E38E(L_65, NULL);
+				Debug_LogError_m059825802BB6AF7EA9693FEBEEB0D85F59A3E38E(L_59, NULL);
 				// allSucceeded = false;
 				V_6 = (bool)0;
 				// continue;
 				IL2CPP_POP_ACTIVE_EXCEPTION();
-				goto IL_012b_1;
+				goto IL_00f9_1;
 			}// end catch (depth: 2)
 
-IL_012b_1:
+IL_00f9_1:
 			{
 				// foreach (var obj in this.instanceResolver.GetObjectsOfType(invocationContext.Type))
-				RuntimeObject* L_66 = V_7;
-				NullCheck(L_66);
-				bool L_67;
-				L_67 = InterfaceFuncInvoker0< bool >::Invoke(0 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_66);
-				if (L_67)
+				RuntimeObject* L_60 = V_7;
+				NullCheck(L_60);
+				bool L_61;
+				L_61 = InterfaceFuncInvoker0< bool >::Invoke(0 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_60);
+				if (L_61)
 				{
-					goto IL_00f1_1;
+					goto IL_00bf_1;
 				}
 			}
 			{
-				goto IL_0142;
+				goto IL_0110;
 			}
 		}// end try (depth: 1)
 		catch(Il2CppExceptionWrapper& e)
@@ -3233,18 +3209,18 @@ IL_012b_1:
 		}
 	}
 
-IL_0142:
+IL_0110:
 	{
 		// return allSucceeded;
-		bool L_68 = V_6;
-		return L_68;
+		bool L_62 = V_6;
+		return L_62;
 	}
 
-IL_0145:
+IL_0113:
 	{
 		// }
-		bool L_69 = V_5;
-		return L_69;
+		bool L_63 = V_5;
+		return L_63;
 	}
 }
 // System.Boolean Meta.Conduit.ConduitDispatcher::<CompatibleInvocationContext>b__8_0(System.Reflection.ParameterInfo)

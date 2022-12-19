@@ -353,7 +353,7 @@ namespace Oculus.Interaction
         {
             if (registry == _registry) return;
 
-            IEnumerable<TInteractable> interactables = _registry.List();
+            var interactables = _registry.List();
             foreach (TInteractable interactable in interactables)
             {
                 registry.Register(interactable);

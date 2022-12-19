@@ -21,20 +21,7 @@ MonoBehaviour:
     createdAt: 
   configId: 74f17110584875d438c76cba2242da14
   clientAccessToken: HOKEABS7HPIQVSRSVWRPTTV75TQJ5QBP
-  timeoutMS: 10000
-  endpointConfiguration:
-    uriScheme: 
-    authority: 
-    port: 0
-    witApiVersion: 
-    speech: 
-    message: 
-    dictation: 
   entities: []
   intents: []
   traits: []
   isDemoOnly: 1
-  useConduit: 0
-  manifestLocalPath: ConduitManifest-f2e94ba9-e43d-4550-b219-c81f1f44ebe4.json
-  autoGenerateManifest: 0
-  openManifestOnGeneration: 0

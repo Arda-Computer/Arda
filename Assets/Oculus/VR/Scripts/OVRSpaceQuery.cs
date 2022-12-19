@@ -47,6 +47,10 @@ internal static class OVRSpaceQuery
         /// </summary>
         Storable = 1 << OVRPlugin.SpaceComponentType.Storable,
 
+        /// <summary>
+        /// The space is sharable.
+        /// </summary>
+        Sharable = 1 << OVRPlugin.SpaceComponentType.Sharable,
 
         /// <summary>
         /// The space represents a 2D plane.
@@ -225,6 +229,8 @@ internal static class OVRSpaceQuery
                     ComponentTypes[numComponents++] = OVRPlugin.SpaceComponentType.Locatable;
                 if ((_componentFilter & ComponentType.Storable) != 0)
                     ComponentTypes[numComponents++] = OVRPlugin.SpaceComponentType.Storable;
+                if ((_componentFilter & ComponentType.Sharable) != 0)
+                    ComponentTypes[numComponents++] = OVRPlugin.SpaceComponentType.Sharable;
                 if ((_componentFilter & ComponentType.Bounded2D) != 0)
                     ComponentTypes[numComponents++] = OVRPlugin.SpaceComponentType.Bounded2D;
                 if ((_componentFilter & ComponentType.Bounded3D) != 0)

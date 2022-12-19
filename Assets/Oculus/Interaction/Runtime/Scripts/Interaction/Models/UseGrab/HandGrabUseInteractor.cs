@@ -243,7 +243,7 @@ namespace Oculus.Interaction.HandGrab
             HandGrabUseInteractable bestCandidate = null;
 
             _usesHandPose = false;
-            IEnumerable<HandGrabUseInteractable> candidates = HandGrabUseInteractable.Registry.List(this);
+            var candidates = HandGrabUseInteractable.Registry.List(this);
             foreach (HandGrabUseInteractable candidate in candidates)
             {
                 candidate.FindBestHandPoses(Hand != null ? Hand.Scale : 1f,

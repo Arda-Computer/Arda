@@ -137,7 +137,8 @@ namespace Oculus.Interaction
 
         private ISelector _selector = null;
 
-        private int _maxIterationsPerFrame = 10;
+        [SerializeField]
+        private int _maxIterationsPerFrame = 3;
         public int MaxIterationsPerFrame
         {
             get

@@ -102,4 +102,17 @@ internal static class OVRDeserialize
         public OVRPlugin.SpaceStorageLocation Location;
     }
 
+    public struct SpaceShareResultData
+    {
+        public UInt64 RequestId;
+
+        public int Result;
+    }
+
+    public struct SpaceListSaveResultData
+    {
+        public UInt64 RequestId;
+
+        public int Result;
+    }
 }

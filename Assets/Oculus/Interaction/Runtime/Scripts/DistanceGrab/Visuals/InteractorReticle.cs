@@ -109,15 +109,25 @@ namespace Oculus.Interaction.DistanceReticles
 
         private void InteractableSet(Component interactable)
         {
-            if (interactable != null)
+            if (interactable != null
+                && interactable.TryGetComponent(out _targetData))
             {
-                interactable.TryGetComponent(out _targetData);
+                _drawn = false;
+            }
+            else
+            {
+                _targetData = null;
             }
         }
 
         private void InteractableUnset()
         {
             _targetData = default(TReticleData);
+            if (_drawn)
+            {
+                _drawn = false;
+                Hide();
+            }
         }
 
         #region Drawing

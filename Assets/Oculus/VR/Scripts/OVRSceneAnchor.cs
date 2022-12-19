@@ -20,7 +20,6 @@
 
 using System;
 using System.Collections.Generic;
-using Unity.Collections;
 using UnityEngine;
 
 /// <summary>
@@ -45,6 +44,11 @@ public sealed class OVRSceneAnchor : MonoBehaviour
     /// The universally unique identifier for this scene anchor.
     /// </summary>
     public Guid Uuid { get; private set; }
+
+    /// <summary>
+    /// Indicates whether this anchor is tracked by the system.
+    /// </summary>
+    public bool IsTracked { get; internal set; }
 
     private static readonly Quaternion RotateY180 = Quaternion.Euler(0, 180, 0);
     private OVRPlugin.Posef? _pose = null;
@@ -86,8 +90,10 @@ public sealed class OVRSceneAnchor : MonoBehaviour
 
         Space = space;
         Uuid = uuid;
+
         ClearPoseCache();
 
+        SceneAnchors[this.Uuid] = this;
         SceneAnchorsList.Add(this);
 
         AnchorReferenceCountDictionary.TryGetValue(Space, out var referenceCount);
@@ -108,6 +114,7 @@ public sealed class OVRSceneAnchor : MonoBehaviour
             // This should work; so add some development-only logs so we know if something is wrong here.
             if (updateTransformSucceeded)
             {
+                IsTracked = true;
                 OVRSceneManager.Development.Log(nameof(OVRSceneAnchor), $"[{uuid}] Initial transform set.");
             }
             else
@@ -115,6 +122,7 @@ public sealed class OVRSceneAnchor : MonoBehaviour
                 OVRSceneManager.Development.LogWarning(nameof(OVRSceneAnchor),
                     $"[{uuid}] {nameof(OVRPlugin.TryLocateSpace)} failed. The entity may have the wrong initial transform.");
             }
+
         }
 
         SyncComponent<OVRSemanticClassification>(OVRPlugin.SpaceComponentType.SemanticLabels);
@@ -134,6 +142,20 @@ public sealed class OVRSceneAnchor : MonoBehaviour
             throw new ArgumentNullException(nameof(other));
 
         Initialize(other.Space, other.Uuid);
+    }
+
+    /// <summary>
+    /// Get the list of all scene anchors.
+    /// </summary>
+    /// <param name="anchors">A list of <see cref="OVRSceneAnchor"/> to populate.</param>
+    /// <exception cref="ArgumentNullException">Thrown if <paramref name="anchors"/> is `null`.</exception>
+    public static void GetSceneAnchors(List<OVRSceneAnchor> anchors)
+    {
+        if (anchors == null)
+            throw new ArgumentNullException(nameof(anchors));
+
+        anchors.Clear();
+        anchors.AddRange(SceneAnchorsList);
     }
 
     internal bool TryUpdateTransform(bool useCache)
@@ -180,7 +202,11 @@ public sealed class OVRSceneAnchor : MonoBehaviour
 
     private void OnDestroy()
     {
+        SceneAnchors.Remove(this.Uuid);
         SceneAnchorsList.Remove(this);
+
+        // Anchor destroyed. Adding it to an ignore list.
+        DestroyedSceneAnchors.Add(this.Uuid);
 
         if (!AnchorReferenceCountDictionary.TryGetValue(Space, out var referenceCount))
         {
@@ -209,7 +235,9 @@ public sealed class OVRSceneAnchor : MonoBehaviour
     private static readonly Dictionary<OVRSpace, int> AnchorReferenceCountDictionary =
         new Dictionary<OVRSpace, int>();
 
+    internal static readonly Dictionary<Guid, OVRSceneAnchor> SceneAnchors = new Dictionary<Guid, OVRSceneAnchor>();
     internal static readonly List<OVRSceneAnchor> SceneAnchorsList = new List<OVRSceneAnchor>();
+    internal static readonly HashSet<Guid> DestroyedSceneAnchors = new HashSet<Guid>();
 }
 
 internal interface IOVRSceneComponent

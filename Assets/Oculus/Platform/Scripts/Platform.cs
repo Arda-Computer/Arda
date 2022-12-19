@@ -97,6 +97,45 @@ namespace Oculus.Platform
       return request;
     }
 
+    /// (BETA) For use on platforms where the Oculus service isn't running with additional
+    /// config options to pass in.
+    ///
+    /// eg:
+    ///
+    ///  var config = new Dictionary<InitConfigOptions, bool>{
+    ///    [InitConfigOptions.DisableP2pNetworking] = true
+    ///  };
+    /// Platform.Core.AsyncInitialize("{access_token}", config);
+    public static Request<Models.PlatformInitialize> AsyncInitialize(string accessToken, Dictionary<InitConfigOptions, bool> initConfigOptions, string appId = null) {
+      appId = getAppID(appId);
+
+      Request<Models.PlatformInitialize> request;
+      if (UnityEngine.Application.isEditor ||
+        UnityEngine.Application.platform == RuntimePlatform.WindowsEditor ||
+        UnityEngine.Application.platform == RuntimePlatform.WindowsPlayer) {
+
+        var platform = new StandalonePlatform();
+        request = platform.AsyncInitializeWithAccessTokenAndOptions(appId, accessToken, initConfigOptions);
+      }
+      else {
+        throw new NotImplementedException("Initializing with access token is not implemented on this platform yet.");
+      }
+
+      IsPlatformInitialized = (request != null);
+
+      if (!IsPlatformInitialized)
+      {
+        throw new UnityException("Oculus Standalone Platform failed to initialize. Check if the access token or app id is correct.");
+      }
+
+      if (LogMessages) {
+        Debug.LogWarning("Oculus.Platform.Core.LogMessages is set to true. This will cause extra heap allocations, and should not be used outside of testing and debugging.");
+      }
+
+      // Create the GameObject that will run the callbacks
+      (new GameObject("Oculus.Platform.CallbackRunner")).AddComponent<CallbackRunner>();
+      return request;
+    }
 
     public static void Initialize(string appId = null)
     {
@@ -973,6 +1012,23 @@ namespace Oculus.Platform
 
   }
 
+  public static partial class Avatar
+  {
+    /// Launches the Avatar Editor
+    ///
+    public static Request<Models.AvatarEditorResult> LaunchAvatarEditor(AvatarEditorOptions options = null)
+    {
+      if (Core.IsInitialized())
+      {
+        return new Request<Models.AvatarEditorResult>(CAPI.ovr_Avatar_LaunchAvatarEditor((IntPtr)options));
+      }
+
+      Debug.LogError(Oculus.Platform.Core.PlatformUninitializedError);
+      return null;
+    }
+
+  }
+
   public static partial class Challenges
   {
     /// DEPRECATED. Use server-to-server API call instead.
@@ -1031,7 +1087,7 @@ namespace Oculus.Platform
     /// Requests a block of challenge entries.
     /// \param challengeID The id of the challenge whose entries to return.
     /// \param limit Defines the maximum number of entries to return.
-    /// \param filter Allows you to restrict the returned values by friends.
+    /// \param filter By using ovrLeaderboard_FilterFriends, this allows you to filter the returned values to bidirectional followers.
     /// \param startAt Defines whether to center the query on the user or start at the top of the challenge.
     ///
     public static Request<Models.ChallengeEntryList> GetEntries(UInt64 challengeID, int limit, LeaderboardFilterType filter, LeaderboardStartAt startAt)
@@ -1359,7 +1415,7 @@ namespace Oculus.Platform
     }
 
     /// Returns a list of users that can be invited to your current lobby. These
-    /// are pulled from your friends and recently met lists.
+    /// are pulled from your bidirectional followers and recently met lists.
     ///
     public static Request<Models.UserList> GetInvitableUsers(InviteOptions options)
     {
@@ -1372,8 +1428,7 @@ namespace Oculus.Platform
       return null;
     }
 
-    /// Returns a list of users that can be invited to your current lobby. These
-    /// are pulled from your friends and recently met lists.
+    /// Get the application invites which have been sent by the user.
     ///
     public static Request<Models.ApplicationInviteList> GetSentInvites()
     {
@@ -1444,8 +1499,7 @@ namespace Oculus.Platform
       return null;
     }
 
-    /// Returns a list of users that can be invited to your current lobby. These
-    /// are pulled from your friends and recently met lists.
+    /// Send application invites to the passed in userIDs.
     ///
     public static Request<Models.SendInvitesResult> SendInvites(UInt64[] userIDs)
     {
@@ -1726,7 +1780,7 @@ namespace Oculus.Platform
     /// Requests a block of leaderboard entries.
     /// \param leaderboardName The name of the leaderboard whose entries to return.
     /// \param limit Defines the maximum number of entries to return.
-    /// \param filter Allows you to restrict the returned values by friends.
+    /// \param filter By using ovrLeaderboard_FilterFriends, this allows you to filter the returned values to bidirectional followers.
     /// \param startAt Defines whether to center the query on the user or start at the top of the leaderboard.
     ///
     /// <b>Error codes</b>
@@ -2452,7 +2506,7 @@ namespace Oculus.Platform
     /// Creates a new private (client controlled) room and adds the caller to it.
     /// This type of room is good for matches where the user wants to play with
     /// friends, as they're primarially discoverable by examining which rooms your
-    /// friends are in.
+    /// bidirectional followers are in.
     /// \param joinPolicy Specifies who can join the room without an invite.
     /// \param maxUsers The maximum number of users allowed in the room, including the creator.
     /// \param roomOptions Additional room configuration for this request. Optional.
@@ -2540,9 +2594,10 @@ namespace Oculus.Platform
     /// DEPRECATED. Will be removed from headers at version v49.
     ///
     /// Loads a list of users you can invite to a room. These are pulled from your
-    /// friends list and recently met lists and filtered for relevance and
-    /// interest. If the room cannot be joined, this list will be empty. By
-    /// default, the invitable users returned will be for the user's current room.
+    /// bidirectional followers list and recently met lists and filtered for
+    /// relevance and interest. If the room cannot be joined, this list will be
+    /// empty. By default, the invitable users returned will be for the user's
+    /// current room.
     ///
     /// If your application grouping was created after September 9 2017, recently
     /// met users will be included by default. If your application grouping was
@@ -2943,7 +2998,7 @@ namespace Oculus.Platform
       return null;
     }
 
-    /// Retrieve a list of the logged in user's friends.
+    /// Retrieve a list of the logged in user's bidirectional followers.
     ///
     public static Request<Models.UserList> GetLoggedInUserFriends()
     {
@@ -2959,8 +3014,8 @@ namespace Oculus.Platform
     /// DEPRECATED. Use Users.GetLoggedInUserFriends() instead Will be removed from
     /// headers at version v49.
     ///
-    /// Retrieve a list of the logged in user's friends and any rooms they might be
-    /// in.
+    /// Retrieve a list of the logged in user's bidirectional followers and any
+    /// rooms they might be in.
     ///
     public static Request<Models.UserAndRoomList> GetLoggedInUserFriendsAndRooms()
     {
@@ -3051,7 +3106,7 @@ namespace Oculus.Platform
       return null;
     }
 
-    /// Launch the flow for blocking the given user. You can't be friended,
+    /// Launch the flow for blocking the given user. You can't follow, be followed,
     /// invited, or searched by a blocked user, for example. You can remove the
     /// block via ovr_User_LaunchUnblockFlow.
     /// \param userID User ID of user being blocked
@@ -3067,8 +3122,8 @@ namespace Oculus.Platform
       return null;
     }
 
-    /// Launch the flow for sending a friend request to a user.
-    /// \param userID User ID of user to send a friend request to
+    /// Launch the flow for sending a follow request to a user.
+    /// \param userID User ID of user to send a follow request to
     ///
     public static Request<Models.LaunchFriendRequestFlowResult> LaunchFriendRequestFlow(UInt64 userID)
     {

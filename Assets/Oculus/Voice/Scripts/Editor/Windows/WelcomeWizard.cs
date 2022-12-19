@@ -101,7 +101,7 @@ namespace Oculus.Voice.Windows
             configuration.name = application.id;
 
             // Save configuration to asset
-            return WitConfigurationUtility.SaveConfiguration(newToken, configuration);
+            return WitConfigurationUtility.SaveConfiguration(string.Empty, configuration);
         }
     }
 

@@ -94,6 +94,7 @@ public class OVRProjectConfig : ScriptableObject
     public HandTrackingVersion handTrackingVersion = HandTrackingVersion.Default;
     [FormerlySerializedAs("spatialAnchorsSupport")]
     public AnchorSupport anchorSupport = AnchorSupport.Disabled;
+    public FeatureSupport sharedAnchorSupport = FeatureSupport.None;
     public RenderModelSupport renderModelSupport = RenderModelSupport.Disabled;
     public TrackedKeyboardSupport trackedKeyboardSupport = TrackedKeyboardSupport.None;
     public FeatureSupport bodyTrackingSupport = FeatureSupport.None;
@@ -113,6 +114,7 @@ public class OVRProjectConfig : ScriptableObject
     public bool experimentalFeaturesEnabled = false;
     public bool insightPassthroughEnabled = false;
     public Texture2D systemSplashScreen;
+
 
 #if OVR_UNITY_PACKAGE_MANAGER
     // Store the checksum of native plugins to compare and prompt for editor restarts when changed
@@ -191,6 +193,7 @@ public class OVRProjectConfig : ScriptableObject
             projectConfig.handTrackingFrequency = HandTrackingFrequency.LOW;
             projectConfig.handTrackingVersion = HandTrackingVersion.Default;
             projectConfig.anchorSupport = AnchorSupport.Disabled;
+            projectConfig.sharedAnchorSupport = FeatureSupport.None;
             projectConfig.trackedKeyboardSupport = TrackedKeyboardSupport.None;
             projectConfig.renderModelSupport = RenderModelSupport.Disabled;
             projectConfig.bodyTrackingSupport = FeatureSupport.None;

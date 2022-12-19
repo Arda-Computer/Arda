@@ -95,12 +95,12 @@ namespace Facebook.WitAi.TTS.Integrations
         private Dictionary<string, WitUnityRequest> _webStreams = new Dictionary<string, WitUnityRequest>();
 
         // Whether TTSService is valid
-        public override string IsValid()
+        public override string GetInvalidError()
         {
-            string validText = base.IsValid();
-            if (!string.IsNullOrEmpty(validText))
+            string invalidError = base.GetInvalidError();
+            if (!string.IsNullOrEmpty(invalidError))
             {
-                return validText;
+                return invalidError;
             }
             if (RequestSettings.configuration == null)
             {
@@ -260,6 +260,9 @@ namespace Facebook.WitAi.TTS.Integrations
         #region ITTSVoiceProvider
         // Preset voice settings
         [Header("Voice Settings")]
+        #if UNITY_2021_3_2 || UNITY_2021_3_3 || UNITY_2021_3_4 || UNITY_2021_3_5
+        [NonReorderable]
+        #endif
         [SerializeField] private TTSWitVoiceSettings[] _presetVoiceSettings;
         public TTSWitVoiceSettings[] PresetWitVoiceSettings => _presetVoiceSettings;
 
@@ -336,10 +339,10 @@ namespace Facebook.WitAi.TTS.Integrations
         private string IsRequestValid(TTSClipData clipData, WitConfiguration configuration)
         {
             // Invalid tts
-            string valid = IsValid();
-            if (!string.IsNullOrEmpty(valid))
+            string invalidError = GetInvalidError();
+            if (!string.IsNullOrEmpty(invalidError))
             {
-                return valid;
+                return invalidError;
             }
             // Invalid clip
             if (clipData == null)

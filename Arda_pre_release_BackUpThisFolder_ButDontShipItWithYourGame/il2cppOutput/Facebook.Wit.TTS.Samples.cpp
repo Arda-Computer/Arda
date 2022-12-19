@@ -587,14 +587,12 @@ struct TTSErrorText_t137C15C0282435D336D5BB765691739CFAB05EF1  : public MonoBeha
 // Facebook.WitAi.TTS.TTSService
 struct TTSService_t95F3B85E7005C6D10BE5A8C288A69C2A368393FD  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
-	// Facebook.WitAi.TTS.TTSLogType Facebook.WitAi.TTS.TTSService::LogLevel
-	int32_t ___LogLevel_5;
 	// Facebook.WitAi.TTS.Events.TTSServiceEvents Facebook.WitAi.TTS.TTSService::_events
-	TTSServiceEvents_tF0569B77D502A5989A86FDCC803D8514413312CB* ____events_6;
+	TTSServiceEvents_tF0569B77D502A5989A86FDCC803D8514413312CB* ____events_5;
 	// System.Boolean Facebook.WitAi.TTS.TTSService::_delegates
-	bool ____delegates_7;
+	bool ____delegates_6;
 	// System.Security.Cryptography.SHA256 Facebook.WitAi.TTS.TTSService::CLIP_HASH
-	SHA256_t6FEDD761EE6301127DAAF13320E8FD63296837F9* ___CLIP_HASH_9;
+	SHA256_t6FEDD761EE6301127DAAF13320E8FD63296837F9* ___CLIP_HASH_8;
 };
 
 struct TTSService_t95F3B85E7005C6D10BE5A8C288A69C2A368393FD_StaticFields
@@ -1256,14 +1254,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TTSErrorText_Update_m33B855CF6D4560DB63D
 		}
 	}
 	{
-		// string serviceError = TTSService.Instance.IsValid();
+		// string invalidError = TTSService.Instance.GetInvalidError();
 		TTSService_t95F3B85E7005C6D10BE5A8C288A69C2A368393FD* L_2;
 		L_2 = TTSService_get_Instance_m52F06F86F78A142DB6C5C9A60715F0B469B1D789(NULL);
 		NullCheck(L_2);
 		String_t* L_3;
-		L_3 = VirtualFuncInvoker0< String_t* >::Invoke(8 /* System.String Facebook.WitAi.TTS.TTSService::IsValid() */, L_2);
+		L_3 = VirtualFuncInvoker0< String_t* >::Invoke(8 /* System.String Facebook.WitAi.TTS.TTSService::GetInvalidError() */, L_2);
 		V_0 = L_3;
-		// if (!string.Equals(serviceError, _error))
+		// if (!string.Equals(invalidError, _error))
 		String_t* L_4 = V_0;
 		String_t* L_5 = __this->____error_5;
 		bool L_6;
@@ -1274,7 +1272,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TTSErrorText_Update_m33B855CF6D4560DB63D
 		}
 	}
 	{
-		// _error = serviceError;
+		// _error = invalidError;
 		String_t* L_7 = V_0;
 		__this->____error_5 = L_7;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____error_5), (void*)L_7);

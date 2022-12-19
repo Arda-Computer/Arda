@@ -24,7 +24,7 @@ using Vector3 = UnityEngine.Vector3;
 
 namespace Oculus.Interaction.Surfaces
 {
-    public class ColliderSurface : MonoBehaviour, ISurface
+    public class ColliderSurface : MonoBehaviour, ISurface, IBounds
     {
 
         [SerializeField]

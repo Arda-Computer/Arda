@@ -313,7 +313,7 @@ namespace Oculus.Interaction
             float bestPositionDeltaSqr = float.MaxValue;
             float bestAngularDelta = float.MaxValue;
 
-            IEnumerable<SnapInteractable> interactables = SnapInteractable.Registry.List(this);
+            var interactables = SnapInteractable.Registry.List(this);
             foreach (SnapInteractable interactable in interactables)
             {
                 if (!interactable.PoseForInteractor(this, out Pose pose))

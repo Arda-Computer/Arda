@@ -764,91 +764,91 @@ struct WitMicLevelChangedEvent_tA9B0047640D9DE7218C4699B6F6E0ABBCD966F1C  : publ
 struct WitRequest_t9EBE9541762EBC83F63DE8E549A47CD273F212A6  : public RuntimeObject
 {
 	// Facebook.WitAi.Data.Configuration.WitConfiguration Facebook.WitAi.WitRequest::configuration
-	WitConfiguration_t3D1E7D46065A2742877307705778E1CBC33530DD* ___configuration_20;
+	WitConfiguration_t3D1E7D46065A2742877307705778E1CBC33530DD* ___configuration_21;
 	// System.String Facebook.WitAi.WitRequest::command
-	String_t* ___command_21;
+	String_t* ___command_22;
 	// System.String Facebook.WitAi.WitRequest::path
-	String_t* ___path_22;
+	String_t* ___path_23;
 	// Facebook.WitAi.WitRequest/QueryParam[] Facebook.WitAi.WitRequest::queryParams
-	QueryParamU5BU5D_t89F4808C20AC370F031313E4A00DEBC463777C2F* ___queryParams_23;
+	QueryParamU5BU5D_t89F4808C20AC370F031313E4A00DEBC463777C2F* ___queryParams_24;
 	// System.Net.HttpWebRequest Facebook.WitAi.WitRequest::_request
-	HttpWebRequest_tDE1EF6EAE715BE99DB1645ED937A6A2AB930E7C9* ____request_24;
+	HttpWebRequest_tDE1EF6EAE715BE99DB1645ED937A6A2AB930E7C9* ____request_25;
 	// System.IO.Stream Facebook.WitAi.WitRequest::_writeStream
-	Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ____writeStream_25;
+	Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ____writeStream_26;
 	// Facebook.WitAi.Lib.WitResponseNode Facebook.WitAi.WitRequest::responseData
-	WitResponseNode_tACC149B056FE33C54D55A5EAB653A77902617DBB* ___responseData_26;
+	WitResponseNode_tACC149B056FE33C54D55A5EAB653A77902617DBB* ___responseData_27;
 	// System.Boolean Facebook.WitAi.WitRequest::isActive
-	bool ___isActive_27;
+	bool ___isActive_28;
 	// System.Boolean Facebook.WitAi.WitRequest::responseStarted
-	bool ___responseStarted_28;
+	bool ___responseStarted_29;
 	// System.Byte[] Facebook.WitAi.WitRequest::postData
-	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___postData_29;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___postData_30;
 	// System.String Facebook.WitAi.WitRequest::postContentType
-	String_t* ___postContentType_30;
+	String_t* ___postContentType_31;
 	// System.String Facebook.WitAi.WitRequest::requestId
-	String_t* ___requestId_31;
+	String_t* ___requestId_32;
 	// System.Object Facebook.WitAi.WitRequest::streamLock
-	RuntimeObject* ___streamLock_32;
+	RuntimeObject* ___streamLock_33;
 	// System.Int32 Facebook.WitAi.WitRequest::bytesWritten
-	int32_t ___bytesWritten_33;
+	int32_t ___bytesWritten_34;
 	// System.Boolean Facebook.WitAi.WitRequest::requestRequiresBody
-	bool ___requestRequiresBody_34;
+	bool ___requestRequiresBody_35;
 	// System.Action`1<Facebook.WitAi.WitRequest> Facebook.WitAi.WitRequest::onPartialResponse
-	Action_1_t9882348D647A3D54BEE7E7F4E7F45D40BA286E19* ___onPartialResponse_35;
+	Action_1_t9882348D647A3D54BEE7E7F4E7F45D40BA286E19* ___onPartialResponse_36;
 	// System.Action`1<Facebook.WitAi.WitRequest> Facebook.WitAi.WitRequest::onResponse
-	Action_1_t9882348D647A3D54BEE7E7F4E7F45D40BA286E19* ___onResponse_36;
+	Action_1_t9882348D647A3D54BEE7E7F4E7F45D40BA286E19* ___onResponse_37;
 	// System.Action`1<Facebook.WitAi.WitRequest> Facebook.WitAi.WitRequest::onInputStreamReady
-	Action_1_t9882348D647A3D54BEE7E7F4E7F45D40BA286E19* ___onInputStreamReady_37;
+	Action_1_t9882348D647A3D54BEE7E7F4E7F45D40BA286E19* ___onInputStreamReady_38;
 	// System.Action`1<System.String> Facebook.WitAi.WitRequest::onRawResponse
-	Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___onRawResponse_38;
+	Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___onRawResponse_39;
 	// System.Action`1<System.String> Facebook.WitAi.WitRequest::onPartialTranscription
-	Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___onPartialTranscription_39;
+	Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___onPartialTranscription_40;
 	// System.Action`1<System.String> Facebook.WitAi.WitRequest::onFullTranscription
-	Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___onFullTranscription_40;
+	Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___onFullTranscription_41;
 	// Facebook.WitAi.WitRequest/OnCustomizeUriEvent Facebook.WitAi.WitRequest::onCustomizeUri
-	OnCustomizeUriEvent_t01DAE8B02F237838AD642DC0F83C1B6E33E5E0DB* ___onCustomizeUri_42;
+	OnCustomizeUriEvent_t01DAE8B02F237838AD642DC0F83C1B6E33E5E0DB* ___onCustomizeUri_43;
 	// Facebook.WitAi.WitRequest/OnProvideCustomHeadersEvent Facebook.WitAi.WitRequest::onProvideCustomHeaders
-	OnProvideCustomHeadersEvent_t1C0E46775EA7FBE85F5C2EFECD08B65EFA336DC4* ___onProvideCustomHeaders_43;
+	OnProvideCustomHeadersEvent_t1C0E46775EA7FBE85F5C2EFECD08B65EFA336DC4* ___onProvideCustomHeaders_44;
 	// Facebook.WitAi.Data.AudioEncoding Facebook.WitAi.WitRequest::audioEncoding
-	AudioEncoding_t2377DC69ECC62D1EB67A1E3B9F2B2FEF67443928* ___audioEncoding_44;
+	AudioEncoding_t2377DC69ECC62D1EB67A1E3B9F2B2FEF67443928* ___audioEncoding_45;
 	// System.Int32 Facebook.WitAi.WitRequest::statusCode
-	int32_t ___statusCode_45;
+	int32_t ___statusCode_46;
 	// System.String Facebook.WitAi.WitRequest::statusDescription
-	String_t* ___statusDescription_46;
+	String_t* ___statusDescription_47;
 	// System.Boolean Facebook.WitAi.WitRequest::isRequestStreamActive
-	bool ___isRequestStreamActive_47;
+	bool ___isRequestStreamActive_48;
 	// System.Boolean Facebook.WitAi.WitRequest::isServerAuthRequired
-	bool ___isServerAuthRequired_48;
+	bool ___isServerAuthRequired_49;
 	// System.Boolean Facebook.WitAi.WitRequest::configurationRequired
-	bool ___configurationRequired_49;
+	bool ___configurationRequired_50;
 	// System.String Facebook.WitAi.WitRequest::serverToken
-	String_t* ___serverToken_50;
+	String_t* ___serverToken_51;
 	// System.String Facebook.WitAi.WitRequest::callingStackTrace
-	String_t* ___callingStackTrace_51;
+	String_t* ___callingStackTrace_52;
 	// System.DateTime Facebook.WitAi.WitRequest::requestStartTime
-	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___requestStartTime_52;
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___requestStartTime_53;
 	// System.Collections.Concurrent.ConcurrentQueue`1<System.Byte[]> Facebook.WitAi.WitRequest::writeBuffer
-	ConcurrentQueue_1_t65D5F18D7E02C26657F50B992141DC982E85B4A0* ___writeBuffer_53;
+	ConcurrentQueue_1_t65D5F18D7E02C26657F50B992141DC982E85B4A0* ___writeBuffer_54;
 	// Facebook.WitAi.Utilities.CoroutineUtility/CoroutinePerformer Facebook.WitAi.WitRequest::_performer
-	CoroutinePerformer_t4817D17E59F38DA4EBE8A6618B780513B4DD0E6B* ____performer_59;
+	CoroutinePerformer_t4817D17E59F38DA4EBE8A6618B780513B4DD0E6B* ____performer_60;
 	// System.Collections.Concurrent.ConcurrentQueue`1<System.Action> Facebook.WitAi.WitRequest::_mainThreadCallbacks
-	ConcurrentQueue_1_tC8B0BCCEA7ED64CA00454B9EB2F35771723A00D3* ____mainThreadCallbacks_60;
+	ConcurrentQueue_1_tC8B0BCCEA7ED64CA00454B9EB2F35771723A00D3* ____mainThreadCallbacks_61;
 };
 
 struct WitRequest_t9EBE9541762EBC83F63DE8E549A47CD273F212A6_StaticFields
 {
 	// Facebook.WitAi.WitRequest/PreSendRequestDelegate Facebook.WitAi.WitRequest::onPreSendRequest
-	PreSendRequestDelegate_t8DAF536AB45C30AE57A5BEE4701E62E6B5878E0B* ___onPreSendRequest_41;
+	PreSendRequestDelegate_t8DAF536AB45C30AE57A5BEE4701E62E6B5878E0B* ___onPreSendRequest_42;
 	// System.String Facebook.WitAi.WitRequest::_operatingSystem
-	String_t* ____operatingSystem_54;
+	String_t* ____operatingSystem_55;
 	// System.String Facebook.WitAi.WitRequest::_deviceModel
-	String_t* ____deviceModel_55;
+	String_t* ____deviceModel_56;
 	// System.String Facebook.WitAi.WitRequest::_appIdentifier
-	String_t* ____appIdentifier_56;
+	String_t* ____appIdentifier_57;
 	// System.String Facebook.WitAi.WitRequest::_unityVersion
-	String_t* ____unityVersion_57;
+	String_t* ____unityVersion_58;
 	// System.Func`1<System.String> Facebook.WitAi.WitRequest::OnProvideCustomUserAgent
-	Func_1_t367387BB2C476D3F32DB12161B5FDC128DC3231C* ___OnProvideCustomUserAgent_58;
+	Func_1_t367387BB2C476D3F32DB12161B5FDC128DC3231C* ___OnProvideCustomUserAgent_59;
 };
 
 // Facebook.WitAi.Events.WitResponseEvent
@@ -961,10 +961,8 @@ struct WitConfiguration_t3D1E7D46065A2742877307705778E1CBC33530DD  : public Scri
 	bool ___useConduit_13;
 	// System.String Facebook.WitAi.Data.Configuration.WitConfiguration::manifestLocalPath
 	String_t* ___manifestLocalPath_14;
-	// System.Boolean Facebook.WitAi.Data.Configuration.WitConfiguration::autoGenerateManifest
-	bool ___autoGenerateManifest_15;
 	// System.Boolean Facebook.WitAi.Data.Configuration.WitConfiguration::openManifestOnGeneration
-	bool ___openManifestOnGeneration_16;
+	bool ___openManifestOnGeneration_15;
 };
 
 // UnityEngine.MonoBehaviour

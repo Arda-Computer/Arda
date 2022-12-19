@@ -30,7 +30,8 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Mono_Security_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Nobi_UiRoundedCorners_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Oculus_AudioManager_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Oculus_Interaction_CodeGenModule;
-IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Oculus_Interaction_Samples_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Oculus_Interaction_OVR_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Oculus_Interaction_OVR_Samples_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Oculus_LipSync_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Oculus_Platform_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Oculus_Spatializer_CodeGenModule;
@@ -93,7 +94,7 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_VoiceSDK_Runtime_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g___Generated_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_mscorlib_CodeGenModule;
 IL2CPP_EXTERN_C const Il2CppCodeGenModule* g_CodeGenModules[];
-const Il2CppCodeGenModule* g_CodeGenModules[74] = 
+const Il2CppCodeGenModule* g_CodeGenModules[75] = 
 {
 	(&g_AssemblyU2DCSharp_CodeGenModule),
 	(&g_AssistantCoreSDKRuntime_CodeGenModule),
@@ -107,7 +108,8 @@ const Il2CppCodeGenModule* g_CodeGenModules[74] =
 	(&g_Nobi_UiRoundedCorners_CodeGenModule),
 	(&g_Oculus_AudioManager_CodeGenModule),
 	(&g_Oculus_Interaction_CodeGenModule),
-	(&g_Oculus_Interaction_Samples_CodeGenModule),
+	(&g_Oculus_Interaction_OVR_CodeGenModule),
+	(&g_Oculus_Interaction_OVR_Samples_CodeGenModule),
 	(&g_Oculus_LipSync_CodeGenModule),
 	(&g_Oculus_Platform_CodeGenModule),
 	(&g_Oculus_Spatializer_CodeGenModule),
@@ -175,18 +177,18 @@ const Il2CppCodeRegistration g_CodeRegistration =
 {
 	14,
 	g_ReversePInvokeWrapperPointers,
-	46200,
+	46586,
 	g_Il2CppGenericMethodPointers,
 	g_Il2CppGenericAdjustorThunks,
-	10316,
+	10394,
 	g_Il2CppInvokerPointers,
-	1805,
+	1822,
 	g_UnresolvedVirtualMethodPointers,
-	1010,
+	1011,
 	g_Il2CppInteropData,
 	0,
 	NULL,
-	74,
+	75,
 	g_CodeGenModules,
 };
 IL2CPP_EXTERN_C_CONST Il2CppMetadataRegistration g_MetadataRegistration;

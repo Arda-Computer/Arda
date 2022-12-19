@@ -22,7 +22,7 @@ using UnityEngine;
 
 namespace Oculus.Interaction.Surfaces
 {
-    public class PlaneSurface : MonoBehaviour, ISurface
+    public class PlaneSurface : MonoBehaviour, ISurface, IBounds
     {
         public enum NormalFacing
         {

@@ -48,9 +48,9 @@ namespace Oculus.Interaction.DistanceReticles
             _lineRenderer.enabled = false;
         }
 
-        protected override void RenderLine(List<Vector3> linePoints)
+        protected override void RenderLine(Vector3[] linePoints)
         {
-            _lineRenderer.SetPositions(linePoints.ToArray());
+            _lineRenderer.SetPositions(linePoints);
         }
 
         #region Inject

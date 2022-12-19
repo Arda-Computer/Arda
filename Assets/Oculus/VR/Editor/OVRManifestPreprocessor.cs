@@ -26,6 +26,17 @@ using Oculus.VR.Editor;
 
 public class OVRManifestPreprocessor
 {
+    private static readonly string ManifestFileName = "AndroidManifest.xml";
+    private static readonly string ManifestFolderName = "Plugins/Android";
+    private static readonly string ManifestFolderPathAbsolute =
+        Path.Combine(Application.dataPath, ManifestFolderName);
+    private static readonly string BuildManifestFolderPathRelative =
+        Path.Combine("Assets", ManifestFolderName);
+    private static readonly string BuildManifestFilePathAbsolute =
+        Path.Combine(ManifestFolderPathAbsolute, ManifestFileName);
+    private static readonly string BuildManifestFilePathRelative =
+        Path.Combine(BuildManifestFolderPathRelative, ManifestFileName);
+
     [MenuItem("Oculus/Tools/Create store-compatible AndroidManifest.xml", false, 100000)]
     public static void GenerateManifestForSubmission()
     {
@@ -42,14 +53,7 @@ public class OVRManifestPreprocessor
             return;
         }
 
-        string manifestFolder = Application.dataPath + "/Plugins/Android";
-
-        if (!Directory.Exists(manifestFolder))
-            Directory.CreateDirectory(manifestFolder);
-
-        string dstFile = manifestFolder + "/AndroidManifest.xml";
-
-        if (File.Exists(dstFile))
+        if (DoesAndroidManifestExist())
         {
             if (!EditorUtility.DisplayDialog("AndroidManifest.xml Already Exists!", "Would you like to replace the existing manifest with a new one? All modifications will be lost.", "Replace", "Cancel"))
             {
@@ -57,17 +61,25 @@ public class OVRManifestPreprocessor
             }
         }
 
-        PatchAndroidManifest(srcFile, dstFile, false);
+        // IO methods use absolute paths
+        if (!Directory.Exists(ManifestFolderPathAbsolute))
+            Directory.CreateDirectory(ManifestFolderPathAbsolute);
+
+        PatchAndroidManifest(srcFile, BuildManifestFilePathAbsolute, false);
 
         AssetDatabase.Refresh();
+    }
+
+    public static bool DoesAndroidManifestExist()
+    {
+        // IO methods use absolute paths
+        return File.Exists(BuildManifestFilePathAbsolute);
     }
 
     [MenuItem("Oculus/Tools/Update AndroidManifest.xml")]
     public static void UpdateAndroidManifest()
     {
-        string manifestFile = "Assets/Plugins/Android/AndroidManifest.xml";
-
-        if (!File.Exists(manifestFile))
+        if (!DoesAndroidManifestExist())
         {
             Debug.LogError("Unable to update manifest because it does not exist! Run \"Create store-compatible AndroidManifest.xml\" first");
             return;
@@ -78,14 +90,15 @@ public class OVRManifestPreprocessor
             return;
         }
 
-        PatchAndroidManifest(manifestFile, skipExistingAttributes: false);
+        PatchAndroidManifest(BuildManifestFilePathAbsolute, skipExistingAttributes: false);
         AssetDatabase.Refresh();
     }
 
     [MenuItem("Oculus/Tools/Remove AndroidManifest.xml")]
     public static void RemoveAndroidManifest()
     {
-        AssetDatabase.DeleteAsset("Assets/Plugins/Android/AndroidManifest.xml");
+        // AssetDatabase functions uses relative paths
+        AssetDatabase.DeleteAsset(BuildManifestFilePathRelative);
         AssetDatabase.Refresh();
     }
 
@@ -309,6 +322,19 @@ public class OVRManifestPreprocessor
             "com.oculus.permission.USE_ANCHOR_API",
             anchorEntryNeeded,
             modifyIfFound);
+
+        var targetSharedAnchorSupport = OVRProjectConfig.GetProjectConfig().sharedAnchorSupport;
+        bool sharedAnchorEntryNeeded = OVRDeviceSelector.isTargetDeviceQuestFamily && targetSharedAnchorSupport != OVRProjectConfig.FeatureSupport.None;
+
+        AddOrRemoveTag(doc,
+            androidNamespaceURI,
+            "/manifest",
+            "uses-permission",
+            "com.oculus.permission.IMPORT_EXPORT_IOT_MAP_DATA",
+            sharedAnchorEntryNeeded,
+            modifyIfFound,
+            "required", targetSharedAnchorSupport == OVRProjectConfig.FeatureSupport.Required ? "true" : "false");
+
 
         //============================================================================
         // Passthrough

@@ -72,18 +72,45 @@ public class OVRPassthroughLayerEditor : Editor {
     };
     private SerializedProperty _projectionSurfaces;
 
+    private SerializedProperty _propProjectionSurfaceType;
+    private SerializedProperty _propOverlayType;
+    private SerializedProperty _propCompositionDepth;
+
+    private SerializedProperty _propTextureOpacity;
+    private SerializedProperty _propEdgeRenderingEnabled;
+    private SerializedProperty _propEdgeColor;
+    private SerializedProperty _propColorMapEditorContrast;
+    private SerializedProperty _propColorMapEditorBrightness;
+    private SerializedProperty _propColorMapEditorPosterize;
+    private SerializedProperty _propColorMapEditorGradient;
+    private SerializedProperty _propColorMapEditorSaturation;
+
+
     void OnEnable()
     {
         _projectionSurfaces = serializedObject.FindProperty(nameof(OVRPassthroughLayer.serializedSurfaceGeometry));
+
+        _propProjectionSurfaceType = serializedObject.FindProperty(nameof(OVRPassthroughLayer.projectionSurfaceType));
+        _propOverlayType = serializedObject.FindProperty(nameof(OVRPassthroughLayer.overlayType));
+        _propCompositionDepth = serializedObject.FindProperty(nameof(OVRPassthroughLayer.compositionDepth));
+        _propTextureOpacity = serializedObject.FindProperty(nameof(OVRPassthroughLayer.textureOpacity_));
+        _propEdgeRenderingEnabled = serializedObject.FindProperty(nameof(OVRPassthroughLayer.edgeRenderingEnabled_));
+        _propEdgeColor = serializedObject.FindProperty(nameof(OVRPassthroughLayer.edgeColor_));
+        _propColorMapEditorContrast = serializedObject.FindProperty(nameof(OVRPassthroughLayer.colorMapEditorContrast));
+        _propColorMapEditorBrightness = serializedObject.FindProperty(nameof(OVRPassthroughLayer.colorMapEditorBrightness));
+        _propColorMapEditorPosterize = serializedObject.FindProperty(nameof(OVRPassthroughLayer.colorMapEditorPosterize));
+        _propColorMapEditorSaturation = serializedObject.FindProperty(nameof(OVRPassthroughLayer.colorMapEditorSaturation));
+        _propColorMapEditorGradient = serializedObject.FindProperty(nameof(OVRPassthroughLayer.colorMapEditorGradient));
+
     }
 
     public override void OnInspectorGUI()
     {
         OVRPassthroughLayer layer = (OVRPassthroughLayer)target;
 
-        layer.projectionSurfaceType = (OVRPassthroughLayer.ProjectionSurfaceType)EditorGUILayout.EnumPopup(
-            new GUIContent("Projection Surface", "The type of projection surface for this Passthrough layer"),
-            layer.projectionSurfaceType);
+        serializedObject.Update();
+        EditorGUILayout.PropertyField(_propProjectionSurfaceType,
+            new GUIContent("Projection Surface", "The type of projection surface for this Passthrough layer"));
 
         if (layer.projectionSurfaceType == OVRPassthroughLayer.ProjectionSurfaceType.UserDefined)
         {
@@ -92,20 +119,32 @@ public class OVRPassthroughLayerEditor : Editor {
 
         EditorGUILayout.Space();
         EditorGUILayout.LabelField("Compositing", EditorStyles.boldLabel);
-        layer.overlayType = (OVROverlay.OverlayType)EditorGUILayout.EnumPopup(new GUIContent("Placement", "Whether this overlay should layer behind the scene or in front of it"), layer.overlayType);
-        layer.compositionDepth = EditorGUILayout.IntField(new GUIContent("Composition Depth", "Depth value used to sort layers in the scene, smaller value appears in front"), layer.compositionDepth);
+
+        EditorGUILayout.PropertyField(_propOverlayType,
+            new GUIContent("Placement", "Whether this overlay should layer behind the scene or in front of it"));
+        EditorGUILayout.PropertyField(_propCompositionDepth,
+            new GUIContent("Composition Depth",
+                "Depth value used to sort layers in the scene, smaller value appears in front"));
+
 
         EditorGUILayout.Space();
         EditorGUILayout.LabelField("Style", EditorStyles.boldLabel);
 
-        layer.textureOpacity = EditorGUILayout.Slider("Opacity", layer.textureOpacity, 0, 1);
+        EditorGUILayout.Slider(_propTextureOpacity, 0, 1f, new GUIContent("Opacity"));
 
         EditorGUILayout.Space();
 
-        layer.edgeRenderingEnabled = EditorGUILayout.Toggle(
-            new GUIContent("Edge Rendering", "Highlight salient edges in the camera images in a specific color"),
-            layer.edgeRenderingEnabled);
-        layer.edgeColor = EditorGUILayout.ColorField("Edge Color", layer.edgeColor);
+        EditorGUILayout.PropertyField(_propEdgeRenderingEnabled, new GUIContent("Edge Rendering", "Highlight salient edges in the camera images in a specific color"));
+        EditorGUILayout.PropertyField(_propEdgeColor, new GUIContent("Edge Color"));
+
+        if (serializedObject.ApplyModifiedProperties())
+        {
+            layer.SetStyleDirty();
+        }
+
+        layer.textureOpacity = _propTextureOpacity.floatValue;
+        layer.edgeRenderingEnabled = _propEdgeRenderingEnabled.boolValue;
+        layer.edgeColor = _propEdgeColor.colorValue;
 
         EditorGUILayout.Space();
 
@@ -119,36 +158,40 @@ public class OVRPassthroughLayerEditor : Editor {
         // Dropdown list contains "Custom" only if it is currently selected.
         string[] colorMapNames = layer.colorMapEditorType == ColorMapEditorType.Custom ? _colorMapNames
             : _selectableColorMapNames;
-        colorMapTypeIndex = EditorGUILayout.Popup(new GUIContent("Color Control", "The type of color controls applied to this layer"), colorMapTypeIndex, colorMapNames);
+        GUIContent[] colorMapLabels = new GUIContent[colorMapNames.Length];
+        for (int i = 0; i < colorMapNames.Length; i++)
+            colorMapLabels[i] = new GUIContent(colorMapNames[i]);
+        bool modified = false;
+        OVREditorUtil.SetupPopupField(target,
+            new GUIContent("Color Control", "The type of color controls applied to this layer"), ref colorMapTypeIndex,
+            colorMapLabels,
+            ref modified);
         layer.colorMapEditorType = _colorMapTypes[colorMapTypeIndex];
 
         if (layer.colorMapEditorType == ColorMapEditorType.Grayscale
             || layer.colorMapEditorType == ColorMapEditorType.GrayscaleToColor
             || layer.colorMapEditorType == ColorMapEditorType.ColorAdjustment
         ) {
-            layer.colorMapEditorContrast = EditorGUILayout.Slider("Contrast", layer.colorMapEditorContrast, -1, 1);
-            layer.colorMapEditorBrightness = EditorGUILayout.Slider("Brightness", layer.colorMapEditorBrightness, -1, 1);
+            EditorGUILayout.PropertyField(_propColorMapEditorContrast, new GUIContent("Contrast"));
+            EditorGUILayout.PropertyField(_propColorMapEditorBrightness, new GUIContent("Brightness"));
         }
 
         if (layer.colorMapEditorType == ColorMapEditorType.Grayscale
             || layer.colorMapEditorType == ColorMapEditorType.GrayscaleToColor)
         {
-            layer.colorMapEditorPosterize = EditorGUILayout.Slider("Posterize", layer.colorMapEditorPosterize, 0, 1);
+            EditorGUILayout.PropertyField(_propColorMapEditorPosterize, new GUIContent("Posterize"));
         }
 
         if (layer.colorMapEditorType == ColorMapEditorType.ColorAdjustment)
         {
-            layer.colorMapEditorSaturation = EditorGUILayout.Slider("Saturation", layer.colorMapEditorSaturation, -1, 1);
+            EditorGUILayout.PropertyField(_propColorMapEditorSaturation, new GUIContent("Saturation"));
         }
 
         if (layer.colorMapEditorType == ColorMapEditorType.GrayscaleToColor)
         {
-            layer.colorMapEditorGradient = EditorGUILayout.GradientField("Colorize", layer.colorMapEditorGradient);
+            EditorGUILayout.PropertyField(_propColorMapEditorGradient, new GUIContent("Colorize"));
         }
 
-        if (GUI.changed)
-        {
-            EditorUtility.SetDirty(layer);
-        }
+        serializedObject.ApplyModifiedProperties();
     }
 }

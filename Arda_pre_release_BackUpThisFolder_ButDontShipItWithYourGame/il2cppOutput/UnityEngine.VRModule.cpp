@@ -416,6 +416,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRSettings_set_showDeviceView_mCB4978611
 	_il2cpp_icall_func = (XRSettings_set_showDeviceView_mCB49786110652E6E784E237B0A1294CF6EF092F1_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.XR.XRSettings::set_showDeviceView(System.Boolean)");
 	_il2cpp_icall_func(___value0);
 }
+// System.Void UnityEngine.XR.XRSettings::set_eyeTextureResolutionScale(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRSettings_set_eyeTextureResolutionScale_m7D440D57C061891E31935BD6382B8AFB4EEDDE84 (float ___value0, const RuntimeMethod* method) 
+{
+	typedef void (*XRSettings_set_eyeTextureResolutionScale_m7D440D57C061891E31935BD6382B8AFB4EEDDE84_ftn) (float);
+	static XRSettings_set_eyeTextureResolutionScale_m7D440D57C061891E31935BD6382B8AFB4EEDDE84_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (XRSettings_set_eyeTextureResolutionScale_m7D440D57C061891E31935BD6382B8AFB4EEDDE84_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.XR.XRSettings::set_eyeTextureResolutionScale(System.Single)");
+	_il2cpp_icall_func(___value0);
+}
 // System.Int32 UnityEngine.XR.XRSettings::get_eyeTextureWidth()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t XRSettings_get_eyeTextureWidth_m3CE183B84E67605E54A6BEABB74B40B7088F2F45 (const RuntimeMethod* method) 
 {

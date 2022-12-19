@@ -141,13 +141,13 @@ namespace Facebook.WitAi.TTS.Utilities
             TTSVoiceSettings voiceSettings = VoiceSettings;
             if (voiceSettings == null)
             {
-                Debug.LogError($"TTS Speaker - No voice found with preset id: {presetVoiceID}");
+                VLog.E($"No voice found with preset id: {presetVoiceID}");
                 return;
             }
             // Log if empty text
             if (string.IsNullOrEmpty(textToSpeak))
             {
-                Debug.LogError("TTS Speaker - No text to speak provided");
+                VLog.E("No text to speak provided");
                 return;
             }
             // Get clip id
@@ -228,10 +228,17 @@ namespace Facebook.WitAi.TTS.Utilities
             // Loading complete
             _loadingClip = null;
 
-            // Load failed
+            // Load error
+            if (!string.IsNullOrEmpty(error))
+            {
+                VLog.E($"Load Clip - Failed\n{error}");
+                Events?.OnClipLoadFailed?.Invoke(this, clipData.textToSpeak);
+                return;
+            }
+            // No clip failure
             if (clipData.clip == null)
             {
-                Debug.LogError($"TTS Speaker - Load Clip - Failed\n{error}");
+                VLog.E($"Load Clip - Failed\nNo clip returned");
                 Events?.OnClipLoadFailed?.Invoke(this, clipData.textToSpeak);
                 return;
             }
@@ -278,7 +285,7 @@ namespace Facebook.WitAi.TTS.Utilities
             // If clip missing
             if (_lastClip == null || _lastClip.clip == null)
             {
-                Debug.LogError("TTS Speaker - Clip destroyed prior to playback");
+                VLog.E("Clip destroyed prior to playback");
                 return;
             }
 

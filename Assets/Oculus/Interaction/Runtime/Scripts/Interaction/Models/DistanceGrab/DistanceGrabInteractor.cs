@@ -108,7 +108,7 @@ namespace Oculus.Interaction
             DistanceGrabInteractable closestInteractable = null;
             float bestScore = float.NegativeInfinity;
 
-            IEnumerable<DistanceGrabInteractable> interactables = DistanceGrabInteractable.Registry.List(this);
+            var interactables = DistanceGrabInteractable.Registry.List(this);
             foreach (DistanceGrabInteractable interactable in interactables)
             {
                 Collider[] colliders = interactable.Colliders;

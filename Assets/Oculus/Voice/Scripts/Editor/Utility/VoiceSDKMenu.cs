@@ -26,7 +26,6 @@ using Facebook.WitAi.Data.Configuration;
 using Facebook.WitAi.Data.Intents;
 using Facebook.WitAi.Data.Entities;
 using Facebook.WitAi.Data.Traits;
-using Facebook.WitAi.TTS;
 using Facebook.WitAi.TTS.Editor;
 using Facebook.WitAi.TTS.Editor.Preload;
 using Oculus.Voice.Windows;

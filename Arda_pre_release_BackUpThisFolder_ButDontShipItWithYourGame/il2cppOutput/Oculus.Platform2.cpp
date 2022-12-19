@@ -9448,7 +9448,7 @@ IL_000f:
 		Message_1_t6600CB25BE1DA3008F62FB49B44DB20C23B9FE93* L_3 = ___msg0;
 		NullCheck(L_3);
 		ProductList_tE3694D232C493A9CD580C5557D937FD0A2506981* L_4;
-		L_4 = VirtualFuncInvoker0< ProductList_tE3694D232C493A9CD580C5557D937FD0A2506981* >::Invoke(68 /* Oculus.Platform.Models.ProductList Oculus.Platform.Message::GetProductList() */, L_3);
+		L_4 = VirtualFuncInvoker0< ProductList_tE3694D232C493A9CD580C5557D937FD0A2506981* >::Invoke(69 /* Oculus.Platform.Models.ProductList Oculus.Platform.Message::GetProductList() */, L_3);
 		NullCheck(L_4);
 		RuntimeObject* L_5;
 		L_5 = DeserializableList_1_GetEnumerator_m6FF4EACFD252C29BB95B64ECCF6945F0F4DB69F1(L_4, DeserializableList_1_GetEnumerator_m6FF4EACFD252C29BB95B64ECCF6945F0F4DB69F1_RuntimeMethod_var);
@@ -9635,7 +9635,7 @@ IL_000f:
 		Message_1_t06970779D503B50E986C5462619C2F6FB72381FA* L_3 = ___msg0;
 		NullCheck(L_3);
 		PurchaseList_tC41D329066EE7B56984F653FB46971C0614DBA0B* L_4;
-		L_4 = VirtualFuncInvoker0< PurchaseList_tC41D329066EE7B56984F653FB46971C0614DBA0B* >::Invoke(70 /* Oculus.Platform.Models.PurchaseList Oculus.Platform.Message::GetPurchaseList() */, L_3);
+		L_4 = VirtualFuncInvoker0< PurchaseList_tC41D329066EE7B56984F653FB46971C0614DBA0B* >::Invoke(71 /* Oculus.Platform.Models.PurchaseList Oculus.Platform.Message::GetPurchaseList() */, L_3);
 		NullCheck(L_4);
 		RuntimeObject* L_5;
 		L_5 = DeserializableList_1_GetEnumerator_m97C6E1206F18E8B7B97BD679E033CF0E9B3AEE62(L_4, DeserializableList_1_GetEnumerator_m97C6E1206F18E8B7B97BD679E033CF0E9B3AEE62_RuntimeMethod_var);
@@ -9799,7 +9799,7 @@ IL_000f:
 		Message_1_t27A884141DAE8B0CC324ED8E3C07EE4DD1D14D2D* L_3 = ___msg0;
 		NullCheck(L_3);
 		Purchase_tD525E4FF299D923FAF9BF3EDB81772753A1E3697* L_4;
-		L_4 = VirtualFuncInvoker0< Purchase_tD525E4FF299D923FAF9BF3EDB81772753A1E3697* >::Invoke(69 /* Oculus.Platform.Models.Purchase Oculus.Platform.Message::GetPurchase() */, L_3);
+		L_4 = VirtualFuncInvoker0< Purchase_tD525E4FF299D923FAF9BF3EDB81772753A1E3697* >::Invoke(70 /* Oculus.Platform.Models.Purchase Oculus.Platform.Message::GetPurchase() */, L_3);
 		V_0 = L_4;
 		// Debug.Log("purchased " + p.Sku);
 		Purchase_tD525E4FF299D923FAF9BF3EDB81772753A1E3697* L_5 = V_0;
