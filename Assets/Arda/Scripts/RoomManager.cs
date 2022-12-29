@@ -33,16 +33,6 @@ public class RoomManager : MonoBehaviour
     }
 
 
-    //save everytime application quits
-    void OnApplicationFocus() {
-
-        SaveLoadSystemClass.SaveNew();
-
-    }
-
-
-
-
     public void DisplayRoomButtons(){
 
         //resetting the buttons so they dont replicate

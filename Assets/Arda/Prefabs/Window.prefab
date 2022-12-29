@@ -39,7 +39,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: 20}
+  m_SizeDelta: {x: 30, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6413201794369692171
 CanvasRenderer:
@@ -138,7 +138,7 @@ MonoBehaviour:
   DoNotTesselate: 0
   savedPos: {x: 0, y: 18, z: 0}
   savedUp: {x: 0, y: 1, z: 0}
-  savedRectSize: {x: 20, y: 20}
+  savedRectSize: {x: 30, y: 30}
   savedColor: {r: 0, g: 0, b: 0, a: 1}
   savedTextUV0: {x: 0, y: 0, z: 0, w: 0}
   savedFill: 1
@@ -192,8 +192,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 8, y: 0}
-  m_SizeDelta: {x: 20, y: 20}
+  m_AnchoredPosition: {x: 11, y: 0}
+  m_SizeDelta: {x: 30, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4239561867836410315
 CanvasRenderer:
@@ -290,9 +290,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoNotTesselate: 0
-  savedPos: {x: 8, y: 18, z: 0}
+  savedPos: {x: 11, y: 18, z: 0}
   savedUp: {x: 0, y: 1, z: 0}
-  savedRectSize: {x: 20, y: 20}
+  savedRectSize: {x: 30, y: 30}
   savedColor: {r: 0, g: 0, b: 0, a: 1}
   savedTextUV0: {x: 0, y: 0, z: 0, w: 0}
   savedFill: 1
@@ -500,8 +500,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4, y: 0}
-  m_SizeDelta: {x: 20, y: 20}
+  m_AnchoredPosition: {x: 6, y: 0}
+  m_SizeDelta: {x: 30, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6620574017874803258
 CanvasRenderer:
@@ -598,9 +598,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoNotTesselate: 0
-  savedPos: {x: 4, y: 18, z: 0}
+  savedPos: {x: 6, y: 18, z: 0}
   savedUp: {x: 0, y: 1, z: 0}
-  savedRectSize: {x: 20, y: 20}
+  savedRectSize: {x: 30, y: 30}
   savedColor: {r: 0, g: 0, b: 0, a: 1}
   savedTextUV0: {x: 0, y: 0, z: 0, w: 0}
   savedFill: 1
@@ -713,7 +713,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &954619729023434144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1041,7 +1041,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -40, y: -2}
-  m_SizeDelta: {x: 20, y: 4}
+  m_SizeDelta: {x: 30, y: 4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4227623735341895841
 CanvasRenderer:
@@ -1096,7 +1096,7 @@ MonoBehaviour:
   DoNotTesselate: 0
   savedPos: {x: 0, y: 18, z: 0}
   savedUp: {x: 0, y: 1, z: 0}
-  savedRectSize: {x: 20, y: 4}
+  savedRectSize: {x: 30, y: 4}
   savedColor: {r: 0.5840602, g: 0.6621476, b: 0.7075472, a: 0.5019608}
   savedTextUV0: {x: 0, y: 0, z: 0, w: 0}
   savedFill: 1
@@ -1126,7 +1126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   r: {x: 1, y: 1, z: 0, w: 0}
-  rect2props: {x: 0.0000009536743, y: -0.5, z: 8.131728, w: 8.131728}
+  rect2props: {x: 0.000002861023, y: -0.4999981, z: 11.667263, w: 11.667263}
   image: {fileID: 5496521064516632807}
 --- !u!1 &8796320557865757722
 GameObject:
@@ -1165,8 +1165,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -8, y: 0}
-  m_SizeDelta: {x: 20, y: 20}
+  m_AnchoredPosition: {x: -11, y: 0}
+  m_SizeDelta: {x: 30, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2958158589833329047
 CanvasRenderer:
@@ -1216,9 +1216,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoNotTesselate: 0
-  savedPos: {x: -8, y: 18, z: 0}
+  savedPos: {x: -11, y: 18, z: 0}
   savedUp: {x: 0, y: 1, z: 0}
-  savedRectSize: {x: 20, y: 20}
+  savedRectSize: {x: 30, y: 30}
   savedColor: {r: 1, g: 1, b: 1, a: 1}
   savedTextUV0: {x: 0, y: 0, z: 0, w: 0}
   savedFill: 0
@@ -1272,8 +1272,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -4, y: 0}
-  m_SizeDelta: {x: 20, y: 20}
+  m_AnchoredPosition: {x: -6, y: 0}
+  m_SizeDelta: {x: 30, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9050388164976478667
 CanvasRenderer:
@@ -1370,9 +1370,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DoNotTesselate: 0
-  savedPos: {x: -4, y: 18, z: 0}
+  savedPos: {x: -6, y: 18, z: 0}
   savedUp: {x: 0, y: 1, z: 0}
-  savedRectSize: {x: 20, y: 20}
+  savedRectSize: {x: 30, y: 30}
   savedColor: {r: 0, g: 0, b: 0, a: 1}
   savedTextUV0: {x: 0, y: 0, z: 0, w: 0}
   savedFill: 1
