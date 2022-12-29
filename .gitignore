@@ -60,5 +60,6 @@ crashlytics-build.properties
 
 # Arda custom files
 /Assets/Vuplex/
+/Arda_pre_release_BackUpThisFolder_ButDontShipItWithYourGame/
 
 

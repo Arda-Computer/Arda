@@ -45,7 +45,8 @@ public class PointerManager : MonoBehaviour
     public PointerInputToggle toggle;
     public GameObject HandGO; 
     public GameObject LaserBeam;
-    public GameObject CameraFollower;
+    // public GameObject CameraFollower;
+    public GameObject CursorCameraFollower;
     bool inputBoolChanged;
     public RaycastHit hit;
 
@@ -61,6 +62,7 @@ public class PointerManager : MonoBehaviour
     public Toggle CursorToggle;
     public Toggle LaserToggle;
     public bool rightAltBool;
+    public Button ResetButton;
 
 
 
@@ -73,24 +75,24 @@ public class PointerManager : MonoBehaviour
         XRSettings.eyeTextureResolutionScale = 1.5f;
 
         lastMouse = CurvedUIInputModule.MousePosition;
-        eyeGaze = GetComponent<OVREyeGaze>();
+        // eyeGaze = GetComponent<OVREyeGaze>();
         
         if (Application.isEditor)
         {
             MouseToggle.isOn = true;
         }else{
-            EyeToggle.isOn = true;
+            // EyeToggle.isOn = true;  //removed for Quest 2
+            HandToggle.isOn = true;
             
         }
 
 
-        //create favicon dir if not exist
+        //create saves dir if not exist
         if(!Directory.Exists(Path.Combine(Application.persistentDataPath, "saves"))){
             Directory.CreateDirectory(Path.Combine(Application.persistentDataPath, "saves"));
             Debug.Log("creating folder: " + Path.Combine(Application.persistentDataPath, "saves"));
         }
 
-        Debug.LogWarning(eyeGaze.ConfidenceThreshold);
 
 
 
@@ -111,6 +113,14 @@ public class PointerManager : MonoBehaviour
 
         }else {
             rightAltBool = false;
+        }
+
+
+        if(Input.GetKey(KeyCode.LeftAlt) && Input.GetKeyDown(KeyCode.R))
+        {
+
+            ResetButton.Select();
+
         }
 
 
@@ -275,13 +285,13 @@ public class PointerManager : MonoBehaviour
             }
 
 
-        Debug.Log(eyeGaze.Confidence);
+        // Debug.Log(eyeGaze.Confidence); //removed for Quest 2
 
 
         if(EyeToggle.isOn){
             // CurvedUIInputModule.CustomControllerButtonState = Input.GetKeyDown(KeyCode.RightAlt); //causes error
             CurvedUIInputModule.CustomControllerButtonState = rightAltBool;
-            // customRaycastGO.transform.SetParent(CameraFollower.transform); //causes error
+            // customRaycastGO.transform.SetParent(CursorCameraFollower.transform); //causes error
             customRaycastGO.transform.rotation = new Quaternion(eyeGaze.transform.rotation.x + eyeQuaternion.x, eyeGaze.transform.rotation.y + eyeQuaternion.y, eyeGaze.transform.rotation.z + eyeQuaternion.z, eyeGaze.transform.rotation.w + eyeQuaternion.w);
 
         }
@@ -297,7 +307,7 @@ public class PointerManager : MonoBehaviour
 
         if(MouseToggle.isOn){
             CurvedUIInputModule.CustomControllerButtonState = Input.GetMouseButton(0);
-            customRaycastGO.transform.SetParent(CameraFollower.transform);
+            customRaycastGO.transform.SetParent(CursorCameraFollower.transform);
 
         }
             
