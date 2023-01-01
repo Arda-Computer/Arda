@@ -13,7 +13,7 @@ public class SpotlightSearch : MonoBehaviour
     HardwareKeyboardListener _hardwareKeyboardListener;
     bool activateBool;
     public TMP_Text Text;
-
+    public TMP_Text placeholderText;
 
 
 
@@ -80,6 +80,7 @@ public void _setupKeyboards() {
                         if(eventArgs.Value == "Enter"){
                             CustomOnSubmit(Text.text);
                             activateBool = false;
+                            placeholderText.gameObject.SetActive(true);
                             Text.text = "";
                         }
                         else if(eventArgs.Value == "Backspace"){
@@ -98,6 +99,7 @@ public void _setupKeyboards() {
 
     public void activateField(){
         activateBool = true;
+        placeholderText.gameObject.SetActive(false);
     }
 
 

@@ -11,6 +11,7 @@ public class RoomNameInputField : MonoBehaviour
     public AddRoom addRoom;
     bool activateBool;
     public TMP_Text Text;
+    public TMP_Text placeholderText;
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +33,7 @@ public class RoomNameInputField : MonoBehaviour
                         if(eventArgs.Value == "Enter"){
                             addRoom.CreateRoom(Text.text);
                             activateBool = false;
+                            placeholderText.gameObject.SetActive(true);
                             Text.text = "";
                         }
                         else if(eventArgs.Value == "Backspace"){
@@ -50,5 +52,6 @@ public class RoomNameInputField : MonoBehaviour
 
     public void activateField(){
         activateBool = true;
+        placeholderText.gameObject.SetActive(false);
     }
 }
