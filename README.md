@@ -1,9 +1,9 @@
 <p align="center">
   <img width="200" alt="Arda Logo" src="https://media.githubusercontent.com/media/Arda-Computer/Arda/main/media/Group%20131_transparent.png">
 
-  <h1 align="center">
+  <h2 align="center">
    Turn your headset into a personal computer
-  </h1> 
+  </h2> 
 
 </p>
 
@@ -40,7 +40,50 @@
   alt="discordapp"></a>
 <br/>
 <br/>
-[<kbd> <br> Title <br> </kbd>][Link]
+[<kbd> <br> Download <br> </kbd>][https://sidequest.com]
+	
+	
+<br>
+
+<div align = center>
+
+[![Badge License]][License]   
+[![Badge Likes]][#]
+
+<br>
+<br>
+    
+# Buttons
+         
+**Links  ➞  Buttons**
+
+<br>
+<br>
+
+[<kbd> <br> KeyBinding Button <br> </kbd>][KBD]
+
+[![Button Shield]][Shield]
+
+</div>
+
+<br>
+<br>
+
+
+<!---------------------------------------------------------------------------->
+
+[Button Shield]: https://img.shields.io/badge/Shield_Buttons-37a779?style=for-the-badge
+
+[License]: LICENSE
+[Shield]: Types/Shield.md
+[KBD]: Types/KBD.md
+[#]: #
+
+
+<!---------------------------------[ Badges ]---------------------------------->
+
+[Badge License]: https://img.shields.io/badge/-BY_SA_4.0-ae6c18.svg?style=for-the-badge&labelColor=EF9421&logoColor=white&logo=CreativeCommons
+[Badge Likes]: https://img.shields.io/github/stars/MarkedDown/Buttons?style=for-the-badge&labelColor=d0ab23&color=b0901e&logoColor=white&logo=Trustpilot
 
 <br/>
   <a href="https://arda.computer">Website</a>
@@ -70,7 +113,7 @@ Being productive on the web in AR with todays tooling is painful. AR personal co
       
 We believe augmented reality (AR) is a core enabling technology, bringing the utility of a workstation, portability of a laptop and the potential for (killer) applications to be useful in ways we never thought possible.
 	 
-	  Join us and contribute to building the future.
+Join us and contribute to building the future.
 
     
   </div>
@@ -81,7 +124,7 @@ We believe augmented reality (AR) is a core enabling technology, bringing the ut
 
 ## Features
 
-  <div id="rightThing" style="text-align:right; float: right; width:50%;">
+  <div id="rightThing" style="text-align:center; float: right; width:50%;">
       
   - **It's fast:** Interacting with your eyes makes navigating and building on the web feel like magic 🚀
   - **Immersion:** Focus for hours by surrounding yourself with multiple monitors 🖥️
@@ -158,7 +201,9 @@ We believe augmented reality (AR) is a core enabling technology, bringing the ut
 Moving away from a form-factor that is as deeply entrenched as conventional personal computing - having not changed in the past half a century - is no easy feat. We’re therefore taking a staged approach to building this future:
 
 `1. Milestone 1:` Reaching feature parity with conventional personal computers. Luckily, since most of what we do today is in the browser, we can build a tool on top of this preexisting, open and powerful ecosystem.
+
 `2. Milestone 2:` Become more usable, convenient and faster to use than conventional personal computers. Using XR-native features like eye tracking, higher i/o bandwidth and multiplayer to take the product from hobbyists to mass market. 
+
 `3. Milestone 3:`  Build a platform based on WebXR, allowing developers to build new types of applications.
 
 
