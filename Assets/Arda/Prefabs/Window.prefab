@@ -446,7 +446,7 @@ MonoBehaviour:
   savedPos: {x: -4, y: -2, z: 0}
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 72, y: 36}
-  savedColor: {r: 1, g: 1, b: 1, a: 0.5019608}
+  savedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
   savedTextUV0: {x: 0, y: 0, z: 0, w: 0}
   savedFill: 0
 --- !u!114 &5440106428169828525
@@ -981,7 +981,7 @@ MonoBehaviour:
   savedPos: {x: 4, y: -2, z: 0}
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 72, y: 36}
-  savedColor: {r: 1, g: 1, b: 1, a: 0.5019608}
+  savedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
   savedTextUV0: {x: 0, y: 0, z: 0, w: 0}
   savedFill: 0
 --- !u!114 &6617132251758940635

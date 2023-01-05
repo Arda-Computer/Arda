@@ -45,6 +45,7 @@ public class PointerManager : MonoBehaviour
     public PointerInputToggle toggle;
     public GameObject HandGO; 
     public GameObject LaserBeam;
+    public GameObject RightController;
     // public GameObject CameraFollower;
     public GameObject CursorCameraFollower;
     bool inputBoolChanged;
@@ -63,6 +64,7 @@ public class PointerManager : MonoBehaviour
     public Toggle LaserToggle;
     public bool rightAltBool;
     public Button ResetButton;
+    public Button DebugButton;
 
 
 
@@ -83,6 +85,7 @@ public class PointerManager : MonoBehaviour
         }else{
             // EyeToggle.isOn = true;  //removed for Quest 2
             HandToggle.isOn = true;
+            Debug.Log("Hands Activated");
             
         }
 
@@ -106,7 +109,7 @@ public class PointerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.LeftAlt))
+        if(Input.GetKeyDown(KeyCode.RightAlt))
         {
 
             rightAltBool = true;
@@ -116,21 +119,16 @@ public class PointerManager : MonoBehaviour
         }
 
 
-        if(Input.GetKey(KeyCode.LeftAlt) && Input.GetKeyDown(KeyCode.R))
-        {
-
-            ResetButton.Select();
-
-        }
 
 
 
-        if(Input.GetKey(KeyCode.LeftAlt) && Input.GetKeyDown(KeyCode.Alpha0))
-        {
 
-            ResetCursorPosition();
+        // if(Input.GetKey(KeyCode.LeftAlt) && Input.GetKeyDown(KeyCode.Alpha0))
+        // {
 
-        }
+        //     ResetCursorPosition();
+
+        // }
 
         if(Input.GetKey(KeyCode.LeftAlt) && Input.GetKeyDown(KeyCode.Alpha1))
         {
@@ -167,7 +165,19 @@ public class PointerManager : MonoBehaviour
 
         }
 
+        if(Input.GetKey(KeyCode.LeftAlt) && Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            DebugButton.Select();
+        }
 
+
+
+        if(Input.GetKey(KeyCode.LeftAlt) && Input.GetKeyDown(KeyCode.Alpha7))
+        {
+
+            ResetButton.Select();
+
+        }
 
         if(Input.GetKey(KeyCode.LeftAlt) && Input.GetKey(KeyCode.RightArrow))
         {
@@ -210,20 +220,6 @@ public class PointerManager : MonoBehaviour
         /// A simple script to make the pointer follow mouse movement and pass the control ray to canvsa
         /// </summary>
 
-        //need if mouse exists otherwise thows errors
-
-        //find mouse delta
-        Vector3 mouseDelta = CurvedUIInputModule.MousePosition - lastMouse;
-        lastMouse = CurvedUIInputModule.MousePosition;
-
-        // Vector3 mouseDelta = Input.mousePosition - lastMouse;
-        // lastMouse = Input.mousePosition;
-
-
-        
-        //adjust transform angle
-        pivot.localEulerAngles += new Vector3(-mouseDelta.y, mouseDelta.x, 0) * sensitivity;
-        
         //pass ray and button state to CurvedUIInputModule
         // var myRay = new Ray(MouseController.transform.position, MouseController.transform.forward);
         var myRay = new Ray(customRaycastGO.transform.position, customRaycastGO.transform.forward);
@@ -298,9 +294,19 @@ public class PointerManager : MonoBehaviour
 
 
         if(HandToggle.isOn){
-            CurvedUIInputModule.CustomControllerButtonState = rightHandReference.GetIndexFingerIsPinching();
-            HandGO.SetActive(true);
-            customRaycastGO.transform.SetParent(handPointer.transform);
+            if (OVRPlugin.GetHandTrackingEnabled()){
+                ResetCursorPosition();
+                customRaycastGO.transform.localPosition = Vector3.zero;
+                customRaycastGO.transform.localEulerAngles = Vector3.zero;
+                CurvedUIInputModule.CustomControllerButtonState = rightHandReference.GetIndexFingerIsPinching();
+                HandGO.SetActive(true);
+                customRaycastGO.transform.SetParent(handPointer.transform);
+
+            }else{
+                ResetCursorPosition();
+                CurvedUIInputModule.CustomControllerButtonState = OVRInput.Get(OVRInput.Button.One);
+                customRaycastGO.transform.SetParent(RightController.transform);
+            }
         }
 
 
@@ -309,6 +315,13 @@ public class PointerManager : MonoBehaviour
             CurvedUIInputModule.CustomControllerButtonState = Input.GetMouseButton(0);
             customRaycastGO.transform.SetParent(CursorCameraFollower.transform);
 
+            //find mouse delta
+            Vector3 mouseDelta = CurvedUIInputModule.MousePosition - lastMouse;
+            lastMouse = CurvedUIInputModule.MousePosition;
+
+            //adjust transform angle
+            pivot.localEulerAngles += new Vector3(-mouseDelta.y, mouseDelta.x, 0) * sensitivity;
+        
         }
             
                 
@@ -323,6 +336,9 @@ public class PointerManager : MonoBehaviour
     public void ResetCursorPosition(){
         customRaycastGO.transform.localPosition = Vector3.zero;
         customRaycastGO.transform.localEulerAngles = Vector3.zero;
+
+        // LaserBeamDot.transform.localPosition = Vector3.zero;
+        LaserBeamDot.transform.localEulerAngles = Vector3.zero;
     }
 
 
