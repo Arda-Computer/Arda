@@ -46,7 +46,7 @@
 <br/>
 <br/>
 <!-- BEGIN LATEST DOWNLOAD BUTTON -->
-[![Download zip](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download")](https://sidequestvr.com/)
+[![Download zip](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download")]
 <!-- END LATEST DOWNLOAD BUTTON -->
   
 <br/>
