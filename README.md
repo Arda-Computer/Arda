@@ -40,12 +40,13 @@
   alt="discordapp"></a>
 <br/>
 <br>
+<br>
 <div align = center>
 [<kbd> <br> KeyBinding Button <br> </kbd>][KBD]
 
 </div>
 
-<br>
+</br>
 
 <!---------------------------------------------------------------------------->
 
@@ -62,7 +63,6 @@
 [Badge License]: https://img.shields.io/badge/-BY_SA_4.0-ae6c18.svg?style=for-the-badge&labelColor=EF9421&logoColor=white&logo=CreativeCommons
 [Badge Likes]: https://img.shields.io/github/stars/MarkedDown/Buttons?style=for-the-badge&labelColor=d0ab23&color=b0901e&logoColor=white&logo=Trustpilot
 
-<p align="center">
 <br/>
   <a href="https://arda.computer">Website</a>
     ·
@@ -72,7 +72,6 @@
     ·
   <a href="https://github.com/Arda-Computer/Arda/issues">Request Feature</a>
 
-</p>
 
     
 
