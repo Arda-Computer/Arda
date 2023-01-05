@@ -39,30 +39,21 @@
   <img src="https://discordapp.com/api/guilds/1009190818667561000/widget.png?style=shield"
   alt="discordapp"></a>
 <br/>
-<br/>
-[<kbd> <br> Download <br> </kbd>][https://sidequest.com]
-	
+<br/>	
 	
 <br>
 
 <div align = center>
 
-[![Badge License]][License]   
-[![Badge Likes]][#]
 
 <br>
 <br>
-    
-# Buttons
-         
-**Links  ➞  Buttons**
 
 <br>
 <br>
 
 [<kbd> <br> KeyBinding Button <br> </kbd>][KBD]
 
-[![Button Shield]][Shield]
 
 </div>
 
@@ -76,7 +67,7 @@
 
 [License]: LICENSE
 [Shield]: Types/Shield.md
-[KBD]: Types/KBD.md
+[KBD]: https://sidequest.com
 [#]: #
 
 
@@ -200,11 +191,11 @@ Join us and contribute to building the future.
 
 Moving away from a form-factor that is as deeply entrenched as conventional personal computing - having not changed in the past half a century - is no easy feat. We’re therefore taking a staged approach to building this future:
 
-`1. Milestone 1:` Reaching feature parity with conventional personal computers. Luckily, since most of what we do today is in the browser, we can build a tool on top of this preexisting, open and powerful ecosystem.
+`Milestone 1:` Reaching feature parity with conventional personal computers. Luckily, since most of what we do today is in the browser, we can build a tool on top of this preexisting, open and powerful ecosystem.
 
-`2. Milestone 2:` Become more usable, convenient and faster to use than conventional personal computers. Using XR-native features like eye tracking, higher i/o bandwidth and multiplayer to take the product from hobbyists to mass market. 
+`Milestone 2:` Become more usable, convenient and faster to use than conventional personal computers. Using XR-native features like eye tracking, higher i/o bandwidth and multiplayer to take the product from hobbyists to mass market. 
 
-`3. Milestone 3:`  Build a platform based on WebXR, allowing developers to build new types of applications.
+`Milestone 3:`  Build a platform based on WebXR, allowing developers to build new types of applications.
 
 
 ## Contributing
