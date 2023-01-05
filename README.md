@@ -2,8 +2,12 @@
   <img width="200" alt="Arda Logo" src="https://media.githubusercontent.com/media/Arda-Computer/Arda/main/media/Group%20131_transparent.png">
 
   <h2 align="center">
-    The productivity tool that combines the utility of a workstation with the portability of a laptop.
+   Turn your headset into a personal computer
   </h2>
+  
+  <h3 align="center">
+	Made to make the web more accessible to those unable to use conventional PCs
+  </h3>
   
 
 </p>
@@ -41,7 +45,10 @@
   alt="discordapp"></a>
 <br/>
 <br/>
-  <a href="https://sidequestvr.com/"><strong>Download »</strong></a>
+<!-- BEGIN LATEST DOWNLOAD BUTTON -->
+[![Download zip](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download")](https://sidequestvr.com/)
+<!-- END LATEST DOWNLOAD BUTTON -->
+  
 <br/>
   <a href="https://arda.computer">Website</a>
     ·
