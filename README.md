@@ -39,13 +39,13 @@
   <img src="https://discordapp.com/api/guilds/1009190818667561000/widget.png?style=shield"
   alt="discordapp"></a>
 <br/>
-
+<br>
 <div align = center>
 [<kbd> <br> KeyBinding Button <br> </kbd>][KBD]
 
 </div>
 
-
+<br>
 
 <!---------------------------------------------------------------------------->
 
