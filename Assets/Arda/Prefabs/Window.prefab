@@ -349,7 +349,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -4, y: -2}
-  m_SizeDelta: {x: 8, y: -4}
+  m_SizeDelta: {x: -8, y: -4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &472611343229802536
 CanvasRenderer:
@@ -446,7 +446,7 @@ MonoBehaviour:
   savedPos: {x: -4, y: -2, z: 0}
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 72, y: 36}
-  savedColor: {r: 1, g: 1, b: 1, a: 0.5019608}
+  savedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
   savedTextUV0: {x: 0, y: 0, z: 0, w: 0}
   savedFill: 0
 --- !u!114 &5440106428169828525
@@ -713,7 +713,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &954619729023434144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -884,7 +884,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 4, y: -2}
-  m_SizeDelta: {x: 8, y: -4}
+  m_SizeDelta: {x: -8, y: -4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9090319201884364628
 CanvasRenderer:
@@ -981,7 +981,7 @@ MonoBehaviour:
   savedPos: {x: 4, y: -2, z: 0}
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 72, y: 36}
-  savedColor: {r: 1, g: 1, b: 1, a: 0.5019608}
+  savedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
   savedTextUV0: {x: 0, y: 0, z: 0, w: 0}
   savedFill: 0
 --- !u!114 &6617132251758940635
