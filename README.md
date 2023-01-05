@@ -46,10 +46,9 @@
 <br/>
 <br/>
 <!-- BEGIN LATEST DOWNLOAD BUTTON -->
-[![Download zip](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download")]
+[![Download zip](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download zip")](https://github.com/DenverCoder1/readme-download-button-action/archive/1.0.1.zip)
 <!-- END LATEST DOWNLOAD BUTTON -->
-  
-<br/>
+	
   <a href="https://arda.computer">Website</a>
     ·
   <a href="https://www.youtube.com/watch?v=iqLrsQolaks">Full Demo</a>
