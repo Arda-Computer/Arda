@@ -3,12 +3,7 @@
 
   <h1 align="center">
    Turn your headset into a personal computer
-  </h1>
-  
-  <h4 align="center">
-	Made to make the web more accessible to those unable to use conventional PCs
-  </h4>
-  
+  </h1> 
 
 </p>
 
@@ -45,7 +40,7 @@
   alt="discordapp"></a>
 <br/>
 <br/>
-[Info Button Text](#link){: .btn .btn--info}
+[<kbd> <br> Title <br> </kbd>][Link]
 
 <br/>
   <a href="https://arda.computer">Website</a>
@@ -68,10 +63,15 @@
     
     
   <div id="leftThing" style="float: left; width:50%;">
-      
-  Arda is a tool that makes humans and computers more productive. We believe augmented reality (AR) is a core enabling technology, bringing the utility of a workstation, portability of a laptop and the potential for (killer) applications to be useful in ways we never thought possible.
+	  
+Conventional personal computing hasn't changed for the past half a century. We're on a mission to make humans and computers more productive, starting with making the web more accessible to those unable to use conventional PCs.
 
-  Doing anything productive in AR with todays tooling is painful. AR personal computing has gone mostly ignored by big tech as they’ve focused on gaming and miscellaneous industrial niches. 
+Being productive on the web in AR with todays tooling is painful. AR personal computing has gone mostly ignored by big tech as they’ve focused on gaming and miscellaneous industrial niches. 
+      
+We believe augmented reality (AR) is a core enabling technology, bringing the utility of a workstation, portability of a laptop and the potential for (killer) applications to be useful in ways we never thought possible.
+	 
+	  Join us and contribute to building the future.
+
     
   </div>
     
@@ -84,11 +84,11 @@
   <div id="rightThing" style="text-align:right; float: right; width:50%;">
       
   - **It's fast:** Interacting with your eyes makes navigating and building on the web feel like magic 🚀
-  - **Immersion:** Focus for hours by surounding yourself with multiple monitors
-  - **Portability:** Arda works in standalone headsets so you can take nothing but your headset with you
-  - **Cross-platform and Opensourced:** Use Arda on standalone headsets and PCVR
-  - **Private and Secure:** Private mode and security built-in
-  - **Customisable:** Easily custumize your surroundsings 
+  - **Immersion:** Focus for hours by surrounding yourself with multiple monitors 🖥️
+  - **Portability:** Arda works on standalone headsets so you can work on the go ✈️
+  - **Cross-platform and Opensourced:** Use Arda on standalone headsets and PCVR 🎉
+  - **Private and Secure:** Private mode and security built-in 🔒
+  - **Customizable:** Easily customize your surroundings ✏️
 
   <p align="center">
   <a href="https://arda.computer"><strong>Full features&nbsp;&nbsp;▶</strong></a>
@@ -141,9 +141,9 @@
 | ----------- |:--------------------:|:--------------------:|
 | Quest       | :white_check_mark:   | :white_check_mark:   |
 | Quest 2     | :white_check_mark:   | :white_check_mark:   |
-| Vive        | :white_large_square: | :white_large_square: |
+| Vive        | :white_check_mark:   | :white_large_square: |
 | Valve Index | :white_large_square: | :white_large_square: |
-| Rift/Rift S | :white_large_square: | :white_large_square: |
+| Rift/Rift S | :white_check_mark:   | :white_large_square: |
 | Windows MR  | :white_large_square: | :white_large_square: |
 | Lynx        | :white_large_square: | :white_large_square: |
 | Pico        | :white_check_mark:   | :white_large_square: |
@@ -157,9 +157,9 @@
 
 Moving away from a form-factor that is as deeply entrenched as conventional personal computing - having not changed in the past half a century - is no easy feat. We’re therefore taking a staged approach to building this future:
 
-1. Milestone 1: Reaching feature parity with conventional personal computers. Luckily, since most of what we do today is in the browser, we can build a tool on top of this preexisting, open and powerful ecosystem. `Oct 2022`
-2. Milestone 2: Become more usable, convenient and faster to use than conventional personal computers. Using XR-native features like eye tracking, higher i/o bandwidth and multiplayer to take the product from hobbyists to mass market. `Early 2023`
-3. Milestone 3:  Build a platform based on WebXR, allowing developers to build new types of applications `Mid 2023`
+`1. Milestone 1:` Reaching feature parity with conventional personal computers. Luckily, since most of what we do today is in the browser, we can build a tool on top of this preexisting, open and powerful ecosystem.
+`2. Milestone 2:` Become more usable, convenient and faster to use than conventional personal computers. Using XR-native features like eye tracking, higher i/o bandwidth and multiplayer to take the product from hobbyists to mass market. 
+`3. Milestone 3:`  Build a platform based on WebXR, allowing developers to build new types of applications.
 
 
 ## Contributing
