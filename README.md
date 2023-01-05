@@ -1,13 +1,13 @@
 <p align="center">
   <img width="200" alt="Arda Logo" src="https://media.githubusercontent.com/media/Arda-Computer/Arda/main/media/Group%20131_transparent.png">
 
-  <h2 align="center">
+  <h1 align="center">
    Turn your headset into a personal computer
-  </h2>
+  </h1>
   
-  <h3 align="center">
+  <h4 align="center">
 	Made to make the web more accessible to those unable to use conventional PCs
-  </h3>
+  </h4>
   
 
 </p>
@@ -45,10 +45,9 @@
   alt="discordapp"></a>
 <br/>
 <br/>
-<!-- BEGIN LATEST DOWNLOAD BUTTON -->
-[![Download zip](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download zip")](https://github.com/DenverCoder1/readme-download-button-action/archive/1.0.1.zip)
-<!-- END LATEST DOWNLOAD BUTTON -->
-	
+[Info Button Text](#link){: .btn .btn--info}
+
+<br/>
   <a href="https://arda.computer">Website</a>
     ·
   <a href="https://www.youtube.com/watch?v=iqLrsQolaks">Full Demo</a>
