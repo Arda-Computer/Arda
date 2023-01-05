@@ -39,14 +39,25 @@
   <img src="https://discordapp.com/api/guilds/1009190818667561000/widget.png?style=shield"
   alt="discordapp"></a>
 <br/>
+
 <br>
-<br>
+
 <div align = center>
+
+
+<br>
+<br>
+
+<br>
+<br>
+
 [<kbd> <br> KeyBinding Button <br> </kbd>][KBD]
+
 
 </div>
 
-</br>
+<br>
+<br>
 
 <!---------------------------------------------------------------------------->
 
@@ -71,7 +82,7 @@
   <a href="https://github.com/Arda-Computer/Arda/issues">Report Bug</a>
     ·
   <a href="https://github.com/Arda-Computer/Arda/issues">Request Feature</a>
-
+</p>
 
     
 
