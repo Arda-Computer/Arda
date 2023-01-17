@@ -56,7 +56,7 @@
 
 [License]: LICENSE
 [Shield]: Types/Shield.md
-[KBD]: [https://github.com/Arda-Computer/Arda/releases/download/Beta/Arda_v3.apk](https://github.com/Arda-Computer/Arda/releases/download/Beta/Arda_v3.apk)
+[KBD]: [https://github.com/Arda-Computer/Arda/releases/download/Beta/Arda_v3.apk]
 [#]: #
 
 
