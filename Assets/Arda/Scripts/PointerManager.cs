@@ -12,7 +12,6 @@ using System.IO;
 public class PointerManager : MonoBehaviour
 {
 
-
     //customRay
     #pragma warning disable 0649
         [SerializeField]
@@ -46,7 +45,6 @@ public class PointerManager : MonoBehaviour
     public GameObject HandGO; 
     public GameObject LaserBeam;
     public GameObject RightController;
-    // public GameObject CameraFollower;
     public GameObject CursorCameraFollower;
     bool inputBoolChanged;
     public RaycastHit hit;
@@ -95,8 +93,6 @@ public class PointerManager : MonoBehaviour
             Directory.CreateDirectory(Path.Combine(Application.persistentDataPath, "saves"));
             Debug.Log("creating folder: " + Path.Combine(Application.persistentDataPath, "saves"));
         }
-
-
 
 
 
