@@ -283,7 +283,6 @@ public class PointerManager : MonoBehaviour
 
         // Debug.Log(eyeGaze.Confidence); //removed for Quest 2
 
-
         if(EyeToggle.isOn){
             // CurvedUIInputModule.CustomControllerButtonState = Input.GetKeyDown(KeyCode.RightAlt); //causes error
             CurvedUIInputModule.CustomControllerButtonState = rightAltBool;
