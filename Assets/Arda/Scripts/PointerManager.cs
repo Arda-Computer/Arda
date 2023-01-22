@@ -12,7 +12,6 @@ using System.IO;
 public class PointerManager : MonoBehaviour
 {
 
-
     //customRay
     #pragma warning disable 0649
         [SerializeField]
@@ -46,7 +45,6 @@ public class PointerManager : MonoBehaviour
     public GameObject HandGO; 
     public GameObject LaserBeam;
     public GameObject RightController;
-    // public GameObject CameraFollower;
     public GameObject CursorCameraFollower;
     bool inputBoolChanged;
     public RaycastHit hit;
