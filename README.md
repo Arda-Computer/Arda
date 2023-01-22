@@ -12,7 +12,6 @@
 </p>
 
 
-
 <p align="center">
 
   <a href="https://github.com/Arda-Computer/Arda/graphs/contributors">
