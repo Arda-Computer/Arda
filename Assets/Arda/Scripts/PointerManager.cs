@@ -121,8 +121,6 @@ public class PointerManager : MonoBehaviour
 
 
 
-
-
         // if(Input.GetKey(KeyCode.LeftAlt) && Input.GetKeyDown(KeyCode.Alpha0))
         // {
 
