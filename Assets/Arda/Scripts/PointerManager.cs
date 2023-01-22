@@ -284,9 +284,7 @@ public class PointerManager : MonoBehaviour
         // Debug.Log(eyeGaze.Confidence); //removed for Quest 2
 
         if(EyeToggle.isOn){
-            // CurvedUIInputModule.CustomControllerButtonState = Input.GetKeyDown(KeyCode.RightAlt); //causes error
             CurvedUIInputModule.CustomControllerButtonState = rightAltBool;
-            // customRaycastGO.transform.SetParent(CursorCameraFollower.transform); //causes error
             customRaycastGO.transform.rotation = new Quaternion(eyeGaze.transform.rotation.x + eyeQuaternion.x, eyeGaze.transform.rotation.y + eyeQuaternion.y, eyeGaze.transform.rotation.z + eyeQuaternion.z, eyeGaze.transform.rotation.w + eyeQuaternion.w);
 
         }
