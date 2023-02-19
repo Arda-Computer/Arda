@@ -4,7 +4,6 @@
   <h2 align="center">
    Turn your headset into a personal computer
   </h2> 
-
 </p>
 
 <p align="center">
